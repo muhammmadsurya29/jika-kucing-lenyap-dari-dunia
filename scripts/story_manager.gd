@@ -90,7 +90,12 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = get_tree().get_first_node_in_group("Player")
 		if aloha and player:
 			aloha.show()
-			aloha.global_position = player.global_position + Vector2(30, 0)
+			
+			var node_aloha = get_tree().get_root().find_child("PosisiAlohaHari3Malam", true, false)
+			if StoryManager.current_day == 3 and node_aloha:
+				aloha.global_position = node_aloha.global_position
+			else:
+				aloha.global_position = player.global_position + Vector2(30, 0)
 			
 			var tween = create_tween()
 			aloha.modulate.a = 0
@@ -191,7 +196,19 @@ func pulang_malam(target_scene: String) -> void:
 	
 	player = get_tree().get_first_node_in_group("Player")
 	if player:
-		player.global_position = Vector2(7, 29) # Posisi di kamar dekat kasur
+		if StoryManager.current_day == 3:
+			var node_mc = get_tree().get_root().find_child("PosisiMCHari3Malam", true, false)
+			if node_mc:
+				player.global_position = node_mc.global_position
+			else:
+				player.global_position = Vector2(7, 29)
+				
+			var kubis = get_tree().get_root().find_child("NPC_Kubis", true, false)
+			var node_kubis = get_tree().get_root().find_child("PosisiKubisHari3Malam", true, false)
+			if kubis and node_kubis:
+				kubis.global_position = node_kubis.global_position
+		else:
+			player.global_position = Vector2(7, 29) # Posisi di kamar dekat kasur
 		
 	var tween_out = get_tree().create_tween()
 	tween_out.tween_property(transition_rect, "modulate", Color(1, 1, 1, 0), 1.5)

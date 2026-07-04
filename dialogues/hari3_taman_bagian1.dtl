@@ -1,8 +1,6 @@
 [background arg="flashback_ibu_taman.png" fade="1.0"]
 narator: Teringat olehku, dulu ibu selalu pergi berjalan-jalan bersama kubis. Mengenang kebiasaan ibu itu, rasanya aku mungkin bisa mengerti sisi ibu yang tidak kuketahui selama ini. Jadi, aku pun siap berjalan-jalan mengikuti kubis dengan santai sepanjang hari. Jika dipikir baik-baik, sepertinya aku tahu mengapa kubis berbicara gaya drama sejarah. Karena ibu sering mengajaknya menonton bersama drama sejarah di TV dengan membiarkan kubis duduk di pangkuannya. Akibatnya, bahasa kubis menjadi bahasa jepang ajaib yang bercampur antara bahasa ibu dengan drama sejarah.
 [background arg="" fade="1.0"]
-[signal arg="kubis_jalan_ke_bunga"]
-[wait time="2.0"]
 kubis: Ini namanya apa, tuanku?
 [background arg="bunga_randa_tapak.png" fade="1.0"]
 mc: Itu Randa Tapak. Dia mekar saat musim semi. Kamu sama seperti ku dulu waktu kecil, Setiap kali melihat bunga, aku langsung duduk menatapnya. Lalu bila menemukannya lagi, langsung jongkok lagi. Repot sekali karena jalan-jalannya tidak selesai-selesai. Begitu cerita dari ibu.

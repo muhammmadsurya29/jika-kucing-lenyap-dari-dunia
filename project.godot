@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="VN Jika Kucing Lenyap Dari Dunia"
+config/name="VN Jika Kucing Lenyap Dari Dunia (4.6)"
 run/main_scene="uid://dsdplvs8eelh7"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -53,10 +53,12 @@ directories/dtl_directory={
 "hari2_malam_bioskop": "res://dialogues/hari2_malam_bioskop.dtl",
 "hari2_pagi_kamar": "res://dialogues/hari2_pagi_kamar.dtl",
 "hari2_siang_tsutaya": "res://dialogues/hari2_siang_tsutaya.dtl",
+"hari3_malam_kamar": "res://dialogues/hari3_malam_kamar.dtl",
 "hari3_pagi_kamar": "res://dialogues/hari3_pagi_kamar.dtl",
 "hari3_siang_taman": "res://dialogues/hari3_siang_taman.dtl",
 "hari3_taman_bagian1": "res://dialogues/hari3_taman_bagian1.dtl",
 "hari3_taman_bagian2": "res://dialogues/hari3_taman_bagian2.dtl",
+"hari3_taman_bunga": "res://dialogues/hari3_taman_bunga.dtl",
 "hari4_kucing": "res://dialogues/hari4_kucing.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
 "pintu_toko_terkunci": "res://dialogues/pintu_toko_terkunci.dtl",

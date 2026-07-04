@@ -1,42 +1,165 @@
-[background arg="res://assets/backgrounds/jalanan_kota.png" fade="1.0"]
-narator: "Pagi hari. Aku terbangun dan panik karena Kubis hilang dari kamar. Aku berlari keluar apartemen, mencari ke taman, hingga ke kedai mie soba."
-mc: "Aku berlari membabi buta. Paru-paruku terasa terbakar. Apa aku telah melenyapkannya dalam mimpi? Aku sudah ditinggalkan ibu dan selada. Aku tak mau ditinggalkan lagi!"
-narator: "Di depan bioskop tua. Kubis menggeliat santai dan mengeong lirih. Aku jatuh terduduk dan memeluknya erat."
-mantan: "Aku kaget tiba-tiba Kubis datang mencariku. Kau menangis lagi, ya? Kebiasaanmu tidak berubah."
-narator: "Mantan menyodorkan sebuah surat tua dengan perangko yang belum dicap."
-mantan: "Ini dari Ibu. Ia menitipkannya saat di RS. Katanya: 'Jika suatu saat anakku dalam kesulitan, serahkan ini.'"
-[background arg="res://assets/backgrounds/ilustrasi_cafe.png" fade="1.0"]
-narator: "Aku duduk di sofa lobi, Kubis di pangkuanku. Membaca surat Ibu. Lalu menangis perlahan membasahi surat."
-narator: "(Isi Surat Ibu): Aku memikirkan 10 hal indah dalam dirimu untuk menggantikan 10 keinginan terakhirku. Wajah tidurmu, lesung pipimu, sifatmu yang peduli pada orang lain... jika kamu merasa sedih pejamkan matamu dan tersenyumlah perlahan, maka kesedihan itu juga akan lenyap. Jangan lupakan itu. Hanya dengan hal-hal itu, kau bisa bahagia. Terima kasih dan selamat tinggal."
-narator: "Bayangan memori Ibu mengelus punggungku saat sakit, menyelimutiku, dan tersenyum melintas."
-mc: "Aku takut mati, Bu. Tapi Ibu benar... lebih susah hidup dengan merenggut sesuatu yang berharga dari dunia."
-narator: "Tiba-tiba Kubis menatapku. Ia bisa berbicara kembali untuk terakhir kalinya."
-kubis: "Gusti Patih, tidak usah menangis. Hilangkan saja kucing. Sahaya ingin Tuanku tetap hidup."
-mc: "Tidak bisa, Kubis. Tidak akan."
-kubis: "Sahaya paham isi hatimu. Kalau begitu, untuk terakhir kalinya... pejamkan matamu."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-kubis: "Pejamkan mata pelan-pelan, lalu tersenyumlah. Itulah sihir Ibu."
-mc: "Terima kasih, Kubis."
-narator: "Aku membuka mata. Kubis hanya mengeong biasa (Meong...). Kemampuan bicaranya telah hilang selamanya."
-aloha: "Sihirnya habis. Kau sudah mengambil keputusan yang sangat... manusiawi."
-narator: "Aku memegang surat Ibu, melihat kalimat terakhir: 'Semoga kamu dan ayahmu hidup rukun'. Ada satu hal terakhir yang harus kulakukan sebelum waktuku habis."
-[background arg="res://assets/backgrounds/kamar_mc.png" fade="1.0"]
-narator: "BABAK 9: DAY SABTU – Sebuah Penerimaan"
-narator: "Matahari pagi menyinari wajahku. Kubis mendengkur tenang di sampingku. Ternyata, kebahagiaan atau kemalangan hanyalah soal bagaimana kita memandang dunia. Aku memutuskan untuk tidak merenggut apa pun lagi. Biarlah waktu hidupku berakhir dengan utuh."
-narator: "Aloha muncul, berdiri di dekat jendela. Ia tidak lagi tersenyum nakal, tatapannya kini sayu namun hangat."
-aloha: "Menukar nyawa demi seekor kucing? Kau konyol, tapi kau menang. Aku mengaku kalah pada 'sisi manusia' dalam dirimu."
-mc: "Siapa kau sebenarnya, Aloha?"
-aloha: "Aku adalah wujud dari segala penyesalan dan keinginan terpendammu. Aku adalah dirimu yang ingin bebas, namun kini kau telah menemukan kedamaianmu sendiri. Selamat tinggal, manusia menarik."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: "BABAK TERAKHIR: Surat dan Punggung Ayah"
-narator: "Aku merapikan barang-barang terakhirku. Aku menemukan kotak logam tua. Di dalamnya tersimpan ratusan perangko warna-warni."
-mc: "Perangko ini adalah bahasa rahasia Ayah. Lewat kepingan kertas ini, dia yang pendiam menceritakan dunia kepadaku. Alasan aku menjadi tukang pos... ternyata agar aku bisa terus menyampaikan 'napas hangat' yang sama kepada orang lain."
-narator: "Aku mengenakan kemeja putih dan dasi abu-abu gelap—seragam tukang pos. Aku menatap bayanganku di cermin."
-mc: "Wajah ini, postur ini... aku benar-benar menjadi mirip dengannya. Aku dulu berpikir bahwa hidup adalah tentang memiliki. Tapi Iblis itu mengajariku satu hal: dunia ini didefinisikan oleh apa yang hilang darinya. Tanpa telepon, aku melihat langit. Tanpa film, aku merasakan kenyataan. Dan tanpa jam... aku akhirnya memahami Ayah"
-narator: "Aku menggendong Kubis ke keranjang sepeda. Tas berisi surat wasiat untuk Ayahku tersampir di bahu. Surat ini tidak boleh hanya berhenti di kotak pos merah itu. Aku sendiri yang akan mengantarkannya. Melewati tanjakan ini, menuju kota di seberang teluk... tempat tinggal Ayah."
-narator: "Aku mengayuh sepedaku sekuat tenaga menuruni bukit. Di bawahku, laut biru pekat berkilau terkena cahaya matahari. Angin berembus kencang, Kubis mengeong segar."
-mc: "Sekarang aku mengerti kenapa dulu Ayah memberiku banyak perangko. Surat itu bukan sekadar kertas dan tinta, tapi cara Ayah mengirimkan cintanya dari jarak jauh. Selama ini aku sibuk melarikan diri, padahal waktu adalah satu-satunya kesempatan yang aku punya untuk bilang: 'Ayah, aku sayang padamu.'"
-[background arg="res://assets/backgrounds/putih.png" fade="2.0"]
-mc: "Aku datang, Ayah."
+[background arg="selada_sakit.png" fade="1.0"]
+narator: Apakah selada ingin ditolong? Aku dan ibu tak bisa berbuat apa-apa. Yang bisa kulakukan hanya menatapnya. Selada berulang-ulang berusaha untuk berdiri, tetapi langsung terjatuh.
+[background arg="selada_tidur_sedih.png" fade="1.0"]
+narator: Waktu tidurnya semakin panjang. Ia bahkan sudah tidak bisa berdiri lagi. Aku membasahi mulutnya dengan cairan campuran Pocari sweat. Perlahan-lahan dia mengangkat kakinya yang tak bisa lagi bertumpu kukuh. Ia berjalan ke depan Ibu lalu terjatuh.
+[background arg="ibu_dan_selada_di_lantai.png" fade="1.0"]
+narator: “Selada!” aku tak tahan lagi. Kuangkat tubuh selada. Tubuh yang lunglai kehabisan tenaga itu menggigil halus namun masih terasa hangat. Terasa jelas bahwa Selada kini berada di ambang hidup dan mati. Aku dilanda kebingungan, tak bisa memahami sebuah nyawa nyaris hilang di depan mata.
+[background arg="selada_di_pangkuan_ibu.png" fade="1.0"]
+mc: Selada! Selada!
+ibu: Biarkan dia tenang, nak. Akhirnya dia bisa pergi ke tempat tanpa derita.
+mc: Kamu menderita, kamu sakit. Maafkan aku, tak bisa berbuat apa-apa untukmu. Tapi, sudah. Sekarang kamu tidak menderita lagi.
+[background arg="menatap_selada_mati.png" fade="1.0"]
+narator: Selada sudah tiada. Aku termangu, menyentuh tubuh selada. Terasa masih hangat, namun tidak bergerak lagi. Kalung merah yang terbuat kulit yang dikenakan selada, tadinya terlihat ‘hidup’ kini terlihat seperti sekadar gumpalan merah kasar permukaannya. Ketika menyentuh kalung itu, kenyataan yang bernama kematian mendadak menerpaku, dan aku menangis seperti hendak muntah.
+[background arg="kamar_gelap_jam_3.png" fade="1.0"]
+[signal arg="napas_tersengal"]
+narator: Aku terbangun dan mendapati air mataku berlinang. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya.
+[background arg="kubis_tidur_di_kaki_kasur.png" fade="1.0"]
+narator: Dia masih ada. Syukurlah kubis masih ada disini. Teringat aloha tadi malam menawarkan untuk menghilangkan kucing. Bagiku saat ini sulit membayangkan hidup tanpa kubis. Empat tahun setelah ibu meninggal, kubis senantiasa menemaniku. Tak mungkin melenyapkannya. Lalu, harus bagaimana? Jika kucing lenyap dari dunia, apa yang diperoleh dan apa yang hilang di dunia bila kucing tiada?
+[background arg="mc_berbaring_samping_kubis.png" fade="1.0"]
+narator: Wajah yang amat damai. Ia tak pernah membayangkan dirinya akan lenyap. Setiap kali ia terbangun dan berujar “mau makan, tuanku”. Namun jika menatap wajahnya lekat seperti ini, terlihat juga seolah ia berkata, ‘sahaya rela lenyap demi Gusti patih’.
+narator: Konon, konsep kematian hanya dimiliki oleh manusia. Bagi kucing tak ada ketakutan terhadap kematian. Karena itulah, manusia memelihara kucing sambil merasakan ketakutan dan kesedihan terhadap kematian meski itu perasaan yang hanya dialami manusia.
+narator: Padahal, manusia tahu kucing juga akan mati, bisa juga lebih dulu dari manusia. Meski begitu, manusia tetap memelihara kucing walaupun menyebabkan kesedihan tak tertahankan. Namun manusia tidak dapat bersedih di atas kematian diri sendiri. Tapi bukankah manusia mau bersama kucing untuk mengetahui sosok dirinya, masa depan dirinya, dan kematian dirinya yang takkan diketahui olehnya? Benar yang dikatakan oleh ibu. Bukan kucing yang membutuhkan manusia, manusia lah yang membutuhkan kucing.
+[background arg="mc_sakit_kepala.png" fade="1.0"]
+narator: Tubuhku. Tubuh mungilku yang dikuasai kematian. Dadaku yang berasa tergerus. Menciut bergetaran dan tanpa daya seperti yang kulihat pada Selada saat itu.
+[background arg="mc_minum_obat_dapur.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="hitam.png" fade="1.0"]
+aloha: Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalo kamu mati kamu tak bisa menyayangi kucing. Dibandingkan dengan itu, apa yang akan hilang itu amat kecil.
+mc: Bisa tolong tunggu sebentar?
+aloha: Apanya yang sulit?
+mc: Tunggu sebentar.
+aloha: Baiklah. Ambilah keputusanmu sebelum nyawamu hilang.
+[background arg="kamar_pagi_hari.png" fade="1.0"]
+narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keputusan untuk menghilangkan kucing dalam keadaan setengah mimpi?
+[background arg="melihat_sekeliling_kamar.png" fade="1.0"]
+narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buku, di bawah tempat tidur, di dalam kamar mandi, ia tidak ada.
+[background arg="mesin_cuci.png" fade="1.0"]
+narator: Tidak ada juga.
+[background arg="pinggir_jendela.png" fade="1.0"]
+narator: Tidak ada juga.
+[signal arg="suara_meong"]
+mc: Kubis!
+[background arg="parkiran_bawah_mobil.png" fade="1.0"]
+narator: Tidak ada kubis.
+[background arg="jalan_tanjakan_taman.png" fade="1.0"]
+narator: Bahkan di taman pun tidak ada.
+[background arg="kursi_biru_taman.png" fade="1.0"]
+narator: Tak ada.
+[background arg="depan_kedai_soba.png" fade="1.0"]
+narator: Tak ada juga. ‘kubis!’, ‘kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.
+[background arg="lari_di_tengah_kota.png" fade="1.0"]
+narator: Sungguhkah ia sudah lenyap? Apakah aku sudah menghilangkan kubis dari dunia ini? Kubis, apa aku tidak bisa bertemu denganmu lagi? Kehangatanmu yang lembut nan nyaman, ekormu yang berayun-ayun, telapak kakimu yang tebal dan kenyal, detak jantungmu yang berdetak halus. Apakah aku tidak bisa menyentuhmu lagi? Ibu. Selada. Aku tidak mau ditinggalkan lagi.
+[background arg="jatuh_di_trotoar.png" fade="1.0"]
+narator: Aku sudah menghilangkan kucing, kubis, dari dunia ini.
+[signal arg="suara_meong"]
+[wait time="1.0"]
+[signal arg="suara_meong"]
+narator: Mimpi atau kenyataan?
+[background arg="depan_bioskop.png" fade="1.0"]
+[signal arg="suara_meong"]
+[background arg="mc_peluk_kubis.png" fade="1.0"]
+narator: Keempukannya terasa pada seluruh lenganku. Dengan lembut dan nyaman kehangatnnya meresap ke dalam tubuhku. Nyawa.
+mantan: Aku kaget karena tiba-tiba si kubis datang.
+mc: Terima kasih. Aku benar-benar bersyukur.
+mantan: Lagi-lagi kamu menangis. Kebiasannmu memang gampang menangis itu tetap sama, ya, sejak dulu. Ini pasti karena ibumu.
+mc: Apa maksudmu?
+[background arg="mantan_kasih_surat.png" fade="1.0"]
+mantan: Sudah lama surat itu dititipkan padaku dari ibumu.
+mc: Dari ibu?
+mantan: Ya. Waktu ibu diopname, aku menjenguknya dan surat itu dititipkan kepadaku.
+mc: Aku baru tau kamu menjenguk ibu.
+mantan: Kata ibu, dia sudah menulis surat itu tapi tidak bisa mengirimkannya. Sepertinya ibu berpikir kamu mengirimkannya, mungkin dia tidak bisa bertemu lagi denganmu. ‘kalau suatu saat tiba waktunya anakku benar-benar mengalami kesulitan atau kesedihan, tolong serahkan surat ini kepadanya’, kata ibu.
+mc: Ternyata begitu, ya.
+mantan: Aku menolak sebenarnya. Karena kita kan sudah putus. Tapi, kata ibu, tidak apa-apa kalau surat ini tidak sampai di tanganmu. Cukup sudah kalau seseorang menyimpan surat itu. Begitu. Hari ini si kubis datang ke sini dan melihat kamu yang menangis, aku pikir inilah saatnya.
+mc: Saatnya apa?
+mantan: Waktunya kamu benar-benar mengalami kesulitan atau kesedihan. Ibumu memang keren tanpa tandingan.
+[background arg="lobi_bioskop_tertawa.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="mc_baca_surat.png" fade="1.0"]
+narator: Pada halaman pertama tertulis besar-besar dengan hruuf yang indah ‘10 hal yang ingin kulakukan sebelum mati’. malah terdengar seperti antiklimaks ini. kami, ibu dan anak, melakukan hal yang sama ternyata.
+[background arg="mc_tertawa_baca_surat.png" fade="1.0"]
+narator: Surat yang berharga ini tidak boleh kubasahi dengan air mata. ketika aku kena flu, ibu yang mengelus-elus punggungku. ketika aku tersesat di taman dan menangis, ibu berlari datang dan memelukku erat-erat. ketika aku mau kotak makan siang berwarna mencolok seperti yang dimiliki anak-anak lain, ibu mencarinya di berbagai toserba sepanjang hari.
+[background arg="ibu_selimuti_mc.png" fade="1.0"]
+narator: Ibu yang selalu menutupi tubuhku dengan selimut saat aku berguling-guling dalam tidur.
+[background arg="makan_bersama_ibu.png" fade="1.0"]
+narator: Ibu yang selalu membuatkan ku telur dadar yang manis dan enak.
+[background arg="ibu_cocokkan_pakaian.png" fade="1.0"]
+narator: Ibu yang selalu membelikanku pakaian, tapi jarang sekali membeli pakaian untuk dirinya sendiri.
+[background arg="ibu_di_kursi_pijat.png" fade="1.0"]
+narator: Karcis pijat bahu yang kuhadiahkan pada hari ulang tahun ibu. ibu tidak mau memakainya. ‘terlalu sayang untuk dipakai’ katanya.
+[background arg="mc_main_piano.png" fade="1.0"]
+narator: Ibu membelikan piano dan selalu memainkan lagu kesukaanku. meski ibu kurang pandai dan selalu salah di bagian yang sama. ibu. apakah ibu punya hobi? apakah ada waktu untuk diri sendiri? apakah ada hal yang ingin ibu lakukan dan cita-cita ibu untuk masa depan? merasa agak malu, aku belum pernah membelikan ibu bahkan setangkai bunga pun. kenapa, kenapa aku tidak melakukan hal segampang itu? kenapa, kenapa waktu itu aku tidak bisa membayangkan ibu akan hilang dari dunia suatu saat nanti?
+[background arg="mc_baca_surat.png" fade="1.0"]
+narator: Ibu, aku tidak mau mati. aku takut mati. tapi, apa yang ibu katakan itu benar jika kita mau memperoleh sesuatu, harus kehilangan sesuatu. namun ibu, bukankah hidup akan lebih susah dengan merenggut sesuatu?
+kubis: Gusti patih, jangan bersedih lagi.
+mc: Tidak bisa, kubis.
+kubis: Sahaya ingin gusti patih tetap hidup. sulit bagi sahaya kalau hidup terus di dunia tanpa gusti patih.
+[background arg="mc_tatapan_dengan_kubis.png" fade="1.0"]
+narator: Seumur hidup sampai hari ini, aku tidak pernah menyangka akan dibuat menangis oleh omongan kucing. namun, walaupun kubis tidak bisa bicara bahasa manusia dan hanya bersuara meong, isi hatinya sampai kepadaku.
+kubis: Sahaya mohon gusti patih jangan menangis. dibandingkan hal-hal yang telah gusti patih hilangkan selama ini, sahaya ini merupakan hal yang sepele, tuanku.
+mc: Bukan itu persoalannya, kubis. bukan begitu.
+[background arg="mc_elus_kubis_bioskop.png" fade="1.0"]
+narator: Jika kucing lenyap dari dunia. jika selada, kubis, dan ibu tiada. aku yang bodoh dan tak tahu apa-apa tidak pernah bisa bayangkan hal itu. tapi sekarang aku tahu. selalu ada alasan mengapa sesuatu berada di dunia, tapi tak ada lagi alasan apapun mengenai sesuatu harus hilang dari dunia. aku membulatkan hatiku. dan kubis pasti memahami hatiku itu lebih baik daripada siapapun.
+kubis: Isi hati gusti pastih sudah sudah sahaya paham, tuanku.
+mc: Terima kasih, kubis.
+kubis: Kalau begitu, untuk yang terakhir kalinya.
+mc: Untuk terakhir kalinya?
+kubis: Sahaya ingin gusti patih memejamkan mata.
+mc: Kenapa?
+kubis: Sudahlah. pokoknya pejamkan mata, tuanku.
+[background arg="mc_pejamkan_mata.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="bayangan_ibu_menenangkan.png" fade="1.0"]
+narator: ”Pejamkanlah matamu pelan-pelan dan tersenyumlah, jika masih belum bisa merasakan apa-apa, coba lagi pelan-pelan”, kata ibu sambil tersneyum saat itu. kubis sedang mengingatkanku pada sihir ibu. setiap aku merasa sedih, sihir ibu selalu berhasil membuatku tersenyum kembali. sihir ibu memang tidak ada duanya.
+[background arg="mc_elus_kubis_senja.png" fade="1.0"]
+kubis: Meong, meong, meong.
+mc: Aku senang karena bisa berbicara denganmu, kubis. pada saat yang terakhir. mungkin ini juga sihir ibu. selamat tinggal, kubis. terima kasih banyak selama ini.
+[background arg="mc_elus_kubis_malam.png" fade="1.0"]
+narator: Dadaku terasa sakit bagai disengat duri kecil setelah membaca surat dari Ibu. seharusnya bagaimana? masih ada satu hal yang harus kulakukan pada akhir hayatku. ya, di bagian terakhir dalam surat itu tertulis begini “semoga kamu dan ayahmu hidup rukun”. apakah aku bahagia atau tidak? hanya satu hal yang aku tahu. hanya dengan pemikiran sendiri, orang bisa jadi sebahagia-bahagianya atau bisa jadi semalang-malangnya.
+[background arg="aloha_depan_apartemen.png" fade="1.0"]
+aloha: Aduhhhh! kemana saja, sih? kukira kamu sudah diculik Tuhan, makanya hampir saja aku menanyai tuhan. eh, tapi boong. hahahahhaa.
+mc: Maaf.
+aloha: Oh, tidak apa-apa kok. jadi, kita langsung menghilangkannya saja ya?
+[background arg="aloha_tunjuk_kubis.png" fade="1.0"]
+mc: Tidak jadi.
+aloha: Apa?
+mc: Tidak jadi menghilangkan kucing!
+aloha: Betulan?
+mc: Betulan.
+[background arg="aloha_kaget.png" fade="1.0"]
+aloha: Apanya yang lucu? kamu akan mati. apa boleh?
+mc: Boleh. sudah, aku tidak akan menghilangkan apapun.
+aloha: Kamu semestinya hidup lebih lama lagi.
+mc: Tapi tak ada artinya kalau sekedar hidup. artinya ada pada bagaimana kita hidup, kan?
+aloha: Lagi-lagi aku kalah dengan Tuhan. dasar manusia!
+mc: Kenapa?!
+aloha: Oh, tidak apa-apa, kok. aku mengaku kalah. silahkan mati saja!
+mc: Jangan ngomong begitu, dong! walaupun betul aku memang akan mati.
+[background arg="aloha_dan_mc_tertawa.png" fade="1.0"]
+mc: Jadi sudah saat nya untuk berpisah, ya.
+aloha: Emm… iyaa….
+mc: Aku kesepian, agaknya.
+aloha: Aku juga akan kesepian. soalnya kamu itu orangnya cukup menarik.
+mc: Kamu juga iblis yang cukup menarik.
+aloha: Kok puji-pujian mulu.
+mc: Tapi, iblis itu berpenampilan seperti apa, sebenarnya?
+aloha: Kamu mau tau?
+mc: Iya mau tahu.
+aloha: Hemmmm sebenarnya aku tidak punya wujud. keberadaan yang disebut iblis hanya ada di dalam hati kalian kaum manusia. kalian hanya membayangkan berbagai gambaran untuk keberadaan yang disebut iblis di dalam hati masing-masing. dengan semena-mena. hitam, punya taring dan memegang tombak, kek, ada yang wujudnya seperti naga.
+mc: Oh, begitu ternyata.
+aloha: Terutama desain yang memegang tombang segala kan sebenarnya keterlaluan, menurutku. soalnya itu kan seleranya jelek, ya?
+mc: Iya memang tidak enak kalau begitu.
+aloha: Tentu tidak enak! oleh karena itu, wujudku ini adalah sosok iblis yang kamu bayangkan. iblis yang ada di dalam hatimu memiliki wujudmu sendiri, ternyata.
+mc: Tapi sifatnya sama sekali berbeda dariku.
+aloha: Iya, itulah intinya, kukira. artinya, aku ini sebenarnya simbol kehidupan lain yang bisa kamu jalankan. pokonya dirimu yang riang, tak berpikir apa-apa, memakai pakaian mencolok, melakukan apapun semaunya, tak peduli pandangan orang lain di sekelilingnya dan mengatakan semuanya yang ingin dikatakan.
+mc: Memang itu terbalik dengan sifatku.
+aloha: Betul. penyesalanmu sejak kecil yang tak terhitung jumlah, seharusnya begini, sebaiknya begitu, dan seandainya memilih jalan lain di persimpangan, akibatnya wujudmu bisa menjadi begini, barangkali. tapi sesuatu bagai iblis itu memang begitu, kukira. dirimu yang kamu impikan, tapi tidak bisa terwujud. sesuatu yang paling dekat dengan dirimu, tapi sekaligus yang paling jauh darimu.
+mc: Apa aku benar begini?
+aloha: Jangan tanya soal itu padaku.
+mc: Apa aku akan menyesal nanti saat mati?
+[background arg="aloha_mc_saling_tatap.png" fade="1.0"]
+aloha: Pasti kamu menyesal. aku mau hiduuuuup! panggilkan kembali iblis ituuuu! hahahahahha. manusia memang makhluk yang suka memandang kehidupan yang tida jadi dipilih daripada kehidupan yang sudah dipilih, dan akibatnya iri atau menyesal melulu.
+narator: Manusia yang berpikiran mungkin dirinya akan mati besok bisa hidup sepenuhnya selama sisa waktu yang mereka miliki. ada orang yang mengatakan demikian. tapi kukira itu kebohongan. sekaligus menyadari kematiannya, orang akan terus menerus menyesuaikan harapan untuk hidup dengan kematian. namun, bagiku yang pernah mendapatkan hal untuk menghilangkan sesuatu dari dunia, justru penyesalan itulah yang tampak indah. karena itulah bukti bahwa aku hidup selama ini.
 [signal arg="event_selesai"]
 [signal arg="tamat"]
+[end_timeline]

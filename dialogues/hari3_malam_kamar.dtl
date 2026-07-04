@@ -1,39 +1,32 @@
 [background arg="kamar_mc_malam.png" fade="1.0"]
-mc: Nah, kubis...
-mc: Kamu benar-benar tidak ingat ibu?
-kubis: Tidak ingat, tuanku.
-mc: Begitu ya, aku sedih.
-kubis: Kenapa sedih, tuanku?
-[background arg="buka_lemari.png" fade="1.0"]
-narator: Aku tidak bisa menjelaskan mengapa aku sedih. Tapi aku ingin menyampaikan kepadanya tentang 'waktu' yang pernah benar-benar ada di antara ibu dan kubis.
-[background arg="lihat_album.png" fade="1.0"]
+narator: MC dan kubis sedang melihat album. Sambil bercerita.
 mc: Masih ingat?
 [background arg="foto_pantai.png" fade="1.0"]
 kubis: Siapakah ini tuanku?
-mc: Ini ayah. Kalo ga salah ini waktu kita pergi ke tempat sumber air panas, persis seminggu sebelum ibu meninggal.
+mc: Ini ayah. kalo ga salah ini waktu kita pergi ke tempat sumber air panas, persis seminggu sebelum ibu meninggal
 kubis: Mengapa demikian, tuanku?
-mc: Kukira ibu ingin kenang-kenangan untuk terakhir kalinya. Soalnya ibu hampir tidak pernah pergi ke tempat jauh. Saat itu kondisi ibu sudah parah, tak dapat ditangani lagi. Setiap hari ibu muntah, menderita, dan tak bisa tidur. Namun, di suatu pagi ibu memintaku pergi ke sumber air panas itu bersama aku, ayah, dan kamu. Aku kebingungan. Dan akhirnya dokter mengizinkan ibu pergi setelah bersusah payah aku memohon kepada Dokter. Sudah ingat sesuatu?
-kubis: Sahaya tetap tidak ingat apa-apa, tuanku. Maafkan sahaya... Hanya saja... sahaya ingat pernah merasa bahagia. Saat foto itu diambil, sahaya merasa bahagia. Itu saja.
+mc: Kukira ibu ingin kenang-kenangan untuk terakhir kalinya. Soalnya ibu hampir tidak pernah pergi ke tempat jauh. Saat itu kondisi ibu sudah parah, tak dapat ditangani lagi. Setiap hari ibu muntah, menderita, dan tak bisa tidur. Namun, di suatu pagi ibu memintaku pergi ke sumber air panas itu Bersama aku, ayah, dan kamu. Aku kebingungan. Dan akhirnya dokter mengizinkan ibu pergi setelah bersusah payah aku memohon kepada Dokter. sudah ingat sesuatu?
+kubis: Sahaya tetap tidak ingat apa-apa, tuanku. Maafkan sahaya... Hanya saja... sahaya ingat pernah merasa Bahagia. Saat foto itu diambil, sahaya merasa bahagia. Itu saja.
 mc: Pernah bahagia?
-kubis: Betul tuanku. Ketika berfoto saat itu, sahaya sangat bahagia. Hanya itu yang sahaya ingat, tuanku.
+kubis: Betul tuanku. Ketika berfoto saat itu, sahaya sangat Bahagia. Hanya itu yang sahaya ingat, tuanku.
 [background arg="elus_kucing.png" fade="1.0"]
 mc: Nah, kubis tahukan kamu arti kasih sayang?
 kubis: Apa itu tuanku?
-mc: Mungkin akan sulit dipahami oleh kucing. Tapi manusia punya perasaan seperti itu. Menyukai seseorang, memperhatikan seseorang, pokoknya perasaaan ingin bersama seseorang.
+mc: Mungkin akan sulit dipahami oleh kucing. Tapi manusia punya perasaan seperti itu. Menyukai seseorang, memperhatikan seseorang, pokonya perasaaan ingin bersama seseorang.
 kubis: Apakah itu bagus tuanku?
-mc: Hmmmm..... kadang merepotkan, kadang mengganggu juga, tapi itu bagus. Ya, sangat bagus.
-narator: Perasaan khas manusia yang disebut kasih sayang itu memang kadang merepotkan dan mengganggu, tapi menyokong manusia secara mutlak. Sama seperti waktu, warna, suhu, kesendirian, dan kasih sayang. Hal-hal yang hanya ada di dunia manusia. Hal-hal yang mengatur manusia tapi juga membuat manusia terbebas. Hal-hal seperti itulah yang membuat kami manusia.
+mc: Hmmmm..... kadang merepotkan, kadang mengganggu juga, tapi itu bagus. Ya, sangat bagus
+narator: perasaan khas manusia yang disebut kasih sayang itu memang kadang merepotkan dan mengganggu, tapi menyokong manusia secara mutlak. Sama seperti waktu, warna, suhu, kesendirian, dan kasih sayang. Hal-hal yang hanya ada di dunia manusia. Hal-hal yang mengatur manusia tapi juga membuat manusia terbebas. Hal-hal seperti itulah yang membuat kami manusia.
 [background arg="kamar_mc_malam.png" fade="1.0"]
-mc: Ayo kubis, kita tidur saja.
-kubis: Meong, meong.
+mc: Ayo kubis, kita tidur saja
+kubis: Meong, meong
 mc: Kok, kenapa, kubis? Tiba-tiba kayak kucing.
-narator: Lelucon tak lucu, tuanku. Tak ada sahutan seperti itu.
-kubis: Meong, meong.
+narator: lelucon tak lucu, tuanku. Tak ada sahutan seperti itu.
+kubis: Meong, meong
 [signal arg="aloha_datang"]
-aloha: Apakah Gusti Patih akan mati tak lama lagi?
+aloha: Apakah gusti patih akan mati tak lama lagi?
 mc: Lelucon, tak lucu!
 aloha: Iya, iya maaf. Sepertinya efek sihirnya tidak berlangsung lama. Dia kembali jadi kucing biasa sekarang. Kecewakah kau tuanku?
-mc: Jangan, ah.
+mc: Jangan, ah
 aloha: Hahahahaha. Aku sudah memutuskan apa yang kamu hilangkan dari dunia berikutnya.
 [signal arg="jantung_berdegup"]
 aloha: Jangan! Mau berteriak begitu kan? Hahahahaha
@@ -48,4 +41,4 @@ aloha: Mari kita lenyapkan Kucing dari dunia!
     [background arg="layar_hitam.png" fade="0.0"]
     [signal arg="jantung_berhenti"]
     [wait time="2.0"]
-    [end_timeline]
+    [jump timeline="true_ending"]

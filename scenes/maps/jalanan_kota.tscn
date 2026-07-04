@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bdjvgmgpv4q3b"]
 
-[ext_resource type="Texture2D" uid="uid://blqutcbise0fp" path="res://assets/Tiles/1_Generic_Black_Shadow_16x16.png" id="1_2k3x1"]
+[ext_resource type="Texture2D" uid="uid://blqutcbise0fp" path="res://assets/Tiles/Interior/1_Generic_Black_Shadow_16x16.png" id="1_2k3x1"]
 [ext_resource type="Script" uid="uid://bl000vgfu16q8" path="res://scripts/scene_transition.gd" id="2_svcpl"]
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="3_1s67d"]
 
