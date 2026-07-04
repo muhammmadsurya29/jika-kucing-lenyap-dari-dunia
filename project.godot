@@ -53,6 +53,7 @@ directories/dtl_directory={
 "hari2_malam_bioskop": "res://dialogues/hari2_malam_bioskop.dtl",
 "hari2_pagi_kamar": "res://dialogues/hari2_pagi_kamar.dtl",
 "hari2_siang_tsutaya": "res://dialogues/hari2_siang_tsutaya.dtl",
+"hari3_malam_flashback": "res://dialogues/hari3_malam_flashback.dtl",
 "hari3_malam_kamar": "res://dialogues/hari3_malam_kamar.dtl",
 "hari3_pagi_kamar": "res://dialogues/hari3_pagi_kamar.dtl",
 "hari3_siang_taman": "res://dialogues/hari3_siang_taman.dtl",

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://kantorpemakamandummy"]
+
+[ext_resource type="Script" path="res://scripts/scene_transition.gd" id="1_scntr"]
+[ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_yd2cm"]
+[ext_resource type="Script" path="res://scripts/story_trigger.gd" id="3_stry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_default"]
+size = Vector2(64, 64)
+
+[node name="KantorPemakaman" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_yd2cm")]
+position = Vector2(100, 100)
+
+[node name="TriggerPemakaman" type="Area2D" parent="."]
+position = Vector2(150, 150)
+script = ExtResource("3_stry")
+timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:ending_surat"])
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerPemakaman"]
+shape = SubResource("RectangleShape2D_default")

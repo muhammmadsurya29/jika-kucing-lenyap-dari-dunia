@@ -65,6 +65,21 @@ func _on_dialogic_signal(argument: String) -> void:
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
 		get_tree().change_scene_to_file("res://scenes/maps/taman.tscn")
+	elif argument == "teleport_ke_kamar_pagi":
+		print(">> Pindah otomatis ke Kamar (Pagi)!")
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("unlock_movement"):
+			player.unlock_movement()
+		get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+	elif argument == "teleport_ke_pemakaman":
+		print(">> Pindah otomatis ke Kantor Pemakaman!")
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("unlock_movement"):
+			player.unlock_movement()
+		get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
+	elif argument == "tamat":
+		print(">> GAME TAMAT!")
+		get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
 	elif argument == "mantan_datang":
 		# Cari NPC Mantan dan buat dia lari ke arah player
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)
