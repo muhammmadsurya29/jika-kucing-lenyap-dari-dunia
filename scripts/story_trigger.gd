@@ -10,11 +10,10 @@ func _ready() -> void:
 	if sm:
 		sm.day_changed.connect(_on_day_changed)
 		
-	# Khusus untuk TriggerBangun, kita masukkan ke grup dan paksa jalankan dialog di Hari 0
+	# Khusus untuk TriggerBangun, kita masukkan ke grup dan paksa jalankan dialog
 	if name == "TriggerBangun":
 		add_to_group("WakingTrigger")
-		if StoryManager.current_day == 0:
-			call_deferred("force_trigger")
+		call_deferred("force_trigger")
 
 func _on_day_changed(new_day: int) -> void:
 	set_deferred("monitoring", true)

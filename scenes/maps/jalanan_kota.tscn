@@ -27731,7 +27731,7 @@ sources/7 = SubResource("TileSetAtlasSource_rtlc8")
 sources/8 = SubResource("TileSetAtlasSource_1p7e2")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s67d"]
-size = Vector2(28.75, 12.625)
+size = Vector2(28.75, 19.6875)
 
 [node name="JalananKota" type="Node2D" unique_id=1501528845]
 
@@ -27766,97 +27766,33 @@ scale = Vector2(0.5306344, 0.4452854)
 text = "KAMAR"
 
 [node name="PintuKamar" type="Area2D" parent="." unique_id=500000001]
+position = Vector2(-63, -375)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/kamar_mc.tscn"
 minimum_day_to_exit = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKamar" unique_id=500000002]
-position = Vector2(-64, -377)
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="LabelCafe" type="Label" parent="." unique_id=500000003]
-visible = false
-offset_left = 345.0
-offset_top = -210.0
-offset_right = 395.0
-offset_bottom = -112.89023
-scale = Vector2(0.53063434, 0.4452854)
-text = "CAFE"
-
-[node name="PintuCafe" type="Area2D" parent="." unique_id=500000004]
-visible = false
-script = ExtResource("2_svcpl")
-target_scene = "res://scenes/maps/cafe.tscn"
-minimum_day_to_exit = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuCafe" unique_id=500000005]
-position = Vector2(-193, -371)
-shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="LabelBioskop" type="Label" parent="." unique_id=500000006]
-visible = false
-offset_left = 328.0
-offset_top = -93.99999
-offset_right = 398.0
-offset_bottom = -70.99999
-scale = Vector2(0.5306344, 0.4452854)
-text = "BIOSKOP"
-
-[node name="PintuBioskop" type="Area2D" parent="." unique_id=500000007]
-visible = false
-script = ExtResource("2_svcpl")
-target_scene = "res://scenes/maps/bioskop.tscn"
-minimum_day_to_exit = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuBioskop" unique_id=500000008]
-position = Vector2(-282, -87)
-shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="LabelTsutaya" type="Label" parent="." unique_id=500000009]
-visible = false
-offset_left = 335.0
-offset_top = -183.0
-offset_right = 405.0
-offset_bottom = -160.0
-scale = Vector2(0.53063434, 0.4452854)
-text = "TSUTAYA"
 
 [node name="PintuTsutaya" type="Area2D" parent="." unique_id=500000010]
+position = Vector2(-619, -365)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/tsutaya.tscn"
 minimum_day_to_exit = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTsutaya" unique_id=500000011]
-position = Vector2(-615, -372)
-shape = SubResource("RectangleShape2D_1s67d")
-
-[node name="LabelTaman" type="Label" parent="." unique_id=500000012]
-visible = false
-offset_left = 424.0
-offset_top = 162.99998
-offset_right = 482.0
-offset_bottom = 185.99998
-scale = Vector2(0.5306344, 0.4452854)
-text = "TAMAN"
-
-[node name="PintuTaman" type="Area2D" parent="." unique_id=500000013]
-visible = false
-script = ExtResource("2_svcpl")
-target_scene = "res://scenes/maps/taman.tscn"
-minimum_day_to_exit = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTaman" unique_id=500000014]
-position = Vector2(434, 188.5)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_1s67d")
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("3_1s67d")]
 position = Vector2(-287, -281)
 
-[node name="TriggerJalananKotaHari4" type="Area2D" parent="."]
-position = Vector2(100, 100)
+[node name="TriggerJalananKotaHari4" type="Area2D" parent="." unique_id=1842399254]
+position = Vector2(-40, -216)
+scale = Vector2(1.8799996, 1)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_parkiran"])
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4" unique_id=2066467426]
 polygon = PackedVector2Array(-30, -30, 30, -30, 30, 30, -30, 30)
-

@@ -68,11 +68,11 @@ speed = 80.0
 position = Vector2(16, -58)
 scale = Vector2(0.906958, 0.90685654)
 
-[node name="TriggerTamanBukitHari4" type="Area2D" parent="."]
+[node name="TriggerTamanBukitHari4" type="Area2D" parent="." unique_id=884586824]
 position = Vector2(100, 100)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_taman_bukit"])
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanBukitHari4"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanBukitHari4" unique_id=1302269936]
+position = Vector2(-186, 285)
 polygon = PackedVector2Array(-30, -30, 30, -30, 30, 30, -30, 30)
-
