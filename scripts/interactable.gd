@@ -136,7 +136,7 @@ func _unhandled_input(event: InputEvent) -> void:
 					return # Hentikan proses, jangan putar dialog utama
 			# --------------------------------------
 			
-			if tl_to_play != "":
+			if tl_to_play != "" and tl_to_play != "IGNORE":
 				if ":" in tl_to_play:
 					var parts = tl_to_play.split(":")
 					Dialogic.start(parts[0], parts[1])

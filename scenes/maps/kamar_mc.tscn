@@ -7981,6 +7981,7 @@ shape = SubResource("RectangleShape2D_uaq6v")
 [node name="NPC_Kubis" parent="." unique_id=102526592 instance=ExtResource("18_cat")]
 position = Vector2(50, 43)
 scale = Vector2(0.75, 0.78992057)
+timeline_per_hari = Array[String](["IGNORE", "IGNORE", "IGNORE", "IGNORE", ""])
 
 [node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
 position = Vector2(1, 0)
