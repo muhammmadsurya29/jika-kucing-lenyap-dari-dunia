@@ -8044,10 +8044,18 @@ position = Vector2(40, 32)
 
 [node name="TriggerMesinCuciHari4" type="Area2D" parent="." unique_id=1054368088]
 position = Vector2(129, 141)
-script = ExtResource("13_df4qw")
+script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerMesinCuciHari4" unique_id=1689120468]
-position = Vector2(1, 3)
+position = Vector2(75, 123)
 scale = Vector2(0.765625, 0.609375)
+polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
+
+[node name="TriggerJendelaHari4" type="Area2D" parent="."]
+position = Vector2(250, 20)
+script = ExtResource("15_d8i2l")
+timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_jendela"])
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJendelaHari4"]
 polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)

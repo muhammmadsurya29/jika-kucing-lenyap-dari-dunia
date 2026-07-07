@@ -1,4 +1,4 @@
-[label name="pagi_bangun"]
+label pagi_bangun
 [background arg="hitam.png" fade="1.0"]
 narator: Pagi hari, matahari menembus jendela apartemen. Mencari sosok kubis.
 narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keputusan untuk menghilangkan kucing dalam keadaan setengah mimpi?
@@ -7,25 +7,22 @@ narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buk
 [signal arg="event_selesai"]
 [end_timeline]
 
-[label name="cek_mesin_cuci"]
+<Empty Text Event>
+label cek_mesin_cuci
 narator: Tidak ada juga.
 [end_timeline]
-
-[label name="cek_jendela"]
+label cek_jendela
 narator: Tidak ada juga.
 [signal arg="suara_meong"]
 mc: Kubis!
 [end_timeline]
-
-[label name="cek_parkiran"]
+label cek_parkiran
 narator: Tidak ada kubis.
 [end_timeline]
-
-[label name="cek_taman_bukit"]
+label cek_taman_bukit
 narator: Bahkan di taman pun tidak ada.
 [end_timeline]
-
-[label name="cek_soba"]
+label cek_soba
 narator: Tak ada juga. ‘Kubis!’, ‘Kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.
 [background arg="hitam.png" fade="1.0"]
 narator: Sungguhkah ia sudah lenyap? Apakah aku sudah menghilangkan kubis dari dunia ini? Kubis, apa aku tidak bisa bertemu denganmu lagi? Kehangatanmu yang lembut nan nyaman, ekormu yang berayun-ayun, telapak kakimu yang tebal dan kenyal, detak jantungmu yang berdetak halus. Apakah aku tidak bisa menyentuhmu lagi? Ibu. Selada. Aku tidak mau ditinggalkan lagi.
@@ -37,8 +34,7 @@ narator: Aku sudah menghilangkan kucing, kubis, dari dunia ini.
 narator: Mimpi atau kenyataan?
 [signal arg="teleport_ke_bioskop_dari_taman"]
 [end_timeline]
-
-[label name="bioskop_puncak"]
+label bioskop_puncak
 [signal arg="suara_meong"]
 [background arg="hitam.png" fade="1.0"]
 narator: Keempukannya terasa pada seluruh lenganku. Dengan lembut dan nyaman kehangatnnya meresap ke dalam tubuhku. Nyawa.
@@ -167,8 +163,7 @@ aloha: Oh jelas. Layanan istimewa untuk kesempatan terakhir! Lakukanlah semua ha
 narator: Aloha mengucapkan perpisahan dengan begitu enteng.
 [signal arg="teleport_ke_kamar_pagi"]
 [end_timeline]
-
-[label name="beres_beres"]
+label beres_beres
 [background arg="hitam.png" fade="1.0"]
 narator: Kemudian aku akan mulai merapikan sekelilingku. Persiapan untuk mati.
 [background arg="hitam.png" fade="1.0"]
@@ -177,8 +172,7 @@ narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak 
 narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
 [signal arg="teleport_ke_pemakaman"]
 [end_timeline]
-
-[label name="pemakaman"]
+label pemakaman
 [background arg="hitam.png" fade="1.0"]
 narator: Aku berkonsultasi dengan petugas penjualan dan promosi kantor di pengurus pemakaman. Altar, peti, jenazah, bunga, foto, guci untuk menyimpan sisa tulang kremasi, papan memori, mobil jenazah dan kremasi. 1.500.000 yen. Aku memberi harga pada kematianku sendiri.
 [background arg="hitam.png" fade="1.0"]
@@ -187,8 +181,7 @@ narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Ora
 narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
 [signal arg="teleport_ke_kamar_pagi"]
 [end_timeline]
-
-[label name="ending_surat"]
+label ending_surat
 [background arg="hitam.png" fade="1.0"]
 narator: Kenangan bersama ayahku. Waktu aku masih kecil, ayahku membelikan aku lembaran seri perangko Olimpiade. Kecil, berwarna-warni dan terlalu sayang untuk dipakai. Perasaan yang tak ada duanya. Karena ayahku pendiam, hadiah ‘perangko’ merupakan satu-satunya ‘percakapan’ antara aku dan dia. Terkadang aku dibuat tertawa karena lelucon ayahku yang langka karena di dalam perangko itu seekor kucing sedang menguap, mirip selada. Aku senang sekali dan merendam kartu pos itu di dalam air semalaman untuk melepas perangkonya.
 [background arg="hitam.png" fade="1.0"]
