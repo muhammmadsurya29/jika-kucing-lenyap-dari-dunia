@@ -65,31 +65,31 @@ func _jalan_ke_kanan_anim() -> void:
 	if kubis:
 		var anim = kubis.get_node_or_null("AnimatedSprite2D")
 		if anim:
-			anim.play("walk_right")
+			anim.play("walk_down")
 		
 		var tween = create_tween()
 		var target = get_node_or_null("NodeBungaRandaTapak")
 		if target:
-			tween.tween_property(kubis, "global_position", target.global_position, 2.0)
+			tween.tween_property(kubis, "global_position", target.global_position, 5.0)
 		else:
-			tween.tween_property(kubis, "position:x", kubis.position.x + 80, 2.0)
+			tween.tween_property(kubis, "position:y", kubis.position.y + 80, 5.0)
 		await tween.finished
 		
 		if anim:
-			anim.play("idle_right")
+			anim.play("idle_down")
 
 func _jalan_ke_atas_anim() -> void:
 	if kubis:
 		var anim = kubis.get_node_or_null("AnimatedSprite2D")
 		if anim:
-			anim.play("walk_up")
+			anim.play("walk_down")
 		
 		var tween = create_tween()
 		var target = get_node_or_null("NodeBangkuKakek")
 		if target:
-			tween.tween_property(kubis, "global_position", target.global_position, 3.0)
+			tween.tween_property(kubis, "global_position", target.global_position, 6.0)
 		else:
-			tween.tween_property(kubis, "position:y", kubis.position.y - 100, 3.0)
+			tween.tween_property(kubis, "position:y", kubis.position.y + 100, 6.0)
 		await tween.finished
 		
 		if anim:
