@@ -85,17 +85,20 @@ func _on_dialogic_signal(argument: String) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
+		print("[DEBUG Interactable] Player masuk ke area: ", self.name)
 		is_player_in_range = true
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
+		print("[DEBUG Interactable] Player keluar dari area: ", self.name)
 		is_player_in_range = false
 
 func _unhandled_input(event: InputEvent) -> void:
-	# Cek apakah player di dalam area jangkauan dan menekan tombol Space/Enter (ui_accept)
-	# Pastikan juga tidak ada dialog yang sedang aktif berjalan
 	if is_player_in_range and event.is_action_pressed("ui_accept"):
-		if timeline_name != "" and not Dialogic.current_timeline:
+		print("[DEBUG Interactable] Pemain menekan Space/Enter di area: ", self.name)
+		if timeline_name != "" or not timeline_per_hari.is_empty():
+			if not Dialogic.current_timeline:
+				print("[DEBUG Interactable] Mempersiapkan timeline...")
 			
 			# --- FITUR NPC MENGHADAP PLAYER ---
 			var player = get_tree().get_first_node_in_group("Player")
@@ -127,21 +130,27 @@ func _unhandled_input(event: InputEvent) -> void:
 					if timeline_per_hari[index] != "":
 						tl_to_play = timeline_per_hari[index]
 			
+			print("[DEBUG Interactable] Timeline yang terpilih: ", tl_to_play)
+			
 			# --- PENGECEKAN SYARAT EVENT HARIAN ---
 			if requires_daily_event:
 				var sm_check = get_node_or_null("/root/StoryManager")
 				if sm_check and not sm_check.can_sleep:
 					if locked_timeline != "":
+						print("[DEBUG Interactable] Memainkan locked_timeline: ", locked_timeline)
 						Dialogic.start(locked_timeline)
 					return # Hentikan proses, jangan putar dialog utama
 			# --------------------------------------
 			
 			if tl_to_play != "" and tl_to_play != "IGNORE":
+				print("[DEBUG Interactable] Memulai Dialogic: ", tl_to_play)
 				if ":" in tl_to_play:
 					var parts = tl_to_play.split(":")
 					Dialogic.start(parts[0], parts[1])
 				else:
 					Dialogic.start(tl_to_play)
+			else:
+				print("[DEBUG Interactable] tl_to_play KOSONG atau IGNORE! Batal menjalankan Dialogic.")
 
 # ==============================================================================
 # LOGIKA CUTSCENE & AI FOLLOWER

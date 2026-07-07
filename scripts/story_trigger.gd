@@ -57,6 +57,7 @@ func _on_body_entered(body: Node2D) -> void:
 		
 	# Jika yang menginjak adalah Player, dan dialog sedang tidak berjalan
 	if body.is_in_group("Player"):
+		print("[DEBUG StoryTrigger] Player menginjak: ", self.name)
 		var target_timeline = timeline_name
 		
 		# Jika ada timeline_per_hari yang di set, gunakan itu berdasarkan hari
@@ -65,7 +66,10 @@ func _on_body_entered(body: Node2D) -> void:
 			if current_day < timeline_per_hari.size():
 				target_timeline = timeline_per_hari[current_day]
 				
+		print("[DEBUG StoryTrigger] Target timeline: ", target_timeline)
+		
 		if target_timeline != "" and not Dialogic.current_timeline:
+			print("[DEBUG StoryTrigger] Memulai Dialogic: ", target_timeline)
 			if ":" in target_timeline:
 				var parts = target_timeline.split(":")
 				Dialogic.start(parts[0], parts[1])
@@ -74,3 +78,5 @@ func _on_body_entered(body: Node2D) -> void:
 			
 			# Nonaktifkan sementara sensor ini agar tidak memicu berulang kali di hari yang sama
 			set_deferred("monitoring", false)
+		else:
+			print("[DEBUG StoryTrigger] Gagal memulai! Alasan: timeline KOSONG atau Dialogic SEDANG AKTIF.")
