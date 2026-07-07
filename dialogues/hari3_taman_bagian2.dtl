@@ -1,3 +1,11 @@
+[background arg="taman_bukit.png" fade="1.0"]
+kubis: Mohon minggir tuan-tuan.
+narator: Aku sempat was-was mereka akan panik melihat kucing berbicara dan tiba-tiba muncul di depan mereka, tapi kedua lansia itu hanya tertawa dan seorang biasa dengan gangguan kucing.
+mc: Eh, tidak boleh, kubis. Bangku ini sedang dipakai bapak-bapak ini.
+kubis: Sahaya mau duduk di tempat ini tuanku.
+[background arg="kucing_acak_catur.png" fade="1.0"]
+[wait time="2.0"]
+[background arg="" fade="1.0"]
 [signal arg="mc_duduk"]
 [wait time="1.0"]
 kubis: Ngomong-ngomong, manusia itu betul-betul makhluk aneh ya, tuanku.

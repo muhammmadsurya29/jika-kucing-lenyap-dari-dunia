@@ -6,16 +6,5 @@ kubis: Ini namanya apa, tuanku?
 mc: Itu Randa Tapak. Dia mekar saat musim semi. Kamu sama seperti ku dulu waktu kecil, Setiap kali melihat bunga, aku langsung duduk menatapnya. Lalu bila menemukannya lagi, langsung jongkok lagi. Repot sekali karena jalan-jalannya tidak selesai-selesai. Begitu cerita dari ibu.
 [background arg="" fade="1.0"]
 [signal arg="kubis_jalan_ke_bukit"]
-[wait time="3.0"]
-[background arg="taman_bukit.png" fade="1.0"]
-[wait time="2.0"]
-[background arg="" fade="1.0"]
-kubis: Mohon minggir tuan-tuan.
-narator: Aku sempat was-was mereka akan panik melihat kucing berbicara dan tiba-tiba muncul di depan mereka, tapi kedua lansia itu hanya tertawa dan seorang biasa dengan gangguan kucing.
-mc: Eh, tidak boleh, kubis. Bangku ini sedang dipakai bapak-bapak ini.
-kubis: Sahaya mau duduk di tempat ini tuanku.
-[background arg="kucing_acak_catur.png" fade="1.0"]
-[wait time="2.0"]
-[background arg="" fade="1.0"]
 [signal arg="aktifkan_bangku"]
 [end_timeline]
