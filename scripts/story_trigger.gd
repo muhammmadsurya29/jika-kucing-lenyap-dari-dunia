@@ -43,7 +43,11 @@ func _wait_and_start(target_tl: String) -> void:
 		await get_tree().create_timer(1.5).timeout
 		
 	if not Dialogic.current_timeline:
-		Dialogic.start(target_tl)
+		if ":" in target_tl:
+			var parts = target_tl.split(":")
+			Dialogic.start(parts[0], parts[1])
+		else:
+			Dialogic.start(target_tl)
 		set_deferred("monitoring", false)
 
 func _on_body_entered(body: Node2D) -> void:
@@ -58,7 +62,11 @@ func _on_body_entered(body: Node2D) -> void:
 				target_timeline = timeline_per_hari[current_day]
 				
 		if target_timeline != "" and not Dialogic.current_timeline:
-			Dialogic.start(target_timeline)
+			if ":" in target_timeline:
+				var parts = target_timeline.split(":")
+				Dialogic.start(parts[0], parts[1])
+			else:
+				Dialogic.start(target_timeline)
 			
 			# Nonaktifkan sementara sensor ini agar tidak memicu berulang kali di hari yang sama
 			set_deferred("monitoring", false)

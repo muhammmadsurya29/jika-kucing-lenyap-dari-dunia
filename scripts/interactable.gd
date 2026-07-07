@@ -137,7 +137,11 @@ func _unhandled_input(event: InputEvent) -> void:
 			# --------------------------------------
 			
 			if tl_to_play != "":
-				Dialogic.start(tl_to_play)
+				if ":" in tl_to_play:
+					var parts = tl_to_play.split(":")
+					Dialogic.start(parts[0], parts[1])
+				else:
+					Dialogic.start(tl_to_play)
 
 # ==============================================================================
 # LOGIKA CUTSCENE & AI FOLLOWER
