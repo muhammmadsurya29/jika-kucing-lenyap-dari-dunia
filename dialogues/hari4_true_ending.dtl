@@ -15,6 +15,7 @@ label cek_jendela
 narator: Tidak ada juga.
 [signal arg="suara_meong"]
 mc: Kubis!
+[signal arg="boleh_keluar"]
 [end_timeline]
 label cek_parkiran
 narator: Tidak ada kubis.
