@@ -8003,7 +8003,7 @@ position = Vector2(53, 49)
 
 [node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
 script = ExtResource("15_d8i2l")
-timeline_per_hari = Array[String](["", "hari1_dapur", "", "", "hari4_true_ending:cek_mesin_cuci"])
+timeline_per_hari = Array[String](["", "hari1_dapur", "", "", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapur" unique_id=1795914732]
 position = Vector2(85, 120)
@@ -8012,7 +8012,7 @@ shape = SubResource("RectangleShape2D_d8i2l")
 [node name="TriggerCermin" type="Area2D" parent="." unique_id=778073307]
 position = Vector2(1, -3)
 script = ExtResource("15_d8i2l")
-timeline_per_hari = Array[String](["", "hari1_cermin", "", "", "hari4_true_ending:cek_jendela"])
+timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerCermin" unique_id=1411985585]
 position = Vector2(72, 42)
@@ -8043,3 +8043,12 @@ position = Vector2(44, 52)
 [node name="PosisiAlohaHari3Malam" type="Marker2D" parent="." unique_id=302555108]
 position = Vector2(40, 32)
 
+[node name="TriggerMesinCuciHari4" type="Area2D" parent="." unique_id=1054368088]
+position = Vector2(129, 141)
+script = ExtResource("15_d8i2l")
+timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerMesinCuciHari4" unique_id=1689120468]
+position = Vector2(0, 1)
+scale = Vector2(0.765625, 0.609375)
+polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
