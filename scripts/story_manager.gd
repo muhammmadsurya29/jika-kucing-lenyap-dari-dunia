@@ -77,6 +77,12 @@ func _on_dialogic_signal(argument: String) -> void:
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
 		get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
+	elif argument == "teleport_ke_bioskop_dari_taman":
+		print(">> Pindah otomatis ke Bioskop!")
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("unlock_movement"):
+			player.unlock_movement()
+		get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
 	elif argument == "tamat":
 		print(">> GAME TAMAT!")
 		get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
@@ -188,6 +194,11 @@ func ganti_hari(target_scene: String = "") -> void:
 	
 	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	transition_layer.visible = false
+	
+	if current_day == 4:
+		if player and player.has_method("lock_movement"):
+			player.lock_movement()
+		Dialogic.start("hari4_true_ending")
 
 func pulang_malam(target_scene: String) -> void:
 	Dialogic.VAR.set("is_night", true)

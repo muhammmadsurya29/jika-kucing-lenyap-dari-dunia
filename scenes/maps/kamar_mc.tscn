@@ -8041,3 +8041,12 @@ position = Vector2(44, 52)
 
 [node name="PosisiAlohaHari3Malam" type="Marker2D" parent="." unique_id=302555108]
 position = Vector2(40, 32)
+
+[node name="TriggerMesinCuciHari4" type="Area2D" parent="."]
+position = Vector2(60, 20)
+script = ExtResource("15_d8i2l")
+timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerMesinCuciHari4"]
+polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
+

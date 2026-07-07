@@ -61,6 +61,7 @@ directories/dtl_directory={
 "hari3_taman_bagian2": "res://dialogues/hari3_taman_bagian2.dtl",
 "hari3_taman_bunga": "res://dialogues/hari3_taman_bunga.dtl",
 "hari4_kucing": "res://dialogues/hari4_kucing.dtl",
+"hari4_true_ending": "res://dialogues/hari4_true_ending.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
 "pintu_toko_terkunci": "res://dialogues/pintu_toko_terkunci.dtl",
 "prolog_vonis": "res://dialogues/prolog_vonis.dtl",
