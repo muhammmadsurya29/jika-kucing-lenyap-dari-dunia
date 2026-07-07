@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 4
+var current_day: int = 3
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -152,6 +152,7 @@ func ganti_hari(target_scene: String = "") -> void:
 	# Sinkronkan dengan variabel Dialogic
 	Dialogic.VAR.set("hari_ke", current_day)
 	Dialogic.VAR.set("event_harian_selesai", false)
+	Dialogic.VAR.set("is_night", false)
 	
 	print("Sekarang adalah Hari ke-", current_day)
 	

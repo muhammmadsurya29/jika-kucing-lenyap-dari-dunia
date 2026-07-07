@@ -13,7 +13,8 @@ func _ready() -> void:
 	# Khusus untuk TriggerBangun, kita masukkan ke grup dan paksa jalankan dialog
 	if name == "TriggerBangun":
 		add_to_group("WakingTrigger")
-		call_deferred("force_trigger")
+		if not Dialogic.VAR.get("is_night", false):
+			call_deferred("force_trigger")
 
 func _on_day_changed(new_day: int) -> void:
 	set_deferred("monitoring", true)
@@ -51,6 +52,9 @@ func _wait_and_start(target_tl: String) -> void:
 		set_deferred("monitoring", false)
 
 func _on_body_entered(body: Node2D) -> void:
+	if Dialogic.VAR.get("is_night", false):
+		return
+		
 	# Jika yang menginjak adalah Player, dan dialog sedang tidak berjalan
 	if body.is_in_group("Player"):
 		var target_timeline = timeline_name
