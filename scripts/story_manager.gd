@@ -6,6 +6,7 @@ var current_day: int = 3
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
+var is_night: bool = false
 
 signal day_changed(new_day: int)
 
@@ -152,6 +153,7 @@ func ganti_hari(target_scene: String = "") -> void:
 	# Sinkronkan dengan variabel Dialogic
 	Dialogic.VAR.set("hari_ke", current_day)
 	Dialogic.VAR.set("event_harian_selesai", false)
+	is_night = false
 	Dialogic.VAR.set("is_night", false)
 	
 	print("Sekarang adalah Hari ke-", current_day)
@@ -202,6 +204,7 @@ func ganti_hari(target_scene: String = "") -> void:
 		Dialogic.start("hari4_true_ending")
 
 func pulang_malam(target_scene: String) -> void:
+	is_night = true
 	Dialogic.VAR.set("is_night", true)
 	
 	transition_label.text = "" # Tidak ada teks hari ke-X
