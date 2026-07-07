@@ -7981,7 +7981,6 @@ shape = SubResource("RectangleShape2D_uaq6v")
 [node name="NPC_Kubis" parent="." unique_id=102526592 instance=ExtResource("18_cat")]
 position = Vector2(50, 43)
 scale = Vector2(0.75, 0.78992057)
-timeline_per_hari = Array[String](["IGNORE", "IGNORE", "IGNORE", "IGNORE", ""])
 
 [node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
 position = Vector2(1, 0)
@@ -8045,10 +8044,10 @@ position = Vector2(40, 32)
 
 [node name="TriggerMesinCuciHari4" type="Area2D" parent="." unique_id=1054368088]
 position = Vector2(129, 141)
-script = ExtResource("15_d8i2l")
+script = ExtResource("13_df4qw")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerMesinCuciHari4" unique_id=1689120468]
-position = Vector2(0, 1)
+position = Vector2(47, -19)
 scale = Vector2(0.765625, 0.609375)
 polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
