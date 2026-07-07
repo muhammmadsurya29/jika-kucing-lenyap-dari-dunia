@@ -27795,4 +27795,5 @@ script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_parkiran"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4" unique_id=2066467426]
-polygon = PackedVector2Array(-30, -30, 30, -30, 30, 30, -30, 30)
+polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
+

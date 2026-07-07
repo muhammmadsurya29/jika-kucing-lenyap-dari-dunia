@@ -6204,5 +6204,6 @@ script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:bioskop_puncak"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerBioskopPuncakHari4"]
-polygon = PackedVector2Array(-500, -500, 500, -500, 500, 500, -500, 500)
+polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
+
 
