@@ -51,6 +51,10 @@ func update_objective_based_on_state() -> void:
 				obj = "Tidur di kasur"
 		4:
 			obj = "Cari Kubis! Ia pasti belum jauh!"
+			# Hilangkan Kubis dari kamar pada Hari ke-4
+			var kubis = get_tree().get_root().find_child("NPC_Kubis", true, false)
+			if kubis:
+				kubis.queue_free()
 	
 	if has_node("/root/ObjectiveHUD"):
 		get_node("/root/ObjectiveHUD").set_objective(obj)
