@@ -217,11 +217,17 @@ func _on_dialogic_signal(argument: String) -> void:
 			aloha.hide()
 
 func _on_dialogue_started() -> void:
+	if has_node("/root/ObjectiveHUD"):
+		get_node("/root/ObjectiveHUD").hide_hud()
+	
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
 
 func _on_dialogue_ended() -> void:
+	if has_node("/root/ObjectiveHUD"):
+		get_node("/root/ObjectiveHUD").show_hud()
+		
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("unlock_movement"):
 		player.unlock_movement()
