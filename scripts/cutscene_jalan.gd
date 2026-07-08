@@ -20,23 +20,13 @@ func _ready() -> void:
 		parallax_bg.hide()
 		
 	# Setup posisi Gedung Bioskop
-	bioskop.position.x = 800.0 # Posisi jauh di kanan
 	
-	# Buat marker tujuan di depan pintu bioskop secara dinamis
-	var pintu = Marker2D.new()
-	pintu.name = "NodeDepanPintuBioskop"
-	pintu.position = Vector2(-20, 50) # 20px di sebelah kiri dan 50px ke bawah dari pusat gedung
-	bioskop.add_child(pintu)
-	target_x = bioskop.position.x + pintu.position.x
-	
-	# Pindahkan kamera ke Player agar mengikuti (jika belum)
-	var camera = $Camera2D
-	if camera:
-		remove_child(camera)
-		player.add_child(camera)
-		camera.position = Vector2(0, 0)
-		camera.position_smoothing_enabled = true
-		camera.position_smoothing_speed = 5.0
+	# Ambil marker tujuan dari depan pintu bioskop
+	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	if pintu:
+		target_x = bioskop.position.x + pintu.position.x
+	else:
+		target_x = bioskop.position.x - 20.0
 		
 	# Setup awal karakter
 	aloha.hide()
