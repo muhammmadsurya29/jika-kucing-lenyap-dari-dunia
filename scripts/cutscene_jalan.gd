@@ -58,6 +58,10 @@ func start_walking():
 	if "is_following_player" in mantan:
 		mantan.is_following_player = false
 		mantan.is_moving = false
+		
+	# Mulai dialog
+	if not Dialogic.current_timeline:
+		Dialogic.start("hari1_malam_jalan")
 
 func _process(delta: float) -> void:
 	if is_walking:
@@ -71,7 +75,11 @@ func _process(delta: float) -> void:
 			_karakter_berhenti()
 
 func _on_dialogic_signal(argument: String) -> void:
-	if argument == "mantan_pergi":
+	if argument == "sampai_bioskop":
+		# Tahan dialog jika karakter masih berjalan (belum sampai bioskop)
+		if is_walking:
+			Dialogic.paused = true
+	elif argument == "mantan_pergi":
 		_mantan_masuk_bioskop()
 	elif argument == "aloha_muncul":
 		_munculkan_aloha()
@@ -91,9 +99,9 @@ func _karakter_berhenti():
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("idle_up")
 		
-	# Mulai dialog setelah sampai di depan bioskop
-	if not Dialogic.current_timeline:
-		Dialogic.start("hari1_malam_jalan")
+	# Lanjutkan dialog jika sebelumnya ditahan
+	if Dialogic.paused:
+		Dialogic.paused = false
 		
 func _mantan_masuk_bioskop():
 	# Mantan berjalan ke atas (masuk pintu)
