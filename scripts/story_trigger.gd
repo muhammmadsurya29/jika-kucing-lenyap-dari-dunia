@@ -14,7 +14,11 @@ func _ready() -> void:
 	if name == "TriggerBangun":
 		add_to_group("WakingTrigger")
 		if not StoryManager.is_night:
-			call_deferred("force_trigger")
+			var skip = false
+			if StoryManager.current_day == 4 and StoryManager.day4_state != "":
+				skip = true
+			if not skip:
+				call_deferred("force_trigger")
 
 func _on_day_changed(new_day: int) -> void:
 	set_deferred("monitoring", true)
@@ -57,6 +61,9 @@ func _on_body_entered(body: Node2D) -> void:
 		
 	# Jika yang menginjak adalah Player, dan dialog sedang tidak berjalan
 	if body.is_in_group("Player"):
+		if name == "TriggerBangun" and StoryManager.current_day == 4 and Dialogic.VAR.get("day4_state") != "":
+			return
+			
 		print("[DEBUG StoryTrigger] Player menginjak: ", self.name)
 		var target_timeline = timeline_name
 		

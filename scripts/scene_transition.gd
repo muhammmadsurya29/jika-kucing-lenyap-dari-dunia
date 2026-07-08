@@ -22,6 +22,14 @@ func _on_body_entered(body: Node2D) -> void:
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
 		
+		# Khusus Pintu Kamar di Hari 4 menuju pemakaman
+		if target_scene == "res://scenes/maps/jalanan_kota.tscn" and day == 4 and sm.day4_state == "beres_beres_selesai":
+			if has_node("/root/ScreenFade"):
+				get_node("/root/ScreenFade").transition_to("res://scenes/maps/kantor_pemakaman.tscn", 1.0)
+			else:
+				get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
+			return
+			
 		# Kunci pintu jika belum ada izin keluar (khusus pintu kamar) atau belum cukup hari
 		if (requires_leave_permission and not can_leave) or (requires_cafe_event_done and not cafe_done) or day < minimum_day_to_exit:
 			var target_tl = locked_timeline

@@ -5,10 +5,9 @@ narator: Pagi hari, matahari menembus jendela apartemen. Mencari sosok kubis.
 narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keputusan untuk menghilangkan kucing dalam keadaan setengah mimpi?
 [background arg="hitam.png" fade="1.0"]
 narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buku, di bawah tempat tidur, di dalam kamar mandi, ia tidak ada.
+[signal arg="set_day4_state:pagi_selesai"]
 [signal arg="event_selesai"]
 [end_timeline]
-
-<Empty Text Event>
 label cek_mesin_cuci
 [signal arg="update_objective:Coba cari di dekat Jendela"]
 narator: Tidak ada juga.
@@ -170,7 +169,8 @@ mc: Kata-kata yang bijaksana sekali.
 aloha: Oh jelas. Layanan istimewa untuk kesempatan terakhir! Lakukanlah semua hal yang masih ingin kamu lakukan sampai tuntas pada akhir hayatmu. Sudah habis waktunya. Selamat tinggal!
 [background arg="hitam.png" fade="1.0"]
 narator: Aloha mengucapkan perpisahan dengan begitu enteng.
-[signal arg="teleport_ke_kamar_pagi"]
+[signal arg="set_day4_state:pagi_selesai"]
+[signal arg="day4_ke_kamar_beres2"]
 [end_timeline]
 label beres_beres
 [signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
@@ -180,7 +180,7 @@ narator: Kemudian aku akan mulai merapikan sekelilingku. Persiapan untuk mati.
 narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak bisa kubuang sampai hari ini. Keping-keping hidupku yang timbul tenggelam. Seandainya aku menghilangkan barang-barang begini, apakah aloha akan memberiku nyawa? Walaupun terlintas begitu di pikiranku, aku lega karena “aku sudah tidak usah menghilangkan apapun lagi”.
 [background arg="hitam.png" fade="1.0"]
 narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
-[signal arg="teleport_ke_pemakaman"]
+[signal arg="set_day4_state:beres_beres_selesai"]
 [end_timeline]
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
@@ -190,7 +190,7 @@ narator: Aku berkonsultasi dengan petugas penjualan dan promosi kantor di pengur
 narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Orang-orang seperti apakah yang akan berkumpul di situ? Teman-teman lama? Pacar masa lalu? Kerabat? Guru? Atau para kolega? Di antara mereka berapa orang yang betul-betul bersedih atas kematianku? Dan bagaimana mereka menceritakan tentang hidupku?
 [background arg="hitam.png" fade="1.0"]
 narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
-[signal arg="teleport_ke_kamar_pagi"]
+[signal arg="set_day4_state:pemakaman_selesai"]
 [end_timeline]
 label ending_surat
 [signal arg="update_objective:Tamat"]

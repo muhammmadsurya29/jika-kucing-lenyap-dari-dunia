@@ -2,11 +2,12 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 1
+var current_day: int = 4
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
 var is_night: bool = false
+var day4_state: String = ""
 
 signal day_changed(new_day: int)
 
@@ -114,6 +115,10 @@ func _on_dialogic_signal(argument: String) -> void:
 		if has_node("/root/ObjectiveHUD"):
 			get_node("/root/ObjectiveHUD").set_objective(new_obj)
 		return
+	elif argument.begins_with("set_day4_state:"):
+		day4_state = argument.replace("set_day4_state:", "")
+		print(">> Day 4 state updated to: ", day4_state)
+		return
 		
 	elif argument == "boleh_keluar":
 		print(">> MC sekarang diizinkan keluar kamar.")
@@ -170,9 +175,30 @@ func _on_dialogic_signal(argument: String) -> void:
 	elif argument == "tamat":
 		print(">> GAME TAMAT!")
 		if has_node("/root/ScreenFade"):
-			get_node("/root/ScreenFade").transition_to("res://scenes/maps/prolog.tscn", 2.0) # Tamat lambat
+			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_scene.tscn", 2.0) # Tamat lambat
 		else:
-			get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
+			get_tree().change_scene_to_file("res://scenes/ui/credit_scene.tscn")
+	elif argument == "day4_ke_kamar_beres2":
+		print(">> Pindah otomatis ke Kamar untuk Beres-beres!")
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("unlock_movement"):
+			player.unlock_movement()
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 0.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+		
+		# Tunggu scene terganti dan fade in selesai
+		await get_tree().create_timer(1.5).timeout
+		
+		while Dialogic.current_timeline != null:
+			await get_tree().create_timer(0.1).timeout
+			
+		var new_player = get_tree().get_first_node_in_group("Player")
+		if new_player and new_player.has_method("lock_movement"):
+			new_player.lock_movement()
+			
+		Dialogic.start("hari4_true_ending", "beres_beres")
 	elif argument == "mantan_datang":
 		# Cari NPC Mantan dan buat dia lari ke arah player
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)

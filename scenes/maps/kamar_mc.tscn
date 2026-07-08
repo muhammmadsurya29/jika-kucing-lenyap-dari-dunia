@@ -7669,7 +7669,7 @@ size = Vector2(20, 25)
 size = Vector2(16, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
-size = Vector2(14.5, 4.75)
+size = Vector2(29.25, 13.375)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tcxud"]
 atlas = ExtResource("19_uiijr")
@@ -8007,7 +8007,7 @@ script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_dapur", "", "", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapur" unique_id=1795914732]
-position = Vector2(85, 120)
+position = Vector2(73.375, 101)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="TriggerCermin" type="Area2D" parent="." unique_id=778073307]
@@ -8023,6 +8023,7 @@ shape = SubResource("RectangleShape2D_d8i2l")
 position = Vector2(169, 46)
 scale = Vector2(0.94863474, 1.0284216)
 sprite_frames = SubResource("SpriteFrames_hxlhn")
+autoplay = "default"
 frame_progress = 0.87111366
 script = ExtResource("17_ykrbj")
 disappear_on_day = 3
@@ -8031,6 +8032,7 @@ disappear_on_day = 3
 position = Vector2(128, 6)
 scale = Vector2(0.64118123, 0.72314024)
 sprite_frames = SubResource("SpriteFrames_chy37")
+autoplay = "default"
 frame_progress = 0.49187386
 script = ExtResource("17_ykrbj")
 disappear_on_day = 2

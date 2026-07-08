@@ -137,6 +137,19 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 			print("[DEBUG Interactable] Timeline yang terpilih: ", tl_to_play)
 			
+			# Khusus Hari 4 akhir game (Menulis surat) di Kasur/Meja
+			if sm and sm.current_day == 4 and sm.day4_state != "":
+				if self.name == "Kasur" or self.name == "Meja":
+					if sm.day4_state == "pemakaman_selesai":
+						tl_to_play = "hari4_true_ending:ending_surat"
+						requires_daily_event = false # Abaikan syarat tidur
+					else:
+						# Belum dari pemakaman, abaikan interaksi kasur
+						return
+				else:
+					# Nonaktifkan mesin cuci, jendela, dll di fase klimaks
+					return
+			
 			# --- PENGECEKAN SYARAT EVENT HARIAN ---
 			if requires_daily_event:
 				var sm_check = get_node_or_null("/root/StoryManager")
