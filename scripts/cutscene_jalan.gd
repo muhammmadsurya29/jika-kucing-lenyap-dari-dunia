@@ -58,10 +58,6 @@ func start_walking():
 	if "is_following_player" in mantan:
 		mantan.is_following_player = false
 		mantan.is_moving = false
-		
-	# Mulai dialog
-	if not Dialogic.current_timeline:
-		Dialogic.start("hari1_malam_jalan")
 
 func _process(delta: float) -> void:
 	if is_walking:
@@ -94,6 +90,10 @@ func _karakter_berhenti():
 		player.play_custom_animation("idle_up")
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("idle_up")
+		
+	# Mulai dialog setelah sampai di depan bioskop
+	if not Dialogic.current_timeline:
+		Dialogic.start("hari1_malam_jalan")
 		
 func _mantan_masuk_bioskop():
 	# Mantan berjalan ke atas (masuk pintu)
