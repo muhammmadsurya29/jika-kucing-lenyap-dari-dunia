@@ -7,22 +7,42 @@ extends Node2D
 @onready var aloha = $NPC_Aloha
 
 var is_walking = false
-var is_arriving = false
-var walk_speed = 30.0
+var walk_speed = 50.0
+var target_x = 0.0
 
 func _ready() -> void:
 	# Dengarkan sinyal dari Dialogic
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
-	# Setup awal
+	# Sembunyikan ParallaxBackground jika ada
+	if parallax_bg:
+		parallax_bg.hide()
+		
+	# Setup posisi Gedung Bioskop
+	bioskop.position.x = 800.0 # Posisi jauh di kanan
+	
+	# Buat marker tujuan di depan pintu bioskop secara dinamis
+	var pintu = Marker2D.new()
+	pintu.name = "NodeDepanPintuBioskop"
+	pintu.position = Vector2(-20, 50) # 20px di sebelah kiri dan 50px ke bawah dari pusat gedung
+	bioskop.add_child(pintu)
+	target_x = bioskop.position.x + pintu.position.x
+	
+	# Pindahkan kamera ke Player agar mengikuti (jika belum)
+	var camera = $Camera2D
+	if camera:
+		remove_child(camera)
+		player.add_child(camera)
+		camera.position = Vector2(0, 0)
+		camera.position_smoothing_enabled = true
+		camera.position_smoothing_speed = 5.0
+		
+	# Setup awal karakter
 	aloha.hide()
 	aloha.modulate.a = 0.0
-	bioskop.position.x = 400.0 # Taruh bioskop di luar layar kanan (agar tidak kelihatan)
-	
-	# Posisikan karakter agak ke kiri (jarak lebih rapat)
 	player.position.x = 80.0
-	mantan.position.x = 100.0
+	mantan.position.x = 40.0 # Mantan berjalan di belakang MC
 	
 	# Mulai cutscene
 	start_walking()
@@ -48,51 +68,36 @@ func start_walking():
 
 func _process(delta: float) -> void:
 	if is_walking:
-		# Geser parallax background ke kiri untuk memberi ilusi berjalan ke kanan
-		parallax_bg.scroll_offset.x -= walk_speed * delta
+		# Karakter benar-benar berjalan menyusuri koordinat X
+		player.position.x += walk_speed * delta
+		mantan.position.x += walk_speed * delta
 		
-		# Jika sudah waktunya sampai, gedung bioskop ikut bergeser secepat jalanan
-		if is_arriving:
-			bioskop.position.x -= walk_speed * delta
-			# Jika gedung sudah masuk agak ke tengah layar, berhenti!
-			if bioskop.position.x <= 260.0:
-				is_walking = false
-				is_arriving = false
-				_karakter_jalan_ke_tengah()
+		# Jika MC sudah mencapai target di depan pintu bioskop
+		if player.position.x >= target_x:
+			is_walking = false
+			_karakter_berhenti()
 
 func _on_dialogic_signal(argument: String) -> void:
-	if argument == "sampai_bioskop":
-		is_arriving = true
-	elif argument == "mantan_pergi":
+	if argument == "mantan_pergi":
 		_mantan_masuk_bioskop()
 	elif argument == "aloha_muncul":
 		_munculkan_aloha()
 	elif argument == "mc_pingsan":
 		_mc_pingsan()
 
-func _karakter_jalan_ke_tengah():
+func _karakter_berhenti():
 	# Kembalikan kecepatan animasi normal
 	if player.has_node("AnimatedSprite2D"):
 		player.get_node("AnimatedSprite2D").speed_scale = 1.0
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").speed_scale = 1.0
 		
-	# Karakter berjalan secara fisik ke arah tengah bioskop
-	var tween = create_tween()
-	tween.set_parallel(true)
-	# MC berhenti di sebelah kiri pintu (posisi bioskop dikurangi 30px)
-	tween.tween_property(player, "position:x", bioskop.position.x - 30.0, 2.0)
-	# Mantan berhenti tepat di depan pintu bioskop (posisi bioskop dikurangi 10px)
-	tween.tween_property(mantan, "position:x", bioskop.position.x - 10.0, 2.0)
-	tween.set_parallel(false)
-	await tween.finished
-	
-	# Setelah sampai, karakter berhenti dan menghadap ke atas (ke arah gedung)
+	# Setelah sampai, karakter berhenti dan menghadap ke atas (ke arah pintu gedung)
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("idle_up")
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("idle_up")
-
+		
 func _mantan_masuk_bioskop():
 	# Mantan berjalan ke atas (masuk pintu)
 	if mantan.has_node("AnimatedSprite2D"):
@@ -106,14 +111,14 @@ func _mantan_masuk_bioskop():
 	mantan.hide()
 	
 func _munculkan_aloha():
-	# Posisikan Aloha agak ke kiri dari MC agar tidak nempel (karena MC ada di 200.0)
-	aloha.position.x = 150.0
+	# Posisikan Aloha agak ke kiri dari MC
+	aloha.position.x = player.position.x - 50.0
 	aloha.position.y = player.position.y
 	
 	# Aloha muncul (fade in)
 	aloha.show()
 	if aloha.has_node("AnimatedSprite2D"):
-		aloha.get_node("AnimatedSprite2D").play("idle_right") # Aloha menghadap MC (karena dari kiri)
+		aloha.get_node("AnimatedSprite2D").play("idle_right") # Aloha menghadap MC
 		
 	var tween = create_tween()
 	tween.tween_property(aloha, "modulate:a", 1.0, 1.0)
@@ -133,12 +138,10 @@ func _mc_pingsan():
 	tween.tween_property(player, "position:y", player.position.y + 10, 0.5)
 	await tween.finished
 	
-	# Ganti ke hari ke-2 dengan transisi loading screen yang sama seperti tidur
+	# Ganti ke hari ke-2
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
-		# Panggil fungsi global agar otomatis ada layar gelap dan tulisan Hari ke-2
-		# Oper parameter scene kamar agar saat layar gelap, sistem memindahkan MC ke sana
-		sm.current_day = 1 # Dikurangi 1 karena ganti_hari() akan menambahkannya +1
+		sm.current_day = 1
 		sm.ganti_hari("res://scenes/maps/kamar_mc.tscn")
 	else:
 		get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
