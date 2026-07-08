@@ -52,7 +52,8 @@ func update_objective_based_on_state() -> void:
 		4:
 			obj = "Cari Kubis! Ia pasti belum jauh!"
 	
-	ObjectiveHUD.set_objective(obj)
+	if has_node("/root/ObjectiveHUD"):
+		get_node("/root/ObjectiveHUD").set_objective(obj)
 
 func _ready() -> void:
 	# Tunggu satu frame agar seluruh sistem terinisialisasi
@@ -108,16 +109,16 @@ func _on_dialogic_signal(argument: String) -> void:
 		print(">> MC sekarang diizinkan keluar kamar.")
 		can_leave_room = true
 		if current_day == 1 and not is_night and not cafe_event_done:
-			ObjectiveHUD.set_objective("Temui Mantan di Cafe (Jalanan Kota)")
+			if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Temui Mantan di Cafe (Jalanan Kota)")
 		elif current_day == 4:
-			ObjectiveHUD.set_objective("Cari Kubis di Parkiran!")
+			if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Cari Kubis di Parkiran!")
 	elif argument == "teleport_ke_taman_bukit":
 		print(">> Pindah otomatis ke Taman Bukit!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/Taman_Bukit.tscn", 1.0)
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/Taman_Bukit.tscn", 1.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
 	elif argument == "teleport_ke_taman":
@@ -125,8 +126,8 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/taman.tscn", 1.0)
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/taman.tscn", 1.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/taman.tscn")
 	elif argument == "teleport_ke_kamar_pagi":
@@ -134,8 +135,8 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/kamar_mc.tscn", 0.5)
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 0.5)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
 	elif argument == "teleport_ke_pemakaman":
@@ -143,8 +144,8 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/kantor_pemakaman.tscn", 0.5)
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kantor_pemakaman.tscn", 0.5)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
 	elif argument == "teleport_ke_bioskop_dari_taman":
@@ -152,14 +153,14 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/bioskop.tscn", 0.5)
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/bioskop.tscn", 0.5)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
 	elif argument == "tamat":
 		print(">> GAME TAMAT!")
-		if ScreenFade:
-			ScreenFade.transition_to("res://scenes/maps/prolog.tscn", 2.0) # Tamat lambat
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/prolog.tscn", 2.0) # Tamat lambat
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
 	elif argument == "mantan_datang":
