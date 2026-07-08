@@ -111,15 +111,19 @@ func _unhandled_input(event: InputEvent) -> void:
 				# Jika jarak horizontal lebih besar dari vertikal (berada di kiri/kanan)
 				if abs(diff.x) > abs(diff.y):
 					if diff.x > 0:
-						sprite.play("idle_right")
+						if sprite.sprite_frames and sprite.sprite_frames.has_animation("idle_right"):
+							sprite.play("idle_right")
 					else:
-						sprite.play("idle_left")
+						if sprite.sprite_frames and sprite.sprite_frames.has_animation("idle_left"):
+							sprite.play("idle_left")
 				# Jika jarak vertikal lebih besar (berada di atas/bawah)
 				else:
 					if diff.y > 0:
-						sprite.play("idle_down")
+						if sprite.sprite_frames and sprite.sprite_frames.has_animation("idle_down"):
+							sprite.play("idle_down")
 					else:
-						sprite.play("idle_up")
+						if sprite.sprite_frames and sprite.sprite_frames.has_animation("idle_up"):
+							sprite.play("idle_up")
 			# ----------------------------------
 			
 			# Tentukan timeline mana yang dimainkan berdasarkan hari

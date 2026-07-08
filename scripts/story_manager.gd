@@ -14,6 +14,46 @@ var transition_layer: CanvasLayer
 var transition_rect: ColorRect
 var transition_label: Label
 
+func update_objective_based_on_state() -> void:
+	if not has_node("/root/ObjectiveHUD"):
+		return
+	
+	var obj = ""
+	match current_day:
+		0:
+			if not is_night:
+				obj = "Keluar kamar, ada telepon masuk!"
+			else:
+				if not can_sleep:
+					obj = "Berbicara dengan Aloha (Iblis)"
+				else:
+					obj = "Tidur di kasur"
+		1:
+			if not is_night:
+				if not cafe_event_done:
+					obj = "Keluar kamar dan temui Mantan di Cafe"
+				else:
+					obj = "Waktunya pulang ke Kamar"
+			else:
+				if not can_sleep:
+					obj = "Keluar kamar dan temui Mantan untuk meminjam DVD"
+				else:
+					obj = "Tidur di kasur"
+		2:
+			if not is_night:
+				obj = "Minta rekomendasi film ke toko DVD"
+			else:
+				obj = "Tidur di kasur"
+		3:
+			if not is_night:
+				obj = "Keluar kamar dan pergi ke Taman Bukit"
+			else:
+				obj = "Tidur di kasur"
+		4:
+			obj = "Cari Kubis! Ia pasti belum jauh!"
+	
+	ObjectiveHUD.set_objective(obj)
+
 func _ready() -> void:
 	# Tunggu satu frame agar seluruh sistem terinisialisasi
 	await get_tree().process_frame
@@ -57,42 +97,71 @@ func _on_dialogic_signal(argument: String) -> void:
 		print(">> Misi hari ini tamat! MC sekarang diizinkan tidur.")
 		can_sleep = true
 		Dialogic.VAR.set("event_harian_selesai", true)
+		can_sleep = true
+		print(">> Event harian selesai! MC sekarang bisa tidur.")
+		update_objective_based_on_state()
+	elif argument == "cafe_selesai":
+		cafe_event_done = true
+		print(">> Event cafe selesai. MC bisa masuk kamar lagi.")
+		update_objective_based_on_state()
 	elif argument == "boleh_keluar":
 		print(">> MC sekarang diizinkan keluar kamar.")
 		can_leave_room = true
+		if current_day == 1 and not is_night and not cafe_event_done:
+			ObjectiveHUD.set_objective("Temui Mantan di Cafe (Jalanan Kota)")
+		elif current_day == 4:
+			ObjectiveHUD.set_objective("Cari Kubis di Parkiran!")
 	elif argument == "teleport_ke_taman_bukit":
 		print(">> Pindah otomatis ke Taman Bukit!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/Taman_Bukit.tscn", 1.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
 	elif argument == "teleport_ke_taman":
 		print(">> Pindah otomatis ke Taman!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		get_tree().change_scene_to_file("res://scenes/maps/taman.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/taman.tscn", 1.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/taman.tscn")
 	elif argument == "teleport_ke_kamar_pagi":
 		print(">> Pindah otomatis ke Kamar (Pagi)!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/kamar_mc.tscn", 0.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
 	elif argument == "teleport_ke_pemakaman":
 		print(">> Pindah otomatis ke Kantor Pemakaman!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/kantor_pemakaman.tscn", 0.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
 	elif argument == "teleport_ke_bioskop_dari_taman":
 		print(">> Pindah otomatis ke Bioskop!")
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()
-		get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/bioskop.tscn", 0.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
 	elif argument == "tamat":
 		print(">> GAME TAMAT!")
-		get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
+		if ScreenFade:
+			ScreenFade.transition_to("res://scenes/maps/prolog.tscn", 2.0) # Tamat lambat
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
 	elif argument == "mantan_datang":
 		# Cari NPC Mantan dan buat dia lari ke arah player
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)
@@ -195,6 +264,8 @@ func ganti_hari(target_scene: String = "") -> void:
 		if player.has_method("play_waking_up_animation"):
 			# Fungsi ini akan secara asinkron memainkan animasi loncat ke samping kasur
 			player.play_waking_up_animation()
+	
+	update_objective_based_on_state()
 			
 	# Fade Out: Kembali perlahan dari gelap, berbarengan dengan MC yang sedang melompat dari kasur
 	var tween_out = get_tree().create_tween()

@@ -40,4 +40,12 @@ func _on_body_entered(body: Node2D) -> void:
 			if target_scene_per_hari[day] != "":
 				final_target = target_scene_per_hari[day]
 		if final_target != "":
-			get_tree().change_scene_to_file(final_target)
+			# Gunakan durasi lebih panjang untuk scene besar seperti jalanan_kota
+			var duration = 0.5
+			if "jalanan_kota" in final_target or "taman" in final_target:
+				duration = 1.0
+			
+			if ScreenFade:
+				ScreenFade.transition_to(final_target, duration)
+			else:
+				get_tree().change_scene_to_file(final_target)

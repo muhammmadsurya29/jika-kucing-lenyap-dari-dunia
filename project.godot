@@ -17,6 +17,8 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+ObjectiveHUD="*res://scenes/ui/ObjectiveHUD.tscn"
+ScreenFade="*res://scenes/ui/ScreenFade.tscn"
 Dialogic="*uid://ds2q0uclmolvu"
 StoryManager="*uid://l8alx6gj06g"
 PortraitDimmer="*res://scripts/portrait_dimmer.gd"
