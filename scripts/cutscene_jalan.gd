@@ -7,7 +7,7 @@ extends Node2D
 @onready var aloha = $NPC_Aloha
 
 var is_walking = false
-var walk_speed = 50.0
+var walk_speed = 15.0 # Sangat lambat
 var target_x = 0.0
 
 func _ready() -> void:
@@ -42,10 +42,10 @@ func start_walking():
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("walk_right")
 		if player.has_node("AnimatedSprite2D"):
-			player.get_node("AnimatedSprite2D").speed_scale = 0.5
+			player.get_node("AnimatedSprite2D").speed_scale = 0.25 # Animasi jalan sangat lambat
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_right")
-		mantan.get_node("AnimatedSprite2D").speed_scale = 0.5
+		mantan.get_node("AnimatedSprite2D").speed_scale = 0.25 # Animasi jalan sangat lambat
 		
 	# Matikan AI follower jika ada
 	if "is_following_player" in mantan:
