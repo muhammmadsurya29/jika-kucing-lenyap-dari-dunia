@@ -16110,10 +16110,7 @@ layer_5/tile_data = PackedInt32Array(131109, 983044, 1, 196645, 983044, 2, 26218
 [node name="Player" parent="." unique_id=429322089 instance=ExtResource("2_player")]
 position = Vector2(-18, 92)
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -20)
-position_smoothing_enabled = true
-position_smoothing_speed = 5.0
+
 
 [node name="NPC_Mantan" parent="." unique_id=501023898 instance=ExtResource("3_mantan")]
 position = Vector2(-19, 68)
