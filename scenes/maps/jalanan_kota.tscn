@@ -27766,7 +27766,7 @@ scale = Vector2(0.5306344, 0.4452854)
 text = "KAMAR"
 
 [node name="PintuKamar" type="Area2D" parent="." unique_id=500000001]
-position = Vector2(-63, -375)
+position = Vector2(-61, -384)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/kamar_mc.tscn"
 minimum_day_to_exit = 0
@@ -27786,7 +27786,7 @@ position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_1s67d")
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("3_1s67d")]
-position = Vector2(-287, -281)
+position = Vector2(-63, -354)
 
 [node name="TriggerJalananKotaHari4" type="Area2D" parent="." unique_id=1842399254]
 position = Vector2(-40, -216)
@@ -27795,5 +27795,6 @@ script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_parkiran"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4" unique_id=2066467426]
+position = Vector2(0.53191495, 10)
+scale = Vector2(-0.0051305597, -0.0036799978)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
-

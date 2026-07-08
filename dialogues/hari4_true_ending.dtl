@@ -19,9 +19,11 @@ mc: Kubis!
 [end_timeline]
 label cek_parkiran
 narator: Tidak ada kubis.
+[signal arg="teleport_ke_taman_bukit"]
 [end_timeline]
 label cek_taman_bukit
 narator: Bahkan di taman pun tidak ada.
+[signal arg="teleport_ke_taman"]
 [end_timeline]
 label cek_soba
 narator: Tak ada juga. ‘Kubis!’, ‘Kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.

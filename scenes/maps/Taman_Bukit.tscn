@@ -75,5 +75,5 @@ timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_taman_
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanBukitHari4" unique_id=1302269936]
 position = Vector2(-186, 285)
+scale = Vector2(0.0046445807, 0.004186348)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
-

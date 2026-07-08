@@ -7669,7 +7669,7 @@ size = Vector2(20, 25)
 size = Vector2(16, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
-size = Vector2(19.5, 25)
+size = Vector2(14.5, 4.75)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tcxud"]
 atlas = ExtResource("19_uiijr")
@@ -7958,16 +7958,18 @@ position = Vector2(29, 37)
 speed = 80.0
 
 [node name="Kasur" type="Area2D" parent="." unique_id=1137098960]
+position = Vector2(9, 25)
 script = ExtResource("13_df4qw")
 timeline_name = "tidur_malam"
 requires_daily_event = true
 locked_timeline = "belum_bisa_tidur"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kasur" unique_id=140283819]
-position = Vector2(11, 29.5)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_df4qw")
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=1058604081]
+position = Vector2(184, 66)
 script = ExtResource("14_uaq6v")
 target_scene = "res://scenes/maps/jalanan_kota.tscn"
 requires_leave_permission = true
@@ -7975,7 +7977,6 @@ locked_timeline_per_hari = Array[String](["", "hari1_pintu", "", "", ""])
 target_scene_per_hari = Array[String](["", "res://scenes/maps/jalanan_kota.tscn", "res://scenes/maps/toko_dvd.tscn", "res://scenes/maps/Taman_Bukit.tscn", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]
-position = Vector2(184, 65)
 shape = SubResource("RectangleShape2D_uaq6v")
 
 [node name="NPC_Kubis" parent="." unique_id=102526592 instance=ExtResource("18_cat")]
@@ -7983,12 +7984,12 @@ position = Vector2(50, 43)
 scale = Vector2(0.75, 0.78992057)
 
 [node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
-position = Vector2(1, 0)
+position = Vector2(8, 13)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["hari0_bangun", "hari1_pagi_kamar", "", "hari3_pagi_kamar", "hari4_true_ending:pagi_bangun"])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerBangun" unique_id=1876794574]
-position = Vector2(9.25, 31.5)
+position = Vector2(2, 16)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="ponsel" type="Sprite2D" parent="." unique_id=1506968749]
@@ -8001,6 +8002,7 @@ script = ExtResource("17_ykrbj")
 position = Vector2(53, 49)
 
 [node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
+position = Vector2(7, 13)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_dapur", "", "", ""])
 
@@ -8009,12 +8011,12 @@ position = Vector2(85, 120)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="TriggerCermin" type="Area2D" parent="." unique_id=778073307]
-position = Vector2(1, -3)
+position = Vector2(73, 38)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerCermin" unique_id=1411985585]
-position = Vector2(72, 42)
+position = Vector2(-1, 12)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="JamDinding" type="AnimatedSprite2D" parent="." unique_id=1870419711]

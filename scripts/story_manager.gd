@@ -60,6 +60,12 @@ func _on_dialogic_signal(argument: String) -> void:
 	elif argument == "boleh_keluar":
 		print(">> MC sekarang diizinkan keluar kamar.")
 		can_leave_room = true
+	elif argument == "teleport_ke_taman_bukit":
+		print(">> Pindah otomatis ke Taman Bukit!")
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("unlock_movement"):
+			player.unlock_movement()
+		get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
 	elif argument == "teleport_ke_taman":
 		print(">> Pindah otomatis ke Taman!")
 		var player = get_tree().get_first_node_in_group("Player")

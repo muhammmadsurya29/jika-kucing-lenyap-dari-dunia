@@ -30518,12 +30518,12 @@ layer_8/name = "Pilar"
 
 [node name="NPC_Mantan" parent="." unique_id=486957782 instance=ExtResource("12_omd0x")]
 y_sort_enabled = true
-position = Vector2(146, -14)
+position = Vector2(489, 83)
 timeline_name = "hari1_siang_cafe"
 timeline_per_hari = Array[String](["", "", ""])
 
 [node name="Player" parent="." unique_id=312454733 instance=ExtResource("2_yd2cm")]
-position = Vector2(87, 242)
+position = Vector2(-413, -124)
 speed = 80.0
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=567891234]
@@ -30575,11 +30575,12 @@ vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TriggerTamanSobaHari4" type="Area2D" parent="." unique_id=1044404464]
-position = Vector2(150, 150)
+position = Vector2(245.00002, 156)
+scale = Vector2(-0.03999821, 0.040000916)
 script = ExtResource("99_stry")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_soba"])
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanSobaHari4" unique_id=85937078]
-position = Vector2(88, -9)
+position = Vector2(50.00244, -24.999237)
+scale = Vector2(0.0930592, 0.07628813)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
-
