@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 0
+var current_day: int = 4
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -105,6 +105,12 @@ func _on_dialogic_signal(argument: String) -> void:
 		cafe_event_done = true
 		print(">> Event cafe selesai. MC bisa masuk kamar lagi.")
 		update_objective_based_on_state()
+	if argument.begins_with("update_objective:"):
+		var new_obj = argument.replace("update_objective:", "")
+		if has_node("/root/ObjectiveHUD"):
+			get_node("/root/ObjectiveHUD").set_objective(new_obj)
+		return
+		
 	elif argument == "boleh_keluar":
 		print(">> MC sekarang diizinkan keluar kamar.")
 		can_leave_room = true
