@@ -31,8 +31,15 @@ func _ready() -> void:
 	# Setup awal karakter
 	aloha.hide()
 	aloha.modulate.a = 0.0
-	player.position.x = 80.0
-	mantan.position.x = 40.0 # Mantan berjalan di belakang MC
+	
+	# Ambil posisi titik mulai
+	var titik_mulai = get_node_or_null("NodeTitikMulai")
+	if titik_mulai:
+		player.position = titik_mulai.position
+		mantan.position = titik_mulai.position - Vector2(40, 0) # Mantan berjalan di belakang MC
+	else:
+		player.position.x = 80.0
+		mantan.position.x = 40.0
 	
 	# Mulai cutscene
 	start_walking()
