@@ -90,8 +90,8 @@ narator: "(Teramat menyedihkan kalau aku baru sadar akan hal itu di akhir hayat.
 aloha: "sudah selesaikah?"
 mc: "Ya, sudah selesai"
 aloha: "kalau gitu mari kita hilangkan. Sampai besok!"
+[signal arg="aloha_hilang"]
 narator: "aloha tersenyum ceria lalu mengedipkan sebelah mata. Dan tak terlihat lagi ponselku yang kupegang... Di susul suara kucing yang tampak menyesal bergema di kamar. Tahu-tahu aku tertidur pulas. Dimulailah tujuh hari ajaib bagiku."
 narator: "Teman sekamar ku adalah seekor kucing. Belum punya nama. Tidak, ia punya. Nama kucingku ialah Kubis. Barangkali kau lupa aku akan menceritakan tentangnya."
 [background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
-[signal arg="npc_hilang"]
 jump hari0_flashback/
