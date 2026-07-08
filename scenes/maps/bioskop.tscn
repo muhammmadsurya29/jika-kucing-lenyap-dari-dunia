@@ -6198,12 +6198,12 @@ layer_3/name = "Wall"
 layer_4/name = "Door"
 layer_5/name = "Decor"
 
-[node name="TriggerBioskopPuncakHari4" type="Area2D" parent="."]
+[node name="TriggerBioskopPuncakHari4" type="Area2D" parent="." unique_id=131150401]
 position = Vector2(10, 10)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:bioskop_puncak"])
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerBioskopPuncakHari4"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerBioskopPuncakHari4" unique_id=1502752516]
+position = Vector2(159, 11)
+scale = Vector2(0.003077244, 0.0030459324)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
-
-
