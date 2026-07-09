@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxc_creditscene1"]
+
+[ext_resource type="Script" path="res://scripts/credit_scene.gd" id="1_credit"]
+[ext_resource type="AudioStream" uid="uid://dwdwdwdw" path="res://assets/audio/happy-end.mp3" id="2_audio"]
+
+[node name="CreditScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_credit")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TrueEndingText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
+text = "— TAMAT / ENDING DAMAI —"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 200.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="CreditContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "JIKA KUCING LENYAP DARI DUNIA"
+horizontal_alignment = 1
+
+[node name="Space1" type="Control" parent="CreditContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Credits" type="Label" parent="CreditContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "- Credit, Penulis:
+Surya Anandri
+Universitas Ahmad Dahlan
+Informatika"
+horizontal_alignment = 1
+
+[node name="Space2" type="Control" parent="CreditContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="Thanks" type="Label" parent="CreditContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Terima kasih sudah bermain!"
+horizontal_alignment = 1
+
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_audio")

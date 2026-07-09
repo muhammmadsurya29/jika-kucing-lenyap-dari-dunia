@@ -37,6 +37,11 @@ directories/dch_directory={
 "tsutaya": "res://assets/sprites/tsutaya.dch"
 }
 directories/dtl_directory={
+"alt_malam_terakhir": "res://dialogues/alt_malam_terakhir.dtl",
+"alt_mengantar_surat": "res://dialogues/alt_mengantar_surat.dtl",
+"alt_pagi_terakhir": "res://dialogues/alt_pagi_terakhir.dtl",
+"alt_sore_kamar": "res://dialogues/alt_sore_kamar.dtl",
+"alt_taman_bukit": "res://dialogues/alt_taman_bukit.dtl",
 "belum_bisa_tidur": "res://dialogues/belum_bisa_tidur.dtl",
 "belum_waktunya_pulang": "res://dialogues/belum_waktunya_pulang.dtl",
 "hari0_bangun": "res://dialogues/hari0_bangun.dtl",

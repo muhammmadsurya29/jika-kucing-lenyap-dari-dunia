@@ -11,10 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://d4bo40hs7t252" path="res://assets/Tiles/exterior/5_Floor_Modular_Buildings_16x16.png" id="7_ykibj"]
 [ext_resource type="Texture2D" uid="uid://b2i124v65prls" path="res://assets/Tiles/exterior/18_Fire_Station_16x16.png" id="8_lymmu"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
-[ext_resource type="Script" path="res://scripts/interactable.gd" id="lpdwmyu6"]
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mns6ss9t"]
-size = Vector2(40, 40)
-
+[ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="lpdwmyu6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lq27n"]
 texture = ExtResource("2_sqsbl")
@@ -27737,6 +27734,9 @@ sources/8 = SubResource("TileSetAtlasSource_1p7e2")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1s67d"]
 size = Vector2(28.75, 19.6875)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mns6ss9t"]
+size = Vector2(40, 40)
+
 [node name="JalananKota" type="Node2D" unique_id=1501528845]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=333640770]
@@ -27803,12 +27803,10 @@ position = Vector2(0.53191495, 10)
 scale = Vector2(-0.0051305597, -0.0036799978)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
 
-
-[node name="KotakPos" type="Area2D" parent="."]
-position = Vector2(0, 0)
+[node name="KotakPos" type="Area2D" parent="." unique_id=806979455]
+position = Vector2(-369, -343)
 script = ExtResource("lpdwmyu6")
 timeline_name = "alt_mengantar_surat"
-required_day = 99
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos" unique_id=537364560]
 shape = SubResource("RectangleShape2D_mns6ss9t")

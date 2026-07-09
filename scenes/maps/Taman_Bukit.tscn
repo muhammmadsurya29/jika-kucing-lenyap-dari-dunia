@@ -4,17 +4,17 @@
 [ext_resource type="TileSet" uid="uid://ruweku4timwf" path="res://assets/Tiles/taman_tileset.res" id="2_7v5x3"]
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_player"]
 [ext_resource type="PackedScene" uid="uid://d22b7ymumnxmy" path="res://scenes/characters/cat.tscn" id="3_kubis"]
+[ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="32c63joa"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
-[ext_resource type="Script" path="res://scripts/interactable.gd" id="32c63joa"]
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_zyd4cgvj"]
-size = Vector2(40, 40)
-
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bunga"]
 size = Vector2(54.999805, 47.857063)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bangku"]
 size = Vector2(102.59885, 56.223083)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_zyd4cgvj"]
+size = Vector2(40, 40)
 
 [node name="TamanBukit" type="Node2D" unique_id=100856775]
 script = ExtResource("1_script")
@@ -82,12 +82,10 @@ position = Vector2(-186, 285)
 scale = Vector2(0.0046445807, 0.004186348)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
 
-
-[node name="BangkuBiru" type="Area2D" parent="."]
-position = Vector2(0, 0)
+[node name="BangkuBiru" type="Area2D" parent="." unique_id=1452792884]
+position = Vector2(104, 382)
 script = ExtResource("32c63joa")
 timeline_name = "alt_taman_bukit"
-required_day = 99
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BangkuBiru"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BangkuBiru" unique_id=1199309097]
 shape = SubResource("RectangleShape2D_zyd4cgvj")
