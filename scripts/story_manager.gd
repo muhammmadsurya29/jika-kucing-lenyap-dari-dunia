@@ -248,6 +248,37 @@ func _on_dialogic_signal(argument: String) -> void:
 			await tween.finished
 			aloha.hide()
 
+
+	elif argument == "alt_malam_terakhir_selesai":
+		current_day = 99 # Hari Alternatif A
+		is_night = false
+		can_sleep = false
+		can_leave_room = false
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 2.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+		# Tunggu lalu mainkan alt_pagi_terakhir
+		await get_tree().create_timer(2.0).timeout
+		while Dialogic.current_timeline != null:
+			await get_tree().create_timer(0.1).timeout
+		var player = get_tree().get_first_node_in_group("Player")
+		if player and player.has_method("lock_movement"): player.lock_movement()
+		Dialogic.start("alt_pagi_terakhir")
+	elif argument == "alt_pagi_terakhir_selesai":
+		can_leave_room = true
+		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Antar surat ke Kotak Pos di Jalanan Kota")
+	elif argument == "alt_mengantar_surat_selesai":
+		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pergi ke Bangku Biru di Taman Bukit")
+	elif argument == "alt_taman_bukit_selesai":
+		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pulang ke Apartemen")
+	elif argument == "alt_tamat":
+		print(">> GAME TAMAT (ENDING DAMAI)!")
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_scene.tscn", 2.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/ui/credit_scene.tscn")
+
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):
 		get_node("/root/ObjectiveHUD").hide_hud()
@@ -371,36 +402,6 @@ func pulang_malam(target_scene: String) -> void:
 	
 	# Langsung trigger dialog malam
 	Dialogic.start("hari3_malam_kamar")
-
-	elif argument == "alt_malam_terakhir_selesai":
-		current_day = 99 # Hari Alternatif A
-		is_night = false
-		can_sleep = false
-		can_leave_room = false
-		if has_node("/root/ScreenFade"):
-			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 2.0)
-		else:
-			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
-		# Tunggu lalu mainkan alt_pagi_terakhir
-		await get_tree().create_timer(2.0).timeout
-		while Dialogic.current_timeline != null:
-			await get_tree().create_timer(0.1).timeout
-		var player = get_tree().get_first_node_in_group("Player")
-		if player and player.has_method("lock_movement"): player.lock_movement()
-		Dialogic.start("alt_pagi_terakhir")
-	elif argument == "alt_pagi_terakhir_selesai":
-		can_leave_room = true
-		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Antar surat ke Kotak Pos di Jalanan Kota")
-	elif argument == "alt_mengantar_surat_selesai":
-		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pergi ke Bangku Biru di Taman Bukit")
-	elif argument == "alt_taman_bukit_selesai":
-		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pulang ke Apartemen")
-	elif argument == "alt_tamat":
-		print(">> GAME TAMAT (ENDING DAMAI)!")
-		if has_node("/root/ScreenFade"):
-			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_scene.tscn", 2.0)
-		else:
-			get_tree().change_scene_to_file("res://scenes/ui/credit_scene.tscn")
 
 
 func play_alt_sore_kamar() -> void:
