@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 0
+var current_day: int = 3
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -14,6 +14,13 @@ signal day_changed(new_day: int)
 var transition_layer: CanvasLayer
 var transition_rect: ColorRect
 var transition_label: Label
+
+# Variabel Cinematic UI
+@export var use_cinematic_mode: bool = true
+var cinematic_layer: CanvasLayer
+var bar_top: ColorRect
+var bar_bottom: ColorRect
+var gameplay_label: Label
 
 func update_objective_based_on_state() -> void:
 	if not has_node("/root/ObjectiveHUD"):
@@ -65,6 +72,7 @@ func _ready() -> void:
 	await get_tree().process_frame
 	
 	setup_transition_ui()
+	setup_cinematic_ui()
 	
 	if Dialogic.has_signal("timeline_started"):
 		Dialogic.timeline_started.connect(_on_dialogue_started)
@@ -250,6 +258,8 @@ func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):
 		get_node("/root/ObjectiveHUD").hide_hud()
 	
+	set_mode_cutscene()
+	
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
@@ -257,7 +267,9 @@ func _on_dialogue_started() -> void:
 func _on_dialogue_ended() -> void:
 	if has_node("/root/ObjectiveHUD"):
 		get_node("/root/ObjectiveHUD").show_hud()
-		
+	
+	set_mode_gameplay()
+	
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("unlock_movement"):
 		player.unlock_movement()
@@ -369,3 +381,58 @@ func pulang_malam(target_scene: String) -> void:
 	
 	# Langsung trigger dialog malam
 	Dialogic.start("hari3_malam_kamar")
+
+# ==============================================================================
+# CINEMATIC UI (GAMEPLAY VS LOCK MODE)
+# ==============================================================================
+
+func setup_cinematic_ui() -> void:
+	if not use_cinematic_mode: return
+	
+	cinematic_layer = CanvasLayer.new()
+	cinematic_layer.layer = 98 
+	add_child(cinematic_layer)
+	
+	bar_top = ColorRect.new()
+	bar_top.color = Color.BLACK
+	bar_top.set_anchors_preset(Control.PRESET_TOP_WIDE)
+	bar_top.offset_top = -80
+	bar_top.offset_bottom = 0
+	cinematic_layer.add_child(bar_top)
+	
+	bar_bottom = ColorRect.new()
+	bar_bottom.color = Color.BLACK
+	bar_bottom.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
+	bar_bottom.offset_top = 0
+	bar_bottom.offset_bottom = 80
+	cinematic_layer.add_child(bar_bottom)
+	
+	gameplay_label = Label.new()
+	gameplay_label.text = "? Gameplay"
+	gameplay_label.add_theme_color_override("font_color", Color(0.2, 0.9, 0.3, 1.0))
+	gameplay_label.add_theme_color_override("font_outline_color", Color.BLACK)
+	gameplay_label.add_theme_constant_override("outline_size", 6)
+	gameplay_label.add_theme_font_size_override("font_size", 22)
+	gameplay_label.position = Vector2(20, 20)
+	cinematic_layer.add_child(gameplay_label)
+
+func set_mode_gameplay() -> void:
+	if not use_cinematic_mode or not is_instance_valid(cinematic_layer): return
+	
+	var tween = create_tween().set_parallel(true)
+	tween.tween_property(gameplay_label, "modulate:a", 1.0, 0.5)
+	tween.tween_property(bar_top, "offset_top", -80, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_top, "offset_bottom", 0, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_bottom, "offset_top", 0, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_bottom, "offset_bottom", 80, 0.8).set_trans(Tween.TRANS_SINE)
+
+func set_mode_cutscene() -> void:
+	if not use_cinematic_mode or not is_instance_valid(cinematic_layer): return
+	
+	var tween = create_tween().set_parallel(true)
+	tween.tween_property(gameplay_label, "modulate:a", 0.0, 0.5)
+	tween.tween_property(bar_top, "offset_top", 0, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_top, "offset_bottom", 80, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_bottom, "offset_top", -80, 0.8).set_trans(Tween.TRANS_SINE)
+	tween.tween_property(bar_bottom, "offset_bottom", 0, 0.8).set_trans(Tween.TRANS_SINE)
+
