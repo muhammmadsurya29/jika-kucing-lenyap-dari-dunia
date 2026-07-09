@@ -1,18 +1,20 @@
 label pagi_bangun
 [signal arg="update_objective:Cari Kubis! Periksa sekitar Mesin Cuci"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/bangun tanpa kubis.png" fade="1.0"]
 narator: Pagi hari, matahari menembus jendela apartemen. Mencari sosok kubis.
 narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keputusan untuk menghilangkan kucing dalam keadaan setengah mimpi?
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://" fade="1.0"]
 narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buku, di bawah tempat tidur, di dalam kamar mandi, ia tidak ada.
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="event_selesai"]
 [end_timeline]
 label cek_mesin_cuci
+[background arg="res://assets/backgrounds/HARI 4/cek mesin cuci.png" fade="1.0"]
 [signal arg="update_objective:Coba cari di dekat Jendela"]
 narator: Tidak ada juga.
 [end_timeline]
 label cek_jendela
+[background arg="res://assets/backgrounds/HARI 4/mengecek jendela.png" fade="1.0"]
 [signal arg="update_objective:Sepertinya Kubis keluar kamar. Keluar lewat Pintu Utama!"]
 narator: Tidak ada juga.
 [signal arg="suara_meong"]
@@ -21,19 +23,21 @@ mc: Kubis!
 [end_timeline]
 label cek_parkiran
 [signal arg="update_objective:Cari Kubis di Taman Bukit"]
+[background arg="res://assets/backgrounds/HARI 4/mencari kubis di mobil van putih.png" fade="1.0"]
 narator: Tidak ada kubis.
 [signal arg="teleport_ke_taman_bukit"]
 [end_timeline]
 label cek_taman_bukit
 [signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
+[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_28_25 AM.png" fade="1.0"]
 narator: Bahkan di taman pun tidak ada.
 [signal arg="teleport_ke_taman"]
 [end_timeline]
 label cek_soba
 narator: Tak ada juga. ‘Kubis!’, ‘Kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_32_03 AM.png" fade="1.0"]
 narator: Sungguhkah ia sudah lenyap? Apakah aku sudah menghilangkan kubis dari dunia ini? Kubis, apa aku tidak bisa bertemu denganmu lagi? Kehangatanmu yang lembut nan nyaman, ekormu yang berayun-ayun, telapak kakimu yang tebal dan kenyal, detak jantungmu yang berdetak halus. Apakah aku tidak bisa menyentuhmu lagi? Ibu. Selada. Aku tidak mau ditinggalkan lagi.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://" fade="1.0"]
 narator: Aku sudah menghilangkan kucing, kubis, dari dunia ini.
 [signal arg="suara_meong"]
 [wait time="1.0"]
@@ -44,14 +48,14 @@ narator: Mimpi atau kenyataan?
 label bioskop_puncak
 [signal arg="update_objective:Beres-beres kamar untuk terakhir kalinya"]
 [signal arg="suara_meong"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
 narator: Keempukannya terasa pada seluruh lenganku. Dengan lembut dan nyaman kehangatnnya meresap ke dalam tubuhku. Nyawa.
 mantan: Aku kaget karena tiba-tiba si kubis datang.
 mc: Terima kasih. Aku benar-benar bersyukur.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/memeluk kubis.png" fade="1.0"]
 mantan: Lagi-lagi kamu menangis. Kebiasaanmu memang gampang menangis itu tetap sama, ya, sejak dulu. Ini pasti karena ibumu.
 mc: Apa maksudmu?
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 12_15_52 PM.png" fade="1.0"]
 mantan: Sudah lama surat itu dititipkan padaku dari ibumu.
 mc: Dari ibu?
 mantan: Ya. Waktu ibu diopname, aku menjenguknya dan surat itu dititipkan kepadaku.
@@ -61,32 +65,32 @@ mc: Ternyata begitu, ya.
 mantan: Aku menolak sebenarnya. Karena kita kan sudah putus. Tapi, kata ibu, tidak apa-apa kalau surat ini tidak sampai di tanganmu. Cukup sudah kalau seseorang menyimpan surat itu. Begitu. Hari ini si kubis datang ke sini dan melihat kamu yang menangis, aku pikir inilah saatnya.
 mc: Saatnya apa?
 mantan: Waktunya kamu benar-benar mengalami kesulitan atau kesedihan. Ibumu memang keren tanpa tandingan.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/sedih membca surat ibu.png" fade="1.0"]
 narator: Pada halaman pertama tertulis besar-besar dengan huruf yang indah ‘10 hal yang ingin kulakukan sebelum mati’. Malah terdengar seperti antiklimaks ini. Kami, ibu dan anak, melakukan hal yang sama ternyata.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Surat yang berharga ini tidak boleh kubasahi dengan air mata. Ketika aku kena flu, ibu yang mengelus-elus punggungku. Ketika aku tersesat di taman dan menangis, ibu berlari datang dan memelukku erat-erat. Ketika aku mau kotak makan siang berwarna mencolok seperti yang dimiliki anak-anak lain, ibu mencarinya di berbagai toserba sepanjang hari.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Ibu yang selalu menutupi tubuhku dengan selimut saat aku berguling-guling dalam tidur.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Ibu yang selalu membuatkan ku telur dadar yang manis dan enak.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Ibu yang selalu membelikanku pakaian, tapi jarang sekali membeli pakaian untuk dirinya sendiri.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Karcis pijat bahu yang kuhadiahkan pada hari ulang tahun ibu. Ibu tidak mau memakainya. ‘Terlalu sayang untuk dipakai’ katanya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Ibu membelikan piano dan selalu memainkan lagu kesukaanku. Meski ibu kurang pandai dan selalu salah di bagian yang sama. Ibu. Apakah ibu punya hobi? Apakah ada waktu untuk diri sendiri? Apakah ada hal yang ingin ibu lakukan dan cita-cita ibu untuk masa depan? Merasa agak malu, aku belum pernah membelikan ibu bahkan setangkai bunga pun. Kenapa, kenapa aku tidak melakukan hal segampang itu? Kenapa, kenapa waktu itu aku tidak bisa membayangkan ibu akan hilang dari dunia suatu saat nanti?
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Ibu, aku tidak mau mati. Aku takut mati. Tapi, apa yang ibu katakan itu benar jika kita mau memperoleh sesuatu, harus kehilangan sesuatu. Namun ibu, bukankah hidup akan lebih susah dengan merenggut sesuatu?
 kubis: Gusti patih, jangan bersedih lagi.
 mc: Tidak bisa, kubis.
 kubis: Sahaya ingin gusti patih tetap hidup. Sulit bagi sahaya kalau hidup terus di dunia tanpa gusti patih.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Seumur hidup sampai hari ini, aku tidak pernah menyangka akan dibuat menangis oleh omongan kucing. Namun, walaupun kubis tidak bisa bicara bahasa manusia dan hanya bersuara meong, isi hatinya sampai kepadaku.
 kubis: Sahaya mohon gusti patih jangan menangis. Dibandingkan hal-hal yang telah gusti patih hilangkan selama ini, sahaya ini merupakan hal yang sepele, tuanku.
 mc: Bukan itu persoalannya, kubis. Bukan begitu.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Jika kucing lenyap dari dunia. Jika selada, kubis, dan ibu tiada. Aku yang bodoh dan tak tahu apa-apa tidak pernah bisa bayangkan hal itu. Tapi sekarang aku tahu. Selalu ada alasan mengapa sesuatu berada di dunia, tapi tak ada lagi alasan apapun mengenai sesuatu harus hilang dari dunia. Aku membulatkan hatiku. Dan kubis pasti memahami hatiku itu lebih baik daripada siapapun.
 kubis: Isi hati gusti patih sudah sahaya paham, tuanku.
 mc: Terima kasih, kubis.
@@ -95,26 +99,26 @@ mc: Untuk terakhir kalinya?
 kubis: Sahaya ingin gusti patih memejamkan mata.
 mc: Kenapa?
 kubis: Sudahlah. Pokoknya pejamkan mata, tuanku.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: ”Pejamkanlah matamu pelan-pelan dan tersenyumlah, jika masih belum bisa merasakan apa-apa, coba lagi pelan-pelan”, kata ibu sambil tersenyum saat itu. Kubis sedang mengingatkanku pada sihir ibu. Setiap aku merasa sedih, sihir ibu selalu berhasil membuatku tersenyum kembali. Sihir ibu memang tidak ada duanya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 kubis: Meong, meong, meong.
 mc: Aku senang karena bisa berbicara denganmu, kubis. Pada saat yang terakhir. Mungkin ini juga sihir ibu. Selamat tinggal, kubis. Terima kasih banyak selama ini.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Dadaku terasa sakit bagai disengat duri kecil setelah membaca surat dari Ibu. Seharusnya bagaimana? Masih ada satu hal yang harus kulakukan pada akhir hayatku. Ya, di bagian terakhir dalam surat itu tertulis begini “semoga kamu dan ayahmu hidup rukun”. Apakah aku bahagia atau tidak? Hanya satu hal yang aku tahu. Hanya dengan pemikiran sendiri, orang bisa jadi sebahagia-bahagianya atau bisa jadi semalang-malangnya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 aloha: Aduhhhh! Kemana saja, sih? Kukira kamu sudah diculik Tuhan, makanya hampir saja aku menanyai tuhan. Eh, tapi boong. Hahahahhaa.
 mc: Maaf.
 aloha: Oh, tidak apa-apa kok. Jadi, kita langsung menghilangkannya saja ya?
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc: Tidak jadi.
 aloha: Apa?
 mc: Tidak jadi menghilangkan kucing!
 aloha: Betulan?
 mc: Betulan.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 aloha: Apanya yang lucu? Kamu akan mati. Apa boleh?
 mc: Boleh. Sudah, aku tidak akan menghilangkan apapun.
 aloha: Kamu semestinya hidup lebih lama lagi.
@@ -123,7 +127,7 @@ aloha: Lagi-lagi aku kalah dengan Tuhan. Dasar manusia!
 mc: Kenapa?!
 aloha: Oh, tidak apa-apa, kok. Aku mengaku kalah. Silahkan mati saja!
 mc: Jangan ngomong begitu, dong! Walaupun betul aku memang akan mati.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc: Jadi sudah saat nya untuk berpisah, ya.
 aloha: Emm… iyaa….
 mc: Aku kesepian, agaknya.
@@ -146,18 +150,18 @@ mc: Apa aku benar begini?
 aloha: Jangan tanya soal itu padaku.
 mc: Apa aku akan menyesal nanti saat mati?
 aloha: Pasti kamu menyesal. Aku mau hiduuuuup! Panggilkan kembali iblis ituuuu! Hahahahahha. Manusia memang makhluk yang suka memandang kehidupan yang tidak jadi dipilih daripada kehidupan yang sudah dipilih, dan akibatnya iri atau menyesal melulu.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Manusia yang berpikiran mungkin dirinya akan mati besok bisa hidup sepenuhnya selama sisa waktu yang mereka miliki. Ada orang yang mengatakan demikian. Tapi kukira itu kebohongan. Sekaligus menyadari kematiannya, orang akan terus menerus menyesuaikan harapan untuk hidup dengan kematian. Namun, bagiku yang pernah mendapatkan hal untuk menghilangkan sesuatu dari dunia, justru penyesalan itulah yang tampak indah. Karena itulah bukti bahwa aku hidup selama ini.
 narator: Jika aku lenyap dari dunia.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Kucing tidak jadi hilang dari dunia. Berarti aku akan hilang dari dunia. Jika aku lenyap dari dunia. Aku membayangkan. Seberapa malang kah keadaan itu? Manusia mana pun akan mati suatu saat. Angka fatalitasnya 100 persen. ‘Untuk memperoleh sesuatu, harus kehilangan sesuatu’ aku ingat selalu kata-kata ibu. Sebagai ganti nyawaku, aku sudah menghilangkan telepon, film, dan jam dari dunia. Tapi aku tidak menghilangkan kucing.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Aku tidak bisa menganggap kehidupanku bahagia kalau aku merenggut sesuatu dari seseorang demi mempertahankan nyawaku. Seandainya sesuatu itu matahari, laut, atau udara, sama saja dengan kucing, menurutku. Karena itulah aku tidak mau lagi menghilangkan sesuatu dari dunia. Aku, dengan caraku sendiri, memutuskan untuk menerima waktu hidupku. Dan tak lama lagi, aku akan mati.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Dalam hidupku, aku ingin hidup sesuai jati diriku tapi ternyata tidak bisa. Dalam hidupku, aku bahkan tidak bisa menemukan jati diriku yang sesungguhnya. Kegagalan dan penyesalan yang tak terhitung jumlahnya, impian yang tak dapat dicapai, orang yang ingin kutemui, makanan yang ingin kumakan, dan tempat yang ingin kutuju. Tapi, sudah cukup bagiku seperti itu. Aku bisa menerima dan merasa puas dengan diriku saat ini. Tidak di suatu tempat yang bukan disini, tapi di sinilah aku berada dan kini aku bisa bersyukur karenanya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Aku yang dinyatakan waktuku tinggal sedikit saja, iblis yang muncul dihadapanku untuk menambah nyawa satu hari. Tapi bukankah kasusku ini sama seperti apel yang muncul di depan mata adam dan hawa? Mungkin ini lanjutan pertaruhan agung antara tuhan dan iblis. Tapi aku tidak bisa menghilangkan kucing dan memutuskan untuk menghilangkan diriku. Tak lama lagi akan tiba hari istirahat bagiku.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 aloha: Pada saat yang benar-benar terakhir, kamu menyadari siapa yang bermakna besar dan apa yang berharga tak ada duanya bagimu sehingga dapat mengetahui betapa indahnya hidup di dunia ini. Setelah satu kali putaran berkeliling dunia, kamu melihat dunia dari sudut pandang yang baru dan sadar bahwa meskipun dunia itu terdiri dari hari-hari membosankan, tetap indah lebih dari cukup. Mungkin itu saja sudah membuat kedatanganku ke sini cukup berarti.
 mc: Tapi, aku akan mati sebentar lagi.
 aloha: Memang begitu. Tapi satu hal yang pasti karena sekarang kamu dapat menyadari soal itu, kamu pasti bahagia.
@@ -167,26 +171,26 @@ mc: Memang begitu.
 aloha: Karena itulah, cepat atau lambat itu tidak perlu dipikirkan.
 mc: Kata-kata yang bijaksana sekali.
 aloha: Oh jelas. Layanan istimewa untuk kesempatan terakhir! Lakukanlah semua hal yang masih ingin kamu lakukan sampai tuntas pada akhir hayatmu. Sudah habis waktunya. Selamat tinggal!
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Aloha mengucapkan perpisahan dengan begitu enteng.
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="day4_ke_kamar_beres2"]
 [end_timeline]
 label beres_beres
 [signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres kamar.png" fade="1.0"]
 narator: Kemudian aku akan mulai merapikan sekelilingku. Persiapan untuk mati.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres.png" fade="1.0"]
 narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak bisa kubuang sampai hari ini. Keping-keping hidupku yang timbul tenggelam. Seandainya aku menghilangkan barang-barang begini, apakah aloha akan memberiku nyawa? Walaupun terlintas begitu di pikiranku, aku lega karena “aku sudah tidak usah menghilangkan apapun lagi”.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
 narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
 [signal arg="set_day4_state:beres_beres_selesai"]
 [end_timeline]
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
 narator: Aku berkonsultasi dengan petugas penjualan dan promosi kantor di pengurus pemakaman. Altar, peti, jenazah, bunga, foto, guci untuk menyimpan sisa tulang kremasi, papan memori, mobil jenazah dan kremasi. 1.500.000 yen. Aku memberi harga pada kematianku sendiri.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
 narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Orang-orang seperti apakah yang akan berkumpul di situ? Teman-teman lama? Pacar masa lalu? Kerabat? Guru? Atau para kolega? Di antara mereka berapa orang yang betul-betul bersedih atas kematianku? Dan bagaimana mereka menceritakan tentang hidupku?
 [background arg="hitam.png" fade="1.0"]
 narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
@@ -194,19 +198,17 @@ narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumb
 [end_timeline]
 label ending_surat
 [signal arg="update_objective:Tamat"]
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
 narator: Kenangan bersama ayahku. Waktu aku masih kecil, ayahku membelikan aku lembaran seri perangko Olimpiade. Kecil, berwarna-warni dan terlalu sayang untuk dipakai. Perasaan yang tak ada duanya. Karena ayahku pendiam, hadiah ‘perangko’ merupakan satu-satunya ‘percakapan’ antara aku dan dia. Terkadang aku dibuat tertawa karena lelucon ayahku yang langka karena di dalam perangko itu seekor kucing sedang menguap, mirip selada. Aku senang sekali dan merendam kartu pos itu di dalam air semalaman untuk melepas perangkonya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
 narator: Aku ingat sekarang. Karena aku suka ini, aku pun bekerja sebagai tukang pos. Menempelkan perangko dan mengirim surat. Menyampaikan kabar. Pasti itulah napas yang hangat. Semakin banyak kuembuskan, semakin hangat diriku. Perasaan yang kusampaikan akan membawaku sendiri ke tempat yang hangat, tenang, dan bahagia. Suatu saat nanti, kita jumpa lagi di situ.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kotak yokumoku.png" fade="1.0"]
 narator: Ya. Aku harus menulis surat. Dalam waktuku yang tersisa. Kata-kata yang tak terhitung jumlahnya, ucapan salam yang tidak jadi diucapkan, perasaan yang tidak dapat disampaikan. Orang yang akan kukirimi surat ini adalah orang yang akan kutitipi kubis. Tak ada orang selain dia. Tak ada apapun selain dia. Jawabannya sudah lama ada di dalam diriku. Tapi selama ini aku tidak bisa mengakuinya.
-[background arg="hitam.png" fade="1.0"]
 narator: Surat pertama dan terakhir kepada ayahku. Akan jadi wasiat yang panjang sekali. Tapi ada banyak hal yang harus kusampaikan. Tentang beberapa hal ajaib ini. Tentang ibu. Tentang kubis. Tentang aku.
-[background arg="hitam.png" fade="1.0"]
 narator: Hari ini. Ayah. Aku ingin bertemu dengan ayah selama ini. Bertemu dengan ayah dan ingin mengucapkan maaf, mengucapkan terima kasih dan mengucapkan selamat tinggal.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/mulai sepeda.png" fade="1.0"]
 narator: Pedalnya terasa berat. Griik, griik, griik tubuh sepeda tua mengerik.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
 narator: Aku akan kesana. Ke tempat ayahku. Di kota sebelah. Kota itu sudah di depan mata.
 [signal arg="tamat"]
 [end_timeline]

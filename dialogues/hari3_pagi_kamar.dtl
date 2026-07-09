@@ -1,20 +1,20 @@
-[background arg="kamar_bengong.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 dialog kubis/Dibangunkan Kubis Day3.png" fade="1.0"]
 kubis: Sampai kapankah tidur terus, tuanku?
 narator: Aku masih di alam mimpi. Suara itu terasa asing tapi dekat.
 kubis: Cepat bangun, tuanku! Sahaya sudah menunggu lama.
 mc: Hah?! Kubis? Kamu... bicara?!
 [signal arg="aloha_datang"]
 aloha: Kejutan! Bagus kan bonus dariku? Karena telepon dan film sudah hilang, kupikir kau butuh teman mengobrol. Karena aku adalah sang iblis jadi aku bisa melakukan apapun dengan sihir. Hahahahaha
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/dibangunkan kubis pagi.png" fade="1.0"]
 mc: Ini merepotkan! Bisakah kamu batalkan? Aku tidak terbiasa kucingku bicara dengan bahasa sejarah begini.
 aloha: Ya bisa sih... tapi kapan-kapan! Benar. Kapankah itu? Hanya Tuhan yang tahu, hahaha!
-[background arg="kucing_jilat.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
 [signal arg="aloha_serius"]
 aloha: Ngomong-ngomong, kau ingat apa yang hilang hari ini?
 mc: Semuanya tampak sama saja... apa yang hilang?
 aloha: Jam. Hari ini, Jam lenyap dari dunia.
-[background arg="flashback_ayah.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/flashback ayah.png" fade="1.0"]
 narator: Betul. Aku sudah menghilangkan jam. Kalau jam lenyap dari dunia, toko jam pun tidak diperlukan lagi. Bagaimana dengan pekerjaan ayahku? Seketika dadaku nyeri. Aku menyesal atas apa yang telah aku perbuat. Namun, benarkah jam sudah lenyap dari dunia? Ponsel juga sudah hilang. Betul-betul tidak tahu jam berapa sekarang. Mengapa rasanya tidak nyata begini?
-[background arg="" fade="1.0"]
 mc: Ngomong-ngomong kenapa jam itu ada?
 aloha: Pertanyaan bagus. Sebenarnya waktu itu hanya ada untuk manusia. Maksudnya waktu itu sekadar aturan yang ditentukan semena-mena oleh manusia. Matahari terbit dan terbenam. Siklus itu memang ada sebagai gejala alam, tapi yang menyebutnya dengan waktu seperti jam 6, jam 12 itu hanya manusia.
 mc: Benar juga.
@@ -24,7 +24,7 @@ aloha: Pokoknya, jalanilah hidup seharian yang menyenangkan!
 [signal arg="aloha_hilang"]
 [wait time="1.0"]
 narator: Ketika aku mengetahui waktuku tinggal amat sedikit, aku pikir seharusnya menganggap 1 jam yang sedang kulewati bukan sebagai 60 menit, melainkan sebagai 3600 detik. namun setelah jam lenyap, anggapan seperti itu sendiri sudah tak ada artinya. Biar bagaimanapun, saat ini aku tidak punya apa-apa yang harus dikerjakan. Untuk membuang waktu pun tak ada lagi waktu untuk dibuang. Kalau dipikir baik-baik, manusia tidur, bangun, bekerja, dan makan diatur sesuai dengan jam. Ada aturan berarti kebebasan menjadi terbatas. Namun, manusia meletakkan nya di dinding bahkan akhirnya melilitkan pada pergelangan tangan. Sekarang aku bisa memahami itu dengan baik. Kebebasan yang disertai kegelisahan. Sebagai gantinya kehilangan kebebasan, manusia memperoleh ketenangan sebab adanya aturan.
-[background arg="kucing_pangkuan.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/mengelus kubis.png" fade="1.0"]
 mc: Kenapa Kubis? Sudah lapar ya?
 kubis: Tidak juga, tuanku.
 mc: Apa?
@@ -36,6 +36,6 @@ narator: Aku terpukul. Selama empat tahun hidup bersama kubis, aku sendiri meras
 mc: Maafkan aku, Kubis. Lalu sekarang apa yang mau kamu lakukan?
 kubis: Mau pergi jalan-jalan.
 mc: Tunggu sebentar aku siap-siap dulu.
-[background arg="" fade="1.0"]
+[background fade="1.0"]
 [signal arg="boleh_keluar"]
 [end_timeline]

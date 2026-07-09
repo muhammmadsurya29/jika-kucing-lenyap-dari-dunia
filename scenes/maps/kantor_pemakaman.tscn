@@ -6658,10 +6658,10 @@ texture = ExtResource("3_4mwsf")
 sources/0 = SubResource("TileSetAtlasSource_oaa3f")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_default"]
-size = Vector2(98, 10.5)
+size = Vector2(56, 16.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pintu"]
-size = Vector2(500, 40)
+size = Vector2(396, 40)
 
 [node name="KantorPemakaman" type="Node2D" unique_id=1048115205]
 position = Vector2(-158, -17)
@@ -6691,7 +6691,7 @@ script = ExtResource("3_stry")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:pemakaman"])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerPemakaman" unique_id=1542961495]
-position = Vector2(-170, -35)
+position = Vector2(-164, -42.125)
 shape = SubResource("RectangleShape2D_default")
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=1749327671]
@@ -6700,5 +6700,5 @@ script = ExtResource("scene_trans")
 target_scene = "res://scenes/maps/kamar_mc.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1327366721]
-position = Vector2(-2, 0)
+position = Vector2(-54, 0)
 shape = SubResource("RectangleShape2D_pintu")

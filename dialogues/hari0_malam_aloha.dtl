@@ -14,10 +14,11 @@ aloha (datar): "Mari aku lihat 10 keinginan mu itu (sambil memegang selembar ker
 narator: "(memberikan selembar kertas berisi daftar 10 keinginan sebelum mati)"
 narator: "Aku malu. Inilah hasil memeras otakku. Rasanya kucing kesayangan ku juga terlihat putus asa tak mau mendekatiku."
 aloha (serius): "Apa-apaan ini? Memang nya kamu anak SMP ? Ih rasanya aku ikutan malu deh. Huhh kalo gitu coba kita lakukan nomer 1, skydiving dulu."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/skydiving.png" fade="1.0"]
 narator: "Iblis itu menepuk tangan nya dan tiba-tiba aku sudah berada di atas pesawat jet dengan ketinggian 3000mdpl. Dia mendorong ku terjun dari langit sambil ketawa terbahak-bahak. Bahkan belum terjun aku sudah mual,dingin,mabuk dan takut. Apakah benar aku ingin melakukan hal semacam ini? Lagi-lagi pandangan ku menjadi gelap gulita."
-[background fade="1.0"]
+[background arg="res://assets/backgrounds/pingsan.png" fade="1.0"]
 narator: "meong... lagi-lagi aku dibangunkan oleh suara meong kucingku. Aku bangkit. Kepalaku nyeri. Rupanya ini bukan mimpi."
+[background fade="1.0"]
 mc (malu_malu): "maaf merepotkan"
 aloha (ngejek): (tertawa) "kamu hampir saja mati betulan. Memang iya sih kamu akan mati sebentar lagi"
 narator: "dengan membisu aku memeluk kucingku. Hangat dan empuk. Sentuhan lembut nan nyaman. Selama ini aku memeluknya tanpa memerhatikan apa-apa. Tapi kini aku sadar bahwa inilah yang disebut nyawa."
@@ -50,9 +51,11 @@ mc: "orang ke-108?"
 narator: "tawaran konyol dan tak masuk akal. Namun tanpa peduli aku percaya atau tidak, pertaruhan ini tidak bisa dilewatkan begitu saja. Bagaimanapun aku akan mati tak lama lagi. Aku tidak punya pilihan."
 mc: "Baiklah, aku setuju. Aku mau menghilangkan... jamur di kamar mandi, atau bangkai tikus di loteng!"
 aloha: (Tertawa lepas) "Kau pikir aku tukang bersih-bersih? Aku yang menentukan. Apa yang akan dihilangkan dan juga tidak, Tergantung suasana hatiku."
+[background arg="res://assets/backgrounds/coklat diatas meja.png" fade="1.0"]
 aloha: "Apa ini? Mari kita mulai dengan menghilangkan kotak cokelat ini. Kau setuju?"
 mc: "anu.. itu namanya cokelat, kau harus membukanya terlebih dahulu untuk memakan apa yang ada didalam nya"
 - YA
+[background fade="1.0"]
 aloha: "Hmm! Manis, pahit, dan meleleh sempurna! Aku berubah pikiran. Aku terlalu menyukai ini. Tidak mungkin menghilangkan makanan seenak ini!"
 mc: "Waduhh..tidak bisa begitu dong! Ini menyangkut nyawaku."
 aloha: "Eh? Sepertinya sekarang kamu mulai menyayangkan nyawamu?"
@@ -62,7 +65,7 @@ mc: "(murung) benar-benar tidak adil!"
 aloha: "Hei!hei! Jangan murung gitu dong, aku akan memikirkan hal lain sekarang juga."
 audio "res://assets/audio/ringtone.mp3"
 narator: "(Ponselku berdering. Dari kantor pos tempat kerja ku.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
+[background arg="res://assets/backgrounds/ponsel.png" fade="0.0"]
 narator: "(Aku melihat jam, sudah lama lewat jam masuk kerja. Yang menelpon adalah kepala kantor pos. Ia kesal karena aku terlambat kerja namun tetap mengkhawatirkan ku karena tau kemaren aku pulang cepat untuk pergi kerumah sakit. Dan akhirnya aku berhasil diizinkan tidak masuk kantor selama seminggu.)"
 [background fade="0.0"]
 aloha: "itu...!"

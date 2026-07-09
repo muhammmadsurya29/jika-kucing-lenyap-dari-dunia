@@ -1,11 +1,11 @@
-[background arg="taman_bukit.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/kubis ngusir kakek.png" fade="1.0"]
 kubis: Mohon minggir tuan-tuan.
 narator: Aku sempat was-was mereka akan panik melihat kucing berbicara dan tiba-tiba muncul di depan mereka, tapi kedua lansia itu hanya tertawa dan seorang biasa dengan gangguan kucing.
 mc: Eh, tidak boleh, kubis. Bangku ini sedang dipakai bapak-bapak ini.
 kubis: Sahaya mau duduk di tempat ini tuanku.
-[background arg="kucing_acak_catur.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/kubis ngusir kakek.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/duduk di bangku biru.png" fade="1.0"]
 [signal arg="mc_duduk"]
 [wait time="1.0"]
 kubis: Ngomong-ngomong, manusia itu betul-betul makhluk aneh ya, tuanku.
@@ -18,21 +18,21 @@ mc: Ngomong-ngomong, ibu hebat ya. Menemanimu setiap hari jalan-jalan begini. Pa
 kubis: Ibu? Ibu itu siapakah gerangan, tuanku?
 mc: Ya, ibuku. Ibumu juga. Benar-benar kamu tidak ingat ibu?
 kubis: Siapakah itu, tuanku?
-[background arg="mc_syok.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/duduk sedih di taman bukit.png" fade="1.0"]
 narator: Aku kehilangan kata. Kubis menatapku polos. Rupanya Kubis benar-benar tidak ingat. Aku sedih. Lebih tepatnya terluka. Satu-satunya saksi hidup tentang kasih sayang Ibu telah kehilangan ingatannya. Di lubuk hatiku aku percaya cerita bahwa hewan takkan melupakan majikannya. Apakah itu sebenarnya hanya khayalan manusia terhadap hewan? Apakah kubis juga akan melupakanku? Apakah suatu saat nanti akan datang hari ketika aku hilang dari dunia kubis? Waktu yang sudah kulewatkan begitu saja selama ini terasa amat berharga bagiku. Tinggal berapa kali lagi aku bisa menyambut pagi bersama kubis? Tinggal berapa kali aku bisa mendengarkan lagu kesayanganku? Tinggal berapa kali aku bisa minum kopi? Tinggal berapa kali aku makan, mengucapkan selamat pagi, bersin, dan tertawa? Selama 30 tahun hidupku ini, pernahkah aku melakukan sesuatu yang benar-benar penting?
-[background arg="mc_bengong_pangku_kubis.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/duduk sedih di taman bukit.png" fade="1.0"]
 narator: Semakin sibuk dikejar hal-hal yang ada di depan mata, aku semakin kehilangan waktu untuk melakukan hal yang benar-benar penting. Dan gawatnya, kita sama sekali tidak sadar telah kehilangan waktu yang berharga itu.
-[background arg="mc_pusing.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Aku belum mau mati. Aku masih ingin hidup. Besok aku harus menghilangkan sesuatu lagi dari dunia ini. Demi nyawaku, aku merenggut sesuatu dari masa depanku.
 kubis: Mari kita pergi, Gusti Patih.
-[background arg="kedai_mie_soba.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 narator: Rupanya kubis adalah kucing populer di pertokoan itu. Dia selalu disapa orang di tempat yang ia singgahi. Padahal, aku Gusti Patih. Namun ada satu hal yang baik, diskon kucing. Berkat kepopulerannya aku bisa membeli sayur, ikan, lauk siap saji dengan diskon khusus. Sulit dipercaya.
-[background arg="jalan_pulang.png" fade="1.0"]
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc: Mulai sekarang aku akan berbelanja denganmu, Kubis.
 kubis: Boleh, tuanku. Tapi mohon dibuatkan makanan kesukaan sahaya dengan benar.
 mc: Aku selalu begitu, kan? Neko manma.
 kubis: Apa itu neko manma, tuanku?
 mc: Itu sekedar sisa makanan manusia yang dipaksa diberi nama segala.
-[background arg="" fade="1.0"]
+[background fade="1.0"]
 [signal arg="ganti_hari_langsung"]
 [end_timeline]

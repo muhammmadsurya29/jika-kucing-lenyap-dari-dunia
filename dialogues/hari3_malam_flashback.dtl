@@ -1,29 +1,27 @@
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc dan ibu sedih.png" fade="1.0"]
 narator: Apakah selada ingin ditolong? Aku dan ibu tak bisa berbuat apa-apa. Yang bisa kulakukan hanya menatapnya. Selada berulang-ulang berusaha untuk berdiri, tetapi langsung terjatuh.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/zoom salada sakit.png" fade="1.0"]
 narator: Waktu tidurnya semakin panjang. Ia bahkan sudah tidak bisa berdiri lagi. Aku membasahi mulutnya dengan cairan campuran Pocari sweat. Perlahan-lahan dia mengangkat kakinya yang tak bisa lagi bertumpu kukuh. Ia berjalan ke depan Ibu lalu terjatuh.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/ibu dan mc di ruang tv salada.png" fade="1.0"]
 narator: “Selada!” aku tak tahan lagi. Kuangkat tubuh selada. Tubuh yang lunglai kehabisan tenaga itu menggigil halus namun masih terasa hangat. Terasa jelas bahwa Selada kini berada di ambang hidup dan mati. Aku dilanda kebingungan, tak bisa memahami sebuah nyawa nyaris hilang di depan mata.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/ibu dan mc di ruang tv salada.png" fade="1.0"]
 mc: Selada! Selada!
 ibu: Biarkan dia tenang, nak. Akhirnya dia bisa pergi ke tempat tanpa derita.
 mc: Kamu menderita, kamu sakit. Maafkan aku, tak bisa berbuat apa-apa untukmu. Tapi, sudah. Sekarang kamu tidak menderita lagi.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc dan ibu sedih.png" fade="1.0"]
 narator: Selada sudah tiada. Aku termangu, menyentuh tubuh selada. Terasa masih hangat, namun tidak bergerak lagi. Kalung merah yang terbuat kulit yang dikenakan selada, tadinya terlihat ‘hidup’ kini terlihat seperti sekadar gumpalan merah kasar permukaannya. Ketika menyentuh kalung itu, kenyataan yang bernama kematian mendadak menerpaku, dan aku menangis seperti hendak muntah.
 [background arg="hitam.png" fade="1.0"]
 [signal arg="napas_tersengal"]
 narator: Aku terbangun dan mendapati air mataku berlinang. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/terbangun malam hari.png" fade="1.0"]
 narator: Dia masih ada. Syukurlah kubis masih ada disini. Teringat aloha tadi malam menawarkan untuk menghilangkan kucing. Bagiku saat ini sulit membayangkan hidup tanpa kubis. Empat tahun setelah ibu meninggal, kubis senantiasa menemaniku. Tak mungkin melenyapkannya. Lalu, harus bagaimana? Jika kucing lenyap dari dunia, apa yang diperoleh dan apa yang hilang di dunia bila kucing tiada?
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc tidur dengan kubis.png" fade="1.0"]
 narator: Wajah yang amat damai. Ia tak pernah membayangkan dirinya akan lenyap. Setiap kali ia terbangun dan berujar “mau makan, tuanku”. Namun jika menatap wajahnya lekat seperti ini, terlihat juga seolah ia berkata, ‘sahaya rela lenyap demi Gusti patih’.
 narator: Konon, konsep kematian hanya dimiliki oleh manusia. Bagi kucing tak ada ketakutan terhadap kematian. Karena itulah, manusia memelihara kucing sambil merasakan ketakutan dan kesedihan terhadap kematian meski itu perasaan yang hanya dialami manusia.
 narator: Padahal, manusia tahu kucing juga akan mati, bisa juga lebih dulu dari manusia. Meski begitu, manusia tetap memelihara kucing walaupun menyebabkan kesedihan tak tertahankan. Namun manusia tidak dapat bersedih di atas kematian diri sendiri. Tapi bukankah manusia mau bersama kucing untuk mengetahui sosok dirinya, masa depan dirinya, dan kematian dirinya yang takkan diketahui olehnya? Benar yang dikatakan oleh ibu. Bukan kucing yang membutuhkan manusia, manusia lah yang membutuhkan kucing.
-[background arg="hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc mengobrol dengan aloha.png" fade="1.0"]
 narator: Tubuhku. Tubuh mungilku yang dikuasai kematian. Dadaku yang berasa tergerus. Menciut bergetaran dan tanpa daya seperti yang kulihat pada Selada saat itu.
-[background arg="hitam.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="hitam.png" fade="1.0"]
 aloha: Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalo kamu mati kamu tak bisa menyayangi kucing. Dibandingkan dengan itu, apa yang akan hilang itu amat kecil.
 mc: Bisa tolong tunggu sebentar?
 aloha: Apanya yang sulit?

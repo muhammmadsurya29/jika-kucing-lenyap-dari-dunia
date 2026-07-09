@@ -1,9 +1,10 @@
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 1 otw taman/salon.png" fade="1.0"]
 narator: Sejujurnya aku enggan memberi tahu. Dia cinta pertamaku. Ya aku juga seorang lelaki biasa seperti para lelaki lain. Itu saja.
 
-[background arg="res://assets/backgrounds/hitam.png" fade="0.5"]
-narator: Kehidupan tanpa telepon. Rasanya seakan akan waktu mendadak memanjang vertikal dan ruang meluas secara horizontal. 
-narator: Menyaksikan suasana damai di dalam kereta ini, aku dibuat merasakan betapa cemerlangnya hasil keputusanku. Aku tidak hanya memperoleh nyawa satu hari tapi seperti membuat kebaikan untuk dunia. 
+[background arg="res://assets/backgrounds/DAY 1 otw taman/di kereta.png" fade="0.5"]
+narator: Kehidupan tanpa telepon. Rasanya seakan akan waktu mendadak memanjang vertikal dan ruang meluas secara horizontal.
+narator: Menyaksikan suasana damai di dalam kereta ini, aku dibuat merasakan betapa cemerlangnya hasil keputusanku. Aku tidak hanya memperoleh nyawa satu hari tapi seperti membuat kebaikan untuk dunia.
 narator: Namun, apakah telepon benar-benar lenyap dari dunia ini?
+[background fade="0.5"]
 
 [signal arg="teleport_ke_taman"]

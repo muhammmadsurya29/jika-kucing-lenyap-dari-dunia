@@ -95,11 +95,13 @@ func _on_body_exited(body: Node2D) -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if is_player_in_range and event.is_action_pressed("ui_accept"):
+		# Jika dialog sedang berjalan, abaikan input agar kotak trigger tidak terpicu ulang
+		if Dialogic.current_timeline != null:
+			return
+			
 		get_viewport().set_input_as_handled()
 		print("[DEBUG Interactable] Pemain menekan Space/Enter di area: ", self.name)
 		if timeline_name != "" or not timeline_per_hari.is_empty():
-			if not Dialogic.current_timeline:
-				print("[DEBUG Interactable] Mempersiapkan timeline...")
 			
 			# --- FITUR NPC MENGHADAP PLAYER ---
 			var player = get_tree().get_first_node_in_group("Player")

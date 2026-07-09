@@ -1,5 +1,7 @@
+[background arg="res://assets/backgrounds/DAY 2 dialog aloha/depan toko dvd.png" fade="1.0"]
 mc: Tsutaya!
 tsutaya: Su....sudah lama, ya. A.....ada apa?
+[background fade="1.0"]
 mc: Aku tau ini terlalu mendadak, tapi karena tidak ada waktu, aku langsung bilang saja. Aku kena kanker fase terminal, akan mati tak lama lagi. Bisa juga besok aku mati.
 tsutaya: Eh....k.....ko bisa?
 mc: Karena itu aku harus memilih film mana yang kutonton untuk terakhir kalinya sekarang juga. Karena itu Tsutaya, kawanku. Aku mohon bantu aku memilih satu film terakhir dalam hidupku.
@@ -9,10 +11,12 @@ mc: Iya, sayangnya.
 narator: Film Amazing Spiderman. Aku teringat ada line yang iconic "with great power, there must come great responsibility" mungkin aku juga begitu pikirku. Demi memperoleh nyawaku, aku menghilangkan sesuatu dari dunia. Disitu juga harus ada tanggung jawab yang besar. "May the force be with you" Terimakasih Star Wars. Wahai pasukan Jedi "I'll be back." The Terminator, aku juga ingin kembali kesini. "Dunia ini milikku" yang bener saja kau DiCaprio kau tidak mengerti apa-apa. "Life is beautiful!" bohong belaka. bagaimana aku ini? Aku masih bingung namun film-film rasanya menyemangatiku.
 [signal arg="tsutaya_kembali"]
 tsutaya: Ba..ba..bagaimana kalau ini?
+[background arg="res://assets/backgrounds/DAY 2 dialog aloha/bicara dengan tsutaya.png" fade="1.0"]
 mc: Limelight ya? Boleh juga, aku menyukai film-film Chaplin tapi yang ini belum sempat aku tonton.
 tsutaya: A..aku tak tau a...paa yang a..kan terjadi...
 mc: Kenapa?
 mc: Jangan sedih Tsutaya. Ada cerita yang bagus dan ada seseorang yang bisa kuceritai. Dengan itu saja hidup ini cukup menyenangkan. Dikatakan begitu dalam The Legend of 1900, kan? Bagiku sekarang, Tsutaya, kamulah seseorang itu. Karena kamu ada, aku juga bisa menganggap hidup ini cukup menyenangkan.
+[background fade="1.0"]
 tsutaya: Te..rima kasih.
 mc: Sampai jumpa.
 [signal arg="boleh_keluar"]
