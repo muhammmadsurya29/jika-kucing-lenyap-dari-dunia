@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://d4bo40hs7t252" path="res://assets/Tiles/exterior/5_Floor_Modular_Buildings_16x16.png" id="7_ykibj"]
 [ext_resource type="Texture2D" uid="uid://b2i124v65prls" path="res://assets/Tiles/exterior/18_Fire_Station_16x16.png" id="8_lymmu"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="lpdwmyu6"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mns6ss9t"]
+size = Vector2(40, 40)
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lq27n"]
 texture = ExtResource("2_sqsbl")
@@ -27798,3 +27802,13 @@ timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_parkir
 position = Vector2(0.53191495, 10)
 scale = Vector2(-0.0051305597, -0.0036799978)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
+
+
+[node name="KotakPos" type="Area2D" parent="."]
+position = Vector2(0, 0)
+script = ExtResource("lpdwmyu6")
+timeline_name = "alt_mengantar_surat"
+required_day = 99
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos"]
+shape = SubResource("RectangleShape2D_mns6ss9t")

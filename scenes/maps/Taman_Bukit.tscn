@@ -5,6 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_player"]
 [ext_resource type="PackedScene" uid="uid://d22b7ymumnxmy" path="res://scenes/characters/cat.tscn" id="3_kubis"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
+[ext_resource type="Script" path="res://scripts/interactable.gd" id="32c63joa"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_zyd4cgvj"]
+size = Vector2(40, 40)
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bunga"]
 size = Vector2(54.999805, 47.857063)
@@ -77,3 +81,13 @@ timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_taman_
 position = Vector2(-186, 285)
 scale = Vector2(0.0046445807, 0.004186348)
 polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
+
+
+[node name="BangkuBiru" type="Area2D" parent="."]
+position = Vector2(0, 0)
+script = ExtResource("32c63joa")
+timeline_name = "alt_taman_bukit"
+required_day = 99
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BangkuBiru"]
+shape = SubResource("RectangleShape2D_zyd4cgvj")
