@@ -9,6 +9,16 @@ class_name Interactable
 @export var requires_daily_event: bool = false
 @export var locked_timeline: String = ""
 
+@export_group("UI Tanda Pentung")
+@export var interact_icon: Texture2D
+@export var icon_hframes: int = 1
+@export var icon_vframes: int = 1
+@export var icon_frame: int = 0
+@export var icon_offset: Vector2 = Vector2(0, -32)
+
+var _icon_sprite: Sprite2D
+var _icon_tween: Tween
+
 # Variabel untuk AI Follower (Mengikuti)
 var is_following_player: bool = false
 var is_moving: bool = false
@@ -32,6 +42,18 @@ func _ready() -> void:
 	if sm:
 		sm.day_changed.connect(_on_day_changed)
 		_on_day_changed(sm.current_day) # Terapkan posisi dan visibilitas awal
+		
+	# Setup UI Tanda Pentung
+	if interact_icon:
+		_icon_sprite = Sprite2D.new()
+		_icon_sprite.texture = interact_icon
+		_icon_sprite.hframes = icon_hframes
+		_icon_sprite.vframes = icon_vframes
+		_icon_sprite.frame = icon_frame
+		_icon_sprite.position = icon_offset
+		_icon_sprite.visible = false
+		_icon_sprite.z_index = 50 # Di atas karakter
+		add_child(_icon_sprite)
 
 func _on_day_changed(new_day: int) -> void:
 	var index = new_day
@@ -87,11 +109,28 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		print("[DEBUG Interactable] Player masuk ke area: ", self.name)
 		is_player_in_range = true
+		
+		# Tampilkan tanda pentung jika ada
+		if _icon_sprite:
+			_icon_sprite.visible = true
+			if _icon_tween:
+				_icon_tween.kill()
+			_icon_sprite.position = icon_offset
+			_icon_tween = create_tween().set_loops()
+			_icon_tween.tween_property(_icon_sprite, "position:y", icon_offset.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
+			_icon_tween.tween_property(_icon_sprite, "position:y", icon_offset.y, 0.6).set_trans(Tween.TRANS_SINE)
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		print("[DEBUG Interactable] Player keluar dari area: ", self.name)
 		is_player_in_range = false
+		
+		# Sembunyikan tanda pentung
+		if _icon_sprite:
+			_icon_sprite.visible = false
+			if _icon_tween:
+				_icon_tween.kill()
+				_icon_tween = null
 
 func _unhandled_input(event: InputEvent) -> void:
 	if is_player_in_range and event.is_action_pressed("ui_accept"):
@@ -101,6 +140,14 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 		get_viewport().set_input_as_handled()
 		print("[DEBUG Interactable] Pemain menekan Space/Enter di area: ", self.name)
+		
+		# Sembunyikan tanda pentung saat dialog mulai
+		if _icon_sprite:
+			_icon_sprite.visible = false
+			if _icon_tween:
+				_icon_tween.kill()
+				_icon_tween = null
+				
 		if timeline_name != "" or not timeline_per_hari.is_empty():
 			
 			# --- FITUR NPC MENGHADAP PLAYER ---
