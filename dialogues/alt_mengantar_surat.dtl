@@ -1,0 +1,15 @@
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
+narator: "Mengantar Surat"
+narator: "Aku memasukkan surat-surat ke kotak pos umum, satu per satu."
+narator: "Untuk Ayah di kota sebelah. Untuk mantan di dekat bioskop tua. Untuk Tsutaya di toko DVD. Untuk kepala kantor pos yang marah-marah tapi tetap khawatir."
+narator: "Masing-masing satu lembar. Tidak panjang. Hanya cukup."
+[background fade="1.0"]
+narator: "Aku berhenti di depan satu surat yang belum dimasukkan. Amplop putih bersih. Tidak ada nama penerima."
+mc: "Yang ini... untuk siapa ya."
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
+narator: "Aku menatap amplop itu lama. Lalu menuliskan sesuatu di bagian depan."
+narator: "\"Untuk siapa saja yang menemukannya.\""
+[background fade="1.0"]
+narator: "Aku memasukkan surat itu ke kotak pos, lalu tersenyum kecil."
+mc (senyum_tulus): "Mudah-mudahan sampai ke orang yang tepat."
+[signal arg="alt_mengantar_surat_selesai"]

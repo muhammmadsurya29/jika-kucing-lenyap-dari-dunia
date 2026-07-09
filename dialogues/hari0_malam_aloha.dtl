@@ -77,8 +77,10 @@ aloha: "bagaimana? kalau kamu tidak cepat, akan aku hilangkan saja"
 mc: "tunggu dulu!"
 aloha: "15 detik....10 detik....9,8,7...."
 - HILANGKAN PONSEL? (YA)
-mc: "jangan baca-baca detik kayak pertandingan shogi dong! Emm... boleh, aku setuju! Nyawa atau telepon tentu saja nyawa menjadi prioritas lebih tinggi"
-aloha: "ha ha ha kalo begitu mari kita hilangkan"
+	mc: "jangan baca-baca detik kayak pertandingan shogi dong! Emm... boleh, aku setuju! Nyawa atau telepon tentu saja nyawa menjadi prioritas lebih tinggi"
+	aloha: "ha ha ha kalo begitu mari kita hilangkan"
+- JANGAN HILANGKAN PONSEL (TIDAK)
+jump alt_malam_terakhir/
 mc: "Eh....."
 narator: "(tiba-tiba teringat olehku. Aku belum menelepon ayahku. Empat tahun setelah ibu meninggal. Satu kali pun tidak pernah)."
 narator: "(Bahkan aku juga tidak menemuinya lagi. Sesekali aku menerima kabar angin bahwa dia masih menjalankan bisnis kecil-kecilan di toko jam miliknya di kota sebelah.)"

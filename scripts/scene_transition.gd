@@ -30,6 +30,16 @@ func _on_body_entered(body: Node2D) -> void:
 				get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
 			return
 			
+		# Khusus kembali ke kamar di Hari 99 (Ending Damai)
+		if target_scene == "res://scenes/maps/kamar_mc.tscn" and day == 99:
+			if has_node("/root/ScreenFade"):
+				get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 1.0)
+			else:
+				get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+			if sm and sm.has_method("play_alt_sore_kamar"):
+				sm.play_alt_sore_kamar()
+			return
+			
 		# Kunci pintu jika belum ada izin keluar (khusus pintu kamar) atau belum cukup hari
 		if (requires_leave_permission and not can_leave) or (requires_cafe_event_done and not cafe_done) or day < minimum_day_to_exit:
 			var target_tl = locked_timeline

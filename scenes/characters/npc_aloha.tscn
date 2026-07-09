@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="1_thh2u"]
 [ext_resource type="Texture2D" uid="uid://c6fbw733hnyf" path="res://assets/sprites/Iblis.png" id="2_2dv3r"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="2_l7ob5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2dv3r"]
-size = Vector2(28, 17)
+size = Vector2(58, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l7ob5"]
 atlas = ExtResource("2_2dv3r")
@@ -123,7 +124,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2qsi8")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_down",
 "speed": 5.0
 }, {
@@ -146,7 +147,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_233av")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_left",
 "speed": 5.0
 }, {
@@ -169,7 +170,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5ge8a")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_right",
 "speed": 5.0
 }, {
@@ -192,7 +193,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6gy43")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle_up",
 "speed": 5.0
 }]
@@ -200,16 +201,20 @@ animations = [{
 [node name="NPC_Aloha" type="Area2D" unique_id=486957782]
 script = ExtResource("1_thh2u")
 timeline_name = "babak2_day1"
+interact_icon = ExtResource("2_l7ob5")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=735589168]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1426728369]
-position = Vector2(0, 0.5)
+position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_2dv3r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pgbys")
-animation = &"idle_left"
+animation = &"idle_down"
 autoplay = "idle_up"
 offset = Vector2(0, -12)
