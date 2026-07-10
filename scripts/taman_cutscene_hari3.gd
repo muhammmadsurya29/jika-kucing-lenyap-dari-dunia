@@ -3,17 +3,21 @@ extends Node2D
 @onready var kubis = $NPC_Kubis
 var player: Node2D
 
+# Referensi NPC yang di-instantiate di hari 99
+var npc_anak: Node2D = null
+var npc_ibu: Node2D = null
+
 func _ready() -> void:
-	if StoryManager.current_day == 3:
-		if Dialogic.has_signal("signal_event"):
-			Dialogic.signal_event.connect(_on_dialogic_signal)
+	if Dialogic.has_signal("signal_event"):
+		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
+	player = get_tree().get_first_node_in_group("Player")
+	
+	if StoryManager.current_day == 3:
 		# Sembunyikan trigger taman default untuk mencegah tabrakan timeline
 		var trigger_taman = get_node_or_null("TriggerTaman")
 		if trigger_taman:
 			trigger_taman.queue_free()
-		
-		player = get_tree().get_first_node_in_group("Player")
 		
 		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
 		if trigger_bangku:
@@ -30,8 +34,38 @@ func _ready() -> void:
 		# Langsung jalankan animasi kubis ke arah bunga tanpa mengunci player
 		_jalan_ke_kanan_anim()
 
+	elif StoryManager.current_day == 99:
+		# Setup Sinematik Hari 99
+		var node_mc = get_node_or_null("NodeA_MC")
+		if player and node_mc:
+			player.global_position = node_mc.global_position
+			if player.has_method("play_custom_animation"):
+				player.play_custom_animation("sit_left")
+		
+		# Untuk Kubis
+		# Jika kubis tidak ada (queue_free sebelumnya), maka kita perlu instansiasi jika perlu, 
+		# Tapi di script ini kubis = $NPC_Kubis yang ada di scene sejak awal.
+		if not kubis:
+			var kubis_scene = load("res://scenes/characters/cat.tscn")
+			if kubis_scene:
+				kubis = kubis_scene.instantiate()
+				add_child(kubis)
+				
+		var node_kubis = get_node_or_null("NodeB_Kubis")
+		if kubis and node_kubis:
+			kubis.global_position = node_kubis.global_position
+			var anim = kubis.get_node_or_null("AnimatedSprite2D")
+			if anim:
+				anim.play("sit_down")
+				
+		# Sembunyikan trigger agar tidak ada interaksi manual
+		var trigger_taman = get_node_or_null("TriggerTaman")
+		if trigger_taman: trigger_taman.queue_free()
+		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
+		if trigger_bangku: trigger_bangku.queue_free()
+
 	else:
-		# Jika bukan hari ke-3, hapus trigger bangku khusus
+		# Jika bukan hari ke-3 atau 99, hapus trigger bangku khusus dan kubis
 		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
 		if trigger_bangku:
 			trigger_bangku.queue_free()
@@ -59,7 +93,60 @@ func _on_dialogic_signal(argument: String) -> void:
 				sm.pulang_malam("res://scenes/maps/kamar_mc.tscn")
 			else:
 				sm.ganti_hari("res://scenes/maps/kamar_mc.tscn")
+	elif argument == "anak_muncul":
+		_munculkan_anak()
+	elif argument == "ibu_muncul":
+		_munculkan_ibu()
 
+func _munculkan_anak() -> void:
+	var anak_scene = load("res://scenes/characters/kencur.tscn")
+	if not anak_scene: return
+	npc_anak = anak_scene.instantiate()
+	add_child(npc_anak)
+	
+	var spawn = get_node_or_null("NodeSpawnAnak")
+	var target = get_node_or_null("NodeTitikAnak")
+	
+	if spawn and target:
+		npc_anak.global_position = spawn.global_position
+		var anim = npc_anak.get_node_or_null("AnimatedSprite2D")
+		if anim: anim.play("walk_down")
+		
+		var dist = spawn.global_position.distance_to(target.global_position)
+		var time = dist / 60.0
+		var tween = create_tween()
+		tween.tween_property(npc_anak, "global_position", target.global_position, time)
+		await tween.finished
+		
+		if anim: anim.play("idle_down")
+		
+	# Lanjutkan dialog
+	Dialogic.VAR.set("anak_sampai", true)
+
+func _munculkan_ibu() -> void:
+	var ibu_scene = load("res://scenes/characters/ibu_kencur.tscn")
+	if not ibu_scene: return
+	npc_ibu = ibu_scene.instantiate()
+	add_child(npc_ibu)
+	
+	var spawn = get_node_or_null("NodeSpawnIbu")
+	var target = get_node_or_null("NodeTitikIbu")
+	
+	if spawn and target:
+		npc_ibu.global_position = spawn.global_position
+		var anim = npc_ibu.get_node_or_null("AnimatedSprite2D")
+		if anim: anim.play("walk_down")
+		
+		var dist = spawn.global_position.distance_to(target.global_position)
+		var time = dist / 60.0
+		var tween = create_tween()
+		tween.tween_property(npc_ibu, "global_position", target.global_position, time)
+		await tween.finished
+		
+		if anim: anim.play("idle_down")
+		
+	# Lanjutkan dialog
+	Dialogic.VAR.set("ibu_sampai", true)
 
 func _jalan_ke_kanan_anim() -> void:
 	if kubis:
@@ -119,7 +206,7 @@ func _on_trigger_bangku_body_entered(body: Node2D) -> void:
 			player.lock_movement()
 			
 		if player and player.has_method("play_custom_animation"):
-			player.play_custom_animation("sit_down")
+			player.play_custom_animation("sit_left")
 			
 		if not Dialogic.current_timeline:
 			Dialogic.start("hari3_taman_bagian2")

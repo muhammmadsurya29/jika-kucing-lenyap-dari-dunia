@@ -33,6 +33,10 @@ func start_choreography() -> void:
 	while is_moving:
 		# Gerak dari posisi awal (A) ke B
 		if point_a: target_npc.global_position = point_a.global_position
+		# Diam sebentar
+		if anim: anim.play("idle_down")
+		await get_tree().create_timer(1.5).timeout
+		
 		if point_b:
 			await move_npc(target_npc, anim, point_b.global_position, "walk_down")
 			
@@ -59,6 +63,10 @@ func start_choreography() -> void:
 		# Kembali (B ke A)
 		if point_a:
 			await move_npc(target_npc, anim, point_a.global_position, "walk_up")
+			
+		# Diam sebentar
+		if anim: anim.play("idle_down")
+		await get_tree().create_timer(1.5).timeout
 			
 		# Selesai satu putaran
 		if anim: anim.play("idle_down")

@@ -216,5 +216,5 @@ shape = SubResource("RectangleShape2D_2dv3r")
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pgbys")
 animation = &"idle_down"
-autoplay = "idle_up"
+autoplay = "idle_down"
 offset = Vector2(0, -12)
