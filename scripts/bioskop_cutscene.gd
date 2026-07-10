@@ -14,7 +14,7 @@ func _ready() -> void:
 		if not Dialogic.current_timeline:
 			Dialogic.start("ending_c_dalam_bioskop")
 		if StoryManager.current_day == 100:
-			# Posisikan seolah sudah duduk
+			# Posisikan seol      ah sudah duduk
 			player.position.y -= 20
 			mantan.position.y -= 20
 			Dialogic.start("alt2_dalam_bioskop")
