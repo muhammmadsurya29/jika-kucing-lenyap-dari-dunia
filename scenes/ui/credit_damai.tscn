@@ -1,16 +1,15 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=2 format=3]
 
-[ext_resource type="Script" path="res://scripts/alt_credit_scene.gd" id="1_credit"]
-[ext_resource type="AudioStream" uid="uid://dwdwdwdw" path="res://assets/audio/happy-end.mp3" id="2_audio"]
+[ext_resource type="Script" path="res://scripts/credit_damai.gd" id="1_script"]
 
-[node name="CreditScene" type="Control"]
+[node name="CreditDamai" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_credit")
+script = ExtResource("1_script")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -21,7 +20,21 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="TrueEndingText" type="Label" parent="."]
+[node name="QuoteText" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "\"Apakah hidup lebih lama selalu lebih baik?
+Mungkin bukan soal panjangnya. Mungkin soal apakah di akhirnya kita bisa duduk tenang dan berkata: ya, ini hidupku. Dan aku tidak menukarnya dengan apapun.\""
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="EndingText" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,7 +42,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 48
-text = "— TAMAT / ENDING DAMAI —"
+text = "ENDING DAMAI"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -57,7 +70,7 @@ theme_override_font_sizes/font_size = 24
 text = "- Credit, Penulis:
 Surya Anandri
 Universitas Ahmad Dahlan
-Informatika"
+Informatika -"
 horizontal_alignment = 1
 
 [node name="Space2" type="Control" parent="CreditContainer"]
@@ -69,6 +82,3 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Terima kasih sudah bermain!"
 horizontal_alignment = 1
-
-[node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_audio")
