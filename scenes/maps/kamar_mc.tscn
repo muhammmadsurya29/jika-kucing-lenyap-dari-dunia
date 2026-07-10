@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://cufou0ay8h6td" path="res://assets/Tiles/Interior/Room_Builder_Floors_16x16.png" id="19_jam"]
 [ext_resource type="Texture2D" uid="uid://2lfeqlt23x6o" path="res://assets/Tiles/animated_cuckoo_clock.png" id="19_uiijr"]
 [ext_resource type="Texture2D" uid="uid://bbg4di4t0fltg" path="res://assets/Tiles/animated_TV_reportage_hospital_2.png" id="20_tcxud"]
+[ext_resource type="Script" path="res://scripts/npc_choreography.gd" id="iq5e41uq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcxud"]
 texture = ExtResource("1_mnld5")
@@ -8063,3 +8064,23 @@ timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_jendel
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJendelaHari4" unique_id=1240997420]
 polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
+
+
+[node name="PointA" type="Marker2D" parent="."]
+position = Vector2(50, 50)
+
+[node name="PointB" type="Marker2D" parent="."]
+position = Vector2(50, 100)
+
+[node name="PointC" type="Marker2D" parent="."]
+position = Vector2(100, 100)
+
+[node name="PointD" type="Marker2D" parent="."]
+position = Vector2(100, 150)
+
+[node name="NPCChoreography" type="Node" parent="."]
+script = ExtResource("iq5e41uq")
+point_a = NodePath("../PointA")
+point_b = NodePath("../PointB")
+point_c = NodePath("../PointC")
+point_d = NodePath("../PointD")
