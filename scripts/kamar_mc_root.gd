@@ -4,6 +4,10 @@ func _ready() -> void:
 
 	# Ending C: Kubis lenyap dan setup awal
 	if StoryManager.is_kubis_lenyap:
+		var choreo = get_node_or_null("NPCChoreography")
+		if choreo:
+			choreo.queue_free()
+			
 		var kubis_node = get_node_or_null("NPC_Kubis")
 		if kubis_node:
 			kubis_node.queue_free()
