@@ -318,6 +318,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_dhfo7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_50gr0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nvox6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sn2pa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8h6a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5teex")
+}],
+"loop": 1,
+"name": &"sit_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_xc8fe")
 }, {
 "duration": 1.0,
@@ -445,7 +468,6 @@ shape = SubResource("RectangleShape2D_2dv3r")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2090563325]
 position = Vector2(0, 1)
 sprite_frames = SubResource("SpriteFrames_pgbys")
-animation = &"walk_up"
+animation = &"idle_up"
 autoplay = "idle_down"
-frame_progress = 0.06304708
 offset = Vector2(0, -12)

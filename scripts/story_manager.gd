@@ -8,6 +8,7 @@ var can_leave_room: bool = false
 var cafe_event_done: bool = false
 var is_night: bool = false
 var day4_state: String = ""
+var alt2_post_bioskop: bool = false
 
 signal day_changed(new_day: int)
 
@@ -307,6 +308,18 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/maps/dalam_bioskop.tscn", 1.5)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/dalam_bioskop.tscn")
+	elif argument == "alt2_bioskop_selesai":
+		alt2_post_bioskop = true
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/jalan_malam_cutscene.tscn", 1.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/jalan_malam_cutscene.tscn")
+	elif argument == "alt2_ending_bangkit_tamat":
+		print(">> GAME TAMAT (ENDING BANGKIT)!")
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_damai.tscn", 2.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/ui/credit_damai.tscn")
 
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):

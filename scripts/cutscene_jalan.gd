@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var parallax_bg = $ParallaxBackground
+#@onready var parallax_bg = $ParallaxBackground
 @onready var bioskop = $GedungBioskop
 @onready var player = $Player
 @onready var mantan = $NPC_Mantan
@@ -14,9 +14,9 @@ func _ready() -> void:
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
-	if parallax_bg:
-		parallax_bg.hide()
-		
+	#if parallax_bg:
+		#parallax_bg.hide()
+		#
 	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
 	if pintu:
 		target_x = bioskop.position.x + pintu.position.x
@@ -27,7 +27,10 @@ func _ready() -> void:
 	aloha.modulate.a = 0.0
 	
 	if StoryManager.current_day == 100:
-		_setup_day100()
+		if StoryManager.alt2_post_bioskop:
+			_setup_post_bioskop()
+		else:
+			_setup_day100()
 	else:
 		_setup_normal()
 
@@ -69,6 +72,31 @@ func _setup_day100():
 	if not Dialogic.current_timeline:
 		Dialogic.start("alt2_luar_bioskop")
 
+func _setup_post_bioskop():
+	is_walking = false
+	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	
+	player.position.x = target_x - 10
+	player.position.y = bioskop.position.y + 40
+	
+	mantan.position.x = target_x + 20
+	mantan.position.y = player.position.y
+	
+	if "is_following_player" in mantan:
+		mantan.is_following_player = false
+		mantan.is_moving = false
+		
+	if player.has_method("play_custom_animation"):
+		player.play_custom_animation("idle_right")
+	elif player.has_node("AnimatedSprite2D"):
+		player.get_node("AnimatedSprite2D").play("idle_right")
+		
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("idle_left")
+		
+	if not Dialogic.current_timeline:
+		Dialogic.start("alt2_luar_bioskop_post")
+
 func start_walking():
 	is_walking = true
 	if player.has_method("play_custom_animation"):
@@ -109,6 +137,35 @@ func _on_dialogic_signal(argument: String) -> void:
 		_alt2_mantan_datang()
 	elif argument == "alt2_mantan_duduk":
 		_alt2_mantan_duduk()
+	elif argument == "alt2_mantan_pergi":
+		_alt2_mantan_pulang()
+
+func _alt2_mantan_pulang():
+	Dialogic.paused = true
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("walk_up")
+		
+	var tween = create_tween()
+	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	if pintu:
+		tween.tween_property(mantan, "position", bioskop.position + pintu.position, 1.5)
+	else:
+		tween.tween_property(mantan, "position:y", mantan.position.y - 40, 1.5)
+		
+	await tween.finished
+	
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("idle_down")
+	await get_tree().create_timer(1.0).timeout
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("idle_up")
+	await get_tree().create_timer(0.5).timeout
+	
+	var tween2 = create_tween()
+	tween2.tween_property(mantan, "modulate:a", 0.0, 1.0)
+	await tween2.finished
+	mantan.hide()
+	Dialogic.paused = false
 
 func _alt2_mantan_datang():
 	Dialogic.paused = true

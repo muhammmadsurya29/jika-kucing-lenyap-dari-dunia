@@ -493,6 +493,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_3wg1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kmyvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2luo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eir2k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_inhyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wqk1x")
+}],
+"loop": 1,
+"name": &"sit_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_6aj6e")
 }, {
 "duration": 1.0,
@@ -652,7 +675,7 @@ shape = SubResource("RectangleShape2D_yewv4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1084857593]
 sprite_frames = SubResource("SpriteFrames_5bn3a")
-animation = &"sit_left"
+animation = &"sit_down"
 offset = Vector2(0, -12)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=153003043]
