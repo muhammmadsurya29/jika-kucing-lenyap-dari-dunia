@@ -41,4 +41,5 @@ mc: "Kalau ini perpisahan, aku akan menontonnya dengan pikiran penuh tentang bah
 aloha (default): "Kamu ini... repot sekali."
 mc (senyum_tipis): "Maaf."
 [signal arg="alt2_start"]
+[signal arg="boleh_keluar"]
 [end_timeline]

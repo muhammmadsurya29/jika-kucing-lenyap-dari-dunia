@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 99
+var current_day: int = 2
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -299,9 +299,14 @@ func _on_dialogic_signal(argument: String) -> void:
 		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pergi ke Toko DVD (Tsutaya)")
 	elif argument == "alt2_tsutaya_selesai":
 		if has_node("/root/ScreenFade"):
-			get_node("/root/ScreenFade").transition_to("res://scenes/maps/bioskop.tscn", 1.5)
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/jalan_malam_cutscene.tscn", 1.5)
 		else:
-			get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
+			get_tree().change_scene_to_file("res://scenes/maps/jalan_malam_cutscene.tscn")
+	elif argument == "alt2_masuk_bioskop":
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/dalam_bioskop.tscn", 1.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/dalam_bioskop.tscn")
 
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):

@@ -11,72 +11,84 @@ var walk_speed = 15.0 # Sangat lambat
 var target_x = 0.0
 
 func _ready() -> void:
-	# Dengarkan sinyal dari Dialogic
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
-	# Sembunyikan ParallaxBackground jika ada
 	if parallax_bg:
 		parallax_bg.hide()
 		
-	# Setup posisi Gedung Bioskop
-	
-	# Ambil marker tujuan dari depan pintu bioskop
 	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
 	if pintu:
 		target_x = bioskop.position.x + pintu.position.x
 	else:
 		target_x = bioskop.position.x - 20.0
 		
-	# Setup awal karakter
 	aloha.hide()
 	aloha.modulate.a = 0.0
 	
-	# Ambil posisi titik mulai
+	if StoryManager.current_day == 100:
+		_setup_day100()
+	else:
+		_setup_normal()
+
+func _setup_normal():
 	var titik_mulai = get_node_or_null("NodeTitikMulai")
 	if titik_mulai:
 		player.position = titik_mulai.position
-		mantan.position = titik_mulai.position - Vector2(40, 0) # Mantan berjalan di belakang MC
+		mantan.position = titik_mulai.position - Vector2(40, 0)
 	else:
 		player.position.x = 80.0
 		mantan.position.x = 40.0
-	
-	# Mulai cutscene
 	start_walking()
+
+func _setup_day100():
+	is_walking = false
+	player.position.x = target_x - 10
+	player.position.y = bioskop.position.y + 40 # Sesuaikan dengan posisi bawah bioskop
+	
+	mantan.position.x = target_x - 200 # Jauh di luar layar kiri
+	mantan.position.y = player.position.y
+	
+	if "is_following_player" in mantan:
+		mantan.is_following_player = false
+		mantan.is_moving = false
+		
+	if player.has_method("play_custom_animation"):
+		player.play_custom_animation("sit_down")
+	elif player.has_node("AnimatedSprite2D"):
+		player.get_node("AnimatedSprite2D").play("sit_down")
+		
+	if not Dialogic.current_timeline:
+		Dialogic.start("alt2_luar_bioskop")
 
 func start_walking():
 	is_walking = true
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("walk_right")
 		if player.has_node("AnimatedSprite2D"):
-			player.get_node("AnimatedSprite2D").speed_scale = 0.25 # Animasi jalan sangat lambat
+			player.get_node("AnimatedSprite2D").speed_scale = 0.25
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_right")
-		mantan.get_node("AnimatedSprite2D").speed_scale = 0.25 # Animasi jalan sangat lambat
+		mantan.get_node("AnimatedSprite2D").speed_scale = 0.25
 		
-	# Matikan AI follower jika ada
 	if "is_following_player" in mantan:
 		mantan.is_following_player = false
 		mantan.is_moving = false
 		
-	# Mulai dialog
 	if not Dialogic.current_timeline:
 		Dialogic.start("hari1_malam_jalan")
 
 func _process(delta: float) -> void:
 	if is_walking:
-		# Karakter benar-benar berjalan menyusuri koordinat X
 		player.position.x += walk_speed * delta
 		mantan.position.x += walk_speed * delta
 		
-		# Jika MC sudah mencapai target di depan pintu bioskop
 		if player.position.x >= target_x:
 			is_walking = false
 			_karakter_berhenti()
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "sampai_bioskop":
-		# Tahan dialog jika karakter masih berjalan (belum sampai bioskop)
 		if is_walking:
 			Dialogic.paused = true
 	elif argument == "mantan_pergi":
@@ -85,65 +97,73 @@ func _on_dialogic_signal(argument: String) -> void:
 		_munculkan_aloha()
 	elif argument == "mc_pingsan":
 		_mc_pingsan()
+	elif argument == "alt2_mantan_datang_awal":
+		_alt2_mantan_datang()
+	elif argument == "alt2_mantan_duduk":
+		_alt2_mantan_duduk()
+
+func _alt2_mantan_datang():
+	Dialogic.paused = true
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("walk_right")
+		
+	var tween = create_tween()
+	tween.tween_property(mantan, "position:x", player.position.x - 30, 2.5)
+	await tween.finished
+	
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("idle_right")
+	Dialogic.paused = false
+
+func _alt2_mantan_duduk():
+	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").play("sit_right")
 
 func _karakter_berhenti():
-	# Kembalikan kecepatan animasi normal
 	if player.has_node("AnimatedSprite2D"):
 		player.get_node("AnimatedSprite2D").speed_scale = 1.0
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").speed_scale = 1.0
 		
-	# Setelah sampai, karakter berhenti dan menghadap ke atas (ke arah pintu gedung)
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("idle_up")
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("idle_up")
 		
-	# Lanjutkan dialog jika sebelumnya ditahan
 	if Dialogic.paused:
 		Dialogic.paused = false
 		
 func _mantan_masuk_bioskop():
-	# Mantan berjalan ke atas (masuk pintu)
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_up")
 		
 	var tween = create_tween()
 	tween.tween_property(mantan, "position:y", mantan.position.y - 40, 1.5)
 	await tween.finished
-	
-	# Mantan menghilang setelah masuk
 	mantan.hide()
 	
 func _munculkan_aloha():
-	# Posisikan Aloha agak ke kiri dari MC
 	aloha.position.x = player.position.x - 50.0
 	aloha.position.y = player.position.y
-	
-	# Aloha muncul (fade in)
 	aloha.show()
 	if aloha.has_node("AnimatedSprite2D"):
-		aloha.get_node("AnimatedSprite2D").play("idle_right") # Aloha menghadap MC
+		aloha.get_node("AnimatedSprite2D").play("idle_right")
 		
 	var tween = create_tween()
 	tween.tween_property(aloha, "modulate:a", 1.0, 1.0)
 	
-	# MC menghadap ke Aloha (ke arah kiri)
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("idle_left")
 
 func _mc_pingsan():
-	# Matikan timeline agar tidak menggantung
 	if Dialogic.current_timeline:
 		Dialogic.end_timeline()
 		
-	# Animasi pingsan darurat: Rotasi 90 derajat
 	var tween = create_tween()
 	tween.tween_property(player, "rotation_degrees", 90.0, 0.5)
 	tween.tween_property(player, "position:y", player.position.y + 10, 0.5)
 	await tween.finished
 	
-	# Ganti ke hari ke-2
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
 		sm.current_day = 1
