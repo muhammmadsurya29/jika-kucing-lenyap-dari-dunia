@@ -9,12 +9,10 @@ func _ready() -> void:
 		
 	# Mulai cutscene otomatis begitu masuk
 	if not Dialogic.current_timeline:
-
-	elif StoryManager.current_day == 101:
-		if not Dialogic.current_timeline:
+		if StoryManager.current_day == 101:
 			Dialogic.start("ending_c_dalam_bioskop")
-		if StoryManager.current_day == 100:
-			# Posisikan seol      ah sudah duduk
+		elif StoryManager.current_day == 100:
+			# Posisikan seolah sudah duduk
 			player.position.y -= 20
 			mantan.position.y -= 20
 			Dialogic.start("alt2_dalam_bioskop")
