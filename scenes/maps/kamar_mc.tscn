@@ -9242,3 +9242,12 @@ point_b = NodePath("../PointB")
 point_c = NodePath("../PointC")
 point_d = NodePath("../PointD")
 movement_speed = 20.0
+
+[node name="NodeMCEpilogDuduk" type="Marker2D" parent="."]
+position = Vector2(80, 50)
+
+[node name="NodeKubisEpilogTidur" type="Marker2D" parent="."]
+position = Vector2(9, 25)
+
+[node name="NodeMCEpilogTidur" type="Marker2D" parent="."]
+position = Vector2(9, 25)

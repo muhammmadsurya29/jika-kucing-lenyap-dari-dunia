@@ -11,13 +11,21 @@ func _ready() -> void:
 			
 		# Posisikan MC (di meja/berdiri)
 		if player:
-			player.position = Vector2(80, 50)
+			var node_mc_duduk = get_node_or_null("NodeMCEpilogDuduk")
+			if node_mc_duduk:
+				player.position = node_mc_duduk.position
+			else:
+				player.position = Vector2(80, 50)
 			if player.has_method("play_custom_animation"):
 				player.play_custom_animation("idle_up")
 				
 		# Posisikan kubis di kasur
 		if kubis:
-			kubis.position = Vector2(9, 25)
+			var node_kubis = get_node_or_null("NodeKubisEpilogTidur")
+			if node_kubis:
+				kubis.position = node_kubis.position
+			else:
+				kubis.position = Vector2(9, 25)
 			if kubis.has_node("AnimatedSprite2D"):
 				kubis.get_node("AnimatedSprite2D").play("sleep")
 				
@@ -40,11 +48,19 @@ func _on_dialogic_signal(argument: String) -> void:
 		var player = $Player
 		var kubis = $NPC_Kubis
 		if player:
-			player.position = Vector2(9, 25) # Kasur
+			var node_mc_tidur = get_node_or_null("NodeMCEpilogTidur")
+			if node_mc_tidur:
+				player.position = node_mc_tidur.position
+			else:
+				player.position = Vector2(9, 25) # Kasur
 			if player.has_method("play_custom_animation"):
 				player.play_custom_animation("idle_right")
 			
 			# Putar MC 90 derajat seolah tidur
 			player.rotation_degrees = 90
 		if kubis:
-			kubis.position = Vector2(9, 15) # Samping kepala
+			var node_kubis = get_node_or_null("NodeKubisEpilogTidur")
+			if node_kubis:
+				kubis.position = node_kubis.position + Vector2(0, -10)
+			else:
+				kubis.position = Vector2(9, 15) # Samping kepala
