@@ -63,6 +63,9 @@ func _ready() -> void:
 		if trigger_taman: trigger_taman.queue_free()
 		var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
 		if trigger_bangku: trigger_bangku.queue_free()
+		
+		# Mainkan dialog otomatis setelah scene dimuat
+		_play_alt_taman_bukit()
 
 	else:
 		# Jika bukan hari ke-3 atau 99, hapus trigger bangku khusus dan kubis
@@ -210,3 +213,11 @@ func _on_trigger_bangku_body_entered(body: Node2D) -> void:
 			
 		if not Dialogic.current_timeline:
 			Dialogic.start("hari3_taman_bagian2")
+
+func _play_alt_taman_bukit() -> void:
+	await get_tree().create_timer(1.0).timeout
+	while Dialogic.current_timeline != null:
+		await get_tree().create_timer(0.1).timeout
+	if player and player.has_method("lock_movement"):
+		player.lock_movement()
+	Dialogic.start("alt_taman_bukit")

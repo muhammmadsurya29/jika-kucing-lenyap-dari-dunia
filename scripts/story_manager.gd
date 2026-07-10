@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 0
+var current_day: int = 99
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -273,7 +273,6 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/maps/Taman_Bukit.tscn", 1.5)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
-		play_alt_taman_bukit()
 	elif argument == "alt_taman_bukit_selesai":
 		if has_node("/root/ScreenFade"):
 			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 1.5)
@@ -286,15 +285,6 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/ui/alt_credit_scene.tscn", 2.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/ui/alt_credit_scene.tscn")
-
-func play_alt_taman_bukit() -> void:
-	await get_tree().create_timer(1.5).timeout
-	while Dialogic.current_timeline != null:
-		await get_tree().create_timer(0.1).timeout
-	var player = get_tree().get_first_node_in_group("Player")
-	if player and player.has_method("lock_movement"):
-		player.lock_movement()
-	Dialogic.start("alt_taman_bukit")
 
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):
