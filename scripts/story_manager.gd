@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 101
+var current_day: int = 0
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -58,6 +58,10 @@ func update_objective_based_on_state() -> void:
 		4:
 			obj = "Cari Kubis! Ia pasti belum jauh!"
 			# Hilangkan Kubis dari kamar pada Hari ke-4
+			var choreo = get_tree().get_root().find_child("NPCChoreography", true, false)
+			if choreo:
+				choreo.queue_free()
+				
 			var kubis = get_tree().get_root().find_child("NPC_Kubis", true, false)
 			if kubis:
 				kubis.queue_free()
