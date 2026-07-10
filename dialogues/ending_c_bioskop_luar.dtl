@@ -1,0 +1,27 @@
+narator: "Depan bioskop tua. Aku berdiri menunggu. Mantan datang dari dalam lalu berhenti, matanya menyapu ke sekelilingku."
+[signal arg="ending_c_mantan_keluar"]
+[wait time="1.5"]
+mantan: "Kubis mana?"
+mantan: "...Kamu tidak membawanya?"
+mc: "Kubis sudah tidak ada."
+mantan: "Apa?"
+mc: "Sudah pergi."
+mantan: "Tadi malam?"
+mc: "Iya."
+[signal arg="ending_c_duduk"]
+[wait time="0.5"]
+mantan: "Ceritakan."
+mc: "Tidak ada yang perlu diceritakan."
+mantan: "Ada."
+mc: "Aku tidak ingin dia ditinggalkan sendirian. Itu saja."
+mantan: "Tapi sekarang kamu yang sendirian. Kubis tidak akan mau begini, kalau dia bisa memilih."
+mc: "Aku tahu."
+mantan: "Lalu kenapa?"
+mc: "Karena aku pengecut. Lebih mudah menghilangkan dia daripada membayangkan dia hidup setelah aku pergi."
+mantan: "Kamu egois."
+mc: "Iya."
+mantan: "Dan bodoh."
+mc: "Iya."
+mantan: "Dan aku mengerti kenapa."
+[signal arg="ending_c_masuk_bioskop"]
+return

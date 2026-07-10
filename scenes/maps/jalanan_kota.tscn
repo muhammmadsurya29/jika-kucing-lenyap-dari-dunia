@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b2i124v65prls" path="res://assets/Tiles/exterior/18_Fire_Station_16x16.png" id="8_lymmu"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="lpdwmyu6"]
+[ext_resource type="Script" path="res://scripts/jalanan_kota_root.gd" id="99_root"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lq27n"]
 texture = ExtResource("2_sqsbl")
@@ -27741,6 +27742,7 @@ size = Vector2(31, 23)
 [sub_resource type="GDScript" id="GDScript_alt2"]
 script/source = "extends Node\n\nfunc _ready():\n\tawait get_tree().create_timer(1.0).timeout\n\tif StoryManager.current_day == 100:\n\t\tvar player = get_tree().get_first_node_in_group('Player')\n\t\tif player and player.has_method('lock_movement'):\n\t\t\tplayer.lock_movement()\n\t\tDialogic.start('alt2_jalanan_kota')\n"
 [node name="JalananKota" type="Node2D" unique_id=1501528845]
+script = ExtResource("99_root")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=333640770]
 tile_set = SubResource("TileSet_1s67d")

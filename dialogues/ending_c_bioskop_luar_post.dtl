@@ -1,0 +1,15 @@
+narator: "Jalanan sepi malam hari."
+mantan: "Bagaimana?"
+mc: "Badut itu mati bahagia."
+mantan: "Kamu?"
+mc: "Aku tidak tahu apakah aku bisa mati bahagia sekarang."
+mantan: "Karena Kubis?"
+mc: "Karena aku baru sadar, Kubis bukan hanya kucing. Dia adalah satu-satunya makhluk yang bisa membuatku merasa bahwa pulang ke rumah itu berarti sesuatu. Tanpa dia, rumah hanya tempat menyimpan barang-barangku."
+mantan: "Kamu harusnya menitipkannya. Padaku. Pada siapapun."
+mc: "Aku tahu."
+mantan: "Tapi kamu tidak bisa."
+mc: "Tidak."
+mantan: "Kenapa?"
+mc: "Karena menitipkan berarti benar-benar melepaskan. Dan aku tidak cukup berani untuk itu. Jadi aku memilih cara yang lebih pengecut. Menghilangkannya sekalian. Supaya tidak ada yang perlu dilepaskan."
+[signal arg="ending_c_pulang"]
+return

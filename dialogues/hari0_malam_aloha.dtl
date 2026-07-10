@@ -70,7 +70,7 @@ narator: "(Aku melihat jam, sudah lama lewat jam masuk kerja. Yang menelpon adal
 [background fade="0.0"]
 aloha: "itu...!"
 mc: "apa?"
-audio -
+audio "-"
 aloha: "itu dia! itu sepertinya tidak dibutuhkan. Telepon? ya. Mari kita hilangkan itu. Ha ha ha"
 narator: "bagaimana? Telepon ditukar dengan nyawa untuk satu hari? Apa yang akan kuperoleh dan apa aku akan kehilangan?"
 aloha: "bagaimana? kalau kamu tidak cepat, akan aku hilangkan saja"
@@ -79,24 +79,23 @@ aloha: "15 detik....10 detik....9,8,7...."
 - HILANGKAN PONSEL? (YA)
 	mc: "jangan baca-baca detik kayak pertandingan shogi dong! Emm... boleh, aku setuju! Nyawa atau telepon tentu saja nyawa menjadi prioritas lebih tinggi"
 	aloha: "ha ha ha kalo begitu mari kita hilangkan"
+	mc: "Eh....."
+	narator: "(tiba-tiba teringat olehku. Aku belum menelepon ayahku. Empat tahun setelah ibu meninggal. Satu kali pun tidak pernah)."
+	narator: "(Bahkan aku juga tidak menemuinya lagi. Sesekali aku menerima kabar angin bahwa dia masih menjalankan bisnis kecil-kecilan di toko jam miliknya di kota sebelah.)"
+	narator: "(Namun, apa boleh aku tidak memberi kabar kepada orang tuaku padahal aku sendiri akan mati tak lama lagi?)"
+	aloha: (tersenyum nakal) "aku tahu. Semua orang begitu. Sesaat sebelum menghilangkan sesuatu, tidak bisa tidak memikirkan ini itu. Karena itu aku memberikan opsi"
+	mc: "opsi? Apa itu?"
+	aloha: "sebagai kesempatan terakhir, kamu berhak memakai barang yang akan dihilangkan satu kali saja. jadi kamu boleh menelepon satu kali saja. terserah siapa yang akan kamu telpon"
+	mc: "(siapa yang akan aku telpon? Ayahku? Tapi sekali membayangkan wajahnya aku tidak bisa tidak ingat apa yang terjadi empat tahun lalu. Apa yang harus aku bicarakan dengan nya?ah aku tidak bisa menelpon ayahku.)"
+	mc: "(Lalu, kepada siapa??)"
+	narator: "(Aku memindai daftar kontak di ponselku dengan kilat. Tak ada siapa pun yang patut menjadi lawan bicara melalui telepon pada akhir hayatku. Aku sebagai seorang manusia ternyata selama ini hidup atas hubungan antarmanusia yang sesamar itu.)"
+	narator: "(Teramat menyedihkan kalau aku baru sadar akan hal itu di akhir hayat. Tiba-tiba ada satu nomor timbul di benakku. Sudah lama aku lupa tapi badanku masih ingat. Nomor yang tidak terdaftar di ponselku kupencet perlahan-lahan. Tiga menit berlalu, kemudian aloha menghadap ke arahku berbicara seraya dengan memasang air muka tenang.)"
+	aloha: "sudah selesaikah?"
+	mc: "Ya, sudah selesai"
+	aloha: "kalau gitu mari kita hilangkan. Sampai besok!"
+	[signal arg="aloha_hilang"]
+	narator: "aloha tersenyum ceria lalu mengedipkan sebelah mata. Dan tak terlihat lagi ponselku yang kupegang... Di susul suara kucing yang tampak menyesal bergema di kamar. Tahu-tahu aku tertidur pulas. Dimulailah tujuh hari ajaib bagiku."
+	[background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
+	jump hari0_flashback/
 - JANGAN HILANGKAN PONSEL (TIDAK)
-jump alt_malam_terakhir/
-mc: "Eh....."
-narator: "(tiba-tiba teringat olehku. Aku belum menelepon ayahku. Empat tahun setelah ibu meninggal. Satu kali pun tidak pernah)."
-narator: "(Bahkan aku juga tidak menemuinya lagi. Sesekali aku menerima kabar angin bahwa dia masih menjalankan bisnis kecil-kecilan di toko jam miliknya di kota sebelah.)"
-narator: "(Namun, apa boleh aku tidak memberi kabar kepada orang tuaku padahal aku sendiri akan mati tak lama lagi?)"
-aloha: (tersenyum nakal) "aku tahu. Semua orang begitu. Sesaat sebelum menghilangkan sesuatu, tidak bisa tidak memikirkan ini itu. Karena itu aku memberikan opsi"
-mc: "opsi? Apa itu?"
-aloha: "sebagai kesempatan terakhir, kamu berhak memakai barang yang akan dihilangkan satu kali saja. jadi kamu boleh menelepon satu kali saja. terserah siapa yang akan kamu telpon"
-mc: "(siapa yang akan aku telpon? Ayahku? Tapi sekali membayangkan wajahnya aku tidak bisa tidak ingat apa yang terjadi empat tahun lalu. Apa yang harus aku bicarakan dengan nya?ah aku tidak bisa menelpon ayahku.)"
-mc: "(Lalu, kepada siapa??)"
-narator: "(Aku memindai daftar kontak di ponselku dengan kilat. Tak ada siapa pun yang patut menjadi lawan bicara melalui telepon pada akhir hayatku. Aku sebagai seorang manusia ternyata selama ini hidup atas hubungan antarmanusia yang sesamar itu.)"
-narator: "(Teramat menyedihkan kalau aku baru sadar akan hal itu di akhir hayat. Tiba-tiba ada satu nomor timbul di benakku. Sudah lama aku lupa tapi badanku masih ingat. Nomor yang tidak terdaftar di ponselku kupencet perlahan-lahan. Tiga menit berlalu, kemudian aloha menghadap ke arahku berbicara seraya dengan memasang air muka tenang.)"
-aloha: "sudah selesaikah?"
-mc: "Ya, sudah selesai"
-aloha: "kalau gitu mari kita hilangkan. Sampai besok!"
-[signal arg="aloha_hilang"]
-narator: "aloha tersenyum ceria lalu mengedipkan sebelah mata. Dan tak terlihat lagi ponselku yang kupegang... Di susul suara kucing yang tampak menyesal bergema di kamar. Tahu-tahu aku tertidur pulas. Dimulailah tujuh hari ajaib bagiku."
-narator: "Teman sekamar ku adalah seekor kucing. Belum punya nama. Tidak, ia punya. Nama kucingku ialah Kubis. Barangkali kau lupa aku akan menceritakan tentangnya."
-[background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
-jump hari0_flashback/
+	jump alt_malam_terakhir/

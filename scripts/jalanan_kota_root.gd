@@ -1,0 +1,9 @@
+extends Node2D
+
+func _ready() -> void:
+	# Tunggu scene transition selesai
+	await get_tree().create_timer(1.0).timeout
+	
+	if StoryManager.current_day == 101:
+		if not Dialogic.current_timeline:
+			Dialogic.start("ending_c_jalanan")

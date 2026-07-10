@@ -1,0 +1,12 @@
+narator: "Aku berjalan sendirian ke pertokoan. Jalan yang biasa kulalui bersama Kubis di keranjang sepeda."
+pemilik_kedai (default): "Eh, biasanya ada yang menemani?"
+narator: "Kedai mie soba. Pemilik kedai menatapku."
+mc (senyum_tipis): "Hari ini sendirian."
+pemilik_kedai: "Oh. Tunggu, kucing kamu mana?"
+mc: "Sudah tidak ada."
+pemilik_kedai: "Sakit?"
+mc: "Semacam itu."
+narator: "Di dunia tanpa kucing, orang tidak tahu apa yang hilang. Mereka hanya tahu ada yang berbeda. Pemilik kedai memberiku semangkuk mie soba dengan potongan ikan yang lebih banyak dari biasanya. Mungkin sebagai ungkapan simpati yang tidak tahu harus diungkapkan bagaimana."
+narator: "Aku memakannya sendiri. Tanpa ada yang mencuri ikan dari mangkukku."
+[signal arg="ending_c_ke_bioskop"]
+return

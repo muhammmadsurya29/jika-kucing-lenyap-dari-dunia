@@ -1,0 +1,14 @@
+mc: "Kalau aku mati, Kubis juga tidak punya siapa-siapa. Setidaknya... kalau dia tidak ada, dia tidak perlu kehilangan siapapun."
+aloha: "Yakin? Itu alasan yang cukup manusiawi dan cukup bodoh."
+mc: "Mungkin."
+narator: "Aloha mengedipkan mata. Selimut oranye di pojok kasur. Dalam satu kedipan, kosong."
+[signal arg="fade_kubis"]
+[wait time="1.5"]
+narator: "Dan Kubis lenyap dari dunia. Seperti itu saja. Tidak ada suara perpisahan. Tidak ada kesempatan terakhir. Karena aku tidak minta. Karena aku takut kalau aku minta, aku tidak akan bisa melanjutkannya."
+narator: "Aku duduk di tepi kasur. Menatap pojok kamar yang kosong."
+narator: "Aku baru sadar bahwa selama empat tahun, aku tidak pernah tidur dalam keheningan penuh. Selalu ada suara dengkuran kecil, gesekan cakar di lantai, bunyi mangkuk makan yang didorong-dorong. Sekarang tidak ada. Dan heningnya bukan menenangkan. Heningnya seperti ruangan yang kehilangan gravitasi."
+narator: "Tanganku bergerak refleks ke arah selimut oranye lalu berhenti. Menyadari."
+mc: "Kubis."
+narator: "Tentu saja tidak ada jawaban. Aku yang memilih ini."
+[signal arg="ending_c_lanjut_pagi"]
+return
