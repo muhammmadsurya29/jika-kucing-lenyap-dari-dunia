@@ -91,16 +91,16 @@ timeline_name = "alt_taman_bukit"
 shape = SubResource("RectangleShape2D_zyd4cgvj")
 
 [node name="NodeA_MC" type="Marker2D" parent="." unique_id=719530208]
-position = Vector2(-73, 376)
+position = Vector2(-73, 378)
 
 [node name="NodeB_Kubis" type="Marker2D" parent="." unique_id=251337889]
-position = Vector2(-102, 376)
+position = Vector2(-101, 379)
 
 [node name="NodeSpawnAnak" type="Marker2D" parent="." unique_id=1599070394]
 position = Vector2(-159, 267)
 
 [node name="NodeTitikAnak" type="Marker2D" parent="." unique_id=273871564]
-position = Vector2(-109, 360)
+position = Vector2(-110, 355)
 
 [node name="NodeSpawnIbu" type="Marker2D" parent="." unique_id=801637810]
 position = Vector2(-154, 264)

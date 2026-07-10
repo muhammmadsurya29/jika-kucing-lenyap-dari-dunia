@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cxc_creditscene1"]
 
-[ext_resource type="Script" path="res://scripts/credit_scene.gd" id="1_credit"]
+[ext_resource type="Script" path="res://scripts/alt_credit_scene.gd" id="1_credit"]
 [ext_resource type="AudioStream" uid="uid://dwdwdwdw" path="res://assets/audio/happy-end.mp3" id="2_audio"]
 
 [node name="CreditScene" type="Control"]
