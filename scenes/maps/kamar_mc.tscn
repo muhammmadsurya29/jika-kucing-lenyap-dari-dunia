@@ -22,8 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://cufou0ay8h6td" path="res://assets/Tiles/Interior/Room_Builder_Floors_16x16.png" id="19_jam"]
 [ext_resource type="Texture2D" uid="uid://2lfeqlt23x6o" path="res://assets/Tiles/animated_cuckoo_clock.png" id="19_uiijr"]
 [ext_resource type="Texture2D" uid="uid://bbg4di4t0fltg" path="res://assets/Tiles/animated_TV_reportage_hospital_2.png" id="20_tcxud"]
+[ext_resource type="Script" uid="uid://bask6tfvanlo0" path="res://scripts/kamar_mc_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://do5fvp7ei04ft" path="res://scripts/npc_choreography.gd" id="iq5e41uq"]
-[ext_resource type="Script" path="res://scripts/kamar_mc_root.gd" id="99_root"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcxud"]
 texture = ExtResource("1_mnld5")
@@ -9083,9 +9083,9 @@ animations = [{
 }]
 
 [node name="KamarMC" type="Node2D" unique_id=1886236822]
-script = ExtResource("99_root")
 y_sort_enabled = true
 position = Vector2(6, 16)
+script = ExtResource("99_root")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=2028054268]
 y_sort_enabled = true
@@ -9243,11 +9243,11 @@ point_c = NodePath("../PointC")
 point_d = NodePath("../PointD")
 movement_speed = 20.0
 
-[node name="NodeMCEpilogDuduk" type="Marker2D" parent="."]
-position = Vector2(80, 50)
+[node name="NodeMCEpilogDuduk" type="Marker2D" parent="." unique_id=1331361822]
+position = Vector2(7, 52)
 
-[node name="NodeKubisEpilogTidur" type="Marker2D" parent="."]
+[node name="NodeKubisEpilogTidur" type="Marker2D" parent="." unique_id=1499807294]
 position = Vector2(9, 25)
 
-[node name="NodeMCEpilogTidur" type="Marker2D" parent="."]
-position = Vector2(9, 25)
+[node name="NodeMCEpilogTidur" type="Marker2D" parent="." unique_id=539984465]
+position = Vector2(8, 13)

@@ -54,10 +54,11 @@ func _on_dialogic_signal(argument: String) -> void:
 			else:
 				player.position = Vector2(9, 25) # Kasur
 			if player.has_method("play_custom_animation"):
-				player.play_custom_animation("idle_right")
+				player.play_custom_animation("idle_tidur")
+			elif player.has_node("AnimatedSprite2D"):
+				player.get_node("AnimatedSprite2D").play("idle_tidur")
 			
-			# Putar MC 90 derajat seolah tidur
-			player.rotation_degrees = 90
+			player.rotation_degrees = 0 # Pastikan rotasinya normal
 		if kubis:
 			var node_kubis = get_node_or_null("NodeKubisEpilogTidur")
 			if node_kubis:
