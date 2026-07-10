@@ -27785,7 +27785,7 @@ shape = SubResource("RectangleShape2D_1s67d")
 [node name="PintuTsutaya" type="Area2D" parent="." unique_id=500000010]
 position = Vector2(-619, -365)
 script = ExtResource("2_svcpl")
-target_scene = "res://scenes/maps/tsutaya.tscn"
+target_scene = "res://scenes/maps/toko_dvd.tscn"
 minimum_day_to_exit = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTsutaya" unique_id=500000011]
