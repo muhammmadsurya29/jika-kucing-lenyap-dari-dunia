@@ -76,11 +76,19 @@ func _setup_post_bioskop():
 	is_walking = false
 	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
 	
-	player.position.x = target_x - 10
-	player.position.y = bioskop.position.y + 40
+	var node_mc_berdiri = get_node_or_null("NodeMCBerdiriMalam")
+	if node_mc_berdiri:
+		player.position = node_mc_berdiri.position
+	else:
+		player.position.x = target_x - 10
+		player.position.y = bioskop.position.y + 40
 	
-	mantan.position.x = target_x + 20
-	mantan.position.y = player.position.y
+	var node_mantan_berdiri = get_node_or_null("NodeMantanBerdiriMalam")
+	if node_mantan_berdiri:
+		mantan.position = node_mantan_berdiri.position
+	else:
+		mantan.position.x = target_x + 20
+		mantan.position.y = player.position.y
 	
 	if "is_following_player" in mantan:
 		mantan.is_following_player = false

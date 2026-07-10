@@ -37,8 +37,10 @@ directories/dch_directory={
 "tsutaya": "res://assets/sprites/tsutaya.dch"
 }
 directories/dtl_directory={
+"alt2_dalam_bioskop": "res://dialogues/alt2_dalam_bioskop.dtl",
 "alt2_jalanan_kota": "res://dialogues/alt2_jalanan_kota.dtl",
 "alt2_luar_bioskop": "res://dialogues/alt2_luar_bioskop.dtl",
+"alt2_luar_bioskop_post": "res://dialogues/alt2_luar_bioskop_post.dtl",
 "alt2_pagi_kamar": "res://dialogues/alt2_pagi_kamar.dtl",
 "alt2_tsutaya": "res://dialogues/alt2_tsutaya.dtl",
 "alt_malam_terakhir": "res://dialogues/alt_malam_terakhir.dtl",

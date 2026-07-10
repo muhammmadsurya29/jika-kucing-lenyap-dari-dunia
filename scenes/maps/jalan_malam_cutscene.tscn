@@ -16124,7 +16124,7 @@ position = Vector2(351, 333)
 position = Vector2(449, 28)
 
 [node name="NodeDepanPintuBioskop" type="Marker2D" parent="GedungBioskop" unique_id=1290573774]
-position = Vector2(42, 79)
+position = Vector2(-1, 67)
 
 [node name="NodeMCDuduk" type="Marker2D" parent="." unique_id=1016404026]
 position = Vector2(531, 72)
@@ -16134,3 +16134,9 @@ position = Vector2(239, 84)
 
 [node name="NodeMantanDuduk" type="Marker2D" parent="." unique_id=893407060]
 position = Vector2(511, 72)
+
+[node name="NodeMCBerdiriMalam" type="Marker2D" parent="."]
+position = Vector2(810, 40)
+
+[node name="NodeMantanBerdiriMalam" type="Marker2D" parent="."]
+position = Vector2(840, 40)
