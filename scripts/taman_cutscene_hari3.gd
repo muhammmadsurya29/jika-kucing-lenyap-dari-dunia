@@ -36,6 +36,10 @@ func _ready() -> void:
 
 	elif StoryManager.current_day == 99:
 		# Setup Sinematik Hari 99
+		# Kunci pergerakan langsung agar animasi tidak ditimpa oleh _physics_process
+		if player and player.has_method("lock_movement"):
+			player.lock_movement()
+			
 		var node_mc = get_node_or_null("NodeA_MC")
 		if player and node_mc:
 			player.global_position = node_mc.global_position
