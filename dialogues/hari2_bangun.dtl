@@ -23,6 +23,22 @@ aloha (default): yaa tentu saja. Akan kuberi waktu setengah hari saja mulai dari
 [end_timeline]
 
 label alt_ending
-aloha: Hmph, bodoh sekali. Kalau begitu, nikmatilah sisa hidupmu yang tinggal sebentar lagi itu!
-[signal arg="game_over"]
+mc: "Batal."
+aloha (default): "Ha?"
+mc: "Aku tidak mau menghilangkan film."
+aloha (serius): "Kamu sadar tidak? Kemarin kamu sudah setuju menghilangkan ponsel. Kamu sudah dapat satu hari tambahan. Kalau sekarang kamu berhenti di sini, hari ini adalah harimu yang terakhir. Sungguhan."
+narator: "Aku diam sebentar, menatap Kubis yang duduk melingkar di atas selimut."
+mc: "Iya. Aku tahu."
+aloha (default): "Kenapa? Film itu... kamu bahkan hampir pingsan kemarin waktu aku menyebutnya."
+mc: "Justru karena itu."
+aloha: "Maksudnya?"
+mc: "Kalau menyebutnya saja sudah membuatku hampir pingsan, berarti film itu bukan hal kecil. Bukan sesuatu yang pantas ku hilangkan dari dunia hanya demi nyawaku satu hari lagi."
+narator: "Aloha mondar-mandir di kamar dengan ekspresi yang untuk pertama kalinya terlihat tidak yakin."
+aloha: "Tapi kamu bisa menonton satu film terakhir dulu. Aku kasih waktu. Bukankah itu yang kamu mau?"
+mc: "Aku mau menonton film terakhir, tapi bukan sebagai perpisahan. Aku mau menonton karena memang mau menonton. Ada bedanya."
+aloha: "Bedanya apa?"
+mc: "Kalau ini perpisahan, aku akan menontonnya dengan pikiran penuh tentang bahwa ini yang terakhir. Tapi kalau film masih ada di dunia, aku bisa menonton dengan pikiran penuh tentang filmnya saja."
+aloha (default): "Kamu ini... repot sekali."
+mc (senyum_tipis): "Maaf."
+[signal arg="alt2_start"]
 [end_timeline]

@@ -4,12 +4,12 @@ kubis: "Meong."
 mc: "Iya, Kubis. Pemandangannya bagus."
 kubis: "Meong."
 mc: "Kamu mau makan? Sabar dulu."
-narator: "Aku mengeluarkan bekal kecil dari tas — sepotong ikan tuna untuk Kubis, roti untuk diriku."
+narator: "Aku mengeluarkan bekal kecil dari tas sepotong ikan tuna untuk Kubis, roti untuk diriku."
 narator: "Sarapan terakhir di bangku taman dengan kucing yang tidak bisa bicara tapi entah kenapa selalu terasa seperti teman terbaik. Tidak buruk, kukira."
 
 [signal arg="anak_muncul"]
 [wait time="2.0"]
-narator: "Seorang anak kecil sekitar 7 tahun — berlari menghampiri bangku dan langsung menatap Kubis dengan mata berbinar."
+narator: "Seorang anak kecil sekitar 7 tahun berlari menghampiri bangku dan langsung menatap Kubis dengan mata berbinar."
 anak: "Kucingnya boleh aku pegang?"
 mc: "Boleh, asal pelan-pelan."
 narator: "Anak itu mengelus Kubis dengan hati-hati. Kubis diam saja bahkan sedikit mendengkur."
@@ -25,6 +25,6 @@ ibu_anak: "Maaf, anak saya langsung lari waktu lihat kucing."
 mc: "Tidak apa-apa. Kubis suka anak kecil."
 narator: "Ibu tersenyum lega. Si anak masih asyik bermain dengan Kubis. Aku menatap mereka."
 narator: "Aku menatap mereka. Ibu dan anak itu. Tiba-tiba teringat ibu. Ibu yang berlari mencariku waktu aku tersesat di taman waktu kecil. Ibu yang selalu datang. Selalu ada. Betapa sederhana tapi betapa luar biasanya itu."
-narator: "Aku tersenyum — senyum yang tidak dibuat-buat."
+narator: "Aku tersenyum senyum yang tidak dibuat-buat."
 
 [signal arg="alt_taman_bukit_selesai"]

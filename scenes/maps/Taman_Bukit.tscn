@@ -91,7 +91,7 @@ timeline_name = "alt_taman_bukit"
 shape = SubResource("RectangleShape2D_zyd4cgvj")
 
 [node name="NodeA_MC" type="Marker2D" parent="." unique_id=719530208]
-position = Vector2(-73, 378)
+position = Vector2(-73, 377)
 
 [node name="NodeB_Kubis" type="Marker2D" parent="." unique_id=251337889]
 position = Vector2(-101, 379)

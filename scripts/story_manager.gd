@@ -285,6 +285,15 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_damai.tscn", 2.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/ui/credit_damai.tscn")
+	elif argument == "alt2_start":
+		current_day = 100 # Ending Bangkit
+		is_night = false
+		can_sleep = false
+		can_leave_room = false
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 2.0)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
 
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):
