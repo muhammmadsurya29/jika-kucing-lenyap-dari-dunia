@@ -162,4 +162,4 @@ aloha: Pasti kamu menyesal. aku mau hiduuuuup! panggilkan kembali iblis ituuuu! 
 narator: Manusia yang berpikiran mungkin dirinya akan mati besok bisa hidup sepenuhnya selama sisa waktu yang mereka miliki. ada orang yang mengatakan demikian. tapi kukira itu kebohongan. sekaligus menyadari kematiannya, orang akan terus menerus menyesuaikan harapan untuk hidup dengan kematian. namun, bagiku yang pernah mendapatkan hal untuk menghilangkan sesuatu dari dunia, justru penyesalan itulah yang tampak indah. karena itulah bukti bahwa aku hidup selama ini.
 [signal arg="event_selesai"]
 [signal arg="tamat"]
-[end_timeline]
+return

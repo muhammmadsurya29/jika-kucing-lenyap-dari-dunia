@@ -35,7 +35,7 @@ mc: Kumohon, jangan.
 aloha: Mari kita lenyapkan Kucing dari dunia!
 - YA (Ending Kesepian)
     [signal arg="ending_kesepian"]
-    [end_timeline]
+    return
 - TIDAK (Terima Kematian)
     mc: Tunggu!
     [background arg="layar_hitam.png" fade="0.0"]

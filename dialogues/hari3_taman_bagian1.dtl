@@ -7,4 +7,4 @@ mc: Itu Randa Tapak. Dia mekar saat musim semi. Kamu sama seperti ku dulu waktu 
 [background arg="" fade="1.0"]
 [signal arg="kubis_jalan_ke_bukit"]
 [signal arg="aktifkan_bangku"]
-[end_timeline]
+return

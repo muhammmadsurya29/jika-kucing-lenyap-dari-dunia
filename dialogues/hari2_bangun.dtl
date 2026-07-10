@@ -20,7 +20,7 @@ narator: film-film yang berharga bagiku, yang senantiasa menemaniku, seandainya 
 mc: Baiklah aku setuju menghapus film, tapi aku diberikan kesempatan terakhirkan untuk menonton film? Seperti sebelumnya
 aloha (default): yaa tentu saja. Akan kuberi waktu setengah hari saja mulai dari sekarang. Pilihlah selama setengah hari! Satu film terakhir dalam hayatmu
 [signal arg="boleh_keluar"]
-[end_timeline]
+return
 
 label alt_ending
 mc: "Batal."
@@ -42,4 +42,4 @@ aloha (default): "Kamu ini... repot sekali."
 mc (senyum_tipis): "Maaf."
 [signal arg="alt2_start"]
 [signal arg="boleh_keluar"]
-[end_timeline]
+return

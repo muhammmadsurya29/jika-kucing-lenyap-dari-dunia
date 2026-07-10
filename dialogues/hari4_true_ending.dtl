@@ -7,12 +7,12 @@ narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keput
 narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buku, di bawah tempat tidur, di dalam kamar mandi, ia tidak ada.
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="event_selesai"]
-[end_timeline]
+return
 label cek_mesin_cuci
 [background arg="res://assets/backgrounds/HARI 4/cek mesin cuci.png" fade="1.0"]
 [signal arg="update_objective:Coba cari di dekat Jendela"]
 narator: Tidak ada juga.
-[end_timeline]
+return
 label cek_jendela
 [background arg="res://assets/backgrounds/HARI 4/mengecek jendela.png" fade="1.0"]
 [signal arg="update_objective:Sepertinya Kubis keluar kamar. Keluar lewat Pintu Utama!"]
@@ -20,19 +20,19 @@ narator: Tidak ada juga.
 [signal arg="suara_meong"]
 mc: Kubis!
 [signal arg="boleh_keluar"]
-[end_timeline]
+return
 label cek_parkiran
 [signal arg="update_objective:Cari Kubis di Taman Bukit"]
 [background arg="res://assets/backgrounds/HARI 4/mencari kubis di mobil van putih.png" fade="1.0"]
 narator: Tidak ada kubis.
 [signal arg="teleport_ke_taman_bukit"]
-[end_timeline]
+return
 label cek_taman_bukit
 [signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
 [background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_28_25 AM.png" fade="1.0"]
 narator: Bahkan di taman pun tidak ada.
 [signal arg="teleport_ke_taman"]
-[end_timeline]
+return
 label cek_soba
 narator: Tak ada juga. ‘Kubis!’, ‘Kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.
 [background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_32_03 AM.png" fade="1.0"]
@@ -44,7 +44,7 @@ narator: Aku sudah menghilangkan kucing, kubis, dari dunia ini.
 [signal arg="suara_meong"]
 narator: Mimpi atau kenyataan?
 [signal arg="teleport_ke_bioskop_dari_taman"]
-[end_timeline]
+return
 label bioskop_puncak
 [signal arg="update_objective:Beres-beres kamar untuk terakhir kalinya"]
 [signal arg="suara_meong"]
@@ -175,7 +175,7 @@ aloha: Oh jelas. Layanan istimewa untuk kesempatan terakhir! Lakukanlah semua ha
 narator: Aloha mengucapkan perpisahan dengan begitu enteng.
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="day4_ke_kamar_beres2"]
-[end_timeline]
+return
 label beres_beres
 [signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres kamar.png" fade="1.0"]
@@ -185,7 +185,7 @@ narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak 
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
 narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
 [signal arg="set_day4_state:beres_beres_selesai"]
-[end_timeline]
+return
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
@@ -195,7 +195,7 @@ narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Ora
 [background arg="hitam.png" fade="1.0"]
 narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
 [signal arg="set_day4_state:pemakaman_selesai"]
-[end_timeline]
+return
 label ending_surat
 [signal arg="update_objective:Tamat"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
@@ -211,4 +211,4 @@ narator: Pedalnya terasa berat. Griik, griik, griik tubuh sepeda tua mengerik.
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
 narator: Aku akan kesana. Ke tempat ayahku. Di kota sebelah. Kota itu sudah di depan mata.
 [signal arg="tamat"]
-[end_timeline]
+return

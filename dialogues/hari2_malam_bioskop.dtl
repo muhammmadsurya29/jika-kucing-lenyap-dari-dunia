@@ -32,4 +32,4 @@ mc: I'll be back.
 [background arg="res://assets/backgrounds/hitam.png" fade="2.0"]
 narator: Setelah aloha menghilangkan film aku mengenang ibu, bukan melainkan teringat perkataan ibu "hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya." apakah aku akan menyadarinya kelak? Saat ini aku sungguh sedih dan menyesal karena kehilangan film. Betapa egoisnya aku. Aku baru sadar, film-film yang tak terhitung jumlahnya mendukungku selama ini. Meskipun begitu, aku masih tidak rela kehilangan nyawaku.
 [signal arg="kembali_ke_kamar"]
-[end_timeline]
+return

@@ -20,4 +20,4 @@ mc: Jangan sedih Tsutaya. Ada cerita yang bagus dan ada seseorang yang bisa kuce
 tsutaya: Te..rima kasih.
 mc: Sampai jumpa.
 [signal arg="boleh_keluar"]
-[end_timeline]
+return

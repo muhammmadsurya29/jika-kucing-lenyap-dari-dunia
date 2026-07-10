@@ -14,4 +14,4 @@ kubis: Sahaya mau duduk di tempat ini tuanku.
 [wait time="2.0"]
 [background fade="1.0"]
 [signal arg="aktifkan_bangku"]
-[end_timeline]
+return

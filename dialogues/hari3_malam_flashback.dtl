@@ -28,4 +28,4 @@ aloha: Apanya yang sulit?
 mc: Tunggu sebentar.
 aloha: Baiklah. Ambilah keputusanmu sebelum nyawamu hilang.
 [signal arg="ganti_hari"]
-[end_timeline]
+return
