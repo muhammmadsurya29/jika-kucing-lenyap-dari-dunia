@@ -9250,4 +9250,4 @@ position = Vector2(7, 52)
 position = Vector2(9, 25)
 
 [node name="NodeMCEpilogTidur" type="Marker2D" parent="." unique_id=539984465]
-position = Vector2(8, 13)
+position = Vector2(8, 27)

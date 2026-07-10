@@ -17,16 +17,34 @@ func _ready() -> void:
 			else:
 				player.position = Vector2(80, 50)
 			if player.has_method("play_custom_animation"):
-				player.play_custom_animation("idle_up")
+				player.play_custom_animation("sit_down")
+			elif player.has_node("AnimatedSprite2D"):
+				player.get_node("AnimatedSprite2D").play("sit_down")
 				
 		# Posisikan kubis di kasur
 		if kubis:
+			if kubis.has_method("set_physics_process"):
+				kubis.set_physics_process(false)
+			if kubis.has_method("set_process"):
+				kubis.set_process(false)
+			if "is_following_player" in kubis:
+				kubis.is_following_player = false
+			if "is_moving" in kubis:
+				kubis.is_moving = false
+				
+			var choreo = get_node_or_null("NPCChoreography")
+			if choreo:
+				choreo.queue_free() # Matikan choreo agar tidak bentrok
+				
 			var node_kubis = get_node_or_null("NodeKubisEpilogTidur")
 			if node_kubis:
 				kubis.position = node_kubis.position
 			else:
 				kubis.position = Vector2(9, 25)
+			
+			# Hentikan AI dan paksa animasi sleep
 			if kubis.has_node("AnimatedSprite2D"):
+				kubis.get_node("AnimatedSprite2D").stop()
 				kubis.get_node("AnimatedSprite2D").play("sleep")
 				
 		# Matikan HUD objektif
