@@ -38,6 +38,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "alt2_jalanan_kota": "res://dialogues/alt2_jalanan_kota.dtl",
+"alt2_luar_bioskop": "res://dialogues/alt2_luar_bioskop.dtl",
 "alt2_pagi_kamar": "res://dialogues/alt2_pagi_kamar.dtl",
 "alt2_tsutaya": "res://dialogues/alt2_tsutaya.dtl",
 "alt_malam_terakhir": "res://dialogues/alt_malam_terakhir.dtl",

@@ -43,12 +43,20 @@ func _setup_normal():
 
 func _setup_day100():
 	is_walking = false
-	player.position.x = target_x - 10
-	player.position.y = bioskop.position.y + 40 # Sesuaikan dengan posisi bawah bioskop
-	
-	mantan.position.x = target_x - 200 # Jauh di luar layar kiri
-	mantan.position.y = player.position.y
-	
+	var node_mc = get_node_or_null("NodeMCDuduk")
+	if node_mc:
+		player.position = node_mc.position
+	else:
+		player.position.x = target_x - 10
+		player.position.y = bioskop.position.y + 40
+		
+	var node_mantan = get_node_or_null("NodeMantanMulai")
+	if node_mantan:
+		mantan.position = node_mantan.position
+	else:
+		mantan.position.x = target_x - 200
+		mantan.position.y = player.position.y
+		
 	if "is_following_player" in mantan:
 		mantan.is_following_player = false
 		mantan.is_moving = false
@@ -107,8 +115,13 @@ func _alt2_mantan_datang():
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_right")
 		
+	var target_pos = player.position.x - 30
+	var node_duduk = get_node_or_null("NodeMantanDuduk")
+	if node_duduk:
+		target_pos = node_duduk.position.x
+		
 	var tween = create_tween()
-	tween.tween_property(mantan, "position:x", player.position.x - 30, 2.5)
+	tween.tween_property(mantan, "position:x", target_pos, 2.5)
 	await tween.finished
 	
 	if mantan.has_node("AnimatedSprite2D"):
