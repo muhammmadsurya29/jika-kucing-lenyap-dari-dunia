@@ -294,6 +294,14 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/maps/kamar_mc.tscn", 2.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
+	elif argument == "alt2_pagi_kamar_selesai":
+		can_leave_room = true
+		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Pergi ke Toko DVD (Tsutaya)")
+	elif argument == "alt2_tsutaya_selesai":
+		if has_node("/root/ScreenFade"):
+			get_node("/root/ScreenFade").transition_to("res://scenes/maps/bioskop.tscn", 1.5)
+		else:
+			get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
 
 func _on_dialogue_started() -> void:
 	if has_node("/root/ObjectiveHUD"):

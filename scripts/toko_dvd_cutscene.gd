@@ -11,6 +11,15 @@ func _ready() -> void:
 	var pintu = get_node_or_null("PintuKeluar")
 	if pintu:
 		pintu.requires_leave_permission = true
+		
+	if StoryManager.current_day == 100:
+		_play_alt2_tsutaya()
+
+func _play_alt2_tsutaya() -> void:
+	await get_tree().create_timer(1.0).timeout
+	if player and player.has_method("lock_movement"):
+		player.lock_movement()
+	Dialogic.start("alt2_tsutaya")
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "tsutaya_cari_dvd":
