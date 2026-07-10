@@ -9159,6 +9159,14 @@ script = ExtResource("17_ykrbj")
 [node name="PosisiAloha_Hari2" type="Marker2D" parent="." unique_id=1559444332]
 position = Vector2(53, 49)
 
+
+[node name="TriggerDapurDay101" type="Area2D" parent="."]
+position = Vector2(7, 13)
+script = ExtResource("15_d8i2l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapurDay101"]
+position = Vector2(73.375, 101)
+shape = SubResource("RectangleShape2D_d8i2l")
 [node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
 position = Vector2(7, 13)
 script = ExtResource("15_d8i2l")
