@@ -1,6 +1,3 @@
-
-[sub_resource type="GDScript" id="GDScript_alt2"]
-script/source = "extends Node\n\nfunc _ready():\n\tawait get_tree().create_timer(1.0).timeout\n\tif StoryManager.current_day == 100:\n\t\tvar player = get_tree().get_first_node_in_group('Player')\n\t\tif player and player.has_method('lock_movement'):\n\t\t\tplayer.lock_movement()\n\t\tDialogic.start('alt2_jalanan_kota')\n"
 [gd_scene format=3 uid="uid://bdjvgmgpv4q3b"]
 
 [ext_resource type="Texture2D" uid="uid://bxhnbmpsvkt1g" path="res://assets/Tiles/exterior/2_City_Terrains_16x16.png" id="2_sqsbl"]
@@ -27740,6 +27737,9 @@ size = Vector2(28.75, 19.6875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mns6ss9t"]
 size = Vector2(31, 23)
 
+
+[sub_resource type="GDScript" id="GDScript_alt2"]
+script/source = "extends Node\n\nfunc _ready():\n\tawait get_tree().create_timer(1.0).timeout\n\tif StoryManager.current_day == 100:\n\t\tvar player = get_tree().get_first_node_in_group('Player')\n\t\tif player and player.has_method('lock_movement'):\n\t\t\tplayer.lock_movement()\n\t\tDialogic.start('alt2_jalanan_kota')\n"
 [node name="JalananKota" type="Node2D" unique_id=1501528845]
 
 [node name="TileMap" type="TileMap" parent="." unique_id=333640770]
