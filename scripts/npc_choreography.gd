@@ -31,6 +31,8 @@ func start_choreography() -> void:
 	var anim = target_npc.get_node_or_null("AnimatedSprite2D")
 	
 	while is_moving:
+		if not is_instance_valid(target_npc):
+			break
 		# Gerak dari posisi awal (A) ke B
 		if point_a: target_npc.global_position = point_a.global_position
 		# Diam sebentar
@@ -80,6 +82,7 @@ func start_choreography() -> void:
 	is_moving = false
 
 func move_npc(npc: Node2D, anim: AnimatedSprite2D, target_pos: Vector2, anim_name: String) -> void:
+	if not is_instance_valid(npc): return
 	if anim: anim.play(anim_name)
 	var dist = npc.global_position.distance_to(target_pos)
 	var time = dist / movement_speed
