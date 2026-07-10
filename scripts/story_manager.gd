@@ -386,7 +386,12 @@ func ganti_hari(target_scene: String = "") -> void:
 	
 	player = get_tree().get_first_node_in_group("Player")
 	if player:
-		player.global_position = Vector2(7, 29)
+		var node_tidur = get_tree().get_root().find_child("NodeMCEpilogTidur", true, false)
+		if node_tidur:
+			player.global_position = node_tidur.global_position
+		else:
+			player.global_position = Vector2(9, 25)
+		
 		if player.has_method("play_waking_up_animation"):
 			# Fungsi ini akan secara asinkron memainkan animasi loncat ke samping kasur
 			player.play_waking_up_animation()

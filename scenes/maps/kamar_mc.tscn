@@ -9247,7 +9247,7 @@ movement_speed = 20.0
 position = Vector2(7, 52)
 
 [node name="NodeKubisEpilogTidur" type="Marker2D" parent="." unique_id=1499807294]
-position = Vector2(9, 25)
+position = Vector2(8, 32)
 
 [node name="NodeMCEpilogTidur" type="Marker2D" parent="." unique_id=539984465]
 position = Vector2(8, 27)
