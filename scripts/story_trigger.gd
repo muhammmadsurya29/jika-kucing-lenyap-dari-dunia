@@ -73,6 +73,9 @@ func _on_body_entered(body: Node2D) -> void:
 			if current_day < timeline_per_hari.size():
 				target_timeline = timeline_per_hari[current_day]
 				
+		if StoryManager.current_day == 101 and self.name == "TriggerDapurDay101":
+			target_timeline = "ending_c_pagi_dapur"
+			
 		print("[DEBUG StoryTrigger] Target timeline: ", target_timeline)
 		
 		if target_timeline != "" and not Dialogic.current_timeline:
