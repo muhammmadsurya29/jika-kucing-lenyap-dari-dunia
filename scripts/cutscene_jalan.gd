@@ -31,13 +31,12 @@ func _ready() -> void:
 			_setup_post_bioskop()
 		else:
 			_setup_day100()
-	elif StoryManager.is_ending_c:
-		if StoryManager.ending_c_state == "luar_bioskop":
-			_setup_ending_c_luar()
-		elif StoryManager.ending_c_state == "luar_bioskop_post":
+	elif StoryManager.current_day == 101:
+		if StoryManager.ending_c_state == "luar_bioskop_post":
 			_setup_ending_c_post()
+		else:
+			_setup_ending_c_luar() # Default for day 101
 	else:
-		_setup_normal()
 		_setup_normal()
 
 func _setup_normal():
