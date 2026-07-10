@@ -8826,7 +8826,7 @@ size = Vector2(20, 25)
 size = Vector2(16, 8)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
-size = Vector2(29.25, 13.375)
+size = Vector2(35.625, 13.375)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tcxud"]
 atlas = ExtResource("19_uiijr")
@@ -9159,14 +9159,14 @@ script = ExtResource("17_ykrbj")
 [node name="PosisiAloha_Hari2" type="Marker2D" parent="." unique_id=1559444332]
 position = Vector2(53, 49)
 
-
-[node name="TriggerDapurDay101" type="Area2D" parent="."]
+[node name="TriggerDapurDay101" type="Area2D" parent="." unique_id=1485353675]
 position = Vector2(7, 13)
 script = ExtResource("15_d8i2l")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapurDay101"]
-position = Vector2(73.375, 101)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapurDay101" unique_id=652546389]
+position = Vector2(39, 118)
 shape = SubResource("RectangleShape2D_d8i2l")
+
 [node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
 position = Vector2(7, 13)
 script = ExtResource("15_d8i2l")

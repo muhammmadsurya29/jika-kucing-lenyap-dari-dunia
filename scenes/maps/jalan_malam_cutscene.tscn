@@ -16140,3 +16140,15 @@ position = Vector2(422, 104)
 
 [node name="NodeMantanBerdiriMalam" type="Marker2D" parent="." unique_id=1320788679]
 position = Vector2(448, 104)
+
+[node name="NodeMCEndingC_Luar" type="Marker2D" parent="."]
+position = Vector2(438, 68)
+
+[node name="NodeMantanEndingC_Luar" type="Marker2D" parent="."]
+position = Vector2(448, 65)
+
+[node name="NodeMCEndingC_Post" type="Marker2D" parent="."]
+position = Vector2(438, 68)
+
+[node name="NodeMantanEndingC_Post" type="Marker2D" parent="."]
+position = Vector2(468, 68)

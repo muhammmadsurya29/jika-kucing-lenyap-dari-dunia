@@ -265,16 +265,25 @@ func _setup_ending_c_luar():
 	is_walking = false
 	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
 	
-	player.position.x = target_x - 10
-	player.position.y = bioskop.position.y + 40
+	var node_mc = get_node_or_null("NodeMCEndingC_Luar")
+	if node_mc:
+		player.position = node_mc.position
+	else:
+		player.position.x = target_x - 10
+		player.position.y = bioskop.position.y + 40
+		
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("idle_up")
 		
 	if pintu:
 		mantan.position = bioskop.position + pintu.position
 	else:
-		mantan.position.x = target_x
-		mantan.position.y = bioskop.position.y
+		var node_mantan = get_node_or_null("NodeMantanEndingC_Luar")
+		if node_mantan:
+			mantan.position = node_mantan.position - Vector2(0, 40)
+		else:
+			mantan.position.x = target_x
+			mantan.position.y = bioskop.position.y
 	mantan.hide() # Akan muncul dari pintu
 	
 	if not Dialogic.current_timeline:
@@ -282,10 +291,19 @@ func _setup_ending_c_luar():
 
 func _setup_ending_c_post():
 	is_walking = false
-	player.position.x = target_x - 10
-	player.position.y = bioskop.position.y + 40
-	mantan.position.x = target_x + 20
-	mantan.position.y = bioskop.position.y + 40
+	var node_mc = get_node_or_null("NodeMCEndingC_Post")
+	if node_mc:
+		player.position = node_mc.position
+	else:
+		player.position.x = target_x - 10
+		player.position.y = bioskop.position.y + 40
+		
+	var node_mantan = get_node_or_null("NodeMantanEndingC_Post")
+	if node_mantan:
+		mantan.position = node_mantan.position
+	else:
+		mantan.position.x = target_x + 20
+		mantan.position.y = bioskop.position.y + 40
 	
 	if player.has_method("play_custom_animation"):
 		player.play_custom_animation("idle_right")
@@ -300,7 +318,11 @@ func _ending_c_mantan_keluar():
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_down")
 	var tween = create_tween()
-	tween.tween_property(mantan, "position:y", mantan.position.y + 40, 1.5)
+	var node_mantan = get_node_or_null("NodeMantanEndingC_Luar")
+	if node_mantan:
+		tween.tween_property(mantan, "position", node_mantan.position, 1.5)
+	else:
+		tween.tween_property(mantan, "position:y", mantan.position.y + 40, 1.5)
 	await tween.finished
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("idle_left")
