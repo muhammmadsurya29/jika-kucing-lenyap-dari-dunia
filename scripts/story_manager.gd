@@ -331,6 +331,10 @@ func _on_dialogic_signal(argument: String) -> void:
 		Dialogic.start("ending_c_kamar_awal")
 	elif argument == "fade_kubis":
 		is_kubis_lenyap = true
+
+		var choreo = get_tree().get_root().find_child("NPCChoreography", true, false)
+		if choreo:
+			choreo.queue_free()
 		var kubis = get_tree().get_root().find_child("NPC_Kubis", true, false)
 		if kubis:
 			var tween = get_tree().create_tween()
