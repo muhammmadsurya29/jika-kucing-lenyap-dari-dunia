@@ -114,6 +114,7 @@ func _alt2_mantan_datang():
 	Dialogic.paused = true
 	if mantan.has_node("AnimatedSprite2D"):
 		mantan.get_node("AnimatedSprite2D").play("walk_right")
+		mantan.get_node("AnimatedSprite2D").speed_scale = 0.35 # Jalan lambat
 		
 	var target_pos = player.position.x - 30
 	var node_duduk = get_node_or_null("NodeMantanDuduk")
@@ -121,16 +122,17 @@ func _alt2_mantan_datang():
 		target_pos = node_duduk.position.x
 		
 	var tween = create_tween()
-	tween.tween_property(mantan, "position:x", target_pos, 2.5)
+	tween.tween_property(mantan, "position:x", target_pos, 5.0) # Durasi jalan 5 detik (lambat)
 	await tween.finished
 	
 	if mantan.has_node("AnimatedSprite2D"):
+		mantan.get_node("AnimatedSprite2D").speed_scale = 1.0 # Kembalikan speed normal
 		mantan.get_node("AnimatedSprite2D").play("idle_right")
 	Dialogic.paused = false
 
 func _alt2_mantan_duduk():
 	if mantan.has_node("AnimatedSprite2D"):
-		mantan.get_node("AnimatedSprite2D").play("sit_right")
+		mantan.get_node("AnimatedSprite2D").play("sit_down")
 
 func _karakter_berhenti():
 	if player.has_node("AnimatedSprite2D"):
