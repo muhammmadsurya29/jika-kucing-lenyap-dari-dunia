@@ -210,7 +210,6 @@ func _unhandled_input(event: InputEvent) -> void:
 			# --------------------------------------
 			
 			if tl_to_play != "" and tl_to_play != "IGNORE":
-				var sm = get_node_or_null("/root/StoryManager")
 				if sm:
 					if tl_to_play != "kasur_malam" and sm.has_played(tl_to_play):
 						print("[DEBUG Interactable] Timeline sudah pernah dimainkan, dilewati: ", tl_to_play)
