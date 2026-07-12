@@ -14,6 +14,50 @@ var is_ending_c: bool = false
 var is_kubis_lenyap: bool = false
 var ending_c_state: String = ""
 
+var played_timelines: Array[String] = []
+
+var unlocked_endings: Array = []
+const ENDINGS_FILE = "user://endings.cfg"
+
+func has_played(timeline: String) -> bool:
+	return played_timelines.has(timeline)
+
+func mark_played(timeline: String) -> void:
+	if not played_timelines.has(timeline):
+		played_timelines.append(timeline)
+
+func reset_game_state() -> void:
+	current_day = 0
+	can_sleep = false
+	can_leave_room = false
+	cafe_event_done = false
+	is_night = false
+	day4_state = ""
+	alt2_post_bioskop = false
+	alt2_epilog = false
+	is_ending_c = false
+	is_kubis_lenyap = false
+	ending_c_state = ""
+	played_timelines.clear()
+	Dialogic.VAR.reset()
+	
+func _ready() -> void:
+	_load_endings()
+	
+func unlock_ending(ending_name: String) -> void:
+	if not unlocked_endings.has(ending_name):
+		unlocked_endings.append(ending_name)
+		var config = ConfigFile.new()
+		config.load(ENDINGS_FILE)
+		config.set_value("History", "endings", unlocked_endings)
+		config.save(ENDINGS_FILE)
+		print("[StoryManager] Ending Unlocked: ", ending_name)
+
+func _load_endings() -> void:
+	var config = ConfigFile.new()
+	if config.load(ENDINGS_FILE) == OK:
+		unlocked_endings = config.get_value("History", "endings", [])
+
 signal day_changed(new_day: int)
 
 var transition_layer: CanvasLayer
@@ -289,7 +333,8 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_tree().change_scene_to_file("res://scenes/maps/kamar_mc.tscn")
 		play_alt_sore_kamar()
 	elif argument == "alt_tamat":
-		print(">> GAME TAMAT (ENDING DAMAI)!")
+		print(">> GAME TAMAT ALT!")
+		unlock_ending("Ending Damai")
 		if has_node("/root/ScreenFade"):
 			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_damai.tscn", 2.0)
 		else:
@@ -323,6 +368,8 @@ func _on_dialogic_signal(argument: String) -> void:
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/jalan_malam_cutscene.tscn")
 	elif argument == "alt2_ending_bangkit_tamat":
+		print(">> GAME TAMAT ALT 2!")
+		unlock_ending("Ending Bangkit")
 		alt2_epilog = true
 		alt2_post_bioskop = false
 		if has_node("/root/ScreenFade"):
@@ -383,6 +430,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			tween.tween_property(aloha, "modulate:a", 1.0, 1.5)
 	elif argument == "ending_c_credit":
 		print(">> GAME TAMAT (ENDING KESEPIAN)!")
+		unlock_ending("Ending Kesepian")
 		if has_node("/root/ScreenFade"):
 			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_kesepian.tscn", 2.0)
 		else:

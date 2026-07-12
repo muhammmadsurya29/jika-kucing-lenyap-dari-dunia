@@ -20,6 +20,36 @@ func _ready() -> void:
 	_setup_pixel_theme()
 	_start_animations()
 	_setup_button_effects()
+	_setup_history_label()
+
+func _setup_history_label() -> void:
+	var sm = get_node_or_null("/root/StoryManager")
+	if not sm: return
+	
+	var endings = sm.unlocked_endings
+	var history_label = Label.new()
+	add_child(history_label)
+	
+	history_label.set_anchors_preset(Control.PRESET_BOTTOM_LEFT)
+	history_label.position = Vector2(20, get_viewport_rect().size.y - 200)
+	history_label.size = Vector2(400, 180)
+	
+	if pixel_font is FontFile:
+		history_label.add_theme_font_override("font", pixel_font)
+	history_label.add_theme_font_size_override("font_size", 32)
+	history_label.add_theme_color_override("font_color", Color.YELLOW)
+	history_label.add_theme_color_override("font_outline_color", Color.BLACK)
+	history_label.add_theme_constant_override("outline_size", 6)
+	history_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_LEFT
+	history_label.vertical_alignment = VERTICAL_ALIGNMENT_BOTTOM
+	
+	var text = "Riwayat Ending:\n"
+	if endings.size() == 0:
+		text += "- Belum ada"
+	else:
+		for e in endings:
+			text += "- " + str(e) + "\n"
+	history_label.text = text
 
 func _setup_layout():
 	# Memaksa Judul agar rata tengah sempurna
@@ -144,6 +174,9 @@ func _tween_btn_scale(btn: Button, target_scale: float):
 	tween.tween_property(btn, "scale", Vector2(target_scale, target_scale), 0.1)
 
 func _on_tombol_mulai_pressed() -> void:
+	var sm = get_node_or_null("/root/StoryManager")
+	if sm:
+		sm.reset_game_state()
 	get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
 
 func _on_tombol_keluar_pressed() -> void:
