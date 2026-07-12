@@ -1,3 +1,4 @@
 [background arg="res://assets/backgrounds/DAY 1 otw taman/bercermin.png" fade="1.0"]
 narator: Lalu, siapakah lawan bicaraku yang terakhir di telepon kemarin?
+[signal arg="update_objective:Pergi ke dapur"]
 [background fade="1.0"]

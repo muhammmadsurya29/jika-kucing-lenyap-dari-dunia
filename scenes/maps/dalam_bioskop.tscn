@@ -4,11 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="2_bioskop"]
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="3_bioskop"]
 
+[sub_resource type="TileSet" id="TileSet_e6rym"]
+
 [node name="DalamBioskop" type="Node2D" unique_id=1106849244]
 script = ExtResource("1_bioskop")
 
 [node name="TileMap" type="TileMap" parent="." unique_id=600905242]
 y_sort_enabled = true
+tile_set = SubResource("TileSet_e6rym")
 format = 2
 
 [node name="NPC_Mantan" parent="." unique_id=2096297878 instance=ExtResource("2_bioskop")]

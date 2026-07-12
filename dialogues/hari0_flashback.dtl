@@ -7,5 +7,6 @@ narator: "Setelah 1 bulan berlalu, tiba-tiba Ibu membawa pulang anak kucing baru
 narator: "Saat itu aku melihat wajah tersenyum ibu setelah sebulan murung. Melihat ibu tersenyum seperti itu aku menangis... Dan empat tahun lalu ibu benar-benar pergi ke tempat jauh."
 narator: "Takdir macam apa ini? Ibu mengalami sakit seperti selada. Dan ibu menitipkan kubis kepada ku untuk dirawat dengan baik. Apakah aku akan mati lebih dulu dari kubis?"
 [signal arg="ganti_hari"]
+[signal arg="update_objective:Bercermin"]
 [background fade="2.0"]
 [wait time="1.0"]
