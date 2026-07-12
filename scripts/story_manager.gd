@@ -41,8 +41,7 @@ func reset_game_state() -> void:
 	played_timelines.clear()
 	Dialogic.VAR.reset()
 	
-func _ready() -> void:
-	_load_endings()
+
 	
 func unlock_ending(ending_name: String) -> void:
 	if not unlocked_endings.has(ending_name):
@@ -120,6 +119,7 @@ func _ready() -> void:
 	await get_tree().process_frame
 	
 	setup_transition_ui()
+	_load_endings()
 	
 	if Dialogic.has_signal("timeline_started"):
 		Dialogic.timeline_started.connect(_on_dialogue_started)
