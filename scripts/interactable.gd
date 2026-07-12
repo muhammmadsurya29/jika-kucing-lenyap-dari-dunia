@@ -210,6 +210,12 @@ func _unhandled_input(event: InputEvent) -> void:
 			# --------------------------------------
 			
 			if tl_to_play != "" and tl_to_play != "IGNORE":
+				var var_name = "played_" + tl_to_play.replace(":", "_")
+				if tl_to_play != "kasur_malam" and Dialogic.VAR.get(var_name, false) == true:
+					print("[DEBUG Interactable] Timeline sudah pernah dimainkan, dilewati: ", tl_to_play)
+					return
+				Dialogic.VAR.set(var_name, true)
+				
 				print("[DEBUG Interactable] Memulai Dialogic: ", tl_to_play)
 				if ":" in tl_to_play:
 					var parts = tl_to_play.split(":")

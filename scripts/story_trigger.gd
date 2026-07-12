@@ -48,6 +48,12 @@ func _wait_and_start(target_tl: String) -> void:
 		await get_tree().create_timer(1.5).timeout
 		
 	if not Dialogic.current_timeline:
+		var var_name = "played_" + target_tl.replace(":", "_")
+		if Dialogic.VAR.get(var_name, false) == true:
+			print("[DEBUG StoryTrigger] (force) Timeline sudah pernah dimainkan, dilewati: ", target_tl)
+			return
+		Dialogic.VAR.set(var_name, true)
+		
 		if ":" in target_tl:
 			var parts = target_tl.split(":")
 			Dialogic.start(parts[0], parts[1])
@@ -79,6 +85,12 @@ func _on_body_entered(body: Node2D) -> void:
 		print("[DEBUG StoryTrigger] Target timeline: ", target_timeline)
 		
 		if target_timeline != "" and not Dialogic.current_timeline:
+			var var_name = "played_" + target_timeline.replace(":", "_")
+			if Dialogic.VAR.get(var_name, false) == true:
+				print("[DEBUG StoryTrigger] Timeline sudah pernah dimainkan, dilewati: ", target_timeline)
+				return
+			Dialogic.VAR.set(var_name, true)
+			
 			print("[DEBUG StoryTrigger] Memulai Dialogic: ", target_timeline)
 			if ":" in target_timeline:
 				var parts = target_timeline.split(":")
