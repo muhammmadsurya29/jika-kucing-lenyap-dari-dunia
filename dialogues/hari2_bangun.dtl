@@ -2,43 +2,44 @@
 aloha (default): kamu kelihatan amat menderita wahai manusia. Ku kira kamu langsung akan mati. Soalnya aku belum pernah sekalipun gagal menyambung nyawa orang! Seandainya gagal, aku akan dimarahi oleh tuhan, tau!
 mc (syok_kesal): maaf... aku akan berhati-hati setelah ini.
 [background fade="1.0"]
-aloha (default): kamu tidak punya waktu untuk mengatakan setelah ini segala. Berabe kalau kamu tidak mau sadar akan hal itu! Jadi, bagaimana?
-mc: apanya?
-aloha (default): aduuuhhhh. Soal apa yang akan kita hilangkan dari dunia. Yang berikut nya adalah film.
-mc: ya, betul
-aloha: mau menghilangkan, atau batal?
+aloha (ada_maunya): kamu tidak punya waktu untuk mengatakan setelah ini segala. Berabe kalau kamu tidak mau sadar akan hal itu! Jadi, bagaimana?
+mc (marah): apanya?
+aloha (ada_maunya): aduuuhhhh. Soal apa yang akan kita hilangkan dari dunia. Yang berikut nya adalah film.
+mc (netral): ya, betul
+aloha (kedipanmata): mau menghilangkan, atau batal?
 - YA - Hapus Film
 	jump hapus_film
 - TIDAK - Pertahankan
 	jump alt_ending
 
 label hapus_film
-mc: tidak boleh selain film?
-aloha (default): tidak boleh
-mc: benar-benar tidak boleh?
+mc (netral): tidak boleh selain film?
+aloha (kesal): tidak boleh
+mc (netral): benar-benar tidak boleh?
 narator: film-film yang berharga bagiku, yang senantiasa menemaniku, seandainya lenyap apakah aku merasakan seakan-akan diriku lenyap? Namun karena aku ada, film baru bisa ada secara relatif. Berarti jika nyawaku tidak ada lagi, percuma saja. Kalau aku tidak hidup, tentu tidak bisa menikmati film, juga tidak bisa menikmati kehebatannya dengan ia atau para pecinta film. Aku membulatkan hatiku. Aku akan menghilangkan film.
-mc: Baiklah aku setuju menghapus film, tapi aku diberikan kesempatan terakhirkan untuk menonton film? Seperti sebelumnya
-aloha (default): yaa tentu saja. Akan kuberi waktu setengah hari saja mulai dari sekarang. Pilihlah selama setengah hari! Satu film terakhir dalam hayatmu
+narator: Berarti jika nyawaku tidak ada lagi, percuma saja. Kalau aku tidak hidup, tentu tidak bisa menikmati film, juga tidak bisa menikmati kehebatannya dengan ia atau para pecinta film. Aku membulatkan hatiku. Aku akan menghilangkan film.
+mc (netral): Baiklah aku setuju menghapus film, tapi aku diberikan kesempatan terakhirkan untuk menonton film? Seperti sebelumnya
+aloha (ngejek): yaa tentu saja. Akan kuberi waktu setengah hari saja mulai dari sekarang. Pilihlah selama setengah hari! Satu film terakhir dalam hayatmu
 [signal arg="boleh_keluar"]
 [end_timeline]
 
 label alt_ending
-mc: "Batal."
-aloha (default): "Ha?"
-mc: "Aku tidak mau menghilangkan film."
-aloha (serius): "Kamu sadar tidak? Kemarin kamu sudah setuju menghilangkan ponsel. Kamu sudah dapat satu hari tambahan. Kalau sekarang kamu berhenti di sini, hari ini adalah harimu yang terakhir. Sungguhan."
-narator: "Aku diam sebentar, menatap Kubis yang duduk melingkar di atas selimut."
-mc: "Iya. Aku tahu."
-aloha (default): "Kenapa? Film itu... kamu bahkan hampir pingsan kemarin waktu aku menyebutnya."
-mc: "Justru karena itu."
-aloha: "Maksudnya?"
-mc: "Kalau menyebutnya saja sudah membuatku hampir pingsan, berarti film itu bukan hal kecil. Bukan sesuatu yang pantas ku hilangkan dari dunia hanya demi nyawaku satu hari lagi."
-narator: "Aloha mondar-mandir di kamar dengan ekspresi yang untuk pertama kalinya terlihat tidak yakin."
-aloha: "Tapi kamu bisa menonton satu film terakhir dulu. Aku kasih waktu. Bukankah itu yang kamu mau?"
-mc: "Aku mau menonton film terakhir, tapi bukan sebagai perpisahan. Aku mau menonton karena memang mau menonton. Ada bedanya."
-aloha: "Bedanya apa?"
-mc: "Kalau ini perpisahan, aku akan menontonnya dengan pikiran penuh tentang bahwa ini yang terakhir. Tapi kalau film masih ada di dunia, aku bisa menonton dengan pikiran penuh tentang filmnya saja."
-aloha (default): "Kamu ini... repot sekali."
+mc (marah): "Batal."
+aloha (kesal): "Ha?"
+mc (marah): "Aku tidak mau menghilangkan film."
+aloha (kesal): "Kamu sadar tidak? Kemarin kamu sudah setuju menghilangkan ponsel. Kamu sudah dapat satu hari tambahan. Kalau sekarang kamu berhenti di sini, hari ini adalah harimu yang terakhir. Sungguhan."
+Aku diam sebentar, menatap Kubis yang duduk melingkar di atas selimut.
+mc (netral): "Iya. Aku tahu."
+aloha (serius): "Kenapa? Film itu... kamu bahkan hampir pingsan kemarin waktu aku menyebutnya."
+mc (netral): "Justru karena itu."
+aloha (default): "Maksudnya?"
+mc (marah): "Kalau menyebutnya saja sudah membuatku hampir pingsan, berarti film itu bukan hal kecil. Bukan sesuatu yang pantas ku hilangkan dari dunia hanya demi nyawaku satu hari lagi."
+narator: Aloha mondar-mandir di kamar dengan ekspresi yang untuk pertama kalinya terlihat tidak yakin.
+aloha (ngejek): "Tapi kamu bisa menonton satu film terakhir dulu. Aku kasih waktu. Bukankah itu yang kamu mau?"
+mc (senyum_tipis): "Aku mau menonton film terakhir, tapi bukan sebagai perpisahan. Aku mau menonton karena memang mau menonton. Ada bedanya."
+aloha (serius): "Bedanya apa?"
+mc (netral): "Kalau ini perpisahan, aku akan menontonnya dengan pikiran penuh tentang bahwa ini yang terakhir. Tapi kalau film masih ada di dunia, aku bisa menonton dengan pikiran penuh tentang filmnya saja."
+aloha (kesal): "Kamu ini... repot sekali."
 mc (senyum_tipis): "Maaf."
 [signal arg="alt2_start"]
 [signal arg="boleh_keluar"]

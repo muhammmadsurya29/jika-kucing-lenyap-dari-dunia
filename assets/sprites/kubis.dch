@@ -7,15 +7,25 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "dialog_potrait",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Kubis Potraits",
 &"description": "",
 &"display_name": "Kubis",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Kubis Potraits": {
+"export_overrides": {
+"image": "\"res://assets/portraits/KUBIS/Kubis_Potraits.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

@@ -1,35 +1,43 @@
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/bioskop malam.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-[wait time="1.0"]
+[background arg="res://assets/backgrounds/duduk di lobby bioskop.png" fade="1.0"]
+[wait time="2.0"]
 [background fade="1.0"]
-mantan: Bagaimana sudah kau pilih?
-mc: Iya sudah. Ini..
+mantan (default): Bagaimana sudah kau pilih?
+mc (netral): Iya sudah. Ini..
 [signal arg="mc_serahkan_dvd"]
-mantan: Limelight ya. Pilihan bagus.
+[background arg="res://assets/backgrounds/21.png" fade="1.0"]
+mantan (default): Limelight ya. Pilihan bagus.
 [signal arg="mc_masuk_duduk"]
+[background arg="res://assets/backgrounds/24.png" fade="1.0"]
 [wait time="1.0"]
-narator: Aku membayangkan jika aku adalah sutradara dari kisahku sendiri, skenarionya pasti akan sangat dramatis, durasinya mungkin hanya 5 menit dan mungkin banyak adegan yang dipotong dalam pengeditan karena terlalu membosankan. 2 jam sudah berlalu.....
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mantan: Merasa sedih?
-mc: Aku tidak tahu.
-mantan: Kalau kau merasa sedih, pedih atau apapun itu kau bisa datang kesini setiap saat.
-mc: Terima kasih.
-mantan: Tunggu dulu!, kuis yang terakhir.
+Aku membayangkan jika aku adalah sutradara dari kisahku sendiri, skenarionya pasti akan sangat dramatis, durasinya mungkin hanya 5 menit dan mungkin banyak adegan yang dipotong dalam pengeditan karena terlalu membosankan. 2 jam sudah berlalu.....
+mantan (sedih): Merasa sedih?
+[background fade="1.0"]
+mc (netral): Aku tidak tahu.
+mantan (senyum_malu): Kalau kau merasa sedih, pedih atau apapun itu kau bisa datang kesini setiap saat.
+mc (senyum_tipis): Terima kasih.
+mantan (sedih): Tunggu dulu!, kuis yang terakhir.
 [signal arg="mantan_panggil_belakang"]
-mc: Lagi?
-mantan: Ini benar-benar yang terakhir!
+mc (senyum_tipis): Lagi?
+mantan (sedih): Ini benar-benar yang terakhir!
 [signal arg="mantan_muka_sedih"]
-mc: Kalau begitu aku siap untuk menang.
-mantan: Kalau aku menonton film yang berakhir dengan sedih, aku pasti menonton ulang sekali lagi, kau tahu kenapa?
-narator: Jawaban untuk itu aku masih ingat dengan baik. Yang kuharapkan terus menerus di dalam pesawat perjalanan pulang dari Buenos Aires. Yang kuharapkan terus menerus setelah berpisah dengan nya.
-mc: Aku tahu. Karena kamu pikir mungkin kali ini akan berakhir happy ending.
+[background arg="res://assets/backgrounds/mantan menangis.png" fade="1.0"]
+mc (malu_malu): Kalau begitu aku siap untuk menang.
+mantan (sedih): Kalau aku menonton film yang berakhir dengan sedih, aku pasti menonton ulang sekali lagi, kau tahu kenapa?
+[background fade="1.0"]
+Jawaban untuk itu aku masih ingat dengan baik. Yang kuharapkan terus menerus di dalam pesawat perjalanan pulang dari Buenos Aires. Yang kuharapkan terus menerus setelah berpisah dengan nya.
+mc (senyum_tipis): Aku tahu. Karena kamu pikir mungkin kali ini akan berakhir happy ending.
 [signal arg="mantan_senyum"]
-mantan: Kamu benar!
-mantan: May the force be with you!
+[background arg="res://assets/backgrounds/23.png" fade="2.0"]
+mantan (senyum_malu): Kamu benar!
+mantan (senyum_malu): May the force be with you!
 [signal arg="mantan_lambai_tangan"]
-mc: I'll be back.
+[background arg="res://assets/backgrounds/22.png" fade="2.0"]
+mc (senyum_tipis): I'll be back.
 [background arg="res://assets/backgrounds/hitam.png" fade="2.0"]
-narator: Setelah aloha menghilangkan film aku mengenang ibu, bukan melainkan teringat perkataan ibu "hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya." apakah aku akan menyadarinya kelak? Saat ini aku sungguh sedih dan menyesal karena kehilangan film. Betapa egoisnya aku. Aku baru sadar, film-film yang tak terhitung jumlahnya mendukungku selama ini. Meskipun begitu, aku masih tidak rela kehilangan nyawaku.
+Setelah aloha menghilangkan film aku mengenang ibu, bukan melainkan teringat perkataan ibu "hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya".
+apakah aku akan menyadarinya kelak? Saat ini aku sungguh sedih dan menyesal karena kehilangan film.
+Betapa egoisnya aku. Aku baru sadar, film-film yang tak terhitung jumlahnya mendukungku selama ini. Meskipun begitu, aku masih tidak rela kehilangan nyawaku.
 [signal arg="kembali_ke_kamar"]
 return

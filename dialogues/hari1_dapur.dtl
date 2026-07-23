@@ -1,4 +1,4 @@
 [background arg="res://assets/backgrounds/DAY 1 otw taman/sarapan.png" fade="1.0"]
 narator: Di dalam kereta, aku pasti menatap ponsel. Bahkan saat menonton film tidak bisa aku tidak melihat ponsel. Saat makan juga. Momen bersama kubis pun aku cenderung lupa bermain dengannya karena melihat ponsel.
+[signal arg="update_objective:  Keluar!"]
 [background fade="1.0"]
-[signal arg="update_objective:Keluar kamar, temui Mantan di dekat Menara Jam"]

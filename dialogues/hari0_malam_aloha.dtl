@@ -1,7 +1,7 @@
-aloha (default): "Salam Kenal!!"
-mc (syok_kesal): (Terkejut) "Anuu...Siapa kamu? Kenapa kamu disini? wajahmu...?"
+"Salam Kenal!!"
+mc (terkejut): (Terkejut) "Anuu...Siapa kamu? Kenapa kamu disini? wajahmu...?"
 aloha (ngejek): (Tersenyum menyeringai) "Aku juga tidak tahu, siapa aku? HA HA HA. Coba kamu tebak dengan isi kepalamu.”
-mc (dada_sesak): "umm...Doppelganger? Malaikat maut? (aku harus tetap waspada)"
+mc (terkejut): "umm...Doppelganger? Malaikat maut? (aku harus tetap waspada)"
 aloha (ketawa_tengil): "HA HA HA ..Benar – benar manusia yang tidak berguna dan bodoh , Aku adalah Sang Iblis."
 mc (dada_sesak): "Iblis?”
 narator: "Iblis? Pernahkah kamu melihat iblis ?kalo aku pernah. Iblis sungguhan tidak punya wajah hitam, tidak punya ekor runcing. Rupanya iblis memiliki wujud dirimu sendiri."
@@ -11,24 +11,26 @@ mc (senyum_tipis): "umm.. mungkin aku akan melakukan nya seperti yang di film-fi
 aloha (terkejeut): "HA HA HA manusia yang unik sekali, kau dihadapkan dengan kematian dan kau masih bisa berfikir dengan santai sekali? Kau cukup menarik anak manusia."
 narator: "10 hal yang harus dilakukan sebelum mati kedengaran nya lucu sih, sebenar nya aku sendiri tak yakin apakah ini memang realita. Manusia bertemu iblis? Apakah aku benar-benar masih ada di dunia yang sama seperti sebelumnya?"
 aloha (datar): "Mari aku lihat 10 keinginan mu itu (sambil memegang selembar kertas)"
+[background arg="res://assets/backgrounds/10_wish_P.png" fade="1.0"]
 narator: "(memberikan selembar kertas berisi daftar 10 keinginan sebelum mati)"
 narator: "Aku malu. Inilah hasil memeras otakku. Rasanya kucing kesayangan ku juga terlihat putus asa tak mau mendekatiku."
-aloha (serius): "Apa-apaan ini? Memang nya kamu anak SMP ? Ih rasanya aku ikutan malu deh. Huhh kalo gitu coba kita lakukan nomer 1, skydiving dulu."
+[background fade="1.0"]
+aloha (ngakak_jail): "Apa-apaan ini? Memang nya kamu anak SMP ? Ih rasanya aku ikutan malu deh. Huhh kalo gitu coba kita lakukan nomer 1, skydiving dulu."
 [background arg="res://assets/backgrounds/skydiving.png" fade="1.0"]
 narator: "Iblis itu menepuk tangan nya dan tiba-tiba aku sudah berada di atas pesawat jet dengan ketinggian 3000mdpl. Dia mendorong ku terjun dari langit sambil ketawa terbahak-bahak. Bahkan belum terjun aku sudah mual,dingin,mabuk dan takut. Apakah benar aku ingin melakukan hal semacam ini? Lagi-lagi pandangan ku menjadi gelap gulita."
 [background arg="res://assets/backgrounds/pingsan.png" fade="1.0"]
 narator: "meong... lagi-lagi aku dibangunkan oleh suara meong kucingku. Aku bangkit. Kepalaku nyeri. Rupanya ini bukan mimpi."
 [background fade="1.0"]
 mc (malu_malu): "maaf merepotkan"
-aloha (ngejek): (tertawa) "kamu hampir saja mati betulan. Memang iya sih kamu akan mati sebentar lagi"
+aloha (ngakak_jail): (tertawa) "kamu hampir saja mati betulan. Memang iya sih kamu akan mati sebentar lagi"
 narator: "dengan membisu aku memeluk kucingku. Hangat dan empuk. Sentuhan lembut nan nyaman. Selama ini aku memeluknya tanpa memerhatikan apa-apa. Tapi kini aku sadar bahwa inilah yang disebut nyawa."
 mc (dada_sesak): "ngomong-ngomong kamu.... kenapa datang ke sini? Eh...tepatnya untuk apa kamu datang ke sini?"
 aloha (kesal): "kok, berani-berani nya manusia rendahan sepertimu bertanya? Kalau begitu biar aku jelaskan"
 mc (marah): "tunggu dulu!"
 narator: "dengan ketakutan terhadap Aloha yang tiba-tiba mengubah air mukanya, aku gelagapan. Firasat buruk muncul dibenakku. Bahaya menantiku. Naluri meneriakkan peringatan."
-aloha (datar): "kenapa?"
+aloha (ketawa_tengil): "kenapa?"
 mc (netral): "Tidak apa-apa, mohon dijelaskan"
-aloha (default): "aku datang kesini untuk menyampaikan bahwa besok kamu mati."
+aloha (ngejek): "aku datang kesini untuk menyampaikan bahwa besok kamu mati."
 mc (syok_kesal): "Apa?!"
 narator: "terlalu kaget, aku kehilangan suara. Seakan-akan menyusul kekagetanku itu, keputusasaaan yang dalam menyelimutiku. Tenaga hilang dari sekujur tubuhku, kedua lutut bergetar tak terkendali."
 aloha (ada_maunya): "hei! Jangan murung gitu dong. Aku juga datang untuk menawarkan Big Chance yang kamu bahkan tidak bisa bayangkan."
@@ -47,16 +49,20 @@ mc: "dalam alkitab? Aku pernah mendengarnya, tapi belum pernah membacanya"
 aloha: "tak apalah, pokonya secara singkat saja aku jelaskan. Dalam kitab tersebut menceritakan bahwa tuhan menciptakan dunia ini dalam tujuh hari. Hari pertama tuhan menciptakan cahaya... (penjelasan panjang tentang kitab kejadian)... Karena itulah aku mengusulkan kepada Tuhan untuk turun ke bumi untuk membuat manusia memutuskan apa yang dibutuhkan dan tidak."
 mc: "oh begitu, aku tau cerita itu."
 aloha: "lalu aku membuat perjanjian dengan Tuhan. Kalau manusia menghilangkan sesuatu, sebagai gantinya kematian manusia itu ditunda satu hari. Sejak itu aku melakukan transaksi ini dan kamu adalah orang ke-108!"
+[background arg="res://assets/backgrounds/mondar_mandir.png" fade="0.0"]
 mc: "orang ke-108?"
+[background fade="0.0"]
 narator: "tawaran konyol dan tak masuk akal. Namun tanpa peduli aku percaya atau tidak, pertaruhan ini tidak bisa dilewatkan begitu saja. Bagaimanapun aku akan mati tak lama lagi. Aku tidak punya pilihan."
 mc: "Baiklah, aku setuju. Aku mau menghilangkan... jamur di kamar mandi, atau bangkai tikus di loteng!"
 aloha: (Tertawa lepas) "Kau pikir aku tukang bersih-bersih? Aku yang menentukan. Apa yang akan dihilangkan dan juga tidak, Tergantung suasana hatiku."
-[background arg="res://assets/backgrounds/coklat diatas meja.png" fade="1.0"]
+[background arg="res://assets/backgrounds/aloha_buka_kotak.png" fade="1.0"]
 aloha: "Apa ini? Mari kita mulai dengan menghilangkan kotak cokelat ini. Kau setuju?"
+[background fade="1.0"]
 mc: "anu.. itu namanya cokelat, kau harus membukanya terlebih dahulu untuk memakan apa yang ada didalam nya"
 - YA
-[background fade="1.0"]
+[background arg="res://assets/backgrounds/aloha_makan_coklat.png" fade="1.0"]
 aloha: "Hmm! Manis, pahit, dan meleleh sempurna! Aku berubah pikiran. Aku terlalu menyukai ini. Tidak mungkin menghilangkan makanan seenak ini!"
+[background fade="1.0"]
 mc: "Waduhh..tidak bisa begitu dong! Ini menyangkut nyawaku."
 aloha: "Eh? Sepertinya sekarang kamu mulai menyayangkan nyawamu?"
 mc: "Ya tentu! Lagipula emang boleh memutuskan apa yang boleh dan tidak dihilangkan sesuai selera pribadi!?"
@@ -65,7 +71,7 @@ mc: "(murung) benar-benar tidak adil!"
 aloha: "Hei!hei! Jangan murung gitu dong, aku akan memikirkan hal lain sekarang juga."
 audio "res://assets/audio/ringtone.mp3"
 narator: "(Ponselku berdering. Dari kantor pos tempat kerja ku.)"
-[background arg="res://assets/backgrounds/ponsel.png" fade="0.0"]
+[background arg="res://assets/backgrounds/ponsel_mlm.png" fade="0.0"]
 narator: "(Aku melihat jam, sudah lama lewat jam masuk kerja. Yang menelpon adalah kepala kantor pos. Ia kesal karena aku terlambat kerja namun tetap mengkhawatirkan ku karena tau kemaren aku pulang cepat untuk pergi kerumah sakit. Dan akhirnya aku berhasil diizinkan tidak masuk kantor selama seminggu.)"
 [background fade="0.0"]
 aloha: "itu...!"

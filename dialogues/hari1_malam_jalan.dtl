@@ -1,47 +1,52 @@
 [background arg="res://assets/backgrounds/DAY 1 perjalanan ke bioskop/jalan taman.png" fade="0.5"]
-mantan: bagaimana kabar ayahmu? Kalian belum baikan juga?
-mc: em... bagaimana ya? Aku belum menemuinya sejak ibuku meninggal.
-mantan: ibumu sering mengatakan semoga kalian jadi rukun
-mc: harapan itu tidak terkabul, sayangnya
+mantan (default): bagaimana kabar ayahmu? Kalian belum baikan juga?
+mc (netral): em... bagaimana ya? Aku belum menemuinya sejak ibuku meninggal.
+mantan (menggoda): ibumu sering mengatakan semoga kalian jadi rukun
+mc (senyum_tipis): harapan itu tidak terkabul, sayangnya
 [background fade="0.5"]
-mantan: ibumu benar-benar orang baik. Waktu ada restoran baru buka, ibu sering mengajakku makan di situ. Ibu mengajariku masak. Bahkan pernah ke salon bersama.
-mc: salon? Wah, aku baru tau.
-mantan: kalo kubis, bagaimana kabarnya?
-mc: baik-baik saja
-mantan: kalau kamu mati, siapa yang merawat kubis?
-mc: aku akan menitipkannya kepada seseorang yang kukira
-mantan: begitu ya, kalau kesulitan katakan saja
-mc: emm.....terimakasih. anu...menurutmu kenapa kita putus?
-mantan: kok kenapa? Tiba-tiba saja
-mc: kukira pasti ada alasannya, tapi walaupun aku berpikir keras, aku tidak bisa menemukan alasannya
-mantan: eh? Kalau makanan kesukaanku apa kamu masih ingat?
-mc: udang gireng tepung roti!
-mantan: salaj!tempura jagung!
-mantan: kalau begitu, apa kau masih ingat minuman favoritku?
-mc: hmm.....aku tidak ingat, aku menyerah
-mantan: Padahal minuman nya ada baru tadi kita minum. Cokelat panas. alasan kita putus juga semacam itu. Tidak pantas diingat.
-mantan: mungkin liburan kita sebelum masuk kuliah juga ada kaitannya.
-mc: Buenos Aires?
-[background arg="res://assets/backgrounds/DAY 1 perjalanan ke bioskop/flashback buenos aries.png" fade="1.0"]
+mantan (senyum_malu): ibumu benar-benar orang baik. Waktu ada restoran baru buka, ibu sering mengajakku makan di situ. Ibu mengajariku masak. Bahkan pernah ke salon bersama.
+mc (netral): salon? Wah, aku baru tau.
+mantan (default): kalo kubis, bagaimana kabarnya?
+mc (netral): baik-baik saja
+mantan (sedih): kalau kamu mati, siapa yang merawat kubis?
+mc (netral): aku akan menitipkannya kepada seseorang yang kukira
+mantan (menggoda): begitu ya, kalau kesulitan katakan saja
+mc (malu_malu): emm.....terimakasih. anu...menurutmu kenapa kita putus?
+mantan (menggoda): kok kenapa? Tiba-tiba saja
+mc (malu_malu): kukira pasti ada alasannya, tapi walaupun aku berpikir keras, aku tidak bisa menemukan alasannya
+mantan (default): eh? Kalau makanan kesukaanku apa kamu masih ingat?
+mc (netral): udang gireng tepung roti!
+mantan (marah): salah!tempura jagung!
+mantan (senyum_malu): kalau begitu, apa kau masih ingat minuman favoritku?
+mc (senyum_tipis): hmm.....aku tidak ingat, aku menyerah
+mantan (marah): Padahal minuman nya ada baru tadi kita minum. Cokelat panas. alasan kita putus juga semacam itu. Tidak pantas diingat.
+mantan (default): mungkin liburan kita sebelum masuk kuliah juga ada kaitannya.
+mc (netral): Buenos Aires?
+[background arg="res://assets/backgrounds/sep_Buenos.png" fade="1.0"]
 Selama 3 tahun pacaran kami tidak pernah meninggalkan kota kecil yang menjadi tempat tinggal kami, selalu berputar di sekeliling kota atau hanya berbincang lewat telpon. Disaat itu telpon sangat penting bagiku. Sebelum masuk kuliah kami merencanakan liburan ke argentina kesuatu tenpat yang bernama "Buenos Aires".
 Kita punya teman dekat disana yang sangat akrab dan berjanji akan ketemu keesokan harinya untuk liburan bersama namun maut berkata lain, dia ditemukan meninggal karena kecelakaan. Yang menjadikan trauma yang mendalam bagi kita,sejak kejadian itu kita tak lagi saling bicara.
-[background arg="res://assets/backgrounds/DAY 1 perjalanan ke bioskop/duduk diam di pesawat.png" fade="1.0"]
+[background arg="res://assets/backgrounds/diam_pesaw.png" fade="1.0"]
 kami kembali ke kota kecil tempat tinggal kami, hanya kata "sampai jumpa" yang ia ucapkan, tak lama kami putus. aku berandai jika saja ada telepon di pesawat yang membuatku berani berbicara padanya hari itu, aku pasti akan menenangkan hatinya. dan bertanya apakah kami tidak akan berpisah?
 [background fade="1.0"]
 [signal arg="sampai_bioskop"]
-mantan: kamu akan mati tak lama lagi kan?
-mc: em... iya, kok enteng banget kamu bilang begitu
-mantan: untuk terakhir kalinya aku akan memutarkan film yang kamu sukai di sini. Kita nonton bersama. Datanglah besok pukul sembilan malam. Bawalah film kesukaanmu.
-mc: baiklah
-mantan: eh, pertanyaan terakhir. Kau ingat tempat favoritku?
-mc: hehehe... sama sekali tidak bisa kuingat
-mantan: lagi-lagi lupa. Kalau begitu jawaban itu PR buatmu. Sampai besok
-mc: sampai besok!
+mantan (menggoda): kamu akan mati tak lama lagi kan?
+mc (netral): em... iya, kok enteng banget kamu bilang begitu
+mantan (sedih): untuk terakhir kalinya aku akan memutarkan film yang kamu sukai di sini. Kita nonton bersama. Datanglah besok pukul sembilan malam. Bawalah film kesukaanmu.
+mc (senyum_tipis): baiklah
+mantan (menggoda): eh, pertanyaan terakhir. Kau ingat tempat favoritku?
+mc (malu_malu): hehehe... sama sekali tidak bisa kuingat
+mantan (sedih): lagi-lagi lupa. Kalau begitu jawaban itu PR buatmu. Sampai besok
+mc (netral): sampai besok!
 [signal arg="mantan_pergi"]
-mc: tempat favoritnya? Aku mendongak dan melihat bioskop tua, aku teringat bahwa bioskop la tempat favoritnya. Aku meraba kantongku mencari ponsel untuk segera memberi jawabannya, aku lupa aku sudah menghapusnya aku resah karena tak bisa langsung mengabarinya, resah karena tak sabar untuk menunggu hari esok. Tiba-tiba terdengar suara "kamu akan mati tak lama lagi kan?". Si aloha.
+mantan (senyum_malu): byee...
+[background arg="res://assets/backgrounds/bioskop malam.png" fade="0.0"]
+tempat favoritnya? Aku mendongak dan melihat bioskop tua, aku teringat bahwa bioskop la tempat favoritnya. Aku meraba kantongku mencari ponsel untuk segera memberi jawabannya, aku lupa aku sudah menghapusnya aku resah karena tak bisa langsung mengabarinya, resah karena tak sabar untuk menunggu hari esok. Tiba-tiba terdengar suara......
+[background arg="res://assets/backgrounds/Aloha_Muncl.png" fade="0.0"]
 [signal arg="aloha_muncul"]
-aloha: kaget? Kaget, kan? Ha ha ha. Aku iri padamu. Sepanjang hari aku menonton mu dari langit, kalian betul-betul kelihatan senang.
-aloha: jadi, berikutnya aku sudah memilih apa yang akan dihilangkan!
+aloha (default): "kamu akan mati tak lama lagi kan?".
+aloha (ketawa_tengil): kaget? Kaget, kan? Ha ha ha. Aku iri padamu. Sepanjang hari aku menonton mu dari langit, kalian betul-betul kelihatan senang.
+[background fade="0.0"]
+aloha (kedipanmata): jadi, berikutnya aku sudah memilih apa yang akan dihilangkan!
 mc: apa?
 aloha: bagaimana kalau kita menghilangkan film? Demi menyambung nyawamu
 mc: film....?

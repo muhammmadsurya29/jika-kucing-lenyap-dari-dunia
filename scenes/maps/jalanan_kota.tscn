@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://bn836n0fhrh31" path="res://assets/Tiles/exterior/9_Shopping_Center_and_Markets_16x16.png" id="6_5l27x"]
 [ext_resource type="Texture2D" uid="uid://d4bo40hs7t252" path="res://assets/Tiles/exterior/5_Floor_Modular_Buildings_16x16.png" id="7_ykibj"]
 [ext_resource type="Texture2D" uid="uid://b2i124v65prls" path="res://assets/Tiles/exterior/18_Fire_Station_16x16.png" id="8_lymmu"]
+[ext_resource type="Script" uid="uid://d31nv1jiq2tt4" path="res://scripts/jalanan_kota_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="lpdwmyu6"]
-[ext_resource type="Script" path="res://scripts/jalanan_kota_root.gd" id="99_root"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lq27n"]
 texture = ExtResource("2_sqsbl")
@@ -27738,9 +27738,18 @@ size = Vector2(28.75, 19.6875)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mns6ss9t"]
 size = Vector2(31, 23)
 
-
 [sub_resource type="GDScript" id="GDScript_alt2"]
-script/source = "extends Node\n\nfunc _ready():\n\tawait get_tree().create_timer(1.0).timeout\n\tif StoryManager.current_day == 100:\n\t\tvar player = get_tree().get_first_node_in_group('Player')\n\t\tif player and player.has_method('lock_movement'):\n\t\t\tplayer.lock_movement()\n\t\tDialogic.start('alt2_jalanan_kota')\n"
+script/source = "extends Node
+
+func _ready():
+	await get_tree().create_timer(1.0).timeout
+	if StoryManager.current_day == 100:
+		var player = get_tree().get_first_node_in_group('Player')
+		if player and player.has_method('lock_movement'):
+			player.lock_movement()
+		Dialogic.start('alt2_jalanan_kota')
+"
+
 [node name="JalananKota" type="Node2D" unique_id=1501528845]
 script = ExtResource("99_root")
 
@@ -27817,5 +27826,5 @@ timeline_name = "alt_mengantar_surat"
 position = Vector2(-7, -19)
 shape = SubResource("RectangleShape2D_mns6ss9t")
 
-[node name="Alt2Trigger" type="Node" parent="."]
+[node name="Alt2Trigger" type="Node" parent="." unique_id=2100484006]
 script = SubResource("GDScript_alt2")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgavumfjqon8f"
-path="res://.godot/imported/ponsel.png-b0c554e6acf66df071e1dbed14a00fc2.ctex"
+uid="uid://32tohhxdunk1"
+path="res://.godot/imported/hopital coridor.png-bb08405339fb68668e601f614dddfc25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/ponsel.png"
-dest_files=["res://.godot/imported/ponsel.png-b0c554e6acf66df071e1dbed14a00fc2.ctex"]
+source_file="res://assets/backgrounds/hopital coridor.png"
+dest_files=["res://.godot/imported/hopital coridor.png-bb08405339fb68668e601f614dddfc25.ctex"]
 
 [params]
 

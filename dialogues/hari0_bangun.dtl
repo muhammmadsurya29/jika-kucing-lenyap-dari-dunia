@@ -1,6 +1,7 @@
 [background arg="res://assets/backgrounds/bangun.png" fade="0.0"]
-narator: "Entah berapa jam sudah berlalu, aku siuman di ruangan dekat pintu. Gumpalan bulat putih,hitam dan abu-abu tampak didepan mataku dan besuara “meongg...”. ia kucing kesayangan ku. Sudah 4 tahun kami hidup berdua. Sekali lagi ia mengeong seolah mencemaskan ku. Aku bangkit. Demam belum turun dan kepala terasa sakit. Sepertinya aku belum mati namun rupanya kematian memang kenyataan."
+narator: "Entah berapa jam sudah berlalu, aku siuman di ruangan dekat pintu. Gumpalan bulat putih,hitam dan abu-abu tampak didepan mataku dan besuara “meongg...”. ia kucing kesayangan ku."
+narator: "Sudah 4 tahun kami hidup berdua. Sekali lagi ia mengeong seolah mencemaskan ku. Aku bangkit. Demam belum turun dan kepala terasa sakit. Sepertinya aku belum mati namun rupanya kematian memang kenyataan."
 [background fade="0.0"]
 mc (dada_sesak): ???!!
-mc (dada_sesak): Sepertinya ada seseorang di dapur
+mc (terkejut): Sepertinya ada seseorang di dapur
 [signal arg="update_objective:Periksa dapur"]
