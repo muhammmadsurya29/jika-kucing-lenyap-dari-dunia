@@ -4,6 +4,10 @@ extends Node2D
 @onready var player = $Player
 
 func _ready() -> void:
+	var dark_mod = CanvasModulate.new()
+	dark_mod.color = Color("262a42") # Warna gelap malam/bioskop
+	add_child(dark_mod)
+	
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
