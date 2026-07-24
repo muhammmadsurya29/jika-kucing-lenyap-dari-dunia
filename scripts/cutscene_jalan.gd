@@ -17,7 +17,7 @@ func _ready() -> void:
 	#if parallax_bg:
 		#parallax_bg.hide()
 		#
-	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	var pintu = bioskop.get_node_or_null("NodeDepanBioskopHari1")
 	if pintu:
 		target_x = bioskop.position.x + pintu.position.x
 	else:
@@ -79,7 +79,7 @@ func _setup_day100():
 
 func _setup_post_bioskop():
 	is_walking = false
-	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	var pintu = bioskop.get_node_or_null("NodeDepanBioskopHari1")
 	
 	var node_mc_berdiri = get_node_or_null("NodeMCBerdiriMalam")
 	if node_mc_berdiri:
@@ -163,7 +163,7 @@ func _alt2_mantan_pulang():
 		mantan.get_node("AnimatedSprite2D").play("walk_up")
 		
 	var tween = create_tween()
-	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	var pintu = bioskop.get_node_or_null("NodeDepanBioskopHari1")
 	if pintu:
 		tween.tween_property(mantan, "position", bioskop.position + pintu.position, 1.5)
 	else:
@@ -262,7 +262,7 @@ func _mc_pingsan():
 
 func _setup_ending_c_luar():
 	is_walking = false
-	var pintu = bioskop.get_node_or_null("NodeDepanPintuBioskop")
+	var pintu = bioskop.get_node_or_null("NodeDepanBioskopHari1")
 	
 	var node_mc = get_node_or_null("NodeMCEndingC_Luar")
 	if node_mc:
