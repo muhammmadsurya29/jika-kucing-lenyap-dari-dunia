@@ -1,6 +1,10 @@
 extends Node2D
 
 func _ready() -> void:
+	if StoryManager.is_night:
+		var night_mod = CanvasModulate.new()
+		night_mod.color = Color("262a42")
+		add_child(night_mod)
 
 	# Ending C: Kubis lenyap dan setup awal
 	if StoryManager.is_kubis_lenyap or StoryManager.current_day == 101:

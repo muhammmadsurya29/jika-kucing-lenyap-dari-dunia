@@ -11,6 +11,10 @@ var walk_speed = 15.0 # Sangat lambat
 var target_x = 0.0
 
 func _ready() -> void:
+	var night_mod = CanvasModulate.new()
+	night_mod.color = Color("262a42")
+	add_child(night_mod)
+	
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		

@@ -16124,7 +16124,7 @@ position = Vector2(351, 333)
 position = Vector2(449, 28)
 
 [node name="NodeDepanBioskopHari1" type="Marker2D" parent="GedungBioskop" unique_id=1290573774]
-position = Vector2(-1, 37)
+position = Vector2(31, 53)
 
 [node name="NodeMCDuduk" type="Marker2D" parent="." unique_id=1016404026]
 position = Vector2(531, 72)
