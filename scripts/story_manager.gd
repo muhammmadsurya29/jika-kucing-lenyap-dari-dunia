@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 3
+var current_day: int = 101
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -108,6 +108,16 @@ func update_objective_based_on_state() -> void:
 			var kubis = get_tree().get_root().find_child("NPC_Kubis", true, false)
 			if kubis:
 				kubis.queue_free()
+		100:
+			if not can_leave_room:
+				obj = "Bersiaplah, Mantan menunggumu di luar."
+			else:
+				obj = "Keluar dari kamar dan temui Mantan."
+		101:
+			if not can_leave_room:
+				obj = "Lihat ke arah dapur (tempat mangkuk Kubis berada)."
+			else:
+				obj = "Keluar dari kamar dan jalani hari ini."
 		99:
 			return
 			
