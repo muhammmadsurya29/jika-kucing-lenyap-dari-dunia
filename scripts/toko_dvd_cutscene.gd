@@ -14,6 +14,13 @@ func _ready() -> void:
 		
 	if StoryManager.current_day == 100:
 		_play_alt2_tsutaya()
+	elif StoryManager.current_day == 2:
+		# Auto trigger dialog Day 2 setelah masuk toko DVD
+		if not Dialogic.current_timeline:
+			var sm = get_node_or_null("/root/StoryManager")
+			if sm and not sm.has_played("hari2_siang_tsutaya"):
+				sm.mark_played("hari2_siang_tsutaya")
+				Dialogic.start("hari2_siang_tsutaya")
 
 func _play_alt2_tsutaya() -> void:
 	await get_tree().create_timer(1.0).timeout
