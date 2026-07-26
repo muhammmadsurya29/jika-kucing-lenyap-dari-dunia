@@ -25,7 +25,6 @@ mantan (sedih): Ini benar-benar yang terakhir!
 [background arg="res://assets/backgrounds/mantan menangis.png" fade="1.0"]
 mc (malu_malu): Kalau begitu aku siap untuk menang.
 mantan (sedih): Kalau aku menonton film yang berakhir dengan sedih, aku pasti menonton ulang sekali lagi, kau tahu kenapa?
-[background fade="1.0"]
 Jawaban untuk itu aku masih ingat dengan baik. Yang kuharapkan terus menerus di dalam pesawat perjalanan pulang dari Buenos Aires. Yang kuharapkan terus menerus setelah berpisah dengan nya.
 mc (senyum_tipis): Aku tahu. Karena kamu pikir mungkin kali ini akan berakhir happy ending.
 [signal arg="mantan_senyum"]

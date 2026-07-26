@@ -10,8 +10,19 @@ extends Area2D
 @export var icon_frame: int = 0
 @export var icon_offset: Vector2 = Vector2(0, -32)
 
+@export_group("UI Panah Luar Layar")
+@export var use_offscreen_pointer: bool = false
+@export var pointer_margin: float = 40.0
+@export var frame_right: int = 0
+@export var frame_left: int = 1
+@export var frame_top_right: int = 2
+@export var frame_top_left: int = 3
+
 var _marker_sprite: Sprite2D
 var _marker_tween: Tween
+
+var _off_canvas: CanvasLayer
+var _off_sprite: Sprite2D
 
 func _ready() -> void:
 	body_entered.connect(_on_body_entered)
@@ -35,6 +46,16 @@ func _ready() -> void:
 		_marker_tween = create_tween().set_loops()
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
+		
+	if use_offscreen_pointer and marker_icon:
+		_off_canvas = CanvasLayer.new()
+		add_child(_off_canvas)
+		
+		_off_sprite = Sprite2D.new()
+		_off_sprite.texture = marker_icon
+		_off_sprite.hframes = icon_hframes
+		_off_sprite.vframes = icon_vframes
+		_off_canvas.add_child(_off_sprite)
 	
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
@@ -153,3 +174,56 @@ func _on_body_entered(body: Node2D) -> void:
 			set_deferred("monitoring", false)
 		else:
 			print("[DEBUG StoryTrigger] Gagal memulai! Alasan: timeline KOSONG atau Dialogic SEDANG AKTIF.")
+
+func _process(delta: float) -> void:
+	if _off_sprite and _off_canvas:
+		if _marker_sprite and _marker_sprite.visible:
+			var camera = get_viewport().get_camera_2d()
+			if camera:
+				var cam_pos = camera.get_screen_center_position()
+				var view_size = get_viewport_rect().size / camera.zoom
+				var screen_rect = Rect2(cam_pos - view_size / 2, view_size)
+				
+				var target_pos = global_position
+				if screen_rect.has_point(target_pos):
+					_off_canvas.visible = false
+				else:
+					_off_canvas.visible = true
+					var ui_size = get_viewport_rect().size
+					var center = ui_size / 2.0
+					var dir = (target_pos - cam_pos).normalized()
+					
+					var x_factor = (ui_size.x/2.0 - pointer_margin) / abs(dir.x) if dir.x != 0 else 10000.0
+					var y_factor = (ui_size.y/2.0 - pointer_margin) / abs(dir.y) if dir.y != 0 else 10000.0
+					var factor = min(x_factor, y_factor)
+					
+					_off_sprite.position = center + dir * factor
+					
+					var deg = rad_to_deg(dir.angle())
+					_off_sprite.rotation = 0
+					_off_sprite.flip_v = false
+					
+					if deg >= -22.5 and deg < 22.5: # Kanan
+						_off_sprite.frame = frame_right
+					elif deg >= 22.5 and deg < 67.5: # Kanan Bawah
+						_off_sprite.frame = frame_top_right
+						_off_sprite.flip_v = true
+					elif deg >= 67.5 and deg < 112.5: # Bawah
+						_off_sprite.frame = frame_right
+						_off_sprite.rotation = PI/2
+					elif deg >= 112.5 and deg < 157.5: # Kiri Bawah
+						_off_sprite.frame = frame_top_left
+						_off_sprite.flip_v = true
+					elif deg >= 157.5 or deg < -157.5: # Kiri
+						_off_sprite.frame = frame_left
+					elif deg >= -157.5 and deg < -112.5: # Kiri Atas
+						_off_sprite.frame = frame_top_left
+					elif deg >= -112.5 and deg < -67.5: # Atas
+						_off_sprite.frame = frame_right
+						_off_sprite.rotation = -PI/2
+					elif deg >= -67.5 and deg < -22.5: # Kanan Atas
+						_off_sprite.frame = frame_top_right
+			else:
+				_off_canvas.visible = false
+		else:
+			_off_canvas.visible = false
