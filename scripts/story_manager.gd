@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 1
+var current_day: int = 0
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false

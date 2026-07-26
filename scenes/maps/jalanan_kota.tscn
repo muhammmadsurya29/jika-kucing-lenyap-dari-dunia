@@ -27803,6 +27803,7 @@ marker_icon = ExtResource("13_l77tl")
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
+use_offscreen_pointer = true
 pointer_texture = ExtResource("13_l77tl")
 pointer_hframes = 18
 pointer_vframes = 16

@@ -52,12 +52,7 @@ func _ready() -> void:
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
 		
-	# Dengarkan sinyal ganti hari dari StoryManager
-	var sm = get_node_or_null("/root/StoryManager")
-	if sm:
-		sm.day_changed.connect(_on_day_changed)
-		_on_day_changed(sm.current_day) # Terapkan posisi dan visibilitas awal
-		
+	
 	# Setup UI Tanda Pentung
 	if interact_icon:
 		_icon_sprite = Sprite2D.new()
@@ -89,6 +84,12 @@ func _ready() -> void:
 		_off_sprite.vframes = pointer_vframes
 		_off_sprite.scale = pointer_scale
 		_off_canvas.add_child(_off_sprite)
+		
+	# Dengarkan sinyal ganti hari dari StoryManager
+	var sm = get_node_or_null("/root/StoryManager")
+	if sm:
+		sm.day_changed.connect(_on_day_changed)
+		_on_day_changed(sm.current_day) # Terapkan posisi dan visibilitas awal
 
 func _on_day_changed(new_day: int) -> void:
 	var index = new_day
