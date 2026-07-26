@@ -21,6 +21,7 @@ class_name Interactable
 @export var pointer_texture: Texture2D
 @export var pointer_hframes: int = 1
 @export var pointer_vframes: int = 1
+@export var pointer_scale: Vector2 = Vector2(1, 1)
 @export var pointer_margin: float = 40.0
 @export var frame_right: int = 0
 @export var frame_left: int = 1
@@ -86,6 +87,7 @@ func _ready() -> void:
 		_off_sprite.texture = pointer_texture
 		_off_sprite.hframes = pointer_hframes
 		_off_sprite.vframes = pointer_vframes
+		_off_sprite.scale = pointer_scale
 		_off_canvas.add_child(_off_sprite)
 
 func _on_day_changed(new_day: int) -> void:

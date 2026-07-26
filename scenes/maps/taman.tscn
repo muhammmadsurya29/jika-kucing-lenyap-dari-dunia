@@ -30720,6 +30720,13 @@ icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
 use_offscreen_pointer = true
+pointer_texture = ExtResource("15_w5h7f")
+pointer_hframes = 18
+pointer_vframes = 16
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerTaman" unique_id=1706436396]
 position = Vector2(161, 135.375)
