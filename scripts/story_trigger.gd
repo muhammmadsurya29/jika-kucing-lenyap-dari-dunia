@@ -185,18 +185,19 @@ func _process(delta: float) -> void:
 		if _marker_sprite and _marker_sprite.visible:
 			var camera = get_viewport().get_camera_2d()
 			if camera:
-				var cam_pos = camera.get_screen_center_position()
-				var view_size = get_viewport_rect().size / camera.zoom
-				var screen_rect = Rect2(cam_pos - view_size / 2, view_size)
+				var ui_size = get_viewport_rect().size
+				var canvas_transform = get_viewport().canvas_transform
+				var target_screen_pos = canvas_transform * global_position
 				
-				var target_pos = global_position
-				if screen_rect.has_point(target_pos):
+				# Tambahkan margin kecil agar panah hilang saat objek "benar-benar" masuk layar
+				var screen_rect = Rect2(Vector2.ZERO, ui_size).grow(-20.0)
+				
+				if screen_rect.has_point(target_screen_pos):
 					_off_canvas.visible = false
 				else:
 					_off_canvas.visible = true
-					var ui_size = get_viewport_rect().size
 					var center = ui_size / 2.0
-					var dir = (target_pos - cam_pos).normalized()
+					var dir = (target_screen_pos - center).normalized()
 					
 					var x_factor = (ui_size.x/2.0 - pointer_margin) / abs(dir.x) if dir.x != 0 else 10000.0
 					var y_factor = (ui_size.y/2.0 - pointer_margin) / abs(dir.y) if dir.y != 0 else 10000.0
