@@ -18,6 +18,9 @@ class_name Interactable
 
 @export_group("UI Panah Luar Layar")
 @export var use_offscreen_pointer: bool = false
+@export var pointer_texture: Texture2D
+@export var pointer_hframes: int = 1
+@export var pointer_vframes: int = 1
 @export var pointer_margin: float = 40.0
 @export var frame_right: int = 0
 @export var frame_left: int = 1
@@ -75,14 +78,14 @@ func _ready() -> void:
 		_icon_tween.tween_property(_icon_sprite, "position:y", _icon_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
 		_icon_tween.tween_property(_icon_sprite, "position:y", _icon_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
 		
-	if use_offscreen_pointer and interact_icon:
+	if use_offscreen_pointer and pointer_texture:
 		_off_canvas = CanvasLayer.new()
 		add_child(_off_canvas)
 		
 		_off_sprite = Sprite2D.new()
-		_off_sprite.texture = interact_icon
-		_off_sprite.hframes = icon_hframes
-		_off_sprite.vframes = icon_vframes
+		_off_sprite.texture = pointer_texture
+		_off_sprite.hframes = pointer_hframes
+		_off_sprite.vframes = pointer_vframes
 		_off_canvas.add_child(_off_sprite)
 
 func _on_day_changed(new_day: int) -> void:

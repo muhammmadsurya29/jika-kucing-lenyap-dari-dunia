@@ -12,6 +12,9 @@ extends Area2D
 
 @export_group("UI Panah Luar Layar")
 @export var use_offscreen_pointer: bool = false
+@export var pointer_texture: Texture2D
+@export var pointer_hframes: int = 1
+@export var pointer_vframes: int = 1
 @export var pointer_margin: float = 40.0
 @export var frame_right: int = 0
 @export var frame_left: int = 1
@@ -47,14 +50,14 @@ func _ready() -> void:
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
 		
-	if use_offscreen_pointer and marker_icon:
+	if use_offscreen_pointer and pointer_texture:
 		_off_canvas = CanvasLayer.new()
 		add_child(_off_canvas)
 		
 		_off_sprite = Sprite2D.new()
-		_off_sprite.texture = marker_icon
-		_off_sprite.hframes = icon_hframes
-		_off_sprite.vframes = icon_vframes
+		_off_sprite.texture = pointer_texture
+		_off_sprite.hframes = pointer_hframes
+		_off_sprite.vframes = pointer_vframes
 		_off_canvas.add_child(_off_sprite)
 	
 	var sm = get_node_or_null("/root/StoryManager")

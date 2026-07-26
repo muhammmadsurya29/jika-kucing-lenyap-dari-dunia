@@ -30719,6 +30719,7 @@ marker_icon = ExtResource("15_w5h7f")
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
+use_offscreen_pointer = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerTaman" unique_id=1706436396]
 position = Vector2(161, 135.375)
