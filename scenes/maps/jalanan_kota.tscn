@@ -27799,6 +27799,19 @@ position = Vector2(-619, -365)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/toko_dvd.tscn"
 minimum_day_to_exit = 0
+marker_icon = ExtResource("13_l77tl")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
+pointer_texture = ExtResource("13_l77tl")
+pointer_hframes = 18
+pointer_vframes = 16
+pointer_scale = Vector2(5, 5)
+pointer_margin = 200.0
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuTsutaya" unique_id=500000011]
 position = Vector2(1, 0)
@@ -27843,6 +27856,7 @@ pointer_vframes = 16
 frame_right = 90
 frame_left = 91
 frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos" unique_id=537364560]
 position = Vector2(-7, -19)

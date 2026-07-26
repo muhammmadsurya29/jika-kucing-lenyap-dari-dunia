@@ -125,53 +125,50 @@ func _on_body_entered(body: Node2D) -> void:
 
 func _process(delta: float) -> void:
 	if _off_sprite and _off_canvas:
-		if _marker_sprite and _marker_sprite.visible:
-			var camera = get_viewport().get_camera_2d()
-			if camera:
-				var ui_size = get_viewport_rect().size
-				var canvas_transform = get_viewport().canvas_transform
-				var target_screen_pos = canvas_transform * global_position
-				
-				var screen_rect = Rect2(Vector2.ZERO, ui_size).grow(-20.0)
-				
-				if screen_rect.has_point(target_screen_pos):
-					_off_canvas.visible = false
-				else:
-					_off_canvas.visible = true
-					var center = ui_size / 2.0
-					var dir = (target_screen_pos - center).normalized()
-					
-					var x_factor = (ui_size.x/2.0 - pointer_margin) / abs(dir.x) if dir.x != 0 else 10000.0
-					var y_factor = (ui_size.y/2.0 - pointer_margin) / abs(dir.y) if dir.y != 0 else 10000.0
-					var factor = min(x_factor, y_factor)
-					
-					_off_sprite.position = center + dir * factor
-					
-					var deg = rad_to_deg(dir.angle())
-					_off_sprite.rotation = 0
-					_off_sprite.flip_v = false
-					
-					if deg >= -22.5 and deg < 22.5: # Kanan
-						_off_sprite.frame = frame_right
-					elif deg >= 22.5 and deg < 67.5: # Kanan Bawah
-						_off_sprite.frame = frame_top_right
-						_off_sprite.flip_v = true
-					elif deg >= 67.5 and deg < 112.5: # Bawah
-						_off_sprite.frame = frame_right
-						_off_sprite.rotation = PI/2
-					elif deg >= 112.5 and deg < 157.5: # Kiri Bawah
-						_off_sprite.frame = frame_top_left
-						_off_sprite.flip_v = true
-					elif deg >= 157.5 or deg < -157.5: # Kiri
-						_off_sprite.frame = frame_left
-					elif deg >= -157.5 and deg < -112.5: # Kiri Atas
-						_off_sprite.frame = frame_top_left
-					elif deg >= -112.5 and deg < -67.5: # Atas
-						_off_sprite.frame = frame_right
-						_off_sprite.rotation = -PI/2
-					elif deg >= -67.5 and deg < -22.5: # Kanan Atas
-						_off_sprite.frame = frame_top_right
-			else:
+		var camera = get_viewport().get_camera_2d()
+		if camera:
+			var ui_size = get_viewport_rect().size
+			var canvas_transform = get_viewport().canvas_transform
+			var target_screen_pos = canvas_transform * global_position
+			
+			var screen_rect = Rect2(Vector2.ZERO, ui_size).grow(-20.0)
+			
+			if screen_rect.has_point(target_screen_pos):
 				_off_canvas.visible = false
+			else:
+				_off_canvas.visible = true
+				var center = ui_size / 2.0
+				var dir = (target_screen_pos - center).normalized()
+				
+				var x_factor = (ui_size.x/2.0 - pointer_margin) / abs(dir.x) if dir.x != 0 else 10000.0
+				var y_factor = (ui_size.y/2.0 - pointer_margin) / abs(dir.y) if dir.y != 0 else 10000.0
+				var factor = min(x_factor, y_factor)
+				
+				_off_sprite.position = center + dir * factor
+				
+				var deg = rad_to_deg(dir.angle())
+				_off_sprite.rotation = 0
+				_off_sprite.flip_v = false
+				
+				if deg >= -22.5 and deg < 22.5: # Kanan
+					_off_sprite.frame = frame_right
+				elif deg >= 22.5 and deg < 67.5: # Kanan Bawah
+					_off_sprite.frame = frame_top_right
+					_off_sprite.flip_v = true
+				elif deg >= 67.5 and deg < 112.5: # Bawah
+					_off_sprite.frame = frame_right
+					_off_sprite.rotation = PI/2
+				elif deg >= 112.5 and deg < 157.5: # Kiri Bawah
+					_off_sprite.frame = frame_top_left
+					_off_sprite.flip_v = true
+				elif deg >= 157.5 or deg < -157.5: # Kiri
+					_off_sprite.frame = frame_left
+				elif deg >= -157.5 and deg < -112.5: # Kiri Atas
+					_off_sprite.frame = frame_top_left
+				elif deg >= -112.5 and deg < -67.5: # Atas
+					_off_sprite.frame = frame_right
+					_off_sprite.rotation = -PI/2
+				elif deg >= -67.5 and deg < -22.5: # Kanan Atas
+					_off_sprite.frame = frame_top_right
 		else:
 			_off_canvas.visible = false
