@@ -27816,6 +27816,14 @@ marker_icon = ExtResource("13_l77tl")
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
+pointer_texture = ExtResource("13_l77tl")
+pointer_hframes = 18
+pointer_vframes = 16
+pointer_scale = Vector2(5, 5)
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4" unique_id=2066467426]
 position = Vector2(0.53191495, 10)
@@ -27829,6 +27837,12 @@ timeline_name = "alt_mengantar_surat"
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
+pointer_texture = ExtResource("13_l77tl")
+pointer_hframes = 18
+pointer_vframes = 16
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos" unique_id=537364560]
 position = Vector2(-7, -19)
