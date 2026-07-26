@@ -50,10 +50,19 @@ func _ready() -> void:
 		_icon_sprite.hframes = icon_hframes
 		_icon_sprite.vframes = icon_vframes
 		_icon_sprite.frame = icon_frame
-		_icon_sprite.position = icon_offset
-		_icon_sprite.visible = false
 		_icon_sprite.z_index = 50 # Di atas karakter
 		add_child(_icon_sprite)
+		
+		var shape = get_node_or_null("CollisionShape2D")
+		if shape:
+			_icon_sprite.position = shape.position + icon_offset
+		else:
+			_icon_sprite.position = icon_offset
+			
+		_icon_sprite.visible = false # Akan diatur oleh _on_day_changed
+		_icon_tween = create_tween().set_loops()
+		_icon_tween.tween_property(_icon_sprite, "position:y", _icon_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
+		_icon_tween.tween_property(_icon_sprite, "position:y", _icon_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
 
 func _on_day_changed(new_day: int) -> void:
 	var index = new_day
@@ -76,14 +85,27 @@ func _on_day_changed(new_day: int) -> void:
 		else:
 			has_dialog = false
 			
+	# Cek apakah timeline ini sudah pernah dimainkan
+	var sm = get_node_or_null("/root/StoryManager")
+	var is_active = has_dialog
+	if is_active and sm:
+		var current_tl = timeline_name
+		if not timeline_per_hari.is_empty() and index >= 0 and index < timeline_per_hari.size():
+			current_tl = timeline_per_hari[index]
+		
+		if current_tl != "" and sm.has_played(current_tl):
+			is_active = false
+			
 	# Munculkan/Sembunyikan NPC di hari baru
 	var shape = get_node_or_null("CollisionShape2D")
 	if has_dialog:
 		show()
 		if shape: shape.set_deferred("disabled", false)
+		if _icon_sprite: _icon_sprite.visible = is_active
 	else:
 		hide()
 		if shape: shape.set_deferred("disabled", true)
+		if _icon_sprite: _icon_sprite.visible = false
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "npc_hilang" and hapus_setelah_dialog:
@@ -109,28 +131,11 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		print("[DEBUG Interactable] Player masuk ke area: ", self.name)
 		is_player_in_range = true
-		
-		# Tampilkan tanda pentung jika ada
-		if _icon_sprite:
-			_icon_sprite.visible = true
-			if _icon_tween:
-				_icon_tween.kill()
-			_icon_sprite.position = icon_offset
-			_icon_tween = create_tween().set_loops()
-			_icon_tween.tween_property(_icon_sprite, "position:y", icon_offset.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
-			_icon_tween.tween_property(_icon_sprite, "position:y", icon_offset.y, 0.6).set_trans(Tween.TRANS_SINE)
 
 func _on_body_exited(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		print("[DEBUG Interactable] Player keluar dari area: ", self.name)
 		is_player_in_range = false
-		
-		# Sembunyikan tanda pentung
-		if _icon_sprite:
-			_icon_sprite.visible = false
-			if _icon_tween:
-				_icon_tween.kill()
-				_icon_tween = null
 
 func _unhandled_input(event: InputEvent) -> void:
 	if is_player_in_range and event.is_action_pressed("ui_accept"):
@@ -144,9 +149,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		# Sembunyikan tanda pentung saat dialog mulai
 		if _icon_sprite:
 			_icon_sprite.visible = false
-			if _icon_tween:
-				_icon_tween.kill()
-				_icon_tween = null
 				
 		if timeline_name != "" or not timeline_per_hari.is_empty():
 			

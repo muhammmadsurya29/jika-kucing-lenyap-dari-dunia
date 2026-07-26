@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cu7mtikq2soeh" path="res://assets/Tiles/exterior/19_Graveyard_16x16.png" id="3_4mwsf"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="3_stry"]
 [ext_resource type="Texture2D" uid="uid://cseiqbsqxyuv4" path="res://assets/Tiles/exterior/4_Generic_Buildings_16x16.png" id="4_cfvqj"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="5_il2gf"]
 [ext_resource type="Script" uid="uid://bl000vgfu16q8" path="res://scripts/scene_transition.gd" id="scene_trans"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_il2gf"]
@@ -6689,6 +6690,10 @@ position = Vector2(100, 100)
 position = Vector2(150, 150)
 script = ExtResource("3_stry")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:pemakaman"])
+marker_icon = ExtResource("5_il2gf")
+icon_hframes = 19
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerPemakaman" unique_id=1542961495]
 position = Vector2(-164, -42.125)

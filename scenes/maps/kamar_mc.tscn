@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://cufou0ay8h6td" path="res://assets/Tiles/Interior/Room_Builder_Floors_16x16.png" id="19_jam"]
 [ext_resource type="Texture2D" uid="uid://2lfeqlt23x6o" path="res://assets/Tiles/animated_cuckoo_clock.png" id="19_uiijr"]
 [ext_resource type="Texture2D" uid="uid://bbg4di4t0fltg" path="res://assets/Tiles/animated_TV_reportage_hospital_2.png" id="20_tcxud"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="22_xgyj3"]
 [ext_resource type="Script" uid="uid://bask6tfvanlo0" path="res://scripts/kamar_mc_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://do5fvp7ei04ft" path="res://scripts/npc_choreography.gd" id="iq5e41uq"]
 
@@ -9190,18 +9191,26 @@ position = Vector2(39, 118)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="TriggerDapur" type="Area2D" parent="." unique_id=880483496]
-position = Vector2(7, 13)
+position = Vector2(223, 29)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_dapur", "", "", ""])
+marker_icon = ExtResource("22_xgyj3")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerDapur" unique_id=1795914732]
-position = Vector2(73.375, 101)
+position = Vector2(-183, 96)
 shape = SubResource("RectangleShape2D_d8i2l")
 
 [node name="TriggerCermin" type="Area2D" parent="." unique_id=778073307]
 position = Vector2(73, 38)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "hari1_cermin", "", "", ""])
+marker_icon = ExtResource("22_xgyj3")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerCermin" unique_id=1411985585]
 position = Vector2(-1, 12)
@@ -9238,6 +9247,10 @@ position = Vector2(40, 32)
 position = Vector2(129, 141)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
+marker_icon = ExtResource("22_xgyj3")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerMesinCuciHari4" unique_id=1689120468]
 position = Vector2(-4, -20)
@@ -9248,6 +9261,9 @@ polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
 position = Vector2(18, 113)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_jendela"])
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJendelaHari4" unique_id=1240997420]
 polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)

@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bn836n0fhrh31" path="res://assets/Tiles/exterior/9_Shopping_Center_and_Markets_16x16.png" id="6_5l27x"]
 [ext_resource type="Texture2D" uid="uid://d4bo40hs7t252" path="res://assets/Tiles/exterior/5_Floor_Modular_Buildings_16x16.png" id="7_ykibj"]
 [ext_resource type="Texture2D" uid="uid://b2i124v65prls" path="res://assets/Tiles/exterior/18_Fire_Station_16x16.png" id="8_lymmu"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="13_l77tl"]
 [ext_resource type="Script" uid="uid://d31nv1jiq2tt4" path="res://scripts/jalanan_kota_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="lpdwmyu6"]
@@ -27811,6 +27812,10 @@ position = Vector2(-40, -216)
 scale = Vector2(1.8799996, 1)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_parkiran"])
+marker_icon = ExtResource("13_l77tl")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerJalananKotaHari4" unique_id=2066467426]
 position = Vector2(0.53191495, 10)
@@ -27821,6 +27826,9 @@ polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
 position = Vector2(-369, -343)
 script = ExtResource("lpdwmyu6")
 timeline_name = "alt_mengantar_surat"
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KotakPos" unique_id=537364560]
 position = Vector2(-7, -19)

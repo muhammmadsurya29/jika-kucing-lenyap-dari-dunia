@@ -3,12 +3,43 @@ extends Area2D
 @export var timeline_name: String = ""
 @export var timeline_per_hari: Array[String] = []
 
+@export_group("UI Penunjuk Arah")
+@export var marker_icon: Texture2D
+@export var icon_hframes: int = 1
+@export var icon_vframes: int = 1
+@export var icon_frame: int = 0
+@export var icon_offset: Vector2 = Vector2(0, -32)
+
+var _marker_sprite: Sprite2D
+var _marker_tween: Tween
+
 func _ready() -> void:
 	body_entered.connect(_on_body_entered)
+	
+	if marker_icon:
+		_marker_sprite = Sprite2D.new()
+		_marker_sprite.texture = marker_icon
+		_marker_sprite.hframes = icon_hframes
+		_marker_sprite.vframes = icon_vframes
+		_marker_sprite.frame = icon_frame
+		_marker_sprite.z_index = 50
+		add_child(_marker_sprite)
+		
+		var shape = get_node_or_null("CollisionShape2D")
+		if shape:
+			_marker_sprite.position = shape.position + icon_offset
+		else:
+			_marker_sprite.position = icon_offset
+			
+		_marker_sprite.visible = false
+		_marker_tween = create_tween().set_loops()
+		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
+		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
 	
 	var sm = get_node_or_null("/root/StoryManager")
 	if sm:
 		sm.day_changed.connect(_on_day_changed)
+		_on_day_changed(sm.current_day)
 		
 	# Khusus untuk TriggerBangun, kita masukkan ke grup dan paksa jalankan dialog
 	if name == "TriggerBangun":
@@ -22,6 +53,21 @@ func _ready() -> void:
 
 func _on_day_changed(new_day: int) -> void:
 	set_deferred("monitoring", true)
+	
+	# Cek apakah timeline ini masih aktif
+	var is_active = false
+	var target_timeline = timeline_name
+	if timeline_per_hari.size() > 0 and new_day < timeline_per_hari.size():
+		target_timeline = timeline_per_hari[new_day]
+		
+	if target_timeline != "":
+		is_active = true
+		var sm = get_node_or_null("/root/StoryManager")
+		if sm and sm.has_played(target_timeline):
+			is_active = false
+			
+	if _marker_sprite:
+		_marker_sprite.visible = is_active
 	
 	# Paksa jalankan dialog secara eksplisit tanpa mengandalkan physics engine
 	if name == "TriggerBangun":
@@ -86,6 +132,9 @@ func _on_body_entered(body: Node2D) -> void:
 		print("[DEBUG StoryTrigger] Target timeline: ", target_timeline)
 		
 		if target_timeline != "" and not Dialogic.current_timeline:
+			if _marker_sprite:
+				_marker_sprite.visible = false
+				
 			var sm = get_node_or_null("/root/StoryManager")
 			if sm:
 				if sm.has_played(target_timeline):

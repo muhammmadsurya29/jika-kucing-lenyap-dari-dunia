@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://ruweku4timwf" path="res://assets/Tiles/taman_tileset.res" id="2_7v5x3"]
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="2_player"]
 [ext_resource type="PackedScene" uid="uid://d22b7ymumnxmy" path="res://scenes/characters/cat.tscn" id="3_kubis"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="6_ct1ny"]
 [ext_resource type="Script" uid="uid://d14lm0q6g1ntu" path="res://scripts/interactable.gd" id="32c63joa"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_strytrg"]
 
@@ -76,6 +77,10 @@ scale = Vector2(0.906958, 0.90685654)
 position = Vector2(100, 100)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_taman_bukit"])
+marker_icon = ExtResource("6_ct1ny")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanBukitHari4" unique_id=1302269936]
 position = Vector2(-186, 285)
@@ -86,6 +91,10 @@ polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
 position = Vector2(104, 382)
 script = ExtResource("32c63joa")
 timeline_name = "alt_taman_bukit"
+interact_icon = ExtResource("6_ct1ny")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BangkuBiru" unique_id=1199309097]
 shape = SubResource("RectangleShape2D_zyd4cgvj")

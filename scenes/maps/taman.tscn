@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://i8k4vwfddlhs" path="res://assets/Tiles/exterior/13_School_16x16.png" id="8_m5wnd"]
 [ext_resource type="Texture2D" uid="uid://bn836n0fhrh31" path="res://assets/Tiles/exterior/9_Shopping_Center_and_Markets_16x16.png" id="9_m5wnd"]
 [ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="12_omd0x"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="15_w5h7f"]
 [ext_resource type="Script" uid="uid://dvcellgd4amrc" path="res://scripts/taman_cutscene_hari3.gd" id="19_taman_hari3"]
 [ext_resource type="Script" uid="uid://twfb1kcuklc" path="res://scripts/story_trigger.gd" id="99_stry"]
 
@@ -30549,6 +30550,10 @@ shape = SubResource("RectangleShape2D_1s67d")
 [node name="TriggerTaman" type="Area2D" parent="." unique_id=571855993]
 script = ExtResource("99_stry")
 timeline_per_hari = Array[String](["", "hari1_taman", "", "", ""])
+marker_icon = ExtResource("15_w5h7f")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerTaman" unique_id=1706436396]
 position = Vector2(161, 135.375)
