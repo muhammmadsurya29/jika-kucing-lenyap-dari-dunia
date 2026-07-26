@@ -7,9 +7,53 @@ var player: Node2D
 var npc_anak: Node2D = null
 var npc_ibu: Node2D = null
 
+@export_group("UI Penunjuk Arah")
+@export var marker_icon: Texture2D
+@export var icon_hframes: int = 1
+@export var icon_vframes: int = 1
+@export var icon_frame: int = 0
+@export var icon_offset: Vector2 = Vector2(0, -32)
+
+@export_group("UI Panah Luar Layar")
+@export var use_offscreen_pointer: bool = false
+@export var pointer_texture: Texture2D
+@export var pointer_hframes: int = 1
+@export var pointer_vframes: int = 1
+@export var pointer_scale: Vector2 = Vector2(1, 1)
+@export var pointer_margin: float = 40.0
+@export var frame_right: int = 0
+@export var frame_left: int = 1
+@export var frame_top_right: int = 2
+@export var frame_top_left: int = 3
+
+var _marker_sprite: Sprite2D
+var _off_canvas: CanvasLayer
+var _off_sprite: Sprite2D
+
 func _ready() -> void:
 	if Dialogic.has_signal("signal_event"):
 		Dialogic.signal_event.connect(_on_dialogic_signal)
+		
+	if marker_icon:
+		_marker_sprite = Sprite2D.new()
+		_marker_sprite.texture = marker_icon
+		_marker_sprite.hframes = icon_hframes
+		_marker_sprite.vframes = icon_vframes
+		_marker_sprite.frame = icon_frame
+		_marker_sprite.z_index = 50
+		add_child(_marker_sprite)
+		_marker_sprite.visible = false
+		
+	if use_offscreen_pointer and pointer_texture:
+		_off_canvas = CanvasLayer.new()
+		add_child(_off_canvas)
+		
+		_off_sprite = Sprite2D.new()
+		_off_sprite.texture = pointer_texture
+		_off_sprite.hframes = pointer_hframes
+		_off_sprite.vframes = pointer_vframes
+		_off_sprite.scale = pointer_scale
+		_off_canvas.add_child(_off_sprite)
 		
 	player = get_tree().get_first_node_in_group("Player")
 	
@@ -225,3 +269,79 @@ func _play_alt_taman_bukit() -> void:
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
 	Dialogic.start("alt_taman_bukit")
+
+func _process(delta: float) -> void:
+	if StoryManager.current_day != 3:
+		if _off_canvas: _off_canvas.visible = false
+		if _marker_sprite: _marker_sprite.visible = false
+		return
+		
+	var trigger_bunga = get_node_or_null("TriggerBunga")
+	var trigger_bangku = get_node_or_null("TriggerBangkuHari3")
+	
+	var active_trigger: Area2D = null
+	if trigger_bunga and trigger_bunga.monitoring:
+		active_trigger = trigger_bunga
+	elif trigger_bangku and trigger_bangku.monitoring:
+		active_trigger = trigger_bangku
+		
+	if active_trigger:
+		if _marker_sprite:
+			_marker_sprite.visible = true
+			var shape = active_trigger.get_node_or_null("CollisionShape2D")
+			var base_pos = shape.global_position if shape else active_trigger.global_position
+			# Animasi naik turun menggunakan sin
+			var y_bob = sin(Time.get_ticks_msec() / 1000.0 * PI * 2) * 4.0
+			_marker_sprite.global_position = base_pos + icon_offset + Vector2(0, y_bob)
+		
+		if _off_sprite and _off_canvas:
+			var camera = get_viewport().get_camera_2d()
+			if camera:
+				var ui_size = get_viewport_rect().size
+				var canvas_transform = get_viewport().canvas_transform
+				var target_screen_pos = canvas_transform * active_trigger.global_position
+				
+				var screen_rect = Rect2(Vector2.ZERO, ui_size).grow(-20.0)
+				
+				if screen_rect.has_point(target_screen_pos):
+					_off_canvas.visible = false
+				else:
+					_off_canvas.visible = true
+					var center = ui_size / 2.0
+					var dir = (target_screen_pos - center).normalized()
+					
+					var x_factor = (ui_size.x/2.0 - pointer_margin) / abs(dir.x) if dir.x != 0 else 10000.0
+					var y_factor = (ui_size.y/2.0 - pointer_margin) / abs(dir.y) if dir.y != 0 else 10000.0
+					var factor = min(x_factor, y_factor)
+					
+					_off_sprite.position = center + dir * factor
+					
+					var deg = rad_to_deg(dir.angle())
+					_off_sprite.rotation = 0
+					_off_sprite.flip_v = false
+					
+					if deg >= -22.5 and deg < 22.5: # Kanan
+						_off_sprite.frame = frame_right
+					elif deg >= 22.5 and deg < 67.5: # Kanan Bawah
+						_off_sprite.frame = frame_top_right
+						_off_sprite.flip_v = true
+					elif deg >= 67.5 and deg < 112.5: # Bawah
+						_off_sprite.frame = frame_right
+						_off_sprite.rotation = PI/2
+					elif deg >= 112.5 and deg < 157.5: # Kiri Bawah
+						_off_sprite.frame = frame_top_left
+						_off_sprite.flip_v = true
+					elif deg >= 157.5 or deg < -157.5: # Kiri
+						_off_sprite.frame = frame_left
+					elif deg >= -157.5 and deg < -112.5: # Kiri Atas
+						_off_sprite.frame = frame_top_left
+					elif deg >= -112.5 and deg < -67.5: # Atas
+						_off_sprite.frame = frame_right
+						_off_sprite.rotation = -PI/2
+					elif deg >= -67.5 and deg < -22.5: # Kanan Atas
+						_off_sprite.frame = frame_top_right
+			else:
+				_off_canvas.visible = false
+	else:
+		if _marker_sprite: _marker_sprite.visible = false
+		if _off_canvas: _off_canvas.visible = false

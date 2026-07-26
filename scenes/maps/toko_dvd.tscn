@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cfiw0rrqb8a14" path="res://scenes/characters/player.tscn" id="4_toko"]
 [ext_resource type="Texture2D" uid="uid://cekybst0of5it" path="res://assets/Tiles/Interior/Japanese_Home_1_Layer_1_16x16.png" id="5_3u72f"]
 [ext_resource type="Texture2D" uid="uid://ccndimi0npih6" path="res://assets/Tiles/Interior/23_Television_and_Film_Studio_Black_Shadow_16x16.png" id="6_gpimc"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="8_o4mtd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p5ay7"]
 texture = ExtResource("2_ukmtm")
@@ -2676,6 +2677,9 @@ layer_3/tile_data = PackedInt32Array(393211, 1, 13, 458747, 1, 14, 524283, 1, 15
 [node name="NPC_Tsutaya" parent="." unique_id=2003782012 instance=ExtResource("3_toko")]
 position = Vector2(682, 233)
 timeline_name = "hari2_siang_tsutaya"
+interact_icon = ExtResource("8_o4mtd")
+icon_hframes = 18
+icon_vframes = 8
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=2081342279]
 position = Vector2(100, 180)
