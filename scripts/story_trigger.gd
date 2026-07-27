@@ -177,7 +177,6 @@ func _on_body_entered(body: Node2D) -> void:
 			if _marker_sprite:
 				_marker_sprite.visible = false
 				
-			var sm = get_node_or_null("/root/StoryManager")
 			if sm:
 				if sm.has_played(target_timeline):
 					print("[DEBUG StoryTrigger] Timeline sudah pernah dimainkan, dilewati: ", target_timeline)
