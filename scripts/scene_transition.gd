@@ -92,7 +92,7 @@ func _on_body_entered(body: Node2D) -> void:
 		var cafe_done = sm.cafe_event_done if sm else false
 		
 		# Khusus Pintu Kamar di Hari 4 menuju pemakaman
-		if target_scene == "res://scenes/maps/jalanan_kota.tscn" and day == 4 and sm.day4_state == "beres_beres_selesai":
+		if day == 4 and sm.day4_state == "beres_beres_selesai":
 			if has_node("/root/ScreenFade"):
 				get_node("/root/ScreenFade").transition_to("res://scenes/maps/kantor_pemakaman.tscn", 1.0)
 			else:

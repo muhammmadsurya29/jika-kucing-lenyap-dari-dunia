@@ -9131,6 +9131,7 @@ script = ExtResource("13_df4qw")
 timeline_name = "tidur_malam"
 requires_daily_event = true
 locked_timeline = "belum_bisa_tidur"
+active_in_day4_climax = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Kasur" unique_id=140283819]
 position = Vector2(-1, 1)
@@ -9143,6 +9144,7 @@ script = ExtResource("13_df4qw")
 timeline_name = "tidur_malam"
 requires_daily_event = true
 locked_timeline = "belum_bisa_tidur"
+active_in_day4_climax = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Meja" unique_id=1470024040]
 position = Vector2(0, 1)
@@ -9247,6 +9249,7 @@ position = Vector2(40, 32)
 position = Vector2(129, 141)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_mesin_cuci"])
+active_in_day4_climax = true
 marker_icon = ExtResource("22_xgyj3")
 icon_hframes = 18
 icon_vframes = 8
@@ -9261,6 +9264,7 @@ polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
 position = Vector2(18, 113)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_jendela"])
+active_in_day4_climax = true
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10

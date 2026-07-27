@@ -30759,6 +30759,7 @@ position = Vector2(245.00002, 156)
 scale = Vector2(-0.03999821, 0.040000916)
 script = ExtResource("99_stry")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_soba"])
+active_in_day4_climax = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerTamanSobaHari4" unique_id=85937078]
 position = Vector2(50.00244, -24.999237)

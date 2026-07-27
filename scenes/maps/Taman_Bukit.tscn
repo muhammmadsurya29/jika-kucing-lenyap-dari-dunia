@@ -86,6 +86,7 @@ scale = Vector2(0.906958, 0.90685654)
 position = Vector2(100, 100)
 script = ExtResource("99_strytrg")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_taman_bukit"])
+active_in_day4_climax = true
 marker_icon = ExtResource("6_ct1ny")
 icon_hframes = 18
 icon_vframes = 8

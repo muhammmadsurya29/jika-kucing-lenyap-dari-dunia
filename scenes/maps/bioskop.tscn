@@ -12362,26 +12362,16 @@ layer_6/name = "build"
 layer_6/tile_data = PackedInt32Array(-393216, 983048, 2, -327680, 983048, 3, -393215, 917512, 2, -327679, 917512, 3, -393205, 983048, 2, -327669, 983048, 3, -393204, 917512, 2, -327668, 917512, 3, 327699, 65540, 165, 393235, 65540, 166, 327693, 327684, 165, 393229, 327684, 166, -393207, 9, 13, -327671, 9, 14, -393206, 65545, 13, -327670, 65545, 14, -393210, 131081, 13, -327674, 131081, 14, -393209, 196617, 13, -327673, 196617, 14, -393213, 262153, 13, -327677, 262153, 14, -393212, 327689, 13, -327676, 327689, 14, -393201, 196617, 13, -327665, 196617, 14, -393202, 131081, 13, -327666, 131081, 14)
 
 [node name="TriggerBioskopPuncakHari4" type="Area2D" parent="." unique_id=131150401]
-position = Vector2(10, 10)
+position = Vector2(172, 3)
 script = ExtResource("99_strytrg")
-timeline_name = null
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:bioskop_puncak"])
+active_in_day4_climax = true
 marker_icon = ExtResource("13_612nn")
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10
-icon_offset = null
-use_offscreen_pointer = null
-pointer_hframes = null
-pointer_vframes = null
-pointer_scale = null
-pointer_margin = null
-frame_right = null
-frame_left = null
-frame_top_right = null
-frame_top_left = null
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TriggerBioskopPuncakHari4" unique_id=1502752516]
-position = Vector2(159, 11)
+position = Vector2(1, 0)
 scale = Vector2(0.003077244, 0.0030459324)
-polygon = PackedVector2Array(-5000, -5000, 5000, -5000, 5000, 5000, -5000, 5000)
+polygon = PackedVector2Array(-5000, -5000, 429.15625, -5000.004, 5000, -5000, 5000, 5000, -5000, 5000)
