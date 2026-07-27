@@ -9,6 +9,7 @@ extends Area2D
 @export var locked_timeline: String = "pintu_terkunci"
 @export var locked_timeline_per_hari: Array[String] = []
 @export var target_scene_per_hari: Array[String] = []
+@export var inactive_on_days: Array[int] = []
 
 @export_group("UI Penunjuk Arah")
 @export var marker_icon: Texture2D
@@ -39,6 +40,12 @@ func _ready() -> void:
 	# Dengarkan ketika ada objek fisik yang menyentuh area pintu ini
 	body_entered.connect(_on_body_entered)
 	
+	var sm = get_node_or_null("/root/StoryManager")
+	var day = sm.current_day if sm else 1
+	
+	if day in inactive_on_days:
+		use_offscreen_pointer = false
+	
 	if marker_icon:
 		_marker_sprite = Sprite2D.new()
 		_marker_sprite.texture = marker_icon
@@ -58,6 +65,9 @@ func _ready() -> void:
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y - 8, 0.6).set_trans(Tween.TRANS_SINE)
 		_marker_tween.tween_property(_marker_sprite, "position:y", _marker_sprite.position.y, 0.6).set_trans(Tween.TRANS_SINE)
 		
+		if day in inactive_on_days:
+			_marker_sprite.visible = false
+		
 	if use_offscreen_pointer and pointer_texture:
 		_off_canvas = CanvasLayer.new()
 		add_child(_off_canvas)
@@ -74,6 +84,10 @@ func _on_body_entered(body: Node2D) -> void:
 		# Ambil data hari dari StoryManager
 		var sm = get_node_or_null("/root/StoryManager")
 		var day = sm.current_day if sm else 1
+		
+		if day in inactive_on_days:
+			return
+			
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
 		

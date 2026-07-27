@@ -2680,6 +2680,7 @@ timeline_name = "hari2_siang_tsutaya"
 interact_icon = ExtResource("8_o4mtd")
 icon_hframes = 18
 icon_vframes = 8
+icon_frame = 10
 
 [node name="PintuKeluar" type="Area2D" parent="." unique_id=2081342279]
 position = Vector2(100, 180)

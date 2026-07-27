@@ -8,6 +8,7 @@ class_name Interactable
 @export var timeline_berikutnya: String = ""
 @export var requires_daily_event: bool = false
 @export var locked_timeline: String = ""
+@export var active_in_day4_climax: bool = false
 
 @export_group("UI Tanda Pentung")
 @export var interact_icon: Texture2D
@@ -123,6 +124,11 @@ func _on_day_changed(new_day: int) -> void:
 		if current_tl != "" and sm.has_played(current_tl):
 			is_active = false
 			
+		# Matikan semua interaksi usang di fase klimaks Hari 4
+		var is_climax_active = active_in_day4_climax or self.name == "Kasur" or self.name == "Meja"
+		if sm.current_day == 4 and sm.day4_state != "" and not is_climax_active:
+			is_active = false
+			
 	# Munculkan/Sembunyikan NPC di hari baru
 	var shape = get_node_or_null("CollisionShape2D")
 	if has_dialog:
@@ -217,7 +223,8 @@ func _unhandled_input(event: InputEvent) -> void:
 			
 			# Khusus Hari 4 akhir game (Menulis surat) di Kasur/Meja
 			if sm and sm.current_day == 4 and sm.day4_state != "":
-				if self.name == "Kasur" or self.name == "Meja":
+				var is_climax_active = active_in_day4_climax or self.name == "Kasur" or self.name == "Meja"
+				if is_climax_active:
 					if sm.day4_state == "pemakaman_selesai":
 						tl_to_play = "hari4_true_ending:ending_surat"
 						requires_daily_event = false # Abaikan syarat tidur

@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://damup8gmw5ajj" path="res://assets/Tiles/Interior/Ice_Cream_Shop_Design_layer_2.png" id="8_ouy8v"]
 [ext_resource type="Texture2D" uid="uid://bc3520pdrqvwm" path="res://assets/Tiles/Interior/Ice_Cream_Shop_Design_layer_3.png" id="9_old4b"]
 [ext_resource type="PackedScene" uid="uid://0hv18rmnpljf" path="res://scenes/characters/npc_mantan.tscn" id="12_omd0x"]
+[ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="14_ujur3"]
 [ext_resource type="Script" uid="uid://bwbpuowcdejay" path="res://scripts/cafe_chair_trigger.gd" id="98_chair"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o3mpf"]
@@ -3729,6 +3730,10 @@ position = Vector2(54, 101)
 [node name="TriggerKursiMC" type="Area2D" parent="." unique_id=1628658716]
 position = Vector2(24, 102)
 script = ExtResource("98_chair")
+marker_icon = ExtResource("14_ujur3")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerKursiMC" unique_id=922502321]
 position = Vector2(0, 2.5)

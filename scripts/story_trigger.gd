@@ -2,6 +2,7 @@ extends Area2D
 
 @export var timeline_name: String = ""
 @export var timeline_per_hari: Array[String] = []
+@export var active_in_day4_climax: bool = false
 
 @export_group("UI Penunjuk Arah")
 @export var marker_icon: Texture2D
@@ -92,6 +93,12 @@ func _on_day_changed(new_day: int) -> void:
 		if sm and sm.has_played(target_timeline):
 			is_active = false
 			
+		# Matikan semua trigger usang di fase klimaks Hari 4
+		if sm and sm.current_day == 4 and sm.day4_state != "":
+			var is_climax_active = active_in_day4_climax or self.name == "Kasur" or self.name == "Meja" or self.name == "TriggerSurat"
+			if not is_climax_active:
+				is_active = false
+			
 	if _marker_sprite:
 		_marker_sprite.visible = is_active
 	
@@ -100,6 +107,12 @@ func _on_day_changed(new_day: int) -> void:
 		force_trigger()
 
 func force_trigger() -> void:
+	var sm = get_node_or_null("/root/StoryManager")
+	if sm and sm.current_day == 4 and sm.day4_state != "":
+		var is_climax_active = active_in_day4_climax or self.name == "Kasur" or self.name == "Meja" or self.name == "TriggerSurat"
+		if not is_climax_active:
+			return
+			
 	var target_timeline = timeline_name
 	
 	if timeline_per_hari.size() > 0:
@@ -140,8 +153,11 @@ func _on_body_entered(body: Node2D) -> void:
 		
 	# Jika yang menginjak adalah Player, dan dialog sedang tidak berjalan
 	if body.is_in_group("Player"):
-		if name == "TriggerBangun" and StoryManager.current_day == 4 and Dialogic.VAR.get("day4_state") != "":
-			return
+		var sm = get_node_or_null("/root/StoryManager")
+		if sm and sm.current_day == 4 and sm.day4_state != "":
+			var is_climax_active = active_in_day4_climax or self.name == "Kasur" or self.name == "Meja" or self.name == "TriggerSurat"
+			if not is_climax_active:
+				return
 			
 		print("[DEBUG StoryTrigger] Player menginjak: ", self.name)
 		var target_timeline = timeline_name
