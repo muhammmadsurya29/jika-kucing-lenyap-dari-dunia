@@ -22,25 +22,18 @@ func _ready() -> void:
 	_setup_button_effects()
 	_setup_gallery_ui()
 
-var gallery_container: Control
 var ending_slots: Array[VBoxContainer] = []
 var texture_placeholder = preload("res://icon.svg") # Placeholder untuk image
 
 func _setup_gallery_ui() -> void:
-	gallery_container = Control.new()
-	gallery_container.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
-	gallery_container.custom_minimum_size.y = 250
-	# Tempatkan agak di atas dasar layar agar tidak terpotong
-	gallery_container.position.y = get_viewport_rect().size.y - 280
-	add_child(gallery_container)
-	
-	var center = CenterContainer.new()
-	center.set_anchors_preset(Control.PRESET_FULL_RECT)
-	gallery_container.add_child(center)
-	
 	var hbox = HBoxContainer.new()
 	hbox.add_theme_constant_override("separation", 60)
-	center.add_child(hbox)
+	hbox.alignment = BoxContainer.ALIGNMENT_CENTER
+	# Jangkar di bagian bawah layar melebar
+	hbox.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
+	hbox.offset_top = -250  # Tarik ke atas dari bawah
+	hbox.offset_bottom = -50 # Beri jarak 50px dari tepi bawah
+	add_child(hbox)
 	
 	# Ambil data ending yang sudah terbuka
 	var sm = get_node_or_null("/root/StoryManager")
