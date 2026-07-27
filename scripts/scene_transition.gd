@@ -141,6 +141,18 @@ func _on_body_entered(body: Node2D) -> void:
 				get_tree().change_scene_to_file(final_target)
 
 func _process(delta: float) -> void:
+	var sm = get_node_or_null("/root/StoryManager")
+	var day = sm.current_day if sm else 1
+	var is_door_active = true
+	if day in inactive_on_days:
+		is_door_active = false
+	if target_scene == "res://scenes/maps/kantor_pemakaman.tscn" and day == 4:
+		if sm and sm.day4_state != "beres_beres_selesai":
+			is_door_active = false
+			
+	if _marker_sprite:
+		_marker_sprite.visible = is_door_active
+		
 	if _off_sprite and _off_canvas:
 		var camera = get_viewport().get_camera_2d()
 		if camera:
@@ -150,7 +162,7 @@ func _process(delta: float) -> void:
 			
 			var screen_rect = Rect2(Vector2.ZERO, ui_size).grow(-20.0)
 			
-			if screen_rect.has_point(target_screen_pos):
+			if screen_rect.has_point(target_screen_pos) or not is_door_active:
 				_off_canvas.visible = false
 			else:
 				_off_canvas.visible = true
