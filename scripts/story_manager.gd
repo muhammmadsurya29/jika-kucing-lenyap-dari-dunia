@@ -2,7 +2,7 @@ extends Node
 
 # Script Global (Autoload) untuk manajemen alur cerita dan state game
 
-var current_day: int = 1
+var current_day: int = 4
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
@@ -257,8 +257,9 @@ func _on_dialogic_signal(argument: String) -> void:
 		# Tunggu scene terganti dan fade in selesai
 		await get_tree().create_timer(1.5).timeout
 		
-		while Dialogic.current_timeline != null:
-			await get_tree().create_timer(0.1).timeout
+		# Pastikan dialog sebelumnya benar-benar tertutup
+		if Dialogic.current_timeline != null:
+			Dialogic.current_timeline = null
 			
 		var new_player = get_tree().get_first_node_in_group("Player")
 		if new_player and new_player.has_method("lock_movement"):

@@ -9155,7 +9155,7 @@ position = Vector2(184, 66)
 script = ExtResource("14_uaq6v")
 target_scene = "res://scenes/maps/jalanan_kota.tscn"
 requires_leave_permission = true
-locked_timeline_per_hari = Array[String](["", "hari1_pintu", "", "", ""])
+locked_timeline_per_hari = Array[String](["", "hari1_pintu", "", "", "hari4_belum_beres"])
 target_scene_per_hari = Array[String](["", "res://scenes/maps/jalanan_kota.tscn", "res://scenes/maps/jalanan_kota.tscn", "res://scenes/maps/Taman_Bukit.tscn", ""])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuKeluar" unique_id=1416787775]
