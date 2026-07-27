@@ -9265,6 +9265,7 @@ position = Vector2(18, 113)
 script = ExtResource("15_d8i2l")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:cek_jendela"])
 active_in_day4_climax = true
+marker_icon = ExtResource("22_xgyj3")
 icon_hframes = 18
 icon_vframes = 8
 icon_frame = 10

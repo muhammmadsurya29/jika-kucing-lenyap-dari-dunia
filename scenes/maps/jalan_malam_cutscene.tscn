@@ -16173,19 +16173,19 @@ position = Vector2(239, 84)
 position = Vector2(511, 72)
 
 [node name="NodeMCBerdiriMalam" type="Marker2D" parent="." unique_id=833225491]
-position = Vector2(482, 103)
+position = Vector2(416, 102)
 
 [node name="NodeMantanBerdiriMalam" type="Marker2D" parent="." unique_id=1320788679]
 position = Vector2(449, 102)
 
 [node name="NodeMCEndingC_Luar" type="Marker2D" parent="." unique_id=1624052900]
-position = Vector2(421, 96)
+position = Vector2(368, 96)
 
 [node name="NodeMantanEndingC_Luar" type="Marker2D" parent="." unique_id=771769420]
 position = Vector2(400, 95)
 
 [node name="NodeMCEndingC_Post" type="Marker2D" parent="." unique_id=1592659903]
-position = Vector2(421, 96)
+position = Vector2(367, 95)
 
 [node name="NodeMantanEndingC_Post" type="Marker2D" parent="." unique_id=2045531981]
 position = Vector2(449, 95)
