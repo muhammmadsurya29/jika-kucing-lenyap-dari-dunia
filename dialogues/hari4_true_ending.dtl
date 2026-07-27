@@ -185,6 +185,7 @@ narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak 
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
 [signal arg="set_day4_state:beres_beres_selesai"]
 narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
+[signal arg="boleh_keluar"]
 return
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
