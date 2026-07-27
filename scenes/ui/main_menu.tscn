@@ -76,6 +76,10 @@ offset_bottom = 488.84
 layout_mode = 2
 text = "Mulai Game"
 
+[node name="TombolGallery" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Gallery"
+
 [node name="TombolBGM" type="Button" parent="VBoxContainer" unique_id=1833409071]
 layout_mode = 2
 text = "BGM: ON"
@@ -85,4 +89,5 @@ layout_mode = 2
 text = "Keluar"
 
 [connection signal="pressed" from="VBoxContainer/TombolMulai" to="." method="_on_tombol_mulai_pressed"]
+[connection signal="pressed" from="VBoxContainer/TombolGallery" to="." method="_on_tombol_gallery_pressed"]
 [connection signal="pressed" from="VBoxContainer/TombolKeluar" to="." method="_on_tombol_keluar_pressed"]
