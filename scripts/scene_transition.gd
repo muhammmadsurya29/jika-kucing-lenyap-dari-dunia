@@ -95,15 +95,7 @@ func _on_body_entered(body: Node2D) -> void:
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
 		
-		# Khusus Pintu Kamar di Hari 4 menuju pemakaman
-		if day == 4 and "beres_beres" in sm.day4_state:
-			print("[DEBUG Pintu] Pintu Kamar terdeteksi pada Hari 4 Klimaks. Mengalihkan ke Kantor Pemakaman.")
-			if has_node("/root/ScreenFade"):
-				get_node("/root/ScreenFade").transition_to("res://scenes/maps/kantor_pemakaman.tscn", 1.0)
-			else:
-				get_tree().change_scene_to_file("res://scenes/maps/kantor_pemakaman.tscn")
-			return
-			
+
 		# Khusus kembali ke kamar di Hari 99 (Ending Damai)
 		if target_scene == "res://scenes/maps/kamar_mc.tscn" and day == 99:
 			if has_node("/root/ScreenFade"):
