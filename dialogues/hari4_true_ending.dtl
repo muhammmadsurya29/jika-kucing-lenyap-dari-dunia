@@ -183,8 +183,8 @@ narator: Kemudian aku akan mulai merapikan sekelilingku. Persiapan untuk mati.
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres.png" fade="1.0"]
 narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak bisa kubuang sampai hari ini. Keping-keping hidupku yang timbul tenggelam. Seandainya aku menghilangkan barang-barang begini, apakah aloha akan memberiku nyawa? Walaupun terlintas begitu di pikiranku, aku lega karena “aku sudah tidak usah menghilangkan apapun lagi”.
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
-narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
 [signal arg="set_day4_state:beres_beres_selesai"]
+narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
 return
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
@@ -193,8 +193,8 @@ narator: Aku berkonsultasi dengan petugas penjualan dan promosi kantor di pengur
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
 narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Orang-orang seperti apakah yang akan berkumpul di situ? Teman-teman lama? Pacar masa lalu? Kerabat? Guru? Atau para kolega? Di antara mereka berapa orang yang betul-betul bersedih atas kematianku? Dan bagaimana mereka menceritakan tentang hidupku?
 [background arg="hitam.png" fade="1.0"]
-narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
 [signal arg="set_day4_state:pemakaman_selesai"]
+narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
 return
 label ending_surat
 [signal arg="update_objective:Tamat"]
