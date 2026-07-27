@@ -239,6 +239,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_tree().change_scene_to_file("res://scenes/maps/bioskop.tscn")
 	elif argument == "tamat":
 		print(">> GAME TAMAT!")
+		unlock_ending("True Ending")
 		if has_node("/root/ScreenFade"):
 			get_node("/root/ScreenFade").transition_to("res://scenes/ui/credit_scene.tscn", 2.0) # Tamat lambat
 		else:

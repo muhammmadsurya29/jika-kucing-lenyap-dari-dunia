@@ -22,111 +22,59 @@ func _ready() -> void:
 	_setup_button_effects()
 	_setup_gallery_ui()
 
-var gallery_panel: Panel
+var gallery_container: Control
 var ending_slots: Array[VBoxContainer] = []
 var texture_placeholder = preload("res://icon.svg") # Placeholder untuk image
 
 func _setup_gallery_ui() -> void:
-	gallery_panel = Panel.new()
-	gallery_panel.set_anchors_preset(Control.PRESET_FULL_RECT)
-	gallery_panel.hide()
-	add_child(gallery_panel)
+	gallery_container = Control.new()
+	gallery_container.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
+	gallery_container.custom_minimum_size.y = 250
+	# Tempatkan agak di atas dasar layar agar tidak terpotong
+	gallery_container.position.y = get_viewport_rect().size.y - 280
+	add_child(gallery_container)
 	
-	# Background gelap transparan
-	var bg = ColorRect.new()
-	bg.set_anchors_preset(Control.PRESET_FULL_RECT)
-	bg.color = Color(0, 0, 0, 0.8)
-	gallery_panel.add_child(bg)
-	
-	# Judul
-	var title = Label.new()
-	title.text = "Riwayat Ending"
-	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	title.set_anchors_preset(Control.PRESET_TOP_WIDE)
-	title.position.y = 80
-	if pixel_font is FontFile:
-		title.add_theme_font_override("font", pixel_font)
-	title.add_theme_font_size_override("font_size", 64)
-	gallery_panel.add_child(title)
-	
-	# Container untuk baris 4 ending
 	var center = CenterContainer.new()
 	center.set_anchors_preset(Control.PRESET_FULL_RECT)
-	gallery_panel.add_child(center)
+	gallery_container.add_child(center)
 	
 	var hbox = HBoxContainer.new()
 	hbox.add_theme_constant_override("separation", 60)
 	center.add_child(hbox)
 	
-	# Buat 4 slot kosong
+	# Ambil data ending yang sudah terbuka
+	var sm = get_node_or_null("/root/StoryManager")
+	var endings = sm.unlocked_endings if sm else []
+	
+	# Buat 4 slot foto
 	for i in range(4):
 		var vbox = VBoxContainer.new()
 		vbox.alignment = BoxContainer.ALIGNMENT_CENTER
-		vbox.add_theme_constant_override("separation", 20)
+		vbox.add_theme_constant_override("separation", 10)
 		
 		var tex = TextureRect.new()
 		tex.texture = texture_placeholder
 		tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-		tex.custom_minimum_size = Vector2(300, 200)
+		tex.custom_minimum_size = Vector2(240, 160) # Sedikit diperkecil agar tidak memakan layar
 		tex.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 		vbox.add_child(tex)
 		
 		var lbl = Label.new()
-		lbl.text = "???"
 		lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		if pixel_font is FontFile:
 			lbl.add_theme_font_override("font", pixel_font)
-		lbl.add_theme_font_size_override("font_size", 32)
-		vbox.add_child(lbl)
-		
-		hbox.add_child(vbox)
-		ending_slots.append(vbox)
-	
-	# Tombol Tutup
-	var btn_close = Button.new()
-	btn_close.text = "Kembali"
-	btn_close.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
-	btn_close.custom_minimum_size.y = 80
-	btn_close.position.y = -120 # Offset dari bawah
-	if pixel_font is FontFile:
-		btn_close.add_theme_font_override("font", pixel_font)
-	btn_close.add_theme_font_size_override("font_size", 48)
-	
-	# Pusatkan tombol close di bawah
-	btn_close.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
-	# Karena position relatif terhadap pojok kiri atas parent, kita hitung dari ukuran layar
-	var screen_size = get_viewport_rect().size
-	btn_close.custom_minimum_size.x = 300
-	btn_close.position = Vector2((screen_size.x / 2.0) - 150, screen_size.y - 150)
-	
-	btn_close.pressed.connect(_on_tombol_tutup_gallery_pressed)
-	gallery_panel.add_child(btn_close)
-
-func _on_tombol_gallery_pressed() -> void:
-	# Update konten galeri berdasarkan save
-	var sm = get_node_or_null("/root/StoryManager")
-	var endings = sm.unlocked_endings if sm else []
-	
-	for i in range(4):
-		var slot = ending_slots[i]
-		var tex = slot.get_child(0) as TextureRect
-		var lbl = slot.get_child(1) as Label
+		lbl.add_theme_font_size_override("font_size", 24)
 		
 		if i < endings.size():
 			lbl.text = str(endings[i])
-			# Disini kita bisa menambahkan logika load gambar asli jika ada
-			# Contoh: tex.texture = load("res://assets/gallery/" + str(endings[i]) + ".png")
-			tex.texture = texture_placeholder # Placeholder untuk saat ini
 			tex.modulate = Color(1, 1, 1, 1) # Terang
 		else:
 			lbl.text = "???"
-			tex.texture = texture_placeholder
 			tex.modulate = Color(0.2, 0.2, 0.2, 1) # Gelap (Belum terbuka)
 			
-	gallery_panel.show()
-
-func _on_tombol_tutup_gallery_pressed() -> void:
-	gallery_panel.hide()
+		vbox.add_child(lbl)
+		hbox.add_child(vbox)
+		ending_slots.append(vbox)
 
 func _setup_layout():
 	# Memaksa Judul agar rata tengah sempurna
