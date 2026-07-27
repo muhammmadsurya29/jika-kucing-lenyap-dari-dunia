@@ -31,8 +31,8 @@ func _setup_gallery_ui() -> void:
 	hbox.alignment = BoxContainer.ALIGNMENT_CENTER
 	# Jangkar di bagian bawah layar melebar
 	hbox.set_anchors_preset(Control.PRESET_BOTTOM_WIDE)
-	hbox.offset_top = -250  # Tarik ke atas dari bawah
-	hbox.offset_bottom = -50 # Beri jarak 50px dari tepi bawah
+	hbox.offset_top = -350  # Tarik lebih jauh ke atas (sebelumnya -250)
+	hbox.offset_bottom = -150 # Beri jarak 150px dari tepi bawah (sebelumnya -50)
 	add_child(hbox)
 	
 	# Ambil data ending yang sudah terbuka
