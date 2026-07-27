@@ -30721,7 +30721,7 @@ frame_top_right = 92
 frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerTaman" unique_id=1706436396]
-position = Vector2(161, 135.375)
+position = Vector2(179, 141)
 shape = SubResource("RectangleShape2D_1s67d")
 
 [node name="PintuCafe" type="Area2D" parent="." unique_id=455985120]
