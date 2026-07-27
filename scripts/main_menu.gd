@@ -92,10 +92,12 @@ func _setup_gallery_ui() -> void:
 		btn_close.add_theme_font_override("font", pixel_font)
 	btn_close.add_theme_font_size_override("font_size", 48)
 	
-	# Pusatkan tombol close (karena BOTTOM_WIDE bikin dia selebar layar, kita atur size x)
+	# Pusatkan tombol close di bawah
 	btn_close.set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
-	btn_close.position.y = -120
+	# Karena position relatif terhadap pojok kiri atas parent, kita hitung dari ukuran layar
+	var screen_size = get_viewport_rect().size
 	btn_close.custom_minimum_size.x = 300
+	btn_close.position = Vector2((screen_size.x / 2.0) - 150, screen_size.y - 150)
 	
 	btn_close.pressed.connect(_on_tombol_tutup_gallery_pressed)
 	gallery_panel.add_child(btn_close)

@@ -6684,12 +6684,13 @@ tile_map_data = PackedByteArray("AAALAAQAAAACACUAAAAMAAQAAAADACUAAAAQAAgAAAACACY
 tile_set = SubResource("TileSet_5rvnl")
 
 [node name="Player" parent="." unique_id=959446254 instance=ExtResource("2_yd2cm")]
-position = Vector2(100, 100)
+position = Vector2(92, 164)
 
 [node name="TriggerPemakaman" type="Area2D" parent="." unique_id=867334353]
 position = Vector2(150, 150)
 script = ExtResource("3_stry")
 timeline_per_hari = Array[String](["", "", "", "", "hari4_true_ending:pemakaman"])
+active_in_day4_climax = true
 marker_icon = ExtResource("5_il2gf")
 icon_hframes = 19
 icon_vframes = 8
