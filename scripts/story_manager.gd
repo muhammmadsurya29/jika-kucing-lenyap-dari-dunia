@@ -246,6 +246,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_tree().change_scene_to_file("res://scenes/ui/credit_scene.tscn")
 	elif argument == "day4_ke_kamar_beres2":
 		print(">> Pindah otomatis ke Kamar untuk Beres-beres!")
+		can_leave_room = false
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("unlock_movement"):
 			player.unlock_movement()

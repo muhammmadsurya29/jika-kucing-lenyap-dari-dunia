@@ -95,6 +95,12 @@ func _on_body_entered(body: Node2D) -> void:
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
 		
+		# Khusus Pintu Pemakaman di Hari 4, hanya bisa diakses SETELAH beres-beres
+		if target_scene == "res://scenes/maps/kantor_pemakaman.tscn" and day == 4:
+			if sm and sm.day4_state != "beres_beres_selesai":
+				if not Dialogic.current_timeline:
+					Dialogic.start("hari4_belum_beres")
+				return
 
 		# Khusus kembali ke kamar di Hari 99 (Ending Damai)
 		if target_scene == "res://scenes/maps/kamar_mc.tscn" and day == 99:
