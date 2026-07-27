@@ -85,14 +85,19 @@ func _on_body_entered(body: Node2D) -> void:
 		var sm = get_node_or_null("/root/StoryManager")
 		var day = sm.current_day if sm else 1
 		
+		print("[DEBUG Pintu] Pintu ", self.name, " diinjak di Hari: ", day, " dengan day4_state: ", sm.day4_state if sm else "")
+		print("[DEBUG Pintu] inactive_on_days berisi: ", inactive_on_days)
+		
 		if day in inactive_on_days:
+			print("[DEBUG Pintu] Pintu dinonaktifkan pada hari ini! Membatalkan.")
 			return
 			
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
 		
 		# Khusus Pintu Kamar di Hari 4 menuju pemakaman
-		if day == 4 and sm.day4_state == "beres_beres_selesai":
+		if day == 4 and "beres_beres" in sm.day4_state:
+			print("[DEBUG Pintu] Pintu Kamar terdeteksi pada Hari 4 Klimaks. Mengalihkan ke Kantor Pemakaman.")
 			if has_node("/root/ScreenFade"):
 				get_node("/root/ScreenFade").transition_to("res://scenes/maps/kantor_pemakaman.tscn", 1.0)
 			else:
