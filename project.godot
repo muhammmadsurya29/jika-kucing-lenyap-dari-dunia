@@ -84,6 +84,7 @@ directories/dtl_directory={
 "hari3_taman_bagian1": "res://dialogues/hari3_taman_bagian1.dtl",
 "hari3_taman_bagian2": "res://dialogues/hari3_taman_bagian2.dtl",
 "hari3_taman_bunga": "res://dialogues/arsip/hari3_taman_bunga.dtl",
+"hari4_belum_beres": "res://dialogues/hari4_belum_beres.dtl",
 "hari4_kucing": "res://dialogues/arsip/hari4_kucing.dtl",
 "hari4_true_ending": "res://dialogues/hari4_true_ending.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
@@ -106,6 +107,8 @@ text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
+animations/join_default="Fade In Out"
+animations/leave_default="Fade In Out"
 animations/join_default_length=0.5
 animations/join_default_wait=true
 animations/leave_default_length=0.5
