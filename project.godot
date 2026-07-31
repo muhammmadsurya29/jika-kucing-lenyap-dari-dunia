@@ -107,8 +107,6 @@ text/text_reveal_skip_delay=0.1
 text/advance_delay=0.1
 text/autoadvance_per_character_delay=0.1
 text/autoadvance_ignored_characters_enabled=true
-animations/join_default="Fade In Out"
-animations/leave_default="Fade In Out"
 animations/join_default_length=0.5
 animations/join_default_wait=true
 animations/leave_default_length=0.5
@@ -139,11 +137,14 @@ layout/style_list=["res://assets/sprites/tema_narasi.tres", "res://assets/sprite
 layout/default_style="res://assets/sprites/tema_narasi.tres"
 glossary/default_case_sensitive=true
 variables={
+"PlayerName": "MC",
 "film_lenyap": false,
 "hari_ke": 1,
 "ponsel_lenyap": false,
 "true_ending": false
 }
+animations/join_default="Fade In Out"
+animations/leave_default="Fade In Out"
 
 [display]
 

@@ -1,4 +1,7 @@
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+narator: Siapa aku?
+narator: Siapa namaku?
+[text_input text="Masukkan Namamu:" var="PlayerName" placeholder="Namamu..."]
 audio "res://assets/audio/heartbeat.mp3"
 narator: "Tumor otak. Stadium empat. Dokter bilang, usiaku hanya tinggal menghitung hari. Vonis kematian itu datang begitu cepat."
 [background arg="res://assets/backgrounds/rumah_sakit.png" fade="1.0"]
