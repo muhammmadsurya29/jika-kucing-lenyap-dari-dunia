@@ -1,4 +1,4 @@
 [background arg="res://assets/backgrounds/Bercermin_Bingung.png" fade="1.0"]
-narator: Lalu, siapakah lawan bicaraku yang terakhir di telepon kemarin?
+mc (batin): "(Tunggu dulu... Siapa lawan bicaraku yang terakhir di telepon kemarin?)"
 [background fade="1.0"]
 [signal arg="update_objective: Pergi ke Dapur!"]

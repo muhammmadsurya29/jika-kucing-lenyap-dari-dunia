@@ -1,5 +1,5 @@
-narator: Waktu janjian sudah tiba, tapi ia belum muncul.
-narator: Tiga puluh menit berlalu. Ia belum juga datang.
-narator: Tanpa sadar tanganku mencari ponsel. Tidak ada. Oh, ya aku sudah melenyapkannya.
-narator: Aku tidak bisa menghubungi nya. Apakah ia menunggu di tempat lain atau aku salah ingat waktu janjian?
+mc (batin): "(Waktu janjian sudah tiba, tapi dia belum muncul.)"
+mc (batin): "(Tiga puluh menit berlalu. Masih belum datang juga.)"
+mc (batin): "(Tanpa sadar tanganku meraba saku mencari ponsel. Ah... ponselku sudah tidak ada.)"
+mc (batin): "(Aku tidak bisa menghubunginya. Apakah dia menunggu di tempat lain? Atau aku salah jam?)"
 [signal arg="mantan_datang"]

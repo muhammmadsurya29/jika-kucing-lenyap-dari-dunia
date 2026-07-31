@@ -1,38 +1,43 @@
 [background arg="res://assets/backgrounds/DAY 3 taman/kubis ngusir kakek.png" fade="1.0"]
-kubis: Mohon minggir tuan-tuan.
-narator: Aku sempat was-was mereka akan panik melihat kucing berbicara dan tiba-tiba muncul di depan mereka, tapi kedua lansia itu hanya tertawa dan seorang biasa dengan gangguan kucing.
-mc: Eh, tidak boleh, kubis. Bangku ini sedang dipakai bapak-bapak ini.
-kubis: Sahaya mau duduk di tempat ini tuanku.
+kubis: "Mohon minggir, Tuan-tuan."
+mc (batin): "(Aku sempat waswas kedua kakek itu akan jantungan mendengar kucing bicara. Ternyata mereka cuma tertawa, mengira suara itu halusinasi belaka.)"
+mc: "Eh, tidak boleh, Kubis. Bangku ini kan sedang dipakai."
+kubis: "Tapi sahaya mau duduk di sini, Tuanku."
 [background arg="res://assets/backgrounds/DAY 3 taman/kubis ngusir kakek.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/DAY 3 taman/duduk di bangku biru.png" fade="1.0"]
 [signal arg="mc_duduk"]
 [wait time="1.0"]
-kubis: Ngomong-ngomong, manusia itu betul-betul makhluk aneh ya, tuanku.
-mc: Begitukah?
-kubis: Mengapa mereka menamai bunga segala?
-mc: Ya, karena jenisnya banyak. Harus dibedakan satu-satu.
-kubis: Walaupun jenisnya banyak, mengapa semua harus dinamai, tuanku? Bukankah cukup kalau semua bunga disebut 'bunga' saja?
-narator: Betul juga. Mengapa orang menamai bunga? Tidak hanya bunga, tapi juga barang, warna, bentuk, dan orang. Mengapa perlu nama? Waktu juga begitu. Manusia semena-mena memberi 'nama' semacam hari, bulan, tahun, detik, menit, dan jam pada gejala alam itu. Tak ada lagi waktu di dunia kubis. Tentu saja tak ada jam juga. Aku tersadar, sebagaimana jam, patokan seperti warna dan suhu pun sebenarnya tak ada. Tapi jika seandainya tak ada warna kuning, merah, apakah kubis tidak menganggap bunga randa tapak itu manis atau bunga mawar itu indah?
-mc: Ngomong-ngomong, ibu hebat ya. Menemanimu setiap hari jalan-jalan begini. Pasti repot kalau menemanimu melewatkan waktu seenaknya begini. Ibu benar-benar menyayangimu.
-kubis: Ibu? Ibu itu siapakah gerangan, tuanku?
-mc: Ya, ibuku. Ibumu juga. Benar-benar kamu tidak ingat ibu?
-kubis: Siapakah itu, tuanku?
+kubis: "Ngomong-ngomong, manusia itu makhluk yang aneh ya, Tuanku."
+mc: "Masa sih?"
+kubis: "Mengapa semua bunga harus dinamai?"
+mc: "Ya, karena jenisnya banyak. Harus dibedakan satu-satu."
+kubis: "Walaupun banyak, mengapa harus punya nama? Bukankah cukup dipanggil 'bunga' saja?"
+mc (batin): "(Betul juga. Mengapa kita menamai segalanya? Bunga, barang, warna, waktu... semuanya kuberi nama.)"
+mc (batin): "(Di dunia Kubis tak ada waktu dan tak ada jam. Patokan suhu atau warna pun tak bernama baginya. Tapi meski tak ada nama 'kuning' atau 'merah', bukankah Kubis tetap bisa melihat keindahan bunga itu?)"
+mc: "Ngomong-ngomong, ibuku hebat ya. Dia sabar menemanimu jalan-jalan setiap hari. Dia pasti sangat menyayangimu."
+kubis: "Ibu? Ibu itu siapakah gerangan, Tuanku?"
+mc: "Ya ibuku, ibumu juga. Masa kau tidak ingat pada Ibu?"
+kubis: "Siapakah itu, Tuanku?"
 [background arg="res://assets/backgrounds/DAY 3 taman/duduk sedih di taman bukit.png" fade="1.0"]
-narator: Aku kehilangan kata. Kubis menatapku polos. Rupanya Kubis benar-benar tidak ingat. Aku sedih. Lebih tepatnya terluka. Satu-satunya saksi hidup tentang kasih sayang Ibu telah kehilangan ingatannya. Di lubuk hatiku aku percaya cerita bahwa hewan takkan melupakan majikannya. Apakah itu sebenarnya hanya khayalan manusia terhadap hewan? Apakah kubis juga akan melupakanku? Apakah suatu saat nanti akan datang hari ketika aku hilang dari dunia kubis? Waktu yang sudah kulewatkan begitu saja selama ini terasa amat berharga bagiku. Tinggal berapa kali lagi aku bisa menyambut pagi bersama kubis? Tinggal berapa kali aku bisa mendengarkan lagu kesayanganku? Tinggal berapa kali aku bisa minum kopi? Tinggal berapa kali aku makan, mengucapkan selamat pagi, bersin, dan tertawa? Selama 30 tahun hidupku ini, pernahkah aku melakukan sesuatu yang benar-benar penting?
+mc (batin): "(Aku terdiam. Kubis menatapku dengan polos. Ia benar-benar tidak ingat.)"
+mc (batin): "(Satu-satunya saksi hidup atas kasih sayang Ibu telah kehilangan ingatannya. Apakah kisah tentang 'hewan yang tak pernah melupakan majikannya' hanyalah khayalan manusia semata?)"
+mc (batin): "(Apakah Kubis juga akan melupakanku kelak?)"
+mc (batin): "(Seketika, waktu yang selama ini kusia-siakan terasa amat berharga. Tinggal berapa kali lagi aku bisa menyambut pagi bersama Kubis? Berapa kali lagi aku bisa makan, bersin, dan tertawa? Selama 30 tahun hidup, pernahkah aku melakukan sesuatu yang benar-benar penting?)"
 [background arg="res://assets/backgrounds/DAY 3 taman/duduk sedih di taman bukit.png" fade="1.0"]
-narator: Semakin sibuk dikejar hal-hal yang ada di depan mata, aku semakin kehilangan waktu untuk melakukan hal yang benar-benar penting. Dan gawatnya, kita sama sekali tidak sadar telah kehilangan waktu yang berharga itu.
+mc (batin): "(Semakin sibuk mengejar hal-hal di depan mata, kita semakin kehilangan waktu untuk hal yang benar-benar berarti. Parahnya, kita tidak sadar telah kehilangannya.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Aku belum mau mati. Aku masih ingin hidup. Besok aku harus menghilangkan sesuatu lagi dari dunia ini. Demi nyawaku, aku merenggut sesuatu dari masa depanku.
-kubis: Mari kita pergi, Gusti Patih.
+mc (batin): "(Aku belum mau mati. Aku masih ingin hidup.)"
+mc (batin): "(Besok aku harus melenyapkan sesuatu lagi. Demi menyambung nyawa, aku merenggut sesuatu dari masa depanku sendiri.)"
+kubis: "Mari kita pulang, Gusti Patih."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Rupanya kubis adalah kucing populer di pertokoan itu. Dia selalu disapa orang di tempat yang ia singgahi. Padahal, aku Gusti Patih. Namun ada satu hal yang baik, diskon kucing. Berkat kepopulerannya aku bisa membeli sayur, ikan, lauk siap saji dengan diskon khusus. Sulit dipercaya.
+mc (batin): "(Rupanya Kubis sangat populer di pasar pertokoan. Semua orang menyapanya. Walau aku cuma sekadar 'Gusti Patih'-nya, lumayan juga... berkat dia aku dapat diskon khusus beli lauk. Hebat juga kucing ini.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mc: Mulai sekarang aku akan berbelanja denganmu, Kubis.
-kubis: Boleh, tuanku. Tapi mohon dibuatkan makanan kesukaan sahaya dengan benar.
-mc: Aku selalu begitu, kan? Neko manma.
-kubis: Apa itu neko manma, tuanku?
-mc: Itu sekedar sisa makanan manusia yang dipaksa diberi nama segala.
+mc: "Mulai sekarang, kita akan sering belanja bareng, Kubis."
+kubis: "Boleh, Tuanku. Tapi mohon buatkan makanan kesukaan sahaya dengan benar."
+mc: "Aku selalu buat yang benar kan? Neko manma."
+kubis: "Apa itu neko manma, Tuanku?"
+mc: "Itu... cuma sisa makanan manusia yang sengaja kami beri nama."
 [background fade="1.0"]
 [signal arg="ganti_hari_langsung"]
 return

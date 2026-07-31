@@ -1,31 +1,33 @@
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc dan ibu sedih.png" fade="1.0"]
-narator: Apakah selada ingin ditolong? Aku dan ibu tak bisa berbuat apa-apa. Yang bisa kulakukan hanya menatapnya. Selada berulang-ulang berusaha untuk berdiri, tetapi langsung terjatuh.
+mc (batin): "(Apakah Selada ingin diselamatkan? Aku dan Ibu hanya bisa menatap nanar. Kucing itu berkali-kali mencoba berdiri, tapi selalu terjatuh.)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/zoom salada sakit.png" fade="1.0"]
-narator: Waktu tidurnya semakin panjang. Ia bahkan sudah tidak bisa berdiri lagi. Aku membasahi mulutnya dengan cairan campuran Pocari sweat. Perlahan-lahan dia mengangkat kakinya yang tak bisa lagi bertumpu kukuh. Ia berjalan ke depan Ibu lalu terjatuh.
+mc (batin): "(Waktu tidurnya makin panjang, dan ia tak bisa bangkit lagi. Aku membasahi mulutnya dengan campuran cairan isotonik. Dengan sisa-sisa tenaga, ia berjalan pelan mendekati Ibu, lalu tersungkur.)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/ibu dan mc di ruang tv salada.png" fade="1.0"]
-narator: “Selada!” aku tak tahan lagi. Kuangkat tubuh selada. Tubuh yang lunglai kehabisan tenaga itu menggigil halus namun masih terasa hangat. Terasa jelas bahwa Selada kini berada di ambang hidup dan mati. Aku dilanda kebingungan, tak bisa memahami sebuah nyawa nyaris hilang di depan mata.
+mc (batin): "('Selada!' teriakku. Kuangkat tubuhnya yang lunglai. Menggigil, namun masih hangat. Ia benar-benar di ambang kematian.)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/ibu dan mc di ruang tv salada.png" fade="1.0"]
-mc: Selada! Selada!
-ibu: Biarkan dia tenang, nak. Akhirnya dia bisa pergi ke tempat tanpa derita.
-mc: Kamu menderita, kamu sakit. Maafkan aku, tak bisa berbuat apa-apa untukmu. Tapi, sudah. Sekarang kamu tidak menderita lagi.
+mc: "Selada! Selada!"
+ibu: "Biarkan dia tenang, Nak. Akhirnya dia pergi ke tempat di mana tak ada penderitaan."
+mc: "Kau menderita... Kau sakit. Maafkan aku tak bisa melakukan apa-apa. Tapi sekarang sudah berakhir. Kau takkan kesakitan lagi."
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc dan ibu sedih.png" fade="1.0"]
-narator: Selada sudah tiada. Aku termangu, menyentuh tubuh selada. Terasa masih hangat, namun tidak bergerak lagi. Kalung merah yang terbuat kulit yang dikenakan selada, tadinya terlihat ‘hidup’ kini terlihat seperti sekadar gumpalan merah kasar permukaannya. Ketika menyentuh kalung itu, kenyataan yang bernama kematian mendadak menerpaku, dan aku menangis seperti hendak muntah.
+mc (batin): "(Selada telah tiada. Kubelai tubuhnya yang masih hangat namun kaku. Kalung merahnya yang dulu terlihat 'hidup', kini tampak hanya seperti gumpalan kulit mati. Saat menyentuh kalung itu, realita kematian menghantamku. Aku menangis sampai rasanya mau muntah.)"
 [background arg="hitam.png" fade="1.0"]
 [signal arg="napas_tersengal"]
-narator: Aku terbangun dan mendapati air mataku berlinang. Kubis tidak ada di tempat biasanya. Jantungku berpacu, takut jika tawaran Aloha tadi malam benar-benar merenggutnya.
+mc (batin): "(Aku terbangun dengan air mata bercucuran. Kubis tak ada di tempatnya. Jantungku berpacu—apakah tawaran Aloha semalam benar-benar langsung merenggutnya?!)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/terbangun malam hari.png" fade="1.0"]
-narator: Dia masih ada. Syukurlah kubis masih ada disini. Teringat aloha tadi malam menawarkan untuk menghilangkan kucing. Bagiku saat ini sulit membayangkan hidup tanpa kubis. Empat tahun setelah ibu meninggal, kubis senantiasa menemaniku. Tak mungkin melenyapkannya. Lalu, harus bagaimana? Jika kucing lenyap dari dunia, apa yang diperoleh dan apa yang hilang di dunia bila kucing tiada?
+mc (batin): "(Syukurlah... dia masih ada di sini.)"
+mc (batin): "(Aloha menawariku untuk melenyapkan kucing. Sulit membayangkan hidup tanpa Kubis. Selama empat tahun sejak Ibu meninggal, dialah yang menemaniku. Tak mungkin kulenyapkan... tapi kalau tidak, aku yang akan mati.)"
+mc (batin): "(Jika kucing lenyap, apa yang tersisa?)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc tidur dengan kubis.png" fade="1.0"]
-narator: Wajah yang amat damai. Ia tak pernah membayangkan dirinya akan lenyap. Setiap kali ia terbangun dan berujar “mau makan, tuanku”. Namun jika menatap wajahnya lekat seperti ini, terlihat juga seolah ia berkata, ‘sahaya rela lenyap demi Gusti patih’.
-narator: Konon, konsep kematian hanya dimiliki oleh manusia. Bagi kucing tak ada ketakutan terhadap kematian. Karena itulah, manusia memelihara kucing sambil merasakan ketakutan dan kesedihan terhadap kematian meski itu perasaan yang hanya dialami manusia.
-narator: Padahal, manusia tahu kucing juga akan mati, bisa juga lebih dulu dari manusia. Meski begitu, manusia tetap memelihara kucing walaupun menyebabkan kesedihan tak tertahankan. Namun manusia tidak dapat bersedih di atas kematian diri sendiri. Tapi bukankah manusia mau bersama kucing untuk mengetahui sosok dirinya, masa depan dirinya, dan kematian dirinya yang takkan diketahui olehnya? Benar yang dikatakan oleh ibu. Bukan kucing yang membutuhkan manusia, manusia lah yang membutuhkan kucing.
+mc (batin): "(Wajahnya begitu damai. Kucing tak punya konsep soal kematian. Manusia yang memeliharanya yang memikul ketakutan dan kesedihan itu.)"
+mc (batin): "(Manusia tahu kucing berumur pendek dan akan mati lebih dulu. Tetap saja manusia memelihara mereka, meski tahu di ujungnya ada kesedihan mendalam. Kenapa?)"
+mc (batin): "(Ibu benar. Bukan kucing yang butuh manusia. Manusialah yang butuh kucing.)"
 [background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc mengobrol dengan aloha.png" fade="1.0"]
-narator: Tubuhku. Tubuh mungilku yang dikuasai kematian. Dadaku yang berasa tergerus. Menciut bergetaran dan tanpa daya seperti yang kulihat pada Selada saat itu.
+mc (batin): "(Kini tubuhku sendiri yang dikuasai kematian. Dadaku nyeri, bergetar tanpa daya, persis seperti Selada saat itu.)"
 [wait time="2.0"]
-aloha: Maunya gimana? Kucing atau nyawamu? Bukan soal yang sulit, kan? Kalo kamu mati kamu tak bisa menyayangi kucing. Dibandingkan dengan itu, apa yang akan hilang itu amat kecil.
-mc: Bisa tolong tunggu sebentar?
-aloha: Apanya yang sulit?
-mc: Tunggu sebentar.
-aloha: Baiklah. Ambilah keputusanmu sebelum nyawamu hilang.
+aloha: "Jadi bagaimana? Kucing atau nyawamu? Bukan pilihan sulit, kan? Kalau kau mati, kau juga tak bisa menyayangi kucing."
+mc: "Bisa tolong tunggu sebentar?"
+aloha: "Apanya yang sulit?"
+mc: "Tolong... beri aku waktu sebentar."
+aloha: "Baiklah. Ambil keputusanmu sebelum nyawamu melayang."
 [signal arg="ganti_hari"]
 return

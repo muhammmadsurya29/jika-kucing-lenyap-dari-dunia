@@ -1,23 +1,20 @@
 [background arg="res://assets/backgrounds/dalam cafe.png" fade="0.0"]
 ..
 [background fade="0.0"]
-mc (netral): Aku baik-baik saja. Hanya ingin bertemu. Dan memberitahumu... bahwa waktuku tak lama lagi.
-mantan (default): Kenapa tiba-tiba?
-narator: Ternyata reaksinya bahkan di bawah tingkat prangko. Namun, aku sendiri juga bersikap tenang ketika dinyatakan kematian tak lama lagi.
-narator: Tapi mengapa manusia mengharapkan orang lain melakukan hal yang bahkan tidak dapat dilakukan oleh diri sendiri?
-narator: Apakah aku ingin dia kaget? Atau ingin dia bersedih?
-mc (netral): Aku... terkena kanker.
-mantan (default): Oh, gawat ya. Tapi kau tidak kelihatan sedih sedikitpun?
-narator: Karena kematianku ditunda oleh iblis. Tidak mungkin aku mengaku demikian. Lagipula bukan ini yang aku mau bicarakan.
-mc (netral): Emmm..... kalau biasanya orang akan mati, orang tersebut ingin mendengar atau mencari tau hal apapun tentang dirinya untuk memastikan makna hidupnya. Tentu aku pun ingin tahu. Karena itu aku ingin kamu ceritakan beberapa hal yang masih teringat dalam kenangan kita. Hal sepele apapun boleh.
-mantan (menggoda): Sering ke toilet. Terlalu sering. Terus, terlalu banyak mendesah. Apakah sesulit itu hidupmu? Selalu kupikir begitu.
-mc (malu_malu): Emmm...begitukah?
-mantan (marah): Kamu juga sama sekali gak bisa minum miras. Oh, ya kalau kita ke restoran, kamu sama sekali tidak bisa memilih makanan dari menu, padahal kamu itu lelaki. Akhirnya kamu selalu memesan kari saja. Kalau aku jengkel, kamu langsung rapuh sampai pingsan dan lama tidak bangkit kembali.
-mc (senyum_ikhlas): Maafkan aku.....
-narator: Uhhh...benar inikah cinta yang harus kudengar pada akhir hayatku? Mana makna hidupku? Mana nilainya? Benar-benar tak kenal ampun.
-narator: Itukah kenangan lelaki yang ia pernah cintai? Dia sama seperti kamu perempuan di dunia ini, hanya bengis dan dingin tanpa kenal kompromi dengan mantannya.
-mantan (marah): Eh masih ada lagi. Kamu suka banyak bicara di telepon tapi kalo ketemu muka nya diam gini kayak tidak ada selera bicara sedikitpun.
-mc (malu_malu): Tapi, meski aku sebrengsek itu, kok kamu bisa berpacaran denganku sampai tiga setengah tahun lamanya?
-mantan (senyum_malu): Iya, tapi.... aku suka telepon darimu. Aku suka kamu waktu bercerita tentang musik atau novel, seolah sedang menyaksikan sesuatu menakjubkan sampai bisa mengubah dunia. Padahal kamu hampir tidak bisa bicara apa-apa kalau kita ketemu.
-mc (senyum_tipis): Betul juga. Aku juga sambil mendengarkan ceritamu tentang film yang kamu tonton hari itu lewat telepon, merasakan diri sendiri seakan-akan dunia bisa berubah drastis.
+mc (netral): "Aku baik-baik saja. Aku menemuimu hanya untuk memberitahu... waktuku tak lama lagi."
+mantan (default): "Kenapa tiba-tiba?"
+mc (batin): "(Reaksinya sangat datar. Tapi, apa yang kuharapkan? Aku ingin dia menangis tersedu-sedu?)"
+mc (netral): "Aku... terkena kanker stadium akhir."
+mantan (default): "Oh, gawat ya. Tapi kau tidak kelihatan sedih sedikitpun?"
+mc (batin): "(Karena kematianku baru saja ditunda oleh Iblis. Tentu saja aku tak bisa bilang begitu.)"
+mc (netral): "Orang yang akan mati biasanya ingin mencari tahu makna hidupnya. Tolong, ceritakan padaku kenangan kita. Hal sepele apa pun boleh."
+mantan (menggoda): "Kamu sering ke toilet. Terlalu sering. Dan terlalu banyak mendesah. Apa hidupmu sesulit itu?"
+mc (malu_malu): "Emmm... begitukah?"
+mantan (marah): "Kau payah minum miras. Kalau di restoran, kau tak pernah bisa memilih menu dan ujung-ujungnya memesan kari. Kalau aku marah, kau langsung rapuh dan lama bangkitnya."
+mc (senyum_ikhlas): "Maafkan aku..."
+mc (batin): "(Inikah makna hidupku yang harus kudengar di akhir hayat? Wanita memang jujur tanpa kompromi.)"
+mantan (marah): "Satu lagi. Kau bawel kalau di telepon, tapi kalau ketemu langsung, kau diam seperti patung."
+mc (malu_malu): "Meski aku seburuk itu, kenapa kau mau berpacaran denganku sampai tiga setengah tahun?"
+mantan (senyum_malu): "Karena... aku suka telepon darimu. Kau bicara soal musik dan novel dengan sangat antusias. Seolah kau sedang menyaksikan keajaiban."
+mc (senyum_tipis): "Betul juga. Dulu aku juga suka mendengar ceritamu tentang film-film itu lewat telepon."
 [signal arg="update_objective:Keluar Cafe"]

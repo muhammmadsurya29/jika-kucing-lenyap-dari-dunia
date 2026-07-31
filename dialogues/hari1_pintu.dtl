@@ -1,11 +1,9 @@
 [background arg="res://assets/backgrounds/mc_potong_rambut.png" fade="1.0"]
-narator: Sejujurnya aku enggan memberi tahu. Dia cinta pertamaku. Ya aku juga seorang lelaki biasa seperti para lelaki lain. Itu saja.
-
+mc (batin): "(Sejujurnya, aku enggan memberitahu dia. Dia cinta pertamaku. Ya, aku hanya lelaki biasa.)"
 [background arg="res://assets/backgrounds/DAY 1 otw taman/di kereta.png" fade="0.5"]
 [signal arg="update_objective:  Temui Mantan DI Sebelah Menara Jam! "]
-narator: Kehidupan tanpa telepon. Rasanya seakan akan waktu mendadak memanjang vertikal dan ruang meluas secara horizontal.
-narator: Menyaksikan suasana damai di dalam kereta ini, aku dibuat merasakan betapa cemerlangnya hasil keputusanku. Aku tidak hanya memperoleh nyawa satu hari tapi seperti membuat kebaikan untuk dunia.
-narator: Namun, apakah telepon benar-benar lenyap dari dunia ini?
+mc (batin): "(Kehidupan tanpa telepon. Rasanya seakan waktu melambat dan ruang meluas.)"
+mc (batin): "(Menyaksikan suasana tenang di kereta ini, aku merasa keputusanku cemerlang. Aku bukan cuma dapat nyawa tambahan, tapi juga membuat dunia sedikit lebih damai.)"
+mc (batin): "(Tapi... benarkah telepon sudah benar-benar lenyap?)"
 [background fade="0.5"]
-
 [signal arg="teleport_ke_taman"]

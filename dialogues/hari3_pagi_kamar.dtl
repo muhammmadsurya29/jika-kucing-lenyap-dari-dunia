@@ -1,41 +1,44 @@
 [background arg="res://assets/backgrounds/DAY 3 dialog kubis/Dibangunkan Kubis Day3.png" fade="1.0"]
-kubis: Sampai kapankah tidur terus, tuanku?
-narator: Aku masih di alam mimpi. Suara itu terasa asing tapi dekat.
-kubis: Cepat bangun, tuanku! Sahaya sudah menunggu lama.
-mc: Hah?! Kubis? Kamu... bicara?!
+kubis: "Sampai kapankah tidur terus, Tuanku?"
+mc (batin): "(Aku masih setengah sadar. Suara itu terasa asing tapi sangat dekat.)"
+kubis: "Cepat bangun, Tuanku! Sahaya sudah menunggu lama."
+mc: "Hah?! Kubis? Kamu... bicara?!"
 [signal arg="aloha_datang"]
-aloha: Kejutan! Bagus kan bonus dariku? Karena telepon dan film sudah hilang, kupikir kau butuh teman mengobrol. Karena aku adalah sang iblis jadi aku bisa melakukan apapun dengan sihir. Hahahahaha
+aloha: "Kejutan! Bagus kan bonus dariku? Karena telepon dan film sudah hilang, kupikir kau butuh teman ngobrol. Aku ini Iblis, sihir semacam ini urusan kecil! Hahahahaha!"
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/dibangunkan kubis pagi.png" fade="1.0"]
-mc: Ini merepotkan! Bisakah kamu batalkan? Aku tidak terbiasa kucingku bicara dengan bahasa sejarah begini.
-aloha: Ya bisa sih... tapi kapan-kapan! Benar. Kapankah itu? Hanya Tuhan yang tahu, hahaha!
+mc: "Ini malah merepotkan! Bisakah kau batalkan? Aku tidak terbiasa kucingku bicara dengan bahasa keraton begini."
+aloha: "Ya bisa sih... tapi kapan-kapan! Kapan ya? Hanya Tuhan yang tahu! Hahaha!"
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
 [signal arg="aloha_serius"]
-aloha: Ngomong-ngomong, kau ingat apa yang hilang hari ini?
-mc: Semuanya tampak sama saja... apa yang hilang?
-aloha: Jam. Hari ini, Jam lenyap dari dunia.
+aloha: "Ngomong-ngomong, kau sadar apa yang hilang hari ini?"
+mc: "Semuanya tampak sama saja... apa yang hilang?"
+aloha: "Jam. Hari ini, jam telah lenyap dari dunia."
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/flashback ayah.png" fade="1.0"]
-narator: Betul. Aku sudah menghilangkan jam. Kalau jam lenyap dari dunia, toko jam pun tidak diperlukan lagi. Bagaimana dengan pekerjaan ayahku? Seketika dadaku nyeri. Aku menyesal atas apa yang telah aku perbuat. Namun, benarkah jam sudah lenyap dari dunia? Ponsel juga sudah hilang. Betul-betul tidak tahu jam berapa sekarang. Mengapa rasanya tidak nyata begini?
-mc: Ngomong-ngomong kenapa jam itu ada?
-aloha: Pertanyaan bagus. Sebenarnya waktu itu hanya ada untuk manusia. Maksudnya waktu itu sekadar aturan yang ditentukan semena-mena oleh manusia. Matahari terbit dan terbenam. Siklus itu memang ada sebagai gejala alam, tapi yang menyebutnya dengan waktu seperti jam 6, jam 12 itu hanya manusia.
-mc: Benar juga.
-aloha: Soalnya, manusia salah sangka bahwa mereka memandang dunia apa adanya, tapi nyatanya mereka memandang berdasarkan ketentuan yang dibuat oleh kemauannya saja. Karena itulah, biar sedikit ganti suasana, biar kalian manusia dapat mengenal dunia tanpa aturan yang dibuat seenaknya oleh manusia, maka aku memilih jam. Itu aja sih.
-mc: Itu aja, sih.....enteng banget kamu ngomong...
-aloha: Pokoknya, jalanilah hidup seharian yang menyenangkan!
+mc (batin): "(Betul juga. Kalau jam lenyap, bagaimana dengan pekerjaan ayahku yang seorang tukang servis jam? Seketika dadaku sesak oleh penyesalan.)"
+mc (batin): "(Tapi... benarkah jam sudah lenyap? Ponsel juga tak ada. Aku sungguh tidak tahu ini jam berapa. Rasanya sangat tidak nyata.)"
+mc: "Ngomong-ngomong, kenapa kau memilih jam?"
+aloha: "Pertanyaan bagus! Sebenarnya, 'waktu' itu cuma ilusi buatan manusia. Matahari terbit dan terbenam itu gejala alam, tapi membaginya jadi 'jam 6' atau 'jam 12' itu cuma ulah manusia."
+mc: "Benar juga."
+aloha: "Manusia sok tahu, merasa paling memahami dunia, padahal mereka cuma melihat dari kacamata aturan mereka sendiri. Makanya, kubuat jam lenyap biar kalian bisa melihat dunia apa adanya. Gitu aja sih."
+mc: "Gitu aja sih... Enteng sekali kau bicara."
+aloha: "Pokoknya, selamat menikmati hari bebas tanpa waktu!"
 [signal arg="aloha_hilang"]
 [wait time="1.0"]
-narator: Ketika aku mengetahui waktuku tinggal amat sedikit, aku pikir seharusnya menganggap 1 jam yang sedang kulewati bukan sebagai 60 menit, melainkan sebagai 3600 detik. namun setelah jam lenyap, anggapan seperti itu sendiri sudah tak ada artinya. Biar bagaimanapun, saat ini aku tidak punya apa-apa yang harus dikerjakan. Untuk membuang waktu pun tak ada lagi waktu untuk dibuang. Kalau dipikir baik-baik, manusia tidur, bangun, bekerja, dan makan diatur sesuai dengan jam. Ada aturan berarti kebebasan menjadi terbatas. Namun, manusia meletakkan nya di dinding bahkan akhirnya melilitkan pada pergelangan tangan. Sekarang aku bisa memahami itu dengan baik. Kebebasan yang disertai kegelisahan. Sebagai gantinya kehilangan kebebasan, manusia memperoleh ketenangan sebab adanya aturan.
+mc (batin): "(Saat tahu umurku tinggal sebentar, kupikir aku harus menghargai 1 jam bukan sebagai 60 menit, melainkan 3600 detik. Tapi sekarang, pemikiran itu sudah tak ada artinya.)"
+mc (batin): "(Lagi pula, aku tak punya apa-apa untuk dikerjakan. Manusia tidur, bangun, bekerja, dan makan diatur oleh jam. Aturan membatasi kebebasan, tapi manusia malah memajangnya di dinding dan mengikatnya di pergelangan tangan.)"
+mc (batin): "(Sekarang aku paham. Kebebasan itu membawa kegelisahan. Sebaliknya, manusia menukar kebebasan dengan aturan demi rasa aman.)"
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/mengelus kubis.png" fade="1.0"]
-mc: Kenapa Kubis? Sudah lapar ya?
-kubis: Tidak juga, tuanku.
-mc: Apa?
-kubis: Gusti Patih selalu salah saja.
-mc: Gusti Patih?
-narator: Sepertinya yang dia maksud dengan sebutan itu adalah aku. Kucing yang betul-betul bergaya drama sejarah.
-kubis: Kalau mau pergi jalan-jalan, katanya mau makan. Kalau mau makan, katanya mau tidur siang. Kalau mau tidur siang, katanya mau main. Selalu meleset, tuanku.
-narator: Aku terpukul. Selama empat tahun hidup bersama kubis, aku sendiri merasa yakin kami berdua saling memahami. Namun rupanya Gusti Patih hampir selalu salah. Kejam juga kalau bisa saling mengerti bahasanya.
-mc: Maafkan aku, Kubis. Lalu sekarang apa yang mau kamu lakukan?
-kubis: Mau pergi jalan-jalan.
-mc: Tunggu sebentar aku siap-siap dulu.
+mc: "Kenapa Kubis? Sudah lapar ya?"
+kubis: "Tidak juga, Tuanku."
+mc: "Lalu?"
+kubis: "Gusti Patih ini selalu salah menebak."
+mc: "Gusti Patih?"
+mc (batin): "(Sepertinya yang dia maksud itu aku. Gaya bicaranya benar-benar seperti drama sejarah kolosal.)"
+kubis: "Kalau sahaya mau jalan-jalan, dikira mau makan. Kalau mau makan, dikira mau tidur siang. Kalau mau tidur, dikira mau main. Selalu meleset, Tuanku."
+mc (batin): "(Aku tertohok. Selama empat tahun hidup bersamanya, kukira kami saling memahami. Ternyata aku nyaris selalu salah tebak. Kejam juga saat kau akhirnya bisa mengerti bahasa hewan peliharaanmu.)"
+mc: "Maafkan aku, Kubis. Lalu sekarang kau maunya apa?"
+kubis: "Mau jalan-jalan."
+mc: "Tunggu sebentar, aku siap-siap dulu."
 [background fade="1.0"]
 [signal arg="boleh_keluar"]
 return

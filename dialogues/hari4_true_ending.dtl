@@ -1,215 +1,208 @@
 label pagi_bangun
 [signal arg="update_objective:Cari Kubis! Periksa sekitar Mesin Cuci"]
 [background arg="res://assets/backgrounds/HARI 4/bangun tanpa kubis.png" fade="1.0"]
-narator: Pagi hari, matahari menembus jendela apartemen. Mencari sosok kubis.
-narator: Kubis. Ia tak ada. Ke mana dia? Jangan-jangan aku sudah mengambil keputusan untuk menghilangkan kucing dalam keadaan setengah mimpi?
+mc (batin): "(Cahaya mentari pagi menembus jendela. Tapi aku tak melihat sosok Kubis.)"
+mc (batin): "(Ia tak ada. Ke mana dia? Jangan-jangan dalam setengah sadar, aku memutuskan untuk melenyapkannya?)"
 [background arg="res://" fade="1.0"]
-narator: Tidak ada. Selimut tua warna orange yang disukai kubis, di atas rak buku, di bawah tempat tidur, di dalam kamar mandi, ia tidak ada.
+mc (batin): "(Selimut oranye tuanya kosong. Di atas rak buku, di bawah kasur, di kamar mandi... ia tak ada.)"
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="event_selesai"]
 return
 label cek_mesin_cuci
 [background arg="res://assets/backgrounds/HARI 4/cek mesin cuci.png" fade="1.0"]
 [signal arg="update_objective:Coba cari di dekat Jendela"]
-narator: Tidak ada juga.
+mc (batin): "(Tidak ada di sini...)"
 return
 label cek_jendela
 [background arg="res://assets/backgrounds/HARI 4/mengecek jendela.png" fade="1.0"]
 [signal arg="update_objective:Sepertinya Kubis keluar kamar. Keluar lewat Pintu Utama!"]
-narator: Tidak ada juga.
+mc (batin): "(Di jendela juga tidak ada.)"
 [signal arg="suara_meong"]
-mc: Kubis!
+mc: "Kubis!"
 [signal arg="boleh_keluar"]
 return
 label cek_parkiran
 [signal arg="update_objective:Cari Kubis di Taman Bukit"]
 [background arg="res://assets/backgrounds/HARI 4/mencari kubis di mobil van putih.png" fade="1.0"]
-narator: Tidak ada kubis.
+mc (batin): "(Di mobil van juga tidak ada.)"
 [signal arg="teleport_ke_taman_bukit"]
 return
 label cek_taman_bukit
 [signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
 [background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_28_25 AM.png" fade="1.0"]
-narator: Bahkan di taman pun tidak ada.
+mc (batin): "(Di bukit ini pun kosong.)"
 [signal arg="teleport_ke_taman"]
 return
 label cek_soba
-narator: Tak ada juga. ‘Kubis!’, ‘Kubis!”. Tenggorokkan ku kering tak karuan, paru-paruku panas seakan terbakar. Otot kakiku sakit, terasa nyaris putus. Aku seperti dejavu empat tahun lalu menuju rumah sakit karena ibu mengalami serangan jantung.
+mc (batin): "(Kubis! Kubis! Tenggorokanku kering, paru-paruku seakan terbakar. Otot kakiku sakit nyaris putus.)"
+mc (batin): "(Persis dejavu empat tahun lalu... saat aku berlari membawa Ibu ke rumah sakit karena serangan jantung.)"
 [background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_32_03 AM.png" fade="1.0"]
-narator: Sungguhkah ia sudah lenyap? Apakah aku sudah menghilangkan kubis dari dunia ini? Kubis, apa aku tidak bisa bertemu denganmu lagi? Kehangatanmu yang lembut nan nyaman, ekormu yang berayun-ayun, telapak kakimu yang tebal dan kenyal, detak jantungmu yang berdetak halus. Apakah aku tidak bisa menyentuhmu lagi? Ibu. Selada. Aku tidak mau ditinggalkan lagi.
+mc (batin): "(Sungguhkah ia sudah lenyap? Kubis... apa kita takkan bertemu lagi? Kehangatanmu, telapak kakimu yang kenyal, detak jantungmu yang halus... aku takkan bisa menyentuhnya lagi?)"
+mc (batin): "(Ibu... Selada... Kumohon, aku tak mau ditinggalkan lagi.)"
 [background arg="res://" fade="1.0"]
-narator: Aku sudah menghilangkan kucing, kubis, dari dunia ini.
+mc (batin): "(Benar. Aku telah melenyapkan kucing dari dunia ini.)"
 [signal arg="suara_meong"]
 [wait time="1.0"]
 [signal arg="suara_meong"]
-narator: Mimpi atau kenyataan?
+mc (batin): "(Ini... mimpi atau kenyataan?)"
 [signal arg="teleport_ke_bioskop_dari_taman"]
 return
 label bioskop_puncak
 [signal arg="update_objective:Beres-beres kamar untuk terakhir kalinya"]
 [signal arg="suara_meong"]
 [background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
-narator: Keempukannya terasa pada seluruh lenganku. Dengan lembut dan nyaman kehangatnnya meresap ke dalam tubuhku. Nyawa.
-mantan: Aku kaget karena tiba-tiba si kubis datang.
-mc: Terima kasih. Aku benar-benar bersyukur.
+mc (batin): "(Kurasakan keempukan dan kehangatan yang meresap ke dalam tubuhku. Ia hidup. Ini sebuah nyawa.)"
+mantan: "Aku sempat kaget tiba-tiba Kubis datang ke sini."
+mc: "Terima kasih... sungguh."
 [background arg="res://assets/backgrounds/HARI 4/memeluk kubis.png" fade="1.0"]
-mantan: Lagi-lagi kamu menangis. Kebiasaanmu memang gampang menangis itu tetap sama, ya, sejak dulu. Ini pasti karena ibumu.
-mc: Apa maksudmu?
+mantan: "Kamu menangis lagi. Dari dulu kebiasaan gampang menangismu tak pernah berubah ya? Pasti karena ibumu."
+mc: "Apa maksudmu?"
 [background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 12_15_52 PM.png" fade="1.0"]
-mantan: Sudah lama surat itu dititipkan padaku dari ibumu.
-mc: Dari ibu?
-mantan: Ya. Waktu ibu diopname, aku menjenguknya dan surat itu dititipkan kepadaku.
-mc: Aku baru tau kamu menjenguk ibu.
-mantan: Kata ibu, dia sudah menulis surat itu tapi tidak bisa mengirimkannya. Sepertinya ibu berpikir kamu mengirimkannya, mungkin dia tidak bisa bertemu lagi denganmu. ‘Kalau suatu saat tiba waktunya anakku benar-benar mengalami kesulitan atau kesedihan, tolong serahkan surat ini kepadanya’, kata ibu.
-mc: Ternyata begitu, ya.
-mantan: Aku menolak sebenarnya. Karena kita kan sudah putus. Tapi, kata ibu, tidak apa-apa kalau surat ini tidak sampai di tanganmu. Cukup sudah kalau seseorang menyimpan surat itu. Begitu. Hari ini si kubis datang ke sini dan melihat kamu yang menangis, aku pikir inilah saatnya.
-mc: Saatnya apa?
-mantan: Waktunya kamu benar-benar mengalami kesulitan atau kesedihan. Ibumu memang keren tanpa tandingan.
+mantan: "Ibumu menitipkan sepucuk surat padaku, sudah lama sekali."
+mc: "Dari Ibu?"
+mantan: "Ya, waktu dia diopname. Aku menjenguknya, dan ia menitipkannya padaku."
+mc: "Aku tak pernah tahu kau menjenguknya."
+mantan: "Ibu bilang, ia sudah menulisnya tapi tak sanggup memberikannya. Ia takut kau sedih. 'Kalau suatu saat anakku benar-benar kesulitan atau sangat bersedih, tolong berikan surat ini padanya,' katanya."
+mc: "Begitu ya..."
+mantan: "Awalnya aku menolak karena kita sudah putus. Tapi Ibu bilang tak apa jika surat ini tak pernah sampai, asal ada yang menyimpannya. Saat melihat Kubis datang ke mari dan kini kau menangis... aku rasa, inilah saatnya."
+mc: "Saatnya?"
+mantan: "Waktunya kamu benar-benar bersedih. Ibumu memang hebat."
 [background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/HARI 4/sedih membca surat ibu.png" fade="1.0"]
-narator: Pada halaman pertama tertulis besar-besar dengan huruf yang indah ‘10 hal yang ingin kulakukan sebelum mati’. Malah terdengar seperti antiklimaks ini. Kami, ibu dan anak, melakukan hal yang sama ternyata.
+mc (batin): "(Halaman pertamanya tertulis dengan huruf besar: '10 Hal yang Ingin Kulakukan Sebelum Mati'. Kami... benar-benar ibu dan anak.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Surat yang berharga ini tidak boleh kubasahi dengan air mata. Ketika aku kena flu, ibu yang mengelus-elus punggungku. Ketika aku tersesat di taman dan menangis, ibu berlari datang dan memelukku erat-erat. Ketika aku mau kotak makan siang berwarna mencolok seperti yang dimiliki anak-anak lain, ibu mencarinya di berbagai toserba sepanjang hari.
+mc (batin): "(Surat ini terlalu berharga untuk dibasahi air mata. Teringat saat aku flu, tangannya mengelus punggungku. Saat aku tersesat di taman, ia berlari memelukku erat-erat. Saat aku merengek minta kotak bekal mencolok, ia mencarinya seharian keliling kota.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Ibu yang selalu menutupi tubuhku dengan selimut saat aku berguling-guling dalam tidur.
+mc (batin): "(Ibu yang selalu menyelimutiku yang banyak tingkah saat tidur.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Ibu yang selalu membuatkan ku telur dadar yang manis dan enak.
+mc (batin): "(Ibu yang selalu membuatkan telur dadar manis kesukaanku.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Ibu yang selalu membelikanku pakaian, tapi jarang sekali membeli pakaian untuk dirinya sendiri.
+mc (batin): "(Ibu yang terus membelikanku baju bagus, tapi jarang sekali beli untuk dirinya sendiri.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Karcis pijat bahu yang kuhadiahkan pada hari ulang tahun ibu. Ibu tidak mau memakainya. ‘Terlalu sayang untuk dipakai’ katanya.
+mc (batin): "(Tiket pijat bahu hadiah ulang tahun dariku... ia tak pernah memakainya. 'Terlalu sayang,' katanya.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Ibu membelikan piano dan selalu memainkan lagu kesukaanku. Meski ibu kurang pandai dan selalu salah di bagian yang sama. Ibu. Apakah ibu punya hobi? Apakah ada waktu untuk diri sendiri? Apakah ada hal yang ingin ibu lakukan dan cita-cita ibu untuk masa depan? Merasa agak malu, aku belum pernah membelikan ibu bahkan setangkai bunga pun. Kenapa, kenapa aku tidak melakukan hal segampang itu? Kenapa, kenapa waktu itu aku tidak bisa membayangkan ibu akan hilang dari dunia suatu saat nanti?
+mc (batin): "(Ia selalu memainkan lagu kesukaanku di piano, meski selalu salah di nada yang sama. Pernahkah aku peduli soal hobi Ibu? Pernahkah aku membelikannya sekuntum bunga? Kenapa... kenapa tak terpikirkan olehku bahwa suatu saat Ibu akan pergi?)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Ibu, aku tidak mau mati. Aku takut mati. Tapi, apa yang ibu katakan itu benar jika kita mau memperoleh sesuatu, harus kehilangan sesuatu. Namun ibu, bukankah hidup akan lebih susah dengan merenggut sesuatu?
-kubis: Gusti patih, jangan bersedih lagi.
-mc: Tidak bisa, kubis.
-kubis: Sahaya ingin gusti patih tetap hidup. Sulit bagi sahaya kalau hidup terus di dunia tanpa gusti patih.
+mc (batin): "(Ibu... aku takut mati. Tapi kata-katamu benar. Jika ingin memperoleh sesuatu, harus ada yang dikorbankan. Tapi Bu... bukankah merenggut sesuatu dari dunia akan membuat hidup makin menyiksa?)"
+kubis: "Gusti Patih, jangan bersedih lagi."
+mc: "Tidak bisa, Kubis."
+kubis: "Sahaya ingin Gusti Patih tetap hidup. Sahaya tak sanggup hidup di dunia tanpa Gusti Patih."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Seumur hidup sampai hari ini, aku tidak pernah menyangka akan dibuat menangis oleh omongan kucing. Namun, walaupun kubis tidak bisa bicara bahasa manusia dan hanya bersuara meong, isi hatinya sampai kepadaku.
-kubis: Sahaya mohon gusti patih jangan menangis. Dibandingkan hal-hal yang telah gusti patih hilangkan selama ini, sahaya ini merupakan hal yang sepele, tuanku.
-mc: Bukan itu persoalannya, kubis. Bukan begitu.
+mc (batin): "(Belum pernah aku dibuat menangis oleh seekor kucing. Meski suaranya hanya 'meong', perasaannya sampai padaku.)"
+kubis: "Mohon jangan menangis. Dibandingkan hal-hal yang telah Gusti Patih korbankan selama ini, sahaya hanyalah sepele."
+mc: "Bukan itu masalahnya, Kubis. Bukan begitu..."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Jika kucing lenyap dari dunia. Jika selada, kubis, dan ibu tiada. Aku yang bodoh dan tak tahu apa-apa tidak pernah bisa bayangkan hal itu. Tapi sekarang aku tahu. Selalu ada alasan mengapa sesuatu berada di dunia, tapi tak ada lagi alasan apapun mengenai sesuatu harus hilang dari dunia. Aku membulatkan hatiku. Dan kubis pasti memahami hatiku itu lebih baik daripada siapapun.
-kubis: Isi hati gusti patih sudah sahaya paham, tuanku.
-mc: Terima kasih, kubis.
-kubis: Kalau begitu, untuk yang terakhir kalinya.
-mc: Untuk terakhir kalinya?
-kubis: Sahaya ingin gusti patih memejamkan mata.
-mc: Kenapa?
-kubis: Sudahlah. Pokoknya pejamkan mata, tuanku.
+mc (batin): "(Jika kucing lenyap... jika Selada, Kubis, dan Ibu tiada... Aku tak sanggup membayangkannya. Selalu ada alasan mengapa sesuatu hadir di dunia, tapi tak ada alasan ia harus dilenyapkan.)"
+mc (batin): "(Aku membulatkan tekad. Dan Kubis memahaminya lebih dari siapa pun.)"
+kubis: "Isi hati Gusti Patih sudah sahaya pahami, Tuanku."
+mc: "Terima kasih, Kubis."
+kubis: "Kalau begitu, untuk yang terakhir kalinya..."
+mc: "Terakhir kali?"
+kubis: "Sahaya ingin Gusti Patih memejamkan mata."
+mc: "Kenapa?"
+kubis: "Turuti saja. Pejamkan mata, Tuanku."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: ”Pejamkanlah matamu pelan-pelan dan tersenyumlah, jika masih belum bisa merasakan apa-apa, coba lagi pelan-pelan”, kata ibu sambil tersenyum saat itu. Kubis sedang mengingatkanku pada sihir ibu. Setiap aku merasa sedih, sihir ibu selalu berhasil membuatku tersenyum kembali. Sihir ibu memang tidak ada duanya.
+mc (batin): "('Pejamkan matamu pelan-pelan dan tersenyumlah,' kata Ibu dulu. Kubis mengingatkanku pada sihir Ibu. Sihir yang selalu berhasil membuatku tersenyum kembali saat sedih.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-kubis: Meong, meong, meong.
-mc: Aku senang karena bisa berbicara denganmu, kubis. Pada saat yang terakhir. Mungkin ini juga sihir ibu. Selamat tinggal, kubis. Terima kasih banyak selama ini.
+kubis: "Meong... meong... meong."
+mc: "Aku senang bisa bicara denganmu, Kubis. Di saat-saat terakhir ini... mungkin ini juga sihir Ibu. Selamat tinggal, Kubis. Terima kasih untuk segalanya."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Dadaku terasa sakit bagai disengat duri kecil setelah membaca surat dari Ibu. Seharusnya bagaimana? Masih ada satu hal yang harus kulakukan pada akhir hayatku. Ya, di bagian terakhir dalam surat itu tertulis begini “semoga kamu dan ayahmu hidup rukun”. Apakah aku bahagia atau tidak? Hanya satu hal yang aku tahu. Hanya dengan pemikiran sendiri, orang bisa jadi sebahagia-bahagianya atau bisa jadi semalang-malangnya.
+mc (batin): "(Di akhir surat Ibu tertulis: 'Semoga kau dan ayahmu hidup rukun'. Apakah aku bahagia? Orang bisa jadi sangat bahagia atau sangat malang hanya tergantung dari cara berpikirnya sendiri.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-aloha: Aduhhhh! Kemana saja, sih? Kukira kamu sudah diculik Tuhan, makanya hampir saja aku menanyai tuhan. Eh, tapi boong. Hahahahhaa.
-mc: Maaf.
-aloha: Oh, tidak apa-apa kok. Jadi, kita langsung menghilangkannya saja ya?
+aloha: "Aduhhh! Dari mana saja sih? Kukira kau sudah diculik Tuhan. Hahahahhaa."
+mc: "Maaf."
+aloha: "Tak apa. Jadi, langsung kita lenyapkan saja?"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mc: Tidak jadi.
-aloha: Apa?
-mc: Tidak jadi menghilangkan kucing!
-aloha: Betulan?
-mc: Betulan.
+mc: "Tidak jadi."
+aloha: "Apa?"
+mc: "Aku batal melenyapkan kucing!"
+aloha: "Betulan?"
+mc: "Betulan."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-aloha: Apanya yang lucu? Kamu akan mati. Apa boleh?
-mc: Boleh. Sudah, aku tidak akan menghilangkan apapun.
-aloha: Kamu semestinya hidup lebih lama lagi.
-mc: Tapi tak ada artinya kalau sekedar hidup. Artinya ada pada bagaimana kita hidup, kan?
-aloha: Lagi-lagi aku kalah dengan Tuhan. Dasar manusia!
-mc: Kenapa?!
-aloha: Oh, tidak apa-apa, kok. Aku mengaku kalah. Silahkan mati saja!
-mc: Jangan ngomong begitu, dong! Walaupun betul aku memang akan mati.
+aloha: "Apanya yang lucu? Kalau begitu kau akan mati. Yakin?"
+mc: "Yakin. Aku takkan melenyapkan apa pun lagi."
+aloha: "Kau semestinya bisa hidup lebih lama."
+mc: "Hidup hanya sekadar hidup tak ada artinya. Yang terpenting adalah bagaimana kita menjalaninya."
+aloha: "Lagi-lagi aku kalah. Dasar manusia!"
+mc: "Kenapa?"
+aloha: "Oh, bukan apa-apa. Aku mengaku kalah. Silakan mati sana!"
+mc: "Jangan ketus begitu dong... meski aku memang akan mati."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mc: Jadi sudah saat nya untuk berpisah, ya.
-aloha: Emm… iyaa….
-mc: Aku kesepian, agaknya.
-aloha: Aku juga akan kesepian. Soalnya kamu itu orangnya cukup menarik.
-mc: Kamu juga iblis yang cukup menarik.
-aloha: Kok puji-pujian mulu.
-mc: Tapi, iblis itu berpenampilan seperti apa, sebenarnya?
-aloha: Kamu mau tau?
-mc: Iya mau tahu.
-aloha: Hemmmm sebenarnya aku tidak punya wujud. Keberadaan yang disebut iblis hanya ada di dalam hati kalian kaum manusia. Kalian hanya membayangkan berbagai gambaran untuk keberadaan yang disebut iblis di dalam hati masing-masing. Dengan semena-mena. Hitam, punya taring dan memegang tombak, kek, ada yang wujudnya seperti naga.
-mc: Oh, begitu ternyata.
-aloha: Terutama desain yang memegang tombak segala kan sebenarnya keterlaluan, menurutku. Soalnya itu kan seleranya jelek, ya?
-mc: Iya memang tidak enak kalau begitu.
-aloha: Tentu tidak enak! Oleh karena itu, wujudku ini adalah sosok iblis yang kamu bayangkan. Iblis yang ada di dalam hatimu memiliki wujudmu sendiri, ternyata.
-mc: Tapi sifatnya sama sekali berbeda dariku.
-aloha: Iya, itulah intinya, kukira. Artinya, aku ini sebenarnya simbol kehidupan lain yang bisa kamu jalankan. Pokonya dirimu yang riang, tak berpikir apa-apa, memakai pakaian mencolok, melakukan apapun semaunya, tak peduli pandangan orang lain di sekelilingnya dan mengatakan semuanya yang ingin dikatakan.
-mc: Memang itu terbalik dengan sifatku.
-aloha: Betul. Penyesalanmu sejak kecil yang tak terhitung jumlah, seharusnya begini, sebaiknya begitu, dan seandainya memilih jalan lain di persimpangan, akibatnya wujudmu bisa menjadi begini, barangkali. Tapi sesuatu bagai iblis itu memang begitu, kukira. Dirimu yang kamu impikan, tapi tidak bisa terwujud. Sesuatu yang paling dekat dengan dirimu, tapi sekaligus yang paling jauh darimu.
-mc: Apa aku benar begini?
-aloha: Jangan tanya soal itu padaku.
-mc: Apa aku akan menyesal nanti saat mati?
-aloha: Pasti kamu menyesal. Aku mau hiduuuuup! Panggilkan kembali iblis ituuuu! Hahahahahha. Manusia memang makhluk yang suka memandang kehidupan yang tidak jadi dipilih daripada kehidupan yang sudah dipilih, dan akibatnya iri atau menyesal melulu.
+mc: "Saatnya berpisah, ya?"
+aloha: "Emm… iya."
+mc: "Rasanya agak kesepian."
+aloha: "Aku juga. Kau ini orang yang cukup menarik."
+mc: "Kau juga iblis yang lumayan menarik."
+aloha: "Jangan puji terus dong."
+mc: "Sebenarnya, iblis itu wujud aslinya seperti apa?"
+aloha: "Mau tahu?"
+mc: "Iya."
+aloha: "Sebenarnya aku tak punya wujud fisik. Iblis itu hanya gambaran yang ada di dalam hati manusia. Ada yang membayangkanku hitam bertaring, atau bersayap kelelawar..."
+mc: "Oh, begitu ya."
+aloha: "Dan iblis di hatimu, ternyata berwujud dirimu sendiri."
+mc: "Tapi sifat kita jauh berbeda."
+aloha: "Itulah intinya. Aku adalah simbol 'kehidupan lain' yang tak kau pilih. Dirimu yang riang, santai, tak peduli omongan orang... dirimu yang tak terwujud akibat penyesalan dan ketakutanmu sendiri."
+mc: "Sesuatu yang paling dekat, tapi sekaligus paling jauh..."
+aloha: "Tepat. Jangan tanya macam-macam lagi."
+mc: "Apa aku akan menyesal saat mati nanti?"
+aloha: "Pasti! 'Aku mau hiduuuup! Panggilkan iblis itu kembaliii!' Hahahahha. Manusia memang selalu menyesali jalan yang tak mereka pilih."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Manusia yang berpikiran mungkin dirinya akan mati besok bisa hidup sepenuhnya selama sisa waktu yang mereka miliki. Ada orang yang mengatakan demikian. Tapi kukira itu kebohongan. Sekaligus menyadari kematiannya, orang akan terus menerus menyesuaikan harapan untuk hidup dengan kematian. Namun, bagiku yang pernah mendapatkan hal untuk menghilangkan sesuatu dari dunia, justru penyesalan itulah yang tampak indah. Karena itulah bukti bahwa aku hidup selama ini.
-narator: Jika aku lenyap dari dunia.
+mc (batin): "(Orang bilang, kalau tahu besok akan mati, kita akan hidup sepenuhnya. Menurutku itu omong kosong. Tapi penyesalan demi penyesalan inilah yang terasa indah. Bukti bahwa aku benar-benar hidup.)"
+mc (batin): "(Kucing tak jadi lenyap. Berarti aku yang akan lenyap.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Kucing tidak jadi hilang dari dunia. Berarti aku akan hilang dari dunia. Jika aku lenyap dari dunia. Aku membayangkan. Seberapa malang kah keadaan itu? Manusia mana pun akan mati suatu saat. Angka fatalitasnya 100 persen. ‘Untuk memperoleh sesuatu, harus kehilangan sesuatu’ aku ingat selalu kata-kata ibu. Sebagai ganti nyawaku, aku sudah menghilangkan telepon, film, dan jam dari dunia. Tapi aku tidak menghilangkan kucing.
+mc (batin): "(Angka fatalitas manusia adalah 100 persen. Kita semua pasti mati. Demi menyambung nyawa, aku sudah merenggut telepon, film, dan jam. Aku tak mau melakukannya lagi pada kucing. Aku sudah puas. Kini aku bisa bersyukur berada di sini, hari ini.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Aku tidak bisa menganggap kehidupanku bahagia kalau aku merenggut sesuatu dari seseorang demi mempertahankan nyawaku. Seandainya sesuatu itu matahari, laut, atau udara, sama saja dengan kucing, menurutku. Karena itulah aku tidak mau lagi menghilangkan sesuatu dari dunia. Aku, dengan caraku sendiri, memutuskan untuk menerima waktu hidupku. Dan tak lama lagi, aku akan mati.
+mc (batin): "(Banyak kegagalan, penyesalan, dan impian yang tak tercapai. Tapi tak apa. Tak lama lagi, akan tiba hari istirahat bagiku.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Dalam hidupku, aku ingin hidup sesuai jati diriku tapi ternyata tidak bisa. Dalam hidupku, aku bahkan tidak bisa menemukan jati diriku yang sesungguhnya. Kegagalan dan penyesalan yang tak terhitung jumlahnya, impian yang tak dapat dicapai, orang yang ingin kutemui, makanan yang ingin kumakan, dan tempat yang ingin kutuju. Tapi, sudah cukup bagiku seperti itu. Aku bisa menerima dan merasa puas dengan diriku saat ini. Tidak di suatu tempat yang bukan disini, tapi di sinilah aku berada dan kini aku bisa bersyukur karenanya.
+aloha: "Di saat terakhir, kau akhirnya sadar betapa berharganya hidup. Setelah merenggut banyak hal, kau melihat dunia dengan kacamata baru... bahwa keseharian yang membosankan itu rupanya indah."
+mc: "Tapi aku akan mati sebentar lagi."
+aloha: "Benar. Tapi karena kau sudah menyadarinya, kau pasti mati dengan bahagia."
+mc: "Mestinya aku sadar lebih cepat."
+aloha: "Siapa tahu? Tak ada manusia yang tahu kapan usianya berakhir. Cepat atau lambat itu bukan urusanmu."
+mc: "Bijak sekali kata-katamu."
+aloha: "Tentu! Layanan spesial sebelum perpisahan. Lakukanlah yang ingin kau selesaikan! Waktunya habis. Selamat tinggal!"
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Aku yang dinyatakan waktuku tinggal sedikit saja, iblis yang muncul dihadapanku untuk menambah nyawa satu hari. Tapi bukankah kasusku ini sama seperti apel yang muncul di depan mata adam dan hawa? Mungkin ini lanjutan pertaruhan agung antara tuhan dan iblis. Tapi aku tidak bisa menghilangkan kucing dan memutuskan untuk menghilangkan diriku. Tak lama lagi akan tiba hari istirahat bagiku.
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-aloha: Pada saat yang benar-benar terakhir, kamu menyadari siapa yang bermakna besar dan apa yang berharga tak ada duanya bagimu sehingga dapat mengetahui betapa indahnya hidup di dunia ini. Setelah satu kali putaran berkeliling dunia, kamu melihat dunia dari sudut pandang yang baru dan sadar bahwa meskipun dunia itu terdiri dari hari-hari membosankan, tetap indah lebih dari cukup. Mungkin itu saja sudah membuat kedatanganku ke sini cukup berarti.
-mc: Tapi, aku akan mati sebentar lagi.
-aloha: Memang begitu. Tapi satu hal yang pasti karena sekarang kamu dapat menyadari soal itu, kamu pasti bahagia.
-mc: Meskipun kupikir seharusnya aku menyadari lebih cepat.
-aloha: Benar juga. Tapi tak ada siapa pun yang tahu masih berapa lama dirinya bertahan hidup. Bisa juga tinggal beberapa hari atau beberapa bulan. Bagi semua manusia kapan berakhirnya usia tak dapat diketahui.
-mc: Memang begitu.
-aloha: Karena itulah, cepat atau lambat itu tidak perlu dipikirkan.
-mc: Kata-kata yang bijaksana sekali.
-aloha: Oh jelas. Layanan istimewa untuk kesempatan terakhir! Lakukanlah semua hal yang masih ingin kamu lakukan sampai tuntas pada akhir hayatmu. Sudah habis waktunya. Selamat tinggal!
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: Aloha mengucapkan perpisahan dengan begitu enteng.
+mc (batin): "(Aloha mengucapkan perpisahan itu dengan sangat ringan.)"
 [signal arg="set_day4_state:pagi_selesai"]
 [signal arg="day4_ke_kamar_beres2"]
 return
 label beres_beres
 [signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres kamar.png" fade="1.0"]
-narator: Kemudian aku akan mulai merapikan sekelilingku. Persiapan untuk mati.
+mc (batin): "(Aku mulai merapikan sekeliling. Persiapan sebelum tiada.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres.png" fade="1.0"]
-narator: Buku harian yang memalukan, pakaian yang bergaya kuno, foto yang tidak bisa kubuang sampai hari ini. Keping-keping hidupku yang timbul tenggelam. Seandainya aku menghilangkan barang-barang begini, apakah aloha akan memberiku nyawa? Walaupun terlintas begitu di pikiranku, aku lega karena “aku sudah tidak usah menghilangkan apapun lagi”.
+mc (batin): "(Buku harian yang memalukan, pakaian kuno, foto usang... kepingan hidupku. Seandainya kulenyapkan barang-barang ini, akankah Aloha memberiku nyawa ekstra? Ah, sudahlah. Syukurlah aku tak perlu melenyapkan apa pun lagi.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
 [signal arg="set_day4_state:beres_beres_selesai"]
-narator: Hadiah yang begitu berharga, surat yang begitu penuh kasih sayang, kenangan begitu indah, semuanya akan menjadi rongsokan dan terlupakan. Aku tidak sanggup memberanikan diri membuka kotak itu.
+mc (batin): "(Semua hadiah berharga dan kenangan indah ini pada akhirnya akan jadi rongsokan dan terlupakan. Aku bahkan tak sanggup membuka kotak kaleng Yokumoku ini lagi.)"
 [signal arg="boleh_keluar"]
 return
 label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
-narator: Aku berkonsultasi dengan petugas penjualan dan promosi kantor di pengurus pemakaman. Altar, peti, jenazah, bunga, foto, guci untuk menyimpan sisa tulang kremasi, papan memori, mobil jenazah dan kremasi. 1.500.000 yen. Aku memberi harga pada kematianku sendiri.
+mc (batin): "(Aku berkonsultasi dengan staf kantor pemakaman. Altar, peti, bunga, foto, guci, hingga mobil jenazah... Semuanya sekitar 1.500.000 yen. Aku sedang memberi harga pada kematianku sendiri.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
-narator: Aku membayangkan diriku berbaring di dalamnya. Upacara pemakamanku. Orang-orang seperti apakah yang akan berkumpul di situ? Teman-teman lama? Pacar masa lalu? Kerabat? Guru? Atau para kolega? Di antara mereka berapa orang yang betul-betul bersedih atas kematianku? Dan bagaimana mereka menceritakan tentang hidupku?
+mc (batin): "(Kubayangkan diriku berbaring di dalamnya. Siapa saja yang akan datang? Mantan pacar? Kerabat? Berapa orang yang benar-benar bersedih atas kepergianku?)"
 [background arg="hitam.png" fade="1.0"]
 [signal arg="set_day4_state:pemakaman_selesai"]
-narator: “Ia orangnya lucu, ia orangnya agak berantakan, ia sebenarnya bersumbu pendek, ia tidak pernah diincar perempuan….” Apakah mereka akan menceritakan seperti itu di sisi bantalku? Saat itu aku tersadar. Apakah yang aku berikan kepada mereka dan apa yang aku tinggalkan pada mereka? Demi detik yang takkan dapat ku ketahui itulah aku hidup selama ini. Dunia tempat aku pernah ada dan dunia tempat aku tidak pernah ada. Di situ pasti ada perbedaan yang sangat kecil, “perbedaan” yang kecil itulah “tanda” aku hidup selama ini.
+mc (batin): "('Dia lucu, berantakan, tapi baik hati,' apakah mereka akan berbisik begitu di depan petiku? Dunia dengan dan tanpa diriku mungkin perbedaannya sangat tipis. Tapi 'perbedaan kecil' itulah bukti nyata bahwa aku pernah hidup.)"
 return
 label ending_surat
 [signal arg="update_objective:Tamat"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
-narator: Kenangan bersama ayahku. Waktu aku masih kecil, ayahku membelikan aku lembaran seri perangko Olimpiade. Kecil, berwarna-warni dan terlalu sayang untuk dipakai. Perasaan yang tak ada duanya. Karena ayahku pendiam, hadiah ‘perangko’ merupakan satu-satunya ‘percakapan’ antara aku dan dia. Terkadang aku dibuat tertawa karena lelucon ayahku yang langka karena di dalam perangko itu seekor kucing sedang menguap, mirip selada. Aku senang sekali dan merendam kartu pos itu di dalam air semalaman untuk melepas perangkonya.
+mc (batin): "(Aku teringat Ayah. Dulu ia membelikanku seri prangko Olimpiade. Berwarna-warni dan sangat berharga. Ayah pendiam, dan prangko adalah satu-satunya jembatan komunikasi kami.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
-narator: Aku ingat sekarang. Karena aku suka ini, aku pun bekerja sebagai tukang pos. Menempelkan perangko dan mengirim surat. Menyampaikan kabar. Pasti itulah napas yang hangat. Semakin banyak kuembuskan, semakin hangat diriku. Perasaan yang kusampaikan akan membawaku sendiri ke tempat yang hangat, tenang, dan bahagia. Suatu saat nanti, kita jumpa lagi di situ.
+mc (batin): "(Kini aku ingat, karena suka prangko, aku bekerja sebagai tukang pos. Menempelkan prangko dan mengirim surat. Menyampaikan perasaan yang hangat, yang pada akhirnya membawaku ke tempat yang tenang dan bahagia.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kotak yokumoku.png" fade="1.0"]
-narator: Ya. Aku harus menulis surat. Dalam waktuku yang tersisa. Kata-kata yang tak terhitung jumlahnya, ucapan salam yang tidak jadi diucapkan, perasaan yang tidak dapat disampaikan. Orang yang akan kukirimi surat ini adalah orang yang akan kutitipi kubis. Tak ada orang selain dia. Tak ada apapun selain dia. Jawabannya sudah lama ada di dalam diriku. Tapi selama ini aku tidak bisa mengakuinya.
-narator: Surat pertama dan terakhir kepada ayahku. Akan jadi wasiat yang panjang sekali. Tapi ada banyak hal yang harus kusampaikan. Tentang beberapa hal ajaib ini. Tentang ibu. Tentang kubis. Tentang aku.
-narator: Hari ini. Ayah. Aku ingin bertemu dengan ayah selama ini. Bertemu dengan ayah dan ingin mengucapkan maaf, mengucapkan terima kasih dan mengucapkan selamat tinggal.
+mc (batin): "(Aku harus menulis surat di sisa waktuku. Kepada satu-satunya orang tempatku akan menitipkan Kubis.)"
+mc (batin): "(Surat pertama dan terakhirku untuk Ayah. Akan jadi wasiat yang panjang. Tentang keajaiban, tentang Ibu, tentang Kubis, dan diriku.)"
+mc (batin): "(Aku ingin bertemu Ayah. Ingin meminta maaf, berterima kasih, dan mengucapkan selamat tinggal.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/mulai sepeda.png" fade="1.0"]
-narator: Pedalnya terasa berat. Griik, griik, griik tubuh sepeda tua mengerik.
+mc (batin): "(Aku mengayuh pedal. Griik, griik, griik... sepeda tuaku berderit.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
-narator: Aku akan kesana. Ke tempat ayahku. Di kota sebelah. Kota itu sudah di depan mata.
+mc (batin): "(Aku segera ke sana. Ke tempat Ayah. Kota itu sudah di depan mata.)"
 [signal arg="tamat"]
 return

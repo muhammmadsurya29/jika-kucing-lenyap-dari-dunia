@@ -1,12 +1,12 @@
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 audio "res://assets/audio/heartbeat.mp3"
-narator: "Tumor otak. Stadium empat. Kata-kata dokter itu terus berputar seperti kaset rusak di kepalaku. Dunia seolah berhenti berputar tepat di depan wajahku."
+narator: "Tumor otak stadium empat. Sisa umurku tinggal hitungan hari."
 [background arg="res://assets/backgrounds/rumah_sakit.png" fade="1.0"]
-"Kenapa aku? Kenapa harus sekarang?"
+mc (batin): "(Kenapa harus aku? Kenapa sekarang? Di saat hidupku baru saja terasa tenang...)"
 [background arg="res://assets/backgrounds/mc_pusing.png" fade="1.0"]
-narator: "Pertanyaan Terus berputar di kepalaku, Apakah ini nyata? "
+narator: "Kata-kata dokter itu menghancurkan duniaku. Kesedihan perlahan mencekik leherku."
 audio -
 [background arg="res://assets/backgrounds/jembatan_mc.png" fade="1.0"]
-narator: "Padahal aku hanya membutuhkan 1 cap lagi untuk mendapatkan voucher pijat gratis di panti pijat dekat rumahku. Padahal aku baru saja membeli banyaak tissue toilet dan deterjen. Namun kesedihan datang secara perlahan-lahan."
+narator: "Aku berjalan pulang dengan tatapan kosong. Semua rencana masa depanku menguap tak bersisa."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: "Ternyata itu hanyalah khayalan konyol. Semua itu hanya terjadi di kepalaku yang terus berputar dengan rasa sakit yang datang perlahan."
+narator: "Namun, keputusasaan ini belumlah seberapa. Karena sesampainya di rumah, aku menyadari kematian bukanlah hal tergila yang menantiku hari ini."
