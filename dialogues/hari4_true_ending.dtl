@@ -203,6 +203,16 @@ mc (batin): "(Aku ingin bertemu Ayah. Ingin meminta maaf, berterima kasih, dan m
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/mulai sepeda.png" fade="1.0"]
 mc (batin): "(Aku mengayuh pedal. Griik, griik, griik... sepeda tuaku berderit.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
-mc (batin): "(Aku segera ke sana. Ke tempat Ayah. Kota itu sudah di depan mata.)"
+mc (batin): "(Aku akan kesana. Ke tempat ayahku. Di kota sebelah. Kota itu sudah di depan mata.)"
+[background arg="res://assets/backgrounds/hitam.png" fade="2.0"]
+narator: ...
+[background arg="res://assets/backgrounds/rumah_sakit.png" fade="2.0"]
+narator: Bau antiseptik menyengat hidungku. Suara monitor detak jantung berbunyi konstan di telingaku.
+narator: Aku membuka mataku dengan berat. Langit-langit putih sebuah ruang ICU. Aku ingat sekarang... Aku tak sadarkan diri di jalan sesaat setelah dokter membacakan vonis tumor stadium empat itu.
+narator: Aloha, iblis cerewet itu, dan kesepakatan gila melenyapkan benda-benda demi satu hari nyawa tambahan...
+narator: Ternyata semua itu hanyalah manifestasi dari rasa takutku. Sebuah proyeksi panjang dari penyesalan yang berputar-putar di kepalaku selama aku terbaring koma.
+narator: Namun berkat mimpi aneh itu, kini aku tahu apa yang paling berharga. Aku tahu apa yang harus kulakukan di sisa hariku yang sebenarnya ini. Ayah... Ibu... Kubis...
+narator: Terima kasih.
+[background arg="res://assets/backgrounds/hitam.png" fade="3.0"]
 [signal arg="tamat"]
 return

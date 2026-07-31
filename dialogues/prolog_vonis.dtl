@@ -1,12 +1,13 @@
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 audio "res://assets/audio/heartbeat.mp3"
-narator: "Tumor otak stadium empat. Sisa umurku tinggal hitungan hari."
+narator: "Tumor otak. Stadium empat. Dokter bilang, usiaku hanya tinggal menghitung hari. Vonis kematian itu datang begitu cepat."
 [background arg="res://assets/backgrounds/rumah_sakit.png" fade="1.0"]
-mc (batin): "(Kenapa harus aku? Kenapa sekarang? Di saat hidupku baru saja terasa tenang...)"
+narator: "Kenapa aku? Kenapa harus sekarang? Semua ini terasa tidak nyata."
 [background arg="res://assets/backgrounds/mc_pusing.png" fade="1.0"]
-narator: "Kata-kata dokter itu menghancurkan duniaku. Kesedihan perlahan mencekik leherku."
+narator: "Bukan kematian yang paling kutakutkan, melainkan penyesalan. Aku belum berdamai dengan ayahku. Aku juga belum berbicara lagi dengan mantan kekasihku..."
 audio -
 [background arg="res://assets/backgrounds/jembatan_mc.png" fade="1.0"]
-narator: "Aku berjalan pulang dengan tatapan kosong. Semua rencana masa depanku menguap tak bersisa."
+narator: "Padahal aku hanya butuh 1 cap lagi untuk mendapat voucher pijat gratis di panti pijat dekat rumah. Padahal aku baru saja memborong tisu toilet dan deterjen. Namun kini..."
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-narator: "Namun, keputusasaan ini belumlah seberapa. Karena sesampainya di rumah, aku menyadari kematian bukanlah hal tergila yang menantiku hari ini."
+[background fade="1.0"]
+narator: "Di tengah rasa sesak dan penyesalan yang membakar dada, kegelapan datang. Namun bukan kematian yang menyapaku, melainkan sebuah sosok aneh."
