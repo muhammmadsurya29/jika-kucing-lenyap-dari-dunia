@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+# Mengizinkan aksi ini untuk melakukan push ke cabang gh-pages
+permissions:
+  contents: write
+
+jobs:
+  export-and-deploy:
+    name: Export to Web and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Export Godot Web
+        id: export
+        uses: firebelley/godot-export@v5.2.1
+        with:
+          godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.2.2-stable/Godot_v4.2.2-stable_linux.x86_64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/4.2.2-stable/Godot_v4.2.2-stable_export_templates.tpz
+          relative_project_path: ./
+          archive_output: false
+          export_debug: false
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ${{ steps.export.outputs.build_directory }}
+          force_orphan: true
