@@ -16,6 +16,12 @@ var is_bgm_muted = false
 func _ready() -> void:
 	Dialogic.end_timeline()
 	
+	var bgm_player = AudioStreamPlayer.new()
+	bgm_player.stream = preload("res://assets/audio/BGM_MAIN_MENU.mp3")
+	bgm_player.bus = "Master"
+	bgm_player.autoplay = true
+	add_child(bgm_player)
+	
 	_setup_layout()
 	_setup_pixel_theme()
 	_start_animations()
