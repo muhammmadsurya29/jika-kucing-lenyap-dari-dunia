@@ -1,7 +1,8 @@
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/menunjukan ibu.png" fade="1.0"]
 mc (batin): "(Aku dan Kubis sedang melihat album foto lama, sambil mengobrol.)"
-mc: "Masih ingat yang ini?"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+mc (batin): "Kamu benar-benar tidak ingat ibu? "
+[background arg="res://assets/backgrounds/DAY 3 taman/nunjuk ayah.png" fade="1.0"]
+mc: "Kalau yang ini masih ingat ?"
 kubis: "Siapakah ini, Tuanku?"
 mc: "Ini ayah. Kalau tak salah, ini waktu kita ke pemandian air panas. Persis seminggu sebelum Ibu meninggal."
 kubis: "Mengapa demikian, Tuanku?"
@@ -10,35 +11,40 @@ mc: "Namun suatu pagi, dia tiba-tiba minta pergi ke sana bersamaku, Ayah, dan ka
 kubis: "Sahaya tetap tidak ingat, Tuanku. Maafkan sahaya... Hanya saja..."
 mc: "Hanya saja?"
 kubis: "Sahaya ingat pernah merasa sangat bahagia. Saat foto itu diambil, sahaya bahagia. Itu saja."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/ngelus kubis.png" fade="1.0"]
 mc: "Kubis... tahukah kau apa arti 'kasih sayang'?"
 kubis: "Apakah itu, Tuanku?"
 mc: "Mungkin sulit dimengerti oleh kucing. Tapi itu adalah perasaan menyukai seseorang, mempedulikannya, dan keinginan untuk selalu bersamanya."
 kubis: "Apakah itu bagus, Tuanku?"
 mc: "Hmm... kadang merepotkan, kadang mengganggu, tapi ya... itu sangat bagus."
 mc (batin): "(Kasih sayang itu kadang merepotkan, tapi menguatkan manusia secara mutlak. Sama seperti waktu, warna, atau suhu. Hal-hal yang hanya ada di dunia manusia, yang mengikat tapi juga membebaskan. Hal-hal yang membuat kami menjadi 'manusia'.)"
-[background arg="res://assets/backgrounds/FLASHBACK SELADA SAKIT/mc tidur dengan kubis.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/81.png" fade="1.0"]
 mc: "Ayo Kubis, kita tidur saja."
 kubis: "Meong."
 mc: "Kok... tiba-tiba kembali seperti kucing biasa?"
 mc (batin): "(Lelucon tak lucu, batinku. Tak ada balasan.)"
 kubis: "Meong... meong..."
+[background fade="1.0"]
 [signal arg="aloha_datang"]
+[background arg="res://assets/backgrounds/DAY 3 taman/aloha ngejek.png" fade="1.0"]
 aloha: "Apakah Gusti Patih sebentar lagi akan mati?"
 mc: "Leluconmu tak lucu!"
 aloha: "Iya, iya, maaf. Sepertinya efek sihirku habis. Dia kembali jadi kucing biasa. Kecewa ya?"
 mc: "Jangan mulai lagi."
 aloha: "Hahahahaha! Ngomong-ngomong, aku sudah memutuskan apa yang akan dihilangkan berikutnya."
+[background arg="res://assets/backgrounds/DAY 3 taman/aloha ngejek.png" fade="1.0"]
 [signal arg="jantung_berdegup"]
+[background arg="res://assets/backgrounds/DAY 3 taman/mcc memohon.png" fade="1.0"]
 aloha: "'Jangan!', kau mau teriak begitu kan? Hahahahaha!"
 mc: "Kumohon, jangan..."
 [signal arg="mc_berlutut"]
 aloha: "Mari kita lenyapkan... Kucing, dari dunia!"
-- YA - Lenyapkan Kucing (Ending Kesepian)
+[background fade="1.0"]
+- AKU TIDAK SANGGUP MEMBAYANGKAN KUBIS HIDUP TANPAKU
     [signal arg="ending_kesepian"]
     [signal arg="update_objective:Periksa dapur"]
     return
-- TIDAK - Pertahankan Kucing (Terima Kematian)
+- KALAU KUBIS BISA TETAP HIDUP, ITU LEBIH DARI CUKUP BUATKU
     mc: "Tunggu!"
     [background arg="layar_hitam.png" fade="0.0"]
     [signal arg="jantung_berhenti"]

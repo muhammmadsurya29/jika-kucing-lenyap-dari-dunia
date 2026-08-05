@@ -20,7 +20,7 @@ func _ready() -> void:
 	
 	# Load and play audio dynamically to avoid resource path issues
 	var audio = AudioStreamPlayer.new()
-	var stream = load("res://assets/audio/happy-end.mp3")
+	var stream = load("res://assets/audio/wave_love.mp3")
 	if stream:
 		audio.stream = stream
 		audio.name = "BGMPlayer"

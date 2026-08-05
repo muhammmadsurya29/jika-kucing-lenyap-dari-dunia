@@ -1,3 +1,4 @@
+[background arg="res://assets/backgrounds/Ending C/12.png" fade="1.0"]
 narator: "Jalanan sepi malam hari."
 mantan: "Bagaimana?"
 mc: "Badut itu mati bahagia."
@@ -11,5 +12,6 @@ mantan: "Tapi kamu tidak bisa."
 mc: "Tidak."
 mantan: "Kenapa?"
 mc: "Karena menitipkan berarti benar-benar melepaskan. Dan aku tidak cukup berani untuk itu. Jadi aku memilih cara yang lebih pengecut. Menghilangkannya sekalian. Supaya tidak ada yang perlu dilepaskan."
+[background fade="1.0"]
 [signal arg="ending_c_pulang"]
 return

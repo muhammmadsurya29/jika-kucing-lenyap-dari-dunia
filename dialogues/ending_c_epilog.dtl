@@ -1,12 +1,17 @@
-narator: "Kamarku. Sepi. Berantakan sedikit bukan karena kotor, tapi karena tidak ada yang membuat alasan untuk merapikannya. Aku duduk di tepi kasur. Di tanganku, selimut oranye satu-satunya yang tersisa dari Kubis."
+[background arg="res://assets/backgrounds/Ending C/13.png" fade="1.0"]
 narator: "Di dunia tanpa kucing, selimut oranye ini tidak punya konteks. Siapapun yang melihatnya hanya melihat selimut lama yang butut. Tapi aku tahu, ini adalah selimut yang selama empat tahun menjadi tempat tidur Kubis. Yang masih menyimpan sedikit bulunya di sudut-sudutnya. Yang masih terasa hangat meski itu mungkin hanya imajinasinya."
+[background arg="res://assets/backgrounds/Ending C/14.png" fade="1.0"]
 narator: "Aku memeluknya."
+[background fade="1.0"]
 [signal arg="alt2_mc_tidur"]
 [wait time="0.5"]
+[background arg="res://assets/backgrounds/Ending C/14.png" fade="1.0"]
 narator: "Aloha bilang untuk memperoleh sesuatu, harus kehilangan sesuatu. Tapi tidak ada yang mengajarkanku bahwa beberapa hal kalau sudah hilang meninggalkan lubang yang tidak bisa diisi oleh apapun yang kamu peroleh sebagai gantinya."
 narator: "Satu hari tambahan. Itulah yang kuperoleh. Dan dalam satu hari itu, aku tidak bisa berhenti memikirkan satu-satunya hal yang hilang."
+[background fade="1.0"]
 [signal arg="aloha_fade_in"]
 [wait time="1.5"]
+[background arg="res://assets/backgrounds/Ending C/15.png" fade="1.0"]
 aloha (serius): "Bagaimana rasanya?"
 mc: "Kamu tahu jawabannya."
 aloha (serius): "Aku ingin kamu yang mengatakannya."
@@ -24,5 +29,6 @@ aloha (serius): "Kalau kamu bisa mengulang, apakah kamu akan membuat pilihan yan
 mc: "Tidak."
 aloha (serius): "Itu sudah cukup."
 narator: "Ibu pernah bilang, hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya. Aku menyadarinya. Hanya saja terlambat dua kali, sekali waktu ibu pergi, sekali waktu Kubis lenyap oleh tanganku sendiri. Mungkin itulah harga dari tidak mau belajar pada waktu yang pertama."
+[background fade="1.0"]
 [signal arg="ending_c_credit"]
 return

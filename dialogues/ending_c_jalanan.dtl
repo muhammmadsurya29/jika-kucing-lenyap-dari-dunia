@@ -1,6 +1,9 @@
+[background arg="res://assets/backgrounds/Ending C/7 (1).png" fade="1.0"]
 narator: "Aku berjalan sendirian ke pertokoan. Jalan yang biasa kulalui bersama Kubis di keranjang sepeda."
+[background arg="res://assets/backgrounds/Ending C/8 (2).png" fade="1.0"]
 pemilik_kedai (default): "Eh, biasanya ada yang menemani?"
 narator: "Kedai mie soba. Pemilik kedai menatapku."
+[background arg="res://assets/backgrounds/Ending C/makan alone.png" fade="1.0"]
 mc (senyum_tipis): "Hari ini sendirian."
 pemilik_kedai: "Oh. Tunggu, kucing kamu mana?"
 mc: "Sudah tidak ada."
@@ -8,5 +11,6 @@ pemilik_kedai: "Sakit?"
 mc: "Semacam itu."
 narator: "Di dunia tanpa kucing, orang tidak tahu apa yang hilang. Mereka hanya tahu ada yang berbeda. Pemilik kedai memberiku semangkuk mie soba dengan potongan ikan yang lebih banyak dari biasanya. Mungkin sebagai ungkapan simpati yang tidak tahu harus diungkapkan bagaimana."
 narator: "Aku memakannya sendiri. Tanpa ada yang mencuri ikan dari mangkukku."
+[background fade="1.0"]
 [signal arg="ending_c_ke_bioskop"]
 return

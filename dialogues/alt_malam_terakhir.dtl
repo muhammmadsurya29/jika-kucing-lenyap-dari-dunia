@@ -2,18 +2,20 @@ mc: "Tidak."
 aloha (terkejut): "Hah? Tidak mau?"
 aloha (serius): "Kamu sadar kan, besok kamu mati? Manusia aneh. Baiklah. Kalau tidak mau ditukar, tidak bisa kutambah waktumu. Besok kamu mati seperti rencana semula. Tidak ada negosiasi."
 mc (senyum_tipis): "Iya. Aku mengerti."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/1.png" fade="1.0"]
 narator: "(Hening. Aku dan Aloha saling bertatap.)"
 aloha (datar): "Kamu... tidak menyesal?"
 mc: "Entah. Tapi rasanya tidak benar kalau harus menukar sesuatu milik orang lain demi memperpanjang hidupku. Telepon itu bukan hanya milikku."
-[background fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/2.png" fade="1.0"]
 narator: "(Aloha diam sebentar, lalu duduk di kursi dengan ekspresi yang tidak biasa. Lebih serius dari biasanya.)"
 aloha (serius): "Menarik juga kamu ini."
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/3.png" fade="1.0"]
 narator: "Malam Terakhir"
 narator: "Kalau besok aku mati, apa yang ingin kulakukan malam ini? Bukan skydiving. Bukan hal-hal dramatis dari film. Mungkin cukup ini saja — duduk, secangkir kopi, dan menulis."
+[background arg="res://assets/backgrounds/Ending A/4.png" fade="1.0"]
 narator: "Bukan surat wasiat. Bukan pidato perpisahan. Hanya... hal-hal yang belum sempat kukatakan. Kepada Ayah. Kepada mantan. Kepada Tsutaya. Kepada Kubis — meskipun dia tidak bisa membaca."
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kotak yokumoku.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/5.png" fade="1.0"]
 narator: "Aku menyelesaikan surat, melipat rapi, dan menempelkan perangko — perangko gambar kucing menguap, dari kotak Yoku Moku."
 narator: "Perangko ini terlalu sayang untuk dipakai, kata hatiku waktu kecil. Tapi ternyata ada saat yang tepat untuk setiap hal. Mungkin inilah saatnya."
+[background fade="1.0"]
 [signal arg="alt_malam_terakhir_selesai"]

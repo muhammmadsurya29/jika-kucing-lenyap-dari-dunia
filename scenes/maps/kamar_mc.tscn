@@ -9145,6 +9145,7 @@ timeline_name = "tidur_malam"
 requires_daily_event = true
 locked_timeline = "belum_bisa_tidur"
 active_in_day4_climax = true
+icon_vframes = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Meja" unique_id=1470024040]
 position = Vector2(0, 1)

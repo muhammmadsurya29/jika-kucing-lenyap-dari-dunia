@@ -1,10 +1,11 @@
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres kamar.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/6.png" fade="1.0"]
 narator: "Pagi Terakhir"
 narator: "Cahaya pagi masuk dari celah jendela. Aku sudah berpakaian rapi — kemeja putih, dasi bergaris, celana abu gelap. Pakaian tukang pos."
 kubis: "Meong."
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/tidur mengelus kubis.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/7 (1).png" fade="1.0"]
 mc (senyum_tulus): "Iya. Hari ini kita jalan-jalan dulu sebentar."
-[background fade="1.0"]
+[background arg="res://assets/backgrounds/Ending A/8 (2).png" fade="1.0"]
+[wait time="0.5"]
 narator: "Aku mengambil tumpukan surat yang sudah ditulis semalam. Memasukkannya ke dalam tas selempang."
 narator: "Tukang pos yang mengantar surat terakhirnya sendiri. Kedengarannya seperti judul film yang agak lebay. Tapi tidak apa-apa."
 [signal arg="alt_pagi_terakhir_selesai"]

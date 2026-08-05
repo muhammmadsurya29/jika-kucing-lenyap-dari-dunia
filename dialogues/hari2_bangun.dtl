@@ -1,15 +1,15 @@
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
 aloha (default): "Kamu kelihatan menderita sekali, wahai manusia. Kukira kamu langsung mati! Kalau aku gagal menyambung nyawamu, aku bisa dimarahi Tuhan, tahu!"
 mc (syok_kesal): "Maaf... aku akan berhati-hati."
-[background fade="1.0"]
 aloha (ada_maunya): "Kamu tidak punya waktu untuk 'setelah ini'! Berabe kalau kamu tidak sadar. Jadi, bagaimana?"
 mc (marah): "Apanya?"
 aloha (ada_maunya): "Aduuuhhh... Soal apa yang akan kita hilangkan hari ini. Berikutnya adalah... film."
 mc (netral): "Film... ya."
 aloha (kedipanmata): "Mau dihilangkan, atau batal?"
-- YA - Lenyapkan Film (Tambah Umur 1 Hari)
+[background fade="1.0"]
+- WALAUPUN AKU SUKA FILM, AKU LEBIH MEMILIH NYAWAKU KARNA MASIH ADA HAL YANG BELUM KU LAKUKAN
 	jump hapus_film
-- TIDAK - Pertahankan Film (Tolak Tawaran)
+- AKU TIDAK MAU MENGHANCURKAN KEBAHAGIAAN ORANG-ORANG YANG MENYUKAI FILM
 	jump alt_ending
 
 label hapus_film
@@ -25,11 +25,13 @@ aloha (ngejek): "Tentu saja. Kuberikan waktu setengah hari. Pilihlah! Satu film 
 [end_timeline]
 
 label alt_ending
+[background arg="res://assets/backgrounds/Ending B/1.png" fade="1.0"]
 mc (marah): "Batal."
 aloha (kesal): "Hah?!"
 mc (marah): "Aku tidak mau menghilangkan film."
 aloha (kesal): "Kamu sadar tidak? Kemarin kamu setuju menghilangkan ponsel demi satu hari. Kalau sekarang kamu berhenti, hari ini sungguh-sungguh akan jadi hari terakhirmu."
 mc (batin): "(Aku terdiam sebentar, menatap Kubis yang sedang meringkuk di atas selimut.)"
+[background arg="res://assets/backgrounds/Ending B/2.png" fade="1.0"]
 mc (netral): "Iya. Aku tahu."
 aloha (serius): "Kenapa? Kemarin kau hampir pingsan waktu aku menyebut kata film!"
 mc (netral): "Justru karena itu."
@@ -42,6 +44,7 @@ aloha (serius): "Apa bedanya?"
 mc (netral): "Kalau ini perpisahan, pikiranku hanya akan terpusat pada fakta bahwa ini yang terakhir. Tapi jika film masih ada di dunia, aku bisa fokus menikmati filmnya dengan tenang."
 aloha (kesal): "Kamu ini... repot sekali!"
 mc (senyum_tipis): "Maaf."
+[background fade="1.0"]
 [signal arg="alt2_start"]
 [signal arg="boleh_keluar"]
 [end_timeline]

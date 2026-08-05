@@ -1,4 +1,4 @@
-[background arg="res://assets/backgrounds/Bercermin_Bingung.png" fade="1.0"]
-mc (batin): "(Tunggu dulu... Siapa lawan bicaraku yang terakhir di telepon kemarin?)"
+[background arg="res://assets/backgrounds/cermin new.png" fade="1.0"]
+mc (batin): "(Tunggu dulu... Siapa lawan bicaraku yang terakhir di telepon kemarin? Aku tidak iingat karena sakit di kepalaku selalu berputar-putar)"
 [background fade="1.0"]
 [signal arg="update_objective: Pergi ke Dapur!"]

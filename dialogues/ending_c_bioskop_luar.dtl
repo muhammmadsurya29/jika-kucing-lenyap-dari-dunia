@@ -1,6 +1,9 @@
+[background arg="res://assets/backgrounds/Ending C/9 (1).png" fade="1.0"]
 narator: "Depan bioskop tua. Aku berdiri menunggu. Mantan datang dari dalam lalu berhenti, matanya menyapu ke sekelilingku."
+[background fade="1.0"]
 [signal arg="ending_c_mantan_keluar"]
 [wait time="1.5"]
+[background arg="res://assets/backgrounds/Ending C/9 (1).png" fade="1.0"]
 mantan: "Kubis mana?"
 mantan: "...Kamu tidak membawanya?"
 mc: "Kubis sudah tidak ada."
@@ -8,8 +11,10 @@ mantan: "Apa?"
 mc: "Sudah pergi."
 mantan: "Tadi malam?"
 mc: "Iya."
+[background fade="1.0"]
 [signal arg="ending_c_duduk"]
 [wait time="0.5"]
+[background arg="res://assets/backgrounds/Ending C/end c sore bioskop.png" fade="1.0"]
 mantan: "Ceritakan."
 mc: "Tidak ada yang perlu diceritakan."
 mantan: "Ada."
@@ -23,5 +28,6 @@ mc: "Iya."
 mantan: "Dan bodoh."
 mc: "Iya."
 mantan: "Dan aku mengerti kenapa."
+[background fade="1.0"]
 [signal arg="ending_c_masuk_bioskop"]
 return

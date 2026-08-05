@@ -22,24 +22,26 @@ mc: "Kubis!"
 [signal arg="boleh_keluar"]
 return
 label cek_parkiran
-[signal arg="update_objective:Cari Kubis di Taman Bukit"]
+[signal arg="update_objective:Cari Kubis di parkiran"]
 [background arg="res://assets/backgrounds/HARI 4/mencari kubis di mobil van putih.png" fade="1.0"]
 mc (batin): "(Di mobil van juga tidak ada.)"
 [signal arg="teleport_ke_taman_bukit"]
 return
 label cek_taman_bukit
 [signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
-[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_28_25 AM.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/49.png" fade="1.0"]
 mc (batin): "(Di bukit ini pun kosong.)"
 [signal arg="teleport_ke_taman"]
 return
 label cek_soba
 mc (batin): "(Kubis! Kubis! Tenggorokanku kering, paru-paruku seakan terbakar. Otot kakiku sakit nyaris putus.)"
 mc (batin): "(Persis dejavu empat tahun lalu... saat aku berlari membawa Ibu ke rumah sakit karena serangan jantung.)"
-[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 11_32_03 AM.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/50 (1).png" fade="1.0"]
 mc (batin): "(Sungguhkah ia sudah lenyap? Kubis... apa kita takkan bertemu lagi? Kehangatanmu, telapak kakimu yang kenyal, detak jantungmu yang halus... aku takkan bisa menyentuhnya lagi?)"
 mc (batin): "(Ibu... Selada... Kumohon, aku tak mau ditinggalkan lagi.)"
-[background arg="res://" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/51.png" fade="1.0"]
+[wait time="0.5"]
+[background arg="res://assets/backgrounds/DAY 3 taman/52.png" fade="1.0"]
 mc (batin): "(Benar. Aku telah melenyapkan kucing dari dunia ini.)"
 [signal arg="suara_meong"]
 [wait time="1.0"]
@@ -50,14 +52,16 @@ return
 label bioskop_puncak
 [signal arg="update_objective:Beres-beres kamar untuk terakhir kalinya"]
 [signal arg="suara_meong"]
-[background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/53 (2).png" fade="1.0"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/54.png" fade="1.0"]
 mc (batin): "(Kurasakan keempukan dan kehangatan yang meresap ke dalam tubuhku. Ia hidup. Ini sebuah nyawa.)"
 mantan: "Aku sempat kaget tiba-tiba Kubis datang ke sini."
 mc: "Terima kasih... sungguh."
-[background arg="res://assets/backgrounds/HARI 4/memeluk kubis.png" fade="1.0"]
+[background arg="res://assets/backgrounds/mantan datang woi.png" fade="1.0"]
 mantan: "Kamu menangis lagi. Dari dulu kebiasaan gampang menangismu tak pernah berubah ya? Pasti karena ibumu."
 mc: "Apa maksudmu?"
-[background arg="res://assets/backgrounds/HARI 4/ChatGPT Image Jul 6, 2026, 12_15_52 PM.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/55.png" fade="1.0"]
 mantan: "Ibumu menitipkan sepucuk surat padaku, sudah lama sekali."
 mc: "Dari Ibu?"
 mantan: "Ya, waktu dia diopname. Aku menjenguknya, dan ia menitipkannya padaku."
@@ -67,32 +71,31 @@ mc: "Begitu ya..."
 mantan: "Awalnya aku menolak karena kita sudah putus. Tapi Ibu bilang tak apa jika surat ini tak pernah sampai, asal ada yang menyimpannya. Saat melihat Kubis datang ke mari dan kini kau menangis... aku rasa, inilah saatnya."
 mc: "Saatnya?"
 mantan: "Waktunya kamu benar-benar bersedih. Ibumu memang hebat."
-[background arg="res://assets/backgrounds/HARI 4/membaca surat ibu.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/56.png" fade="1.0"]
 [wait time="2.0"]
-[background arg="res://assets/backgrounds/HARI 4/sedih membca surat ibu.png" fade="1.0"]
-mc (batin): "(Halaman pertamanya tertulis dengan huruf besar: '10 Hal yang Ingin Kulakukan Sebelum Mati'. Kami... benar-benar ibu dan anak.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/57.png" fade="1.0"]
+mc (batin): "(Halaman pertamanya tertulis dengan huruf besar\: '10 Hal yang Ingin Kulakukan Sebelum Mati'. Kami... benar-benar ibu dan anak.)"
+[background arg="res://assets/backgrounds/DAY 3 taman/58.png" fade="1.0"]
 mc (batin): "(Surat ini terlalu berharga untuk dibasahi air mata. Teringat saat aku flu, tangannya mengelus punggungku. Saat aku tersesat di taman, ia berlari memelukku erat-erat. Saat aku merengek minta kotak bekal mencolok, ia mencarinya seharian keliling kota.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/59.png" fade="1.0"]
 mc (batin): "(Ibu yang selalu menyelimutiku yang banyak tingkah saat tidur.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/makan sama ibu.png" fade="1.0"]
 mc (batin): "(Ibu yang selalu membuatkan telur dadar manis kesukaanku.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/60.png" fade="1.0"]
 mc (batin): "(Ibu yang terus membelikanku baju bagus, tapi jarang sekali beli untuk dirinya sendiri.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/61.png" fade="1.0"]
 mc (batin): "(Tiket pijat bahu hadiah ulang tahun dariku... ia tak pernah memakainya. 'Terlalu sayang,' katanya.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/62.png" fade="1.0"]
 mc (batin): "(Ia selalu memainkan lagu kesukaanku di piano, meski selalu salah di nada yang sama. Pernahkah aku peduli soal hobi Ibu? Pernahkah aku membelikannya sekuntum bunga? Kenapa... kenapa tak terpikirkan olehku bahwa suatu saat Ibu akan pergi?)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/nangis karna surat.png" fade="1.0"]
 mc (batin): "(Ibu... aku takut mati. Tapi kata-katamu benar. Jika ingin memperoleh sesuatu, harus ada yang dikorbankan. Tapi Bu... bukankah merenggut sesuatu dari dunia akan membuat hidup makin menyiksa?)"
 kubis: "Gusti Patih, jangan bersedih lagi."
 mc: "Tidak bisa, Kubis."
 kubis: "Sahaya ingin Gusti Patih tetap hidup. Sahaya tak sanggup hidup di dunia tanpa Gusti Patih."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc (batin): "(Belum pernah aku dibuat menangis oleh seekor kucing. Meski suaranya hanya 'meong', perasaannya sampai padaku.)"
 kubis: "Mohon jangan menangis. Dibandingkan hal-hal yang telah Gusti Patih korbankan selama ini, sahaya hanyalah sepele."
 mc: "Bukan itu masalahnya, Kubis. Bukan begitu..."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/64.2.png" fade="1.0"]
 mc (batin): "(Jika kucing lenyap... jika Selada, Kubis, dan Ibu tiada... Aku tak sanggup membayangkannya. Selalu ada alasan mengapa sesuatu hadir di dunia, tapi tak ada alasan ia harus dilenyapkan.)"
 mc (batin): "(Aku membulatkan tekad. Dan Kubis memahaminya lebih dari siapa pun.)"
 kubis: "Isi hati Gusti Patih sudah sahaya pahami, Tuanku."
@@ -106,22 +109,21 @@ kubis: "Turuti saja. Pejamkan mata, Tuanku."
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc (batin): "('Pejamkan matamu pelan-pelan dan tersenyumlah,' kata Ibu dulu. Kubis mengingatkanku pada sihir Ibu. Sihir yang selalu berhasil membuatku tersenyum kembali saat sedih.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/64.2.png" fade="1.0"]
 kubis: "Meong... meong... meong."
 mc: "Aku senang bisa bicara denganmu, Kubis. Di saat-saat terakhir ini... mungkin ini juga sihir Ibu. Selamat tinggal, Kubis. Terima kasih untuk segalanya."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
-mc (batin): "(Di akhir surat Ibu tertulis: 'Semoga kau dan ayahmu hidup rukun'. Apakah aku bahagia? Orang bisa jadi sangat bahagia atau sangat malang hanya tergantung dari cara berpikirnya sendiri.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+mc (batin): "(Di akhir surat Ibu tertulis\: 'Semoga kau dan ayahmu hidup rukun'. Apakah aku bahagia? Orang bisa jadi sangat bahagia atau sangat malang hanya tergantung dari cara berpikirnya sendiri.)"
+[background arg="res://assets/backgrounds/DAY 3 taman/65.1.png" fade="1.0"]
 aloha: "Aduhhh! Dari mana saja sih? Kukira kau sudah diculik Tuhan. Hahahahhaa."
 mc: "Maaf."
 aloha: "Tak apa. Jadi, langsung kita lenyapkan saja?"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/65.2.png" fade="1.0"]
 mc: "Tidak jadi."
 aloha: "Apa?"
 mc: "Aku batal melenyapkan kucing!"
 aloha: "Betulan?"
 mc: "Betulan."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/65.3.png" fade="1.0"]
 aloha: "Apanya yang lucu? Kalau begitu kau akan mati. Yakin?"
 mc: "Yakin. Aku takkan melenyapkan apa pun lagi."
 aloha: "Kau semestinya bisa hidup lebih lama."
@@ -130,7 +132,7 @@ aloha: "Lagi-lagi aku kalah. Dasar manusia!"
 mc: "Kenapa?"
 aloha: "Oh, bukan apa-apa. Aku mengaku kalah. Silakan mati sana!"
 mc: "Jangan ketus begitu dong... meski aku memang akan mati."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/65.4.png" fade="1.0"]
 mc: "Saatnya berpisah, ya?"
 aloha: "Emm… iya."
 mc: "Rasanya agak kesepian."
@@ -149,14 +151,18 @@ mc: "Sesuatu yang paling dekat, tapi sekaligus paling jauh..."
 aloha: "Tepat. Jangan tanya macam-macam lagi."
 mc: "Apa aku akan menyesal saat mati nanti?"
 aloha: "Pasti! 'Aku mau hiduuuup! Panggilkan iblis itu kembaliii!' Hahahahha. Manusia memang selalu menyesali jalan yang tak mereka pilih."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/81.png" fade="1.0"]
+[wait time="1.2"]
 mc (batin): "(Orang bilang, kalau tahu besok akan mati, kita akan hidup sepenuhnya. Menurutku itu omong kosong. Tapi penyesalan demi penyesalan inilah yang terasa indah. Bukti bahwa aku benar-benar hidup.)"
+[background arg="res://assets/backgrounds/DAY 3 taman/64.png" fade="1.0"]
+[wait time="0.5"]
+[background arg="res://assets/backgrounds/DAY 3 taman/65.png" fade="1.0"]
 mc (batin): "(Kucing tak jadi lenyap. Berarti aku yang akan lenyap.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 taman/66.png" fade="1.0"]
 mc (batin): "(Angka fatalitas manusia adalah 100 persen. Kita semua pasti mati. Demi menyambung nyawa, aku sudah merenggut telepon, film, dan jam. Aku tak mau melakukannya lagi pada kucing. Aku sudah puas. Kini aku bisa bersyukur berada di sini, hari ini.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
 mc (batin): "(Banyak kegagalan, penyesalan, dan impian yang tak tercapai. Tapi tak apa. Tak lama lagi, akan tiba hari istirahat bagiku.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/aloha terkahir  kali.png" fade="1.0"]
 aloha: "Di saat terakhir, kau akhirnya sadar betapa berharganya hidup. Setelah merenggut banyak hal, kau melihat dunia dengan kacamata baru... bahwa keseharian yang membosankan itu rupanya indah."
 mc: "Tapi aku akan mati sebentar lagi."
 aloha: "Benar. Tapi karena kau sudah menyadarinya, kau pasti mati dengan bahagia."
@@ -175,7 +181,7 @@ label beres_beres
 mc (batin): "(Aku mulai merapikan sekeliling. Persiapan sebelum tiada.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres.png" fade="1.0"]
 mc (batin): "(Buku harian yang memalukan, pakaian kuno, foto usang... kepingan hidupku. Seandainya kulenyapkan barang-barang ini, akankah Aloha memberiku nyawa ekstra? Ah, sudahlah. Syukurlah aku tak perlu melenyapkan apa pun lagi.)"
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kotak yokumoku.png" fade="1.0"]
 [signal arg="set_day4_state:beres_beres_selesai"]
 mc (batin): "(Semua hadiah berharga dan kenangan indah ini pada akhirnya akan jadi rongsokan dan terlupakan. Aku bahkan tak sanggup membuka kotak kaleng Yokumoku ini lagi.)"
 [signal arg="boleh_keluar"]
@@ -184,35 +190,40 @@ label pemakaman
 [signal arg="update_objective:Pulang ke rumah untuk menulis surat"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
 mc (batin): "(Aku berkonsultasi dengan staf kantor pemakaman. Altar, peti, bunga, foto, guci, hingga mobil jenazah... Semuanya sekitar 1.500.000 yen. Aku sedang memberi harga pada kematianku sendiri.)"
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kantor pemakaman.png" fade="1.0"]
 mc (batin): "(Kubayangkan diriku berbaring di dalamnya. Siapa saja yang akan datang? Mantan pacar? Kerabat? Berapa orang yang benar-benar bersedih atas kepergianku?)"
+[background fade="1.0"]
 [background arg="hitam.png" fade="1.0"]
 [signal arg="set_day4_state:pemakaman_selesai"]
 mc (batin): "('Dia lucu, berantakan, tapi baik hati,' apakah mereka akan berbisik begitu di depan petiku? Dunia dengan dan tanpa diriku mungkin perbedaannya sangat tipis. Tapi 'perbedaan kecil' itulah bukti nyata bahwa aku pernah hidup.)"
 return
 label ending_surat
 [signal arg="update_objective:Tamat"]
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
-mc (batin): "(Aku teringat Ayah. Dulu ia membelikanku seri prangko Olimpiade. Berwarna-warni dan sangat berharga. Ayah pendiam, dan prangko adalah satu-satunya jembatan komunikasi kami.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/yokumoku.png" fade="1.0"]
+mc (batin): "(Aku teringat Ayah. Dulu ia membelikanku seri prangko Olimpiade. Berwarna-warni dan sangat berharga. Ayah pendiam, dan prangko adalah satu-satunya jembatan komunikasi kami.)"
 mc (batin): "(Kini aku ingat, karena suka prangko, aku bekerja sebagai tukang pos. Menempelkan prangko dan mengirim surat. Menyampaikan perasaan yang hangat, yang pada akhirnya membawaku ke tempat yang tenang dan bahagia.)"
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/kotak yokumoku.png" fade="1.0"]
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/menulis surat.png" fade="1.0"]
 mc (batin): "(Aku harus menulis surat di sisa waktuku. Kepada satu-satunya orang tempatku akan menitipkan Kubis.)"
 mc (batin): "(Surat pertama dan terakhirku untuk Ayah. Akan jadi wasiat yang panjang. Tentang keajaiban, tentang Ibu, tentang Kubis, dan diriku.)"
 mc (batin): "(Aku ingin bertemu Ayah. Ingin meminta maaf, berterima kasih, dan mengucapkan selamat tinggal.)"
+[background fade="1.0"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/mulai sepeda.png" fade="1.0"]
-mc (batin): "(Aku mengayuh pedal. Griik, griik, griik... sepeda tuaku berderit.)"
+[wait time="1.0"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/bersepeda keliling kota.png" fade="1.0"]
+mc (batin): "(Aku mengayuh pedal. Griik, griik, griik... sepeda tuaku berderit.)"
 mc (batin): "(Aku akan kesana. Ke tempat ayahku. Di kota sebelah. Kota itu sudah di depan mata.)"
 [background arg="res://assets/backgrounds/hitam.png" fade="2.0"]
 narator: ...
-[background arg="res://assets/backgrounds/rumah_sakit.png" fade="2.0"]
+[background arg="res://assets/backgrounds/start.png" fade="2.0"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/star.png" fade="2.0"]
 narator: Bau antiseptik menyengat hidungku. Suara monitor detak jantung berbunyi konstan di telingaku.
+audio "res://assets/audio/heartbeat.mp3"
 narator: Aku membuka mataku dengan berat. Langit-langit putih sebuah ruang ICU. Aku ingat sekarang... Aku tak sadarkan diri di jalan sesaat setelah dokter membacakan vonis tumor stadium empat itu.
 narator: Aloha, iblis cerewet itu, dan kesepakatan gila melenyapkan benda-benda demi satu hari nyawa tambahan...
 narator: Ternyata semua itu hanyalah manifestasi dari rasa takutku. Sebuah proyeksi panjang dari penyesalan yang berputar-putar di kepalaku selama aku terbaring koma.
 narator: Namun berkat mimpi aneh itu, kini aku tahu apa yang paling berharga. Aku tahu apa yang harus kulakukan di sisa hariku yang sebenarnya ini. Ayah... Ibu... Kubis...
 narator: Terima kasih.
 [background arg="res://assets/backgrounds/hitam.png" fade="3.0"]
+audio -
 [signal arg="tamat"]
 return

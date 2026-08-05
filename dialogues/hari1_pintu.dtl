@@ -1,5 +1,5 @@
 [background arg="res://assets/backgrounds/mc_potong_rambut.png" fade="1.0"]
-mc (batin): "(Sejujurnya, aku enggan memberitahu dia. Dia cinta pertamaku. Ya, aku hanya lelaki biasa.)"
+mc (batin): "(Sejujurnya, aku enggan memberitahu dia. Orang yang terakhir aku telfon kemarin. Dia cinta pertamaku. Dan hari ini aku akan bertemu dengannya.)"
 [background arg="res://assets/backgrounds/DAY 1 otw taman/di kereta.png" fade="0.5"]
 [signal arg="update_objective:  Temui Mantan DI Sebelah Menara Jam! "]
 mc (batin): "(Kehidupan tanpa telepon. Rasanya seakan waktu melambat dan ruang meluas.)"

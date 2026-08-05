@@ -30,6 +30,8 @@ PortraitToggler="*res://scripts/portrait_toggler.gd"
 directories/dch_directory={
 "aloha": "res://assets/sprites/aloha.dch",
 "ibu": "res://assets/sprites/ibu.dch",
+"ibu-kencur": "res://assets/sprites/ibu-kencur.dch",
+"kencur": "res://assets/sprites/kencur.dch",
 "kubis": "res://assets/sprites/kubis.dch",
 "mantan": "res://assets/sprites/mantan.dch",
 "mc": "res://assets/sprites/mc.dch",

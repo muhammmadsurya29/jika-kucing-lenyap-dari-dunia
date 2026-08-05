@@ -29,7 +29,6 @@ func _ready() -> void:
 	_setup_gallery_ui()
 
 var ending_slots: Array[VBoxContainer] = []
-var texture_placeholder = preload("res://icon.svg") # Placeholder untuk image
 
 func _setup_gallery_ui() -> void:
 	var hbox = HBoxContainer.new()
@@ -43,16 +42,25 @@ func _setup_gallery_ui() -> void:
 	
 	# Ambil data ending yang sudah terbuka
 	var sm = get_node_or_null("/root/StoryManager")
-	var endings = sm.unlocked_endings if sm else []
+	var unlocked_endings = sm.unlocked_endings if sm else []
+	
+	var ending_list = [
+		{"name": "Ending Kesepian", "image": preload("res://assets/ui/credit/Ending Kesepian.png")},
+		{"name": "Ending Bangkit", "image": preload("res://assets/ui/credit/Ending Bangkit.png")},
+		{"name": "Ending Damai", "image": preload("res://assets/ui/credit/Ending Damai.png")},
+		{"name": "True Ending", "image": preload("res://assets/ui/credit/True Ending.png")}
+	]
 	
 	# Buat 4 slot foto
-	for i in range(4):
+	for i in range(ending_list.size()):
+		var ending_data = ending_list[i]
+		
 		var vbox = VBoxContainer.new()
 		vbox.alignment = BoxContainer.ALIGNMENT_CENTER
 		vbox.add_theme_constant_override("separation", 10)
 		
 		var tex = TextureRect.new()
-		tex.texture = texture_placeholder
+		tex.texture = ending_data["image"]
 		tex.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		tex.custom_minimum_size = Vector2(240, 160) # Sedikit diperkecil agar tidak memakan layar
 		tex.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -64,12 +72,12 @@ func _setup_gallery_ui() -> void:
 			lbl.add_theme_font_override("font", pixel_font)
 		lbl.add_theme_font_size_override("font_size", 24)
 		
-		if i < endings.size():
-			lbl.text = str(endings[i])
+		if unlocked_endings.has(ending_data["name"]):
+			lbl.text = ending_data["name"]
 			tex.modulate = Color(1, 1, 1, 1) # Terang
 		else:
 			lbl.text = "???"
-			tex.modulate = Color(0.2, 0.2, 0.2, 1) # Gelap (Belum terbuka)
+			tex.modulate = Color(0.1, 0.1, 0.1, 1) # Gelap (Belum terbuka)
 			
 		vbox.add_child(lbl)
 		hbox.add_child(vbox)

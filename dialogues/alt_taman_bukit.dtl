@@ -1,30 +1,38 @@
+[background arg="res://assets/backgrounds/Ending A/12.png" fade="1.0"]
 narator: "Aku dan Kubis duduk di bangku kayu biru. Menatap kota sebelah. Menatap bioskop. Kedai mie soba."
 narator: "Dari sini, kota terlihat kecil. Tapi justru karena kecil itulah semuanya kelihatan jelas. Di sana ada toko jam Ayah. Di pojok sana ada bioskop tua. Di bawah sana ada kedai mie soba tempat Kubis populer. Dunia kecil ini yang selama ini kulewati begitu saja ternyata penuh sekali."
 kubis: "Meong."
 mc: "Iya, Kubis. Pemandangannya bagus."
 kubis: "Meong."
 mc: "Kamu mau makan? Sabar dulu."
+[background arg="res://assets/backgrounds/Ending A/13.png" fade="1.0"]
 narator: "Aku mengeluarkan bekal kecil dari tas sepotong ikan tuna untuk Kubis, roti untuk diriku."
 narator: "Sarapan terakhir di bangku taman dengan kucing yang tidak bisa bicara tapi entah kenapa selalu terasa seperti teman terbaik. Tidak buruk, kukira."
 
 [signal arg="anak_muncul"]
-[wait time="2.0"]
+[wait time="1.5"]
+[background arg="res://assets/backgrounds/Ending A/14.png" fade="1.0"]
 narator: "Seorang anak kecil sekitar 7 tahun berlari menghampiri bangku dan langsung menatap Kubis dengan mata berbinar."
 anak: "Kucingnya boleh aku pegang?"
 mc: "Boleh, asal pelan-pelan."
+[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
 narator: "Anak itu mengelus Kubis dengan hati-hati. Kubis diam saja bahkan sedikit mendengkur."
 anak: "Namanya siapa?"
 mc: "Kubis."
 anak: "(Tertawa) Nama kucing kok kayak sayuran!"
 mc: "Memang. Dia juga bulat seperti kubis."
+[background fade="1.0"]
 
 [signal arg="ibu_muncul"]
 [wait time="2.0"]
+[background arg="res://assets/backgrounds/Ending A/16 (1).png" fade="1.0"]
 narator: "Ibu si anak datang menghampiri, sedikit panik karena anaknya lari duluan."
 ibu_anak: "Maaf, anak saya langsung lari waktu lihat kucing."
 mc: "Tidak apa-apa. Kubis suka anak kecil."
-narator: "Ibu tersenyum lega. Si anak masih asyik bermain dengan Kubis. Aku menatap mereka."
-narator: "Aku menatap mereka. Ibu dan anak itu. Tiba-tiba teringat ibu. Ibu yang berlari mencariku waktu aku tersesat di taman waktu kecil. Ibu yang selalu datang. Selalu ada. Betapa sederhana tapi betapa luar biasanya itu."
+[background arg="res://assets/backgrounds/Ending A/17.png" fade="1.0"]
+narator: "Aku tersenyum lega. Si anak masih asyik bermain dengan Kubis. Aku menatap mereka."
+narator: "Tiba-tiba teringat ibu. Ibu yang berlari mencariku waktu aku tersesat di taman waktu kecil. Ibu yang selalu datang. Selalu ada. Betapa sederhana tapi betapa luar biasanya itu."
 narator: "Aku tersenyum senyum yang tidak dibuat-buat."
+[background fade="1.0"]
 
 [signal arg="alt_taman_bukit_selesai"]

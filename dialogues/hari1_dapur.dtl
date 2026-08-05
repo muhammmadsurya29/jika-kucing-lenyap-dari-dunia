@@ -1,4 +1,4 @@
 [background arg="res://assets/backgrounds/DAY 1 otw taman/sarapan.png" fade="1.0"]
-mc (batin): "(Biasanya aku tak pernah lepas dari ponsel. Saat sarapan, nonton film, bahkan saat bermain dengan Kubis. Semuanya selalu tentang layar kecil itu.)"
+mc (batin): "(Biasanya aku tak pernah lepas dari ponsel. Saat sarapan seperti ini, nonton film, bahkan saat bermain dengan Kubis. Semuanya selalu tentang ponsel itu)"
 [signal arg="update_objective:  Keluar!"]
 [background fade="1.0"]

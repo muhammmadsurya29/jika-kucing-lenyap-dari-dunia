@@ -1,14 +1,20 @@
+[background arg="res://assets/backgrounds/Ending C/1.png" fade="1.0"]
 mc: "Kalau aku mati, Kubis juga tidak punya siapa-siapa. Setidaknya... kalau dia tidak ada, dia tidak perlu kehilangan siapapun."
 aloha: "Yakin? Itu alasan yang cukup manusiawi dan cukup bodoh."
 mc: "Mungkin."
+[background arg="res://assets/backgrounds/Ending C/2.png" fade="1.0"]
 narator: "Aloha mengedipkan mata. Selimut oranye di pojok kasur. Dalam satu kedipan, kosong."
+[background fade="1.0"]
 [signal arg="fade_kubis"]
-[wait time="1.5"]
-narator: "Dan Kubis lenyap dari dunia. Seperti itu saja. Tidak ada suara perpisahan. Tidak ada kesempatan terakhir. Karena aku tidak minta. Karena aku takut kalau aku minta, aku tidak akan bisa melanjutkannya."
+[wait time="2.0"]
+[background arg="res://assets/backgrounds/Ending C/3.png" fade="1.0"]
 narator: "Aku duduk di tepi kasur. Menatap pojok kamar yang kosong."
-narator: "Aku baru sadar bahwa selama empat tahun, aku tidak pernah tidur dalam keheningan penuh. Selalu ada suara dengkuran kecil, gesekan cakar di lantai, bunyi mangkuk makan yang didorong-dorong. Sekarang tidak ada. Dan heningnya bukan menenangkan. Heningnya seperti ruangan yang kehilangan gravitasi."
+narator: "Dan Kubis lenyap dari dunia. Seperti itu saja. Tidak ada suara perpisahan. Tidak ada kesempatan terakhir. Karena aku tidak minta. Karena aku takut kalau aku minta, aku tidak akan bisa melanjutkannya."
+[background arg="res://assets/backgrounds/Ending C/4.png" fade="1.0"]
 narator: "Tanganku bergerak refleks ke arah selimut oranye lalu berhenti. Menyadari."
+narator: "Aku baru sadar bahwa selama empat tahun, aku tidak pernah tidur dalam keheningan penuh. Selalu ada suara dengkuran kecil, gesekan cakar di lantai, bunyi mangkuk makan yang didorong-dorong. Sekarang tidak ada. Dan heningnya bukan menenangkan. Heningnya seperti ruangan yang kehilangan gravitasi."
 mc: "Kubis."
 narator: "Tentu saja tidak ada jawaban. Aku yang memilih ini."
+[background fade="1.0"]
 [signal arg="ending_c_lanjut_pagi"]
 return

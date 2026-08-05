@@ -2,9 +2,9 @@
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/duduk di lobby bioskop.png" fade="1.0"]
 [wait time="2.0"]
-[background fade="1.0"]
 mantan (default): "Bagaimana? Sudah kau pilih?"
 mc (netral): "Sudah. Ini..."
+[background fade="1.0"]
 [signal arg="mc_serahkan_dvd"]
 [background arg="res://assets/backgrounds/21.png" fade="1.0"]
 mantan (default): "Limelight, ya. Pilihan bagus."
@@ -13,11 +13,12 @@ mantan (default): "Limelight, ya. Pilihan bagus."
 [wait time="1.0"]
 mc (batin): "(Jika aku sutradara untuk hidupku sendiri, durasinya mungkin cuma lima menit. Sisanya dipotong saat editing karena membosankan.)"
 mc (batin): "(Dua jam pun berlalu...)"
+[background arg="res://assets/backgrounds/12.png" fade="1.0"]
 mantan (sedih): "Merasa sedih?"
-[background fade="1.0"]
 mc (netral): "Entahlah. Aku tidak tahu."
 mantan (senyum_malu): "Kalau kau merasa sedih atau pedih, kau bisa datang ke sini setiap saat."
 mc (senyum_tipis): "Terima kasih."
+[background fade="1.0"]
 mantan (sedih): "Tunggu dulu! Kuis yang terakhir."
 [signal arg="mantan_panggil_belakang"]
 mc (senyum_tipis): "Lagi?"

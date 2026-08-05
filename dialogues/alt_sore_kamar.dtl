@@ -1,10 +1,13 @@
+[background arg="res://assets/backgrounds/Ending A/18.png" fade="1.0"]
 narator: "Tidak ada hal besar yang kulakukan hari ini. Tidak ada pencapaian dramatis. Hanya berjalan, mengantar surat, duduk di taman, berbagi sarapan dengan kucing, dan ngobrol sebentar dengan orang asing beserta anaknya. Tapi rasanya aneh ini sudah lebih dari cukup."
 mc (senyum_tipis): "Nanti kamu akan dijemput seseorang, Kubis. Orang yang baik. Kamu tidak akan sendirian."
 kubis: "Meong."
 mc (senyum_tulus): "Iya. Aku juga tidak akan sendirian."
+[background fade="1.0"]
 
 [signal arg="aloha_datang"]
 [wait time="1.5"]
+[background arg="res://assets/backgrounds/Ending A/19 (1).png" fade="1.0"]
 narator: "Sudut kamar. Aloha muncul kali ini tanpa kemeja mencolok. Hanya berdiri diam, ekspresinya berbeda dari biasanya. Lebih tenang."
 aloha (serius): "Sudah siap?"
 mc: "Entah. Tapi rasanya tidak apa-apa."
@@ -16,10 +19,13 @@ aloha: "Kamu yang pertama menolak di awal. Sebelum melihat apa yang bisa diperol
 mc (senyum_tipis): "Mungkin karena aku baru sadar, yang paling aku butuhkan tidak bisa ditukar dengan apapun. Waktu yang sudah ada. Orang-orang yang sudah ada. Semuanya sudah cukup dari dulu. Aku saja yang tidak menyadarinya."
 aloha (senyum): "Kalau begitu... selamat tinggal, manusia unik."
 mc: "Selamat tinggal, Iblis."
+[background fade="1.0"]
 
 [signal arg="aloha_hilang"]
 [wait time="1.5"]
+[background arg="res://assets/backgrounds/Ending A/20.png" fade="1.0"]
 narator: "Kamar yang tenang. Cahaya senja berwarna jingga hangat. Kubis tidur melingkar di atas selimut oranye. Di meja, kotak Yoku Moku terbuka. Perangko-perangko warna-warni masih tersisa beberapa yang tidak sempat dipakai."
 narator: "Aku tidak menghilangkan ponsel. Aku tidak mendapat satu hari tambahan pun. Tapi justru karena itulah, malam terakhir ini terasa seperti milikku sepenuhnya, bukan hasil pertukaran, bukan hutang pada siapapun."
+[background fade="1.0"]
 
 [signal arg="alt_tamat"]

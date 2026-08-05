@@ -1,7 +1,8 @@
-[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
+[background arg="res://assets/backgrounds/Ending B/15.png" fade="1.0"]
 narator: "Hanya dua kursi yang terisi, aku dan mantan, duduk berdampingan. Layar lebar menyala."
 narator: "Aku tidak tahu cerita Limelight sebelum menontonnya. Yang kuketahui hanya bahwa ini film Chaplin, dan Chaplin selalu tentang orang kecil yang mencoba bertahan di dunia yang terlalu besar. Aku pikir aku akan mengerti."
-[background fade="1.0"]
+[background arg="res://assets/backgrounds/Ending B/16.png" fade="1.0"]
 narator: "Film itu bercerita tentang seorang badut tua yang sudah tidak lucu lagi. Yang membantu seorang penari muda untuk percaya pada dirinya sendiri, bahkan ketika dia sendiri sudah tidak percaya pada dirinya. Di akhir, badut itu mati di balik panggung, sementara sang penari baru saja tampil dengan gemilang. Dia mati dengan tersenyum. Tanpa ada yang menyaksikannya."
+[background arg="res://assets/backgrounds/Ending B/17.png" fade="1.0"]
 narator: "Aku menangis. Tidak banyak. Hanya air mata yang turun sendiri tanpa permisi, seperti yang selalu terjadi padaku sejak kecil kata ibu."
-[signal arg="alt2_bioskop_selesai"]
+jump alt2_luar_bioskop_post/

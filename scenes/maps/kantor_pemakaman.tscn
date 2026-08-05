@@ -6930,6 +6930,7 @@ tile_set = SubResource("TileSet_5rvnl")
 
 [node name="Player" parent="." unique_id=959446254 instance=ExtResource("2_yd2cm")]
 position = Vector2(92, 164)
+speed = 80.0
 
 [node name="TriggerPemakaman" type="Area2D" parent="." unique_id=867334353]
 position = Vector2(150, 150)

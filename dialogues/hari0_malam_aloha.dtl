@@ -14,17 +14,19 @@ aloha (datar): "Coba kulihat daftar 10 keinginanmu itu."
 [background arg="res://assets/backgrounds/10_wish_P.png" fade="1.0"]
 narator: "[i](Aku memberikan selembar kertas hasil perasan otakku... Kucing kesayanganku, Kubis, bahkan menatapku dengan tatapan kasihan.)[/i]"
 [background fade="1.0"]
-aloha (ngakak_jail): "Apa-apaan ini? Daftar macam apa ini?! Anak SMP pun bisa menulis yang lebih bagus! Repot sekali kalau aku harus mengabulkan semuanya. Kita pilih satu saja yang paling konyol. Nomor 1: Skydiving!"
+aloha (ngakak_jail): "Apa-apaan ini? Daftar macam apa ini?! Anak SMP pun bisa menulis yang lebih bagus! Repot sekali kalau aku harus mengabulkan semuanya. Kita pilih satu saja yang paling konyol. Nomor 1\: Skydiving!"
 [background arg="res://assets/backgrounds/skydiving.png" fade="1.0"]
 narator: "Iblis itu menepuk tangannya dan tiba-tiba aku sudah berada di atas pesawat dengan ketinggian 3000 meter. Dia mendorongku terjun ke bawah sambil tertawa terbahak-bahak! Mual, dingin, takut. Apakah aku benar-benar ingin mati lebih cepat dengan cara ini? Pandanganku kembali gelap gulita."
-[background arg="res://assets/backgrounds/pingsan.png" fade="1.0"]
+[background arg="res://assets/backgrounds/pingsun.png" fade="1.0"]
 narator: "Meong... Aku terbangun oleh suara Kubis. Kepalaku nyeri luar biasa. Rupanya ini bukan mimpi."
 [background fade="1.0"]
 mc (malu_malu): "Maaf... merepotkan."
 aloha (ngakak_jail): (Tertawa) "Kamu hampir saja mati sungguhan di atas sana! Yah, lagipula cepat atau lambat kamu memang akan mati."
+[background arg="res://assets/backgrounds/peluk diri.png" fade="1.0"]
 narator: "Dengan membisu aku memeluk Kubis. Hangat, empuk, dan nyaman. Selama ini aku memeluknya tanpa peduli. Tapi kini, degup jantungnya mengingatkanku pada sesuatu... nyawa."
-mc (dada_sesak): "Sebenarnya... untuk apa kamu benar-benar datang ke sini? Tidak sekadar mengejekku, kan?"
-aloha (kesal): "Kok, berani-beraninya manusia rendahan sepertimu bertanya? Baiklah, akan kujelaskan."
+[background fade="1.0"]
+mc (dada_sesak): "Untuk apa kamu datang ke sini? Tidak sekadar mengejekku, kan?"
+aloha (kesal): "Berani-beraninya manusia rendahan sepertimu bertanya? Baiklah, akan kujelaskan."
 mc (marah): "Tunggu!"
 narator: "Naluriku tiba-tiba meneriakkan bahaya. Air muka Aloha berubah drastis."
 aloha (ketawa_tengil): "Kenapa? Takut mendengarnya?"
@@ -35,18 +37,18 @@ narator: "Terlalu kaget, aku kehilangan suaraku. Keputusasaan menyelimuti, tenag
 aloha (ada_maunya): "Hei! Jangan pasang wajah memelas begitu. Aku datang membawa tawaran besar. 'Big Chance' yang tak bisa kau bayangkan."
 mc (netral): "Tawaran apa?"
 aloha (ada_maunya): "Apa kamu mau mati besok dengan keadaan menyedihkan dan penuh penyesalan? Ha ha ha..."
-mc (dada_sesak): "Tentu saja tidak! Aku... aku belum mau mati. Masih banyak yang harus kulakukan!"
-aloha (ketawa_tengil): "Nah! Ada satu cara, sihir khusus milikku. Aku bisa memperpanjang nyawamu. Hanya satu hari tambahan. Tapi ingat... untuk memperoleh sesuatu, kau harus siap kehilangan sesuatu."
+mc (dada_sesak): "Tentu saja tidak! Aku... aku belum mau mati. Aku belum memperbaiki hubungan ku dengan Ayah dan Mantan ku"
+aloha (ketawa_tengil): "Nah! Ada satu cara, sihir khusus milikku. Aku bisa memperpanjang satu hari nyawamu.  Tapi... kau harus siap kehilangan sesuatu sebagai penukar nyawa tambahanmu itu."
 mc (dada_sesak): "Maksudmu... apa yang harus kukorbankan?"
-aloha (default): "Hanya transaksi sederhana. Untuk setiap 1 hari tambahan hidupmu, kamu harus memilih satu hal di dunia ini untuk DILENYAPKAN selama-lamanya."
+aloha (default): "Hanya transaksi sederhana. Untuk setiap 1 hari tambahan hidupmu, kamu harus MELENYAPKAN SATU BENDA dari dunia. Selama-lamanya."
 narator: "Sulit dipercaya. Tapi di ambang kematian, naluri untuk hidup jauh lebih kuat daripada akal sehat. Bagaimanapun, aku tak punya pilihan."
 mc (nyimak_aloha): "Baiklah, aku setuju! Mari kita hilangkan... jamur di kamar mandi, atau nyamuk!"
 aloha (ngakak_jail): (Tertawa lepas) "Kau pikir aku tukang bersih-bersih?! Aku yang menentukan barang apa yang akan lenyap. Semua tergantung suasana hatiku."
 [background arg="res://assets/backgrounds/aloha_buka_kotak.png" fade="1.0"]
 aloha (terkejeut): "Oh? Apa ini? Mari kita mulai dengan melenyapkan kotak cokelat ini!"
 [background fade="1.0"]
-mc (netral): "Anuu... itu cokelat, kau harus membukanya dulu dan mencicipinya."
-- YA
+mc (netral): "Anuu... itu cokelat kesukaanku yang selalu diberikan oleh ibuku."
+- Kalau itu membuat ku hidup.....lakukan saja!
 [background arg="res://assets/backgrounds/aloha_makan_coklat.png" fade="1.0"]
 aloha (terkejeut): "Hmm! Manis, pahit, dan meleleh sempurna! Wah, aku berubah pikiran. Sayang sekali melenyapkan makanan seenak ini."
 [background fade="1.0"]
@@ -58,11 +60,12 @@ mc (sakit_kepala): "[i](Benar-benar tidak adil...)[/i]"
 aloha (ngejek): "Hei hei, jangan murung. Aku akan memikirkan barang lain."
 audio "res://assets/audio/ringtone.mp3"
 narator: "[i](Ponselku berdering. Kepala kantor pos mencariku karena aku bolos hari ini.)[/i]"
-[background arg="res://assets/backgrounds/ponsel_mlm.png" fade="0.0"]
+[background arg="res://assets/backgrounds/ponsel bunyi.png" fade="0.0"]
 aloha (ada_maunya): "Itu...!"
 mc (netral): "Apa?"
 aloha (ketawa_tengil): "Benda kotak berisik itu! Telepon? Ya. Mari kita hilangkan ponsel itu dari dunia ini! Ha ha ha!"
-audio "-"
+audio -
+[background fade="0.0"]
 mc (terkejut): "Ponsel? Ditukar dengan satu hari nyawa tambahan?"
 aloha (serius): "Bagaimana? Kalau kamu tidak mau, tidak apa-apa, kamu mati besok."
 mc (netral): "Tunggu dulu!"
@@ -71,7 +74,7 @@ aloha (ngejek): "15 detik..."
 aloha (ngejek): "10 detik..."
 [wait time="1.0"]
 aloha (ngejek): "5... 4... 3..."
-- HILANGKAN PONSEL? (YA)
+- [i](Ponsel Tukar Nyawa? Sepertinya itu harga yang murah)[/i] BAIKLAH AKU SETUJU
 	mc (marah): "Boleh! Aku setuju! Lagipula nyawaku jauh lebih penting daripada ponsel ini!"
 	aloha (ngejek): "Pilihan bagus! Mari kita musnahkan benda kecil penyedot perhatian ini!"
 	mc (terkejut): "Tunggu..."
@@ -85,9 +88,9 @@ aloha (ngejek): "5... 4... 3..."
 	mc (netral): "Ya. Sudah."
 	aloha (kedipanmata): "Kalau begitu, ucapkan selamat tinggal pada ponselmu."
 	narator: "Aloha mengedipkan sebelah mata. Ponsel di tanganku menguap ke udara, lenyap tanpa sisa. Diiringi suara meong Kubis yang kebingungan, mataku tiba-tiba memberat. Aku tertidur pulas."
-	aloha (kedipanmata): "Nikmati hari pertamamu besok!"
+	aloha (kedipanmata): "Nikmati hari pertamamu tanpa adanya ponsel di dunia besok!"
 	[signal arg="aloha_hilang"]
 	[background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
 	jump hari0_flashback/
-- JANGAN HILANGKAN PONSEL (TIDAK)
+- JANGAN! AKU TIDAK BISA BERKOMUNIKASI DENGAN AYAHKU
 	jump alt_malam_terakhir/

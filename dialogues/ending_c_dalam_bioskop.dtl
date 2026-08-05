@@ -1,5 +1,8 @@
+[background arg="res://assets/backgrounds/Ending C/10.png" fade="1.0"]
 narator: "Dua jam berlalu. Aku menonton Charlie Chaplin memainkan badut tua yang sudah tidak lucu lagi. Yang memberikan segalanya untuk orang lain sampai tidak tersisa apapun untuk dirinya sendiri. Dan di akhir, dia mati sendirian di balik panggung."
+[background arg="res://assets/backgrounds/Ending C/11.png" fade="1.0"]
 narator: "Badut itu mati sendirian. Tapi dia tahu penari muda yang dibantunya sedang tampil gemilang di luar sana. Ada sesuatu yang dia tinggalkan. Ada jejak bahwa dia pernah ada."
 narator: "Aku? Aku menghilangkan jejak itu sendiri. Dengan tanganku sendiri. Malam tadi."
+[background fade="1.0"]
 [signal arg="ending_c_keluar_bioskop"]
 return

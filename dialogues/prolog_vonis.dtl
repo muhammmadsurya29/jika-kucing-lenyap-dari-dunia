@@ -7,7 +7,7 @@ narator: Ya, benar... Namaku {PlayerName}.
 narator: Dan sebuah kenyataan pahit menyadarkanku, bahwa aku tidak akan hidup lebih lama lagi.
 audio "res://assets/audio/heartbeat.mp3"
 narator: "Tumor otak. Stadium empat. Dokter bilang, usiaku hanya tinggal menghitung hari. Vonis kematian itu datang begitu cepat."
-[background arg="res://assets/backgrounds/rumah_sakit.png" fade="1.0"]
+[background arg="res://assets/backgrounds/star.png" fade="1.0"]
 narator: "Kenapa aku? Kenapa harus sekarang? Semua ini terasa tidak nyata."
 [background arg="res://assets/backgrounds/mc_pusing.png" fade="1.0"]
 narator: "Bukan kematian yang paling kutakutkan, melainkan penyesalan. Aku belum berdamai dengan ayahku. Aku juga belum berbicara lagi dengan mantan kekasihku..."

@@ -1,15 +1,16 @@
+[background arg="res://assets/backgrounds/Ending B/18.png" fade="1.0"]
 narator: "Malam sudah gelap. Bintang-bintang muncul satu per satu."
 mantan: "Bagaimana?"
 mc: "Badut itu mati bahagia."
 mantan: "Kamu tidak sedih?"
 mc: "Sedih. Tapi juga... lega, entah kenapa. Karena dia mati setelah melakukan hal yang paling dia yakini. Bukan sebelumnya."
+[background arg="res://assets/backgrounds/Ending B/19.png" fade="1.0"]
 narator: "Kami saling menatap."
 mantan: "Kamu mirip dia."
 mc: "Badut tua yang tidak lucu lagi?"
 mantan (senyum): "Orang yang paling bahagia ketika bisa membuat orang lain melihat sesuatu, entah itu lewat cerita, musik, atau... surat yang dikirim tepat waktu."
 mc: "Aku tidak tahu kamu berpikir begitu."
 mantan: "Kamu juga tidak pernah bertanya."
-[background fade="1.0"]
 narator: "Kami berdiri di depan pintu bioskop yang sudah gelap. Jalan sepi. Angin malam berhembus pelan."
 mantan: "Kuis terakhir."
 mc: "Lagi?"
@@ -23,7 +24,10 @@ mantan: "Ibumu pernah bilang, kalau suatu saat kamu kesulitan, katakan saja. Ini
 mc: "Terima kasih."
 mantan: "Besok antarkan dia ke sini."
 mc: "Baiklah."
-[signal arg="alt2_mantan_pergi"]
 mantan: "May the force be with you."
+[background arg="res://assets/backgrounds/Ending B/20.png" fade="1.0"]
+[wait time="1.0"]
+[background fade="1.0"]
+[signal arg="alt2_mantan_pergi"]
 mc: "I'll be back."
 [signal arg="alt2_ending_bangkit_tamat"]

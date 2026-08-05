@@ -1,11 +1,16 @@
-[background arg="res://assets/backgrounds/DAY 3 dialog kubis/Dibangunkan Kubis Day3.png" fade="1.0"]
+[background arg="res://assets/backgrounds/26.png" fade="1.0"]
 kubis: "Sampai kapankah tidur terus, Tuanku?"
+[wait time="0.5"]
+[background arg="res://assets/backgrounds/7.png" fade="1.0"]
 mc (batin): "(Aku masih setengah sadar. Suara itu terasa asing tapi sangat dekat.)"
+[background arg="res://assets/backgrounds/kaget.png" fade="1.0"]
 kubis: "Cepat bangun, Tuanku! Sahaya sudah menunggu lama."
-mc: "Hah?! Kubis? Kamu... bicara?!"
+mc (terkejut): "Hah?! Kubis? Kamu... bicara?!"
+[background fade="1.0"]
 [signal arg="aloha_datang"]
+[wait time="1.0"]
+[background arg="res://assets/backgrounds/27.png" fade="1.0"]
 aloha: "Kejutan! Bagus kan bonus dariku? Karena telepon dan film sudah hilang, kupikir kau butuh teman ngobrol. Aku ini Iblis, sihir semacam ini urusan kecil! Hahahahaha!"
-[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/dibangunkan kubis pagi.png" fade="1.0"]
 mc: "Ini malah merepotkan! Bisakah kau batalkan? Aku tidak terbiasa kucingku bicara dengan bahasa keraton begini."
 aloha: "Ya bisa sih... tapi kapan-kapan! Kapan ya? Hanya Tuhan yang tahu! Hahaha!"
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
@@ -15,24 +20,30 @@ mc: "Semuanya tampak sama saja... apa yang hilang?"
 aloha: "Jam. Hari ini, jam telah lenyap dari dunia."
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/flashback ayah.png" fade="1.0"]
 mc (batin): "(Betul juga. Kalau jam lenyap, bagaimana dengan pekerjaan ayahku yang seorang tukang servis jam? Seketika dadaku sesak oleh penyesalan.)"
-mc (batin): "(Tapi... benarkah jam sudah lenyap? Ponsel juga tak ada. Aku sungguh tidak tahu ini jam berapa. Rasanya sangat tidak nyata.)"
+mc: "(Tapi... benarkah jam sudah lenyap? Ponsel juga tak ada. Aku sungguh tidak tahu ini jam berapa. Rasanya sangat tidak nyata.)"
+[background fade="1.0"]
+[wait time="0.5"]
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
 mc: "Ngomong-ngomong, kenapa kau memilih jam?"
 aloha: "Pertanyaan bagus! Sebenarnya, 'waktu' itu cuma ilusi buatan manusia. Matahari terbit dan terbenam itu gejala alam, tapi membaginya jadi 'jam 6' atau 'jam 12' itu cuma ulah manusia."
 mc: "Benar juga."
 aloha: "Manusia sok tahu, merasa paling memahami dunia, padahal mereka cuma melihat dari kacamata aturan mereka sendiri. Makanya, kubuat jam lenyap biar kalian bisa melihat dunia apa adanya. Gitu aja sih."
 mc: "Gitu aja sih... Enteng sekali kau bicara."
 aloha: "Pokoknya, selamat menikmati hari bebas tanpa waktu!"
+[background fade="1.0"]
 [signal arg="aloha_hilang"]
 [wait time="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/flashback ayah.png" fade="1.0"]
 mc (batin): "(Saat tahu umurku tinggal sebentar, kupikir aku harus menghargai 1 jam bukan sebagai 60 menit, melainkan 3600 detik. Tapi sekarang, pemikiran itu sudah tak ada artinya.)"
 mc (batin): "(Lagi pula, aku tak punya apa-apa untuk dikerjakan. Manusia tidur, bangun, bekerja, dan makan diatur oleh jam. Aturan membatasi kebebasan, tapi manusia malah memajangnya di dinding dan mengikatnya di pergelangan tangan.)"
 mc (batin): "(Sekarang aku paham. Kebebasan itu membawa kegelisahan. Sebaliknya, manusia menukar kebebasan dengan aturan demi rasa aman.)"
+[wait time="0.5"]
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/mengelus kubis.png" fade="1.0"]
-mc: "Kenapa Kubis? Sudah lapar ya?"
+mc (senyum_tipis): "Kenapa Kubis? Sudah lapar ya?"
 kubis: "Tidak juga, Tuanku."
-mc: "Lalu?"
+mc (senyum_tipis): "Lalu?"
 kubis: "Gusti Patih ini selalu salah menebak."
-mc: "Gusti Patih?"
+mc (nyimak_aloha): "Gusti Patih?"
 mc (batin): "(Sepertinya yang dia maksud itu aku. Gaya bicaranya benar-benar seperti drama sejarah kolosal.)"
 kubis: "Kalau sahaya mau jalan-jalan, dikira mau makan. Kalau mau makan, dikira mau tidur siang. Kalau mau tidur, dikira mau main. Selalu meleset, Tuanku."
 mc (batin): "(Aku tertohok. Selama empat tahun hidup bersamanya, kukira kami saling memahami. Ternyata aku nyaris selalu salah tebak. Kejam juga saat kau akhirnya bisa mengerti bahasa hewan peliharaanmu.)"

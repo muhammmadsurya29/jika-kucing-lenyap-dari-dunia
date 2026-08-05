@@ -15,8 +15,8 @@ mc: "Justru karena belum pernah. Kalau menonton film yang sudah pernah kutonton,
 mantan: "...Kamu kadang-kadang bilang hal yang cukup pintar juga ya."
 mc: "Kadang-kadang?"
 narator: "Kami berdua tertawa kecil."
-[background fade="1.0"]
-narator: "Matahari mulai condong ke barat. Bayangan tangga bioskop memanjang di aspal. Dua cangkir kopi sudah lama habis tapi kami masih duduk di sana."
+[background arg="res://assets/backgrounds/Ending B/14.png" fade="1.0"]
+narator: "Matahari mulai condong ke barat. Dua cangkir kopi sudah lama habis tapi kami masih duduk di sana."
 mantan: "Boleh aku tanya sesuatu?"
 mc: "Boleh."
 mantan: "Kamu menyesal? Putus dulu?"

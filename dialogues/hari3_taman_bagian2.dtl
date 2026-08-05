@@ -30,9 +30,9 @@ mc (batin): "(Semakin sibuk mengejar hal-hal di depan mata, kita semakin kehilan
 mc (batin): "(Aku belum mau mati. Aku masih ingin hidup.)"
 mc (batin): "(Besok aku harus melenyapkan sesuatu lagi. Demi menyambung nyawa, aku merenggut sesuatu dari masa depanku sendiri.)"
 kubis: "Mari kita pulang, Gusti Patih."
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/DAY 3 dialog kubis/tuna kubis.png" fade="1.0"]
 mc (batin): "(Rupanya Kubis sangat populer di pasar pertokoan. Semua orang menyapanya. Walau aku cuma sekadar 'Gusti Patih'-nya, lumayan juga... berkat dia aku dapat diskon khusus beli lauk. Hebat juga kucing ini.)"
-[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+[background arg="res://assets/backgrounds/balik dari toko.png" fade="1.0"]
 mc: "Mulai sekarang, kita akan sering belanja bareng, Kubis."
 kubis: "Boleh, Tuanku. Tapi mohon buatkan makanan kesukaan sahaya dengan benar."
 mc: "Aku selalu buat yang benar kan? Neko manma."
