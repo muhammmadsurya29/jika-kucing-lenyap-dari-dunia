@@ -30703,6 +30703,7 @@ position = Vector2(64, 17)
 shape = SubResource("RectangleShape2D_1s67d")
 
 [node name="TriggerTaman" type="Area2D" parent="." unique_id=571855993]
+position = Vector2(178, 124)
 script = ExtResource("99_stry")
 timeline_per_hari = Array[String](["", "hari1_taman", "", "", ""])
 marker_icon = ExtResource("15_w5h7f")
@@ -30721,7 +30722,7 @@ frame_top_right = 92
 frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TriggerTaman" unique_id=1706436396]
-position = Vector2(179, 141)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_1s67d")
 
 [node name="PintuCafe" type="Area2D" parent="." unique_id=455985120]

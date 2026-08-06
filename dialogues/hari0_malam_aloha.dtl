@@ -1,54 +1,67 @@
 "Salam Kenal!!"
 mc (terkejut): "Anuu... Siapa kamu? Kenapa kamu di sini? Dan... wajahmu...?"
 aloha (ngejek): (Tersenyum menyeringai) "Aku juga tidak tahu, siapa aku? HA HA HA. Coba kamu tebak dengan sisa isi kepalamu yang berharga itu.”
-mc (terkejut): "Umm... Doppelganger? Malaikat maut? [i](Aku harus tetap waspada, penampilannya sama persis denganku!)[/i]"
+- [Lempar bantal terdekat ke arahnya]
+	mc (marah): "Pergi dari sini! Apa kau hantu?!"
+	aloha (ketawa_tengil): "Wow, wow! Tenang. Bantal empukmu tidak mempan terhadapku."
+- [Mundur ketakutan]
+	mc (terkejut): "[i](Aku mundur beberapa langkah, tubuhku gemetar.)[/i]"
+	aloha (ngejek): "Hahaha, lihat wajah ketakutanmu itu. Lucu sekali!"
+- [Tertawa tidak percaya]
+	mc (senyum_tipis): "Ah, ini pasti halusinasi efek tumor itu kan? Hahaha..."
+	aloha (kesal): "Hei, aku bukan halusinasi murahan!"
+mc (terkejut): "Jadi kau ini apa? Doppelganger? Malaikat maut?"
 aloha (ketawa_tengil): "HA HA HA... Benar-benar manusia yang tidak berguna dan bodoh. Aku adalah Sang Iblis."
 mc (dada_sesak): "Iblis?”
 narator: "Iblis? Pernahkah kalian melihat iblis? Kalau aku, pernah. Iblis sungguhan tidak punya wajah hitam gelap, atau ekor runcing. Rupanya iblis meminjam wujud dirimu sendiri."
-mc (netral): "Anuu... Lalu apa yang kamu mau? Kenapa kau datang menemuiku sekarang?"
-aloha (default): "Waktumu tinggal sedikit, kan? Sangat-sangat sedikit. Jadi, apa yang akan kamu lakukan di sisa hari ini?"
-mc (senyum_tipis): "Umm.. mungkin aku akan melakukannya seperti tokoh di film-film. Menyusun daftar '10 hal yang harus dilakukan sebelum mati'?"
-aloha (terkejeut): "HA HA HA! Manusia yang unik sekali. Kau dihadapkan dengan kematian dan masih bisa berpikir santai seperti itu? Kau cukup menarik."
-narator: "Menyusun 10 hal sebelum mati kedengarannya konyol. Aku sendiri tak yakin apakah ini nyata. Apakah aku sudah gila karena tumor ini?"
-aloha (datar): "Coba kulihat daftar 10 keinginanmu itu."
-[background arg="res://assets/backgrounds/10_wish_P.png" fade="1.0"]
-narator: "[i](Aku memberikan selembar kertas hasil perasan otakku... Kucing kesayanganku, Kubis, bahkan menatapku dengan tatapan kasihan.)[/i]"
-[background fade="1.0"]
-aloha (ngakak_jail): "Apa-apaan ini? Daftar macam apa ini?! Anak SMP pun bisa menulis yang lebih bagus! Repot sekali kalau aku harus mengabulkan semuanya. Kita pilih satu saja yang paling konyol. Nomor 1\: Skydiving!"
+mc (netral): "Lalu apa yang kamu mau? Kenapa kau datang menemuiku sekarang?"
+aloha (default): "Waktumu tinggal sedikit, kan? Sangat-sangat sedikit. Jadi, apa yang akan kamu lakukan di sisa hidupmu ini?"
+mc (senyum_tipis): "Umm.. mungkin aku akan menyusun daftar '10 hal yang harus dilakukan sebelum mati'?"
+aloha (terkejeut): "HA HA HA! Kau dihadapkan dengan kematian dan masih bisa berpikir santai seperti itu? Coba, hal bodoh apa yang ingin kau lakukan?"
+- [Skydiving tanpa instruktur!]
+	mc (senyum_tipis): "Mungkin... Skydiving dari langit yang tinggi?!"
+- [Makan daging Wagyu A5 sampai muntah!]
+	mc (senyum_tipis): "Makan daging Wagyu A5 paling mahal sampai aku tak bisa bergerak?!"
+- [Menyatakan cinta ke idol terkenal!]
+	mc (senyum_tipis): "Menerobos masuk ke konser dan menyatakan cinta ke idol?!"
+aloha (ngakak_jail): "HA HA HA! Apa-apaan itu?! Ide macam apa itu?! Anak SMP pun bisa lebih kreatif! Repot sekali kalau aku harus mengabulkan semuanya. Kita lakukan satu saja. Skydiving!"
 [background arg="res://assets/backgrounds/skydiving.png" fade="1.0"]
-narator: "Iblis itu menepuk tangannya dan tiba-tiba aku sudah berada di atas pesawat dengan ketinggian 3000 meter. Dia mendorongku terjun ke bawah sambil tertawa terbahak-bahak! Mual, dingin, takut. Apakah aku benar-benar ingin mati lebih cepat dengan cara ini? Pandanganku kembali gelap gulita."
+narator: "Iblis itu menepuk tangannya dan tiba-tiba aku sudah berada di atas pesawat dengan ketinggian 3000 meter."
+aloha (ketawa_tengil): "Siap... Terjun!!"
+narator: "Dia mendorongku terjun ke bawah sambil tertawa terbahak-bahak! Mual, dingin, takut. Apakah aku benar-benar ingin mati lebih cepat dengan cara ini? Pandanganku kembali gelap gulita."
 [background arg="res://assets/backgrounds/pingsun.png" fade="1.0"]
 narator: "Meong... Aku terbangun oleh suara Kubis. Kepalaku nyeri luar biasa. Rupanya ini bukan mimpi."
 [background fade="1.0"]
 mc (malu_malu): "Maaf... merepotkan."
 aloha (ngakak_jail): (Tertawa) "Kamu hampir saja mati sungguhan di atas sana! Yah, lagipula cepat atau lambat kamu memang akan mati."
 [background arg="res://assets/backgrounds/peluk diri.png" fade="1.0"]
-narator: "Dengan membisu aku memeluk Kubis. Hangat, empuk, dan nyaman. Selama ini aku memeluknya tanpa peduli. Tapi kini, degup jantungnya mengingatkanku pada sesuatu... nyawa."
+narator: "Dengan membisu aku memeluk Kubis. Hangat, empuk, dan nyaman. Kucing kesayanganku. Tapi kini, degup jantungnya mengingatkanku pada sesuatu... nyawa."
 [background fade="1.0"]
-mc (dada_sesak): "Untuk apa kamu datang ke sini? Tidak sekadar mengejekku, kan?"
-aloha (kesal): "Berani-beraninya manusia rendahan sepertimu bertanya? Baiklah, akan kujelaskan."
-mc (marah): "Tunggu!"
-narator: "Naluriku tiba-tiba meneriakkan bahaya. Air muka Aloha berubah drastis."
-aloha (ketawa_tengil): "Kenapa? Takut mendengarnya?"
-mc (netral): "Tidak... silakan jelaskan."
-aloha (ngejek): "Aku datang untuk menyampaikan... bahwa besok, kamu MATI."
+mc (dada_sesak): "Tunggu, untuk apa sebenarnya kamu datang ke sini?"
+aloha (ngejek): "Oh? Kau sudah siap mendengarnya? Aku datang untuk menyampaikan... bahwa besok, kamu MATI."
 mc (syok_kesal): "A-apa?!"
-narator: "Terlalu kaget, aku kehilangan suaraku. Keputusasaan menyelimuti, tenagaku hilang, dan lututku bergetar hebat. Besok? Aku tak punya banyak waktu lagi untuk memperbaiki kesalahanku!"
+narator: "Terlalu kaget, aku kehilangan suaraku. Besok? Aku tak punya banyak waktu lagi untuk memperbaiki kesalahanku!"
+- [Marah pada takdir]
+	mc (marah): "Kenapa besok?! Ini tidak adil! Aku belum sempat berbaikan dengan ayahku! Aku belum—!"
+	aloha (ketawa_tengil): "Marah-marah pada takdir tidak akan mengubah apapun, kawan."
+- [Menangis pasrah]
+	mc (dada_sesak): "[i](Air mataku menetes. Selesai sudah. Hidupku yang menyedihkan ini akan berakhir besok...)[/i]"
+	aloha (ngejek): "Hahaha, lihatlah. Manusia selalu menangis di saat-saat terakhir."
 aloha (ada_maunya): "Hei! Jangan pasang wajah memelas begitu. Aku datang membawa tawaran besar. 'Big Chance' yang tak bisa kau bayangkan."
 mc (netral): "Tawaran apa?"
-aloha (ada_maunya): "Apa kamu mau mati besok dengan keadaan menyedihkan dan penuh penyesalan? Ha ha ha..."
-mc (dada_sesak): "Tentu saja tidak! Aku... aku belum mau mati. Aku belum memperbaiki hubungan ku dengan Ayah dan Mantan ku"
-aloha (ketawa_tengil): "Nah! Ada satu cara, sihir khusus milikku. Aku bisa memperpanjang satu hari nyawamu.  Tapi... kau harus siap kehilangan sesuatu sebagai penukar nyawa tambahanmu itu."
+aloha (ada_maunya): "Apa kamu mau mati besok dengan keadaan menyedihkan dan penuh penyesalan?"
+mc (dada_sesak): "Tentu saja tidak! Aku... aku belum mau mati."
+aloha (ketawa_tengil): "Nah! Ada satu cara, sihir khusus milikku. Aku bisa memperpanjang SATU HARI nyawamu. Tapi... kau harus siap kehilangan sesuatu sebagai penukar nyawa tambahanmu itu."
 mc (dada_sesak): "Maksudmu... apa yang harus kukorbankan?"
-aloha (default): "Hanya transaksi sederhana. Untuk setiap 1 hari tambahan hidupmu, kamu harus MELENYAPKAN SATU BENDA dari dunia. Selama-lamanya."
-narator: "Sulit dipercaya. Tapi di ambang kematian, naluri untuk hidup jauh lebih kuat daripada akal sehat. Bagaimanapun, aku tak punya pilihan."
+aloha (default): "Untuk setiap 1 hari tambahan hidupmu, kamu harus MELENYAPKAN SATU BENDA dari dunia. Selama-lamanya."
+narator: "Sulit dipercaya. Tapi di ambang kematian, naluri untuk hidup jauh lebih kuat daripada akal sehat. Aku tak punya pilihan."
 mc (nyimak_aloha): "Baiklah, aku setuju! Mari kita hilangkan... jamur di kamar mandi, atau nyamuk!"
-aloha (ngakak_jail): (Tertawa lepas) "Kau pikir aku tukang bersih-bersih?! Aku yang menentukan barang apa yang akan lenyap. Semua tergantung suasana hatiku."
+aloha (ngakak_jail): "Kau pikir aku tukang bersih-bersih?! Aku yang menentukan barang apa yang akan lenyap. Semua tergantung suasana hatiku."
 [background arg="res://assets/backgrounds/aloha_buka_kotak.png" fade="1.0"]
 aloha (terkejeut): "Oh? Apa ini? Mari kita mulai dengan melenyapkan kotak cokelat ini!"
 [background fade="1.0"]
 mc (netral): "Anuu... itu cokelat kesukaanku yang selalu diberikan oleh ibuku."
-- Kalau itu membuat ku hidup.....lakukan saja!
+- Biarkan dia memakannya
 [background arg="res://assets/backgrounds/aloha_makan_coklat.png" fade="1.0"]
 aloha (terkejeut): "Hmm! Manis, pahit, dan meleleh sempurna! Wah, aku berubah pikiran. Sayang sekali melenyapkan makanan seenak ini."
 [background fade="1.0"]

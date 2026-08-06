@@ -1,7 +1,24 @@
-[background arg="res://assets/backgrounds/bangun.png" fade="0.0"]
-narator: "Entah berapa jam sudah berlalu, aku siuman di ruangan dekat pintu. Gumpalan bulat putih,hitam dan abu-abu tampak didepan mataku dan besuara “meongg...”. ia kucing kesayangan ku."
-narator: "Sudah 4 tahun kami hidup berdua. Sekali lagi ia mengeong seolah mencemaskan ku. Aku bangkit. Demam belum turun dan kepala terasa sakit. Sepertinya aku belum mati namun rupanya kematian memang kenyataan."
-[background fade="0.0"]
-mc (dada_sesak): ???!!
-mc (terkejut): Sepertinya ada seseorang di dapur
+[background arg="res://assets/backgrounds/hitam.png" fade="1.0"]
+audio "res://assets/audio/cat-meow.wav"
+- Buka mata perlahan
+	[background arg="res://assets/backgrounds/bangun.png" fade="2.0"]
+	mc (kesakitan): "Ukh... kepalaku berat sekali. Pandanganku masih berputar..."
+	mc (batin): "(Kubis... kamu mencemaskanku ya? Badanku masih terasa panas...)"
+- Tidur lagi 5 menit
+	audio "res://assets/audio/cat-meow.wav"
+	mc (batin): "(Ukh, basah... Kubis menjilati wajahku. Aku harus bangun...)"
+	[background arg="res://assets/backgrounds/bangun.png" fade="2.0"]
+	mc (kesakitan): "Ukh... kepalaku berat sekali. Sepertinya demamku belum turun."
+audio -
+mc (batin): "(Entah berapa jam sudah berlalu sejak aku pulang dari rumah sakit. Sepertinya kematian memang bukan sekadar ancaman kosong.)"
+[background fade="2.0"]
+audio "res://assets/audio/mixkit-frying-eggs-on-hot-pan-121.mp3"
+mc (terkejut): "Eh...?"
+mc: "(Suara apa itu? Ada orang yang sedang memasak? Pencuri? Tidak mungkin... Ibu? Ah, tidak mungkin...)"
+- Ambil sapu untuk senjata
+	mc (batin): "(Kalau itu pencuri, setidaknya aku tidak akan mati konyol hari ini.)"
+	mc (batin): "(Ukh, badanku rasanya mau rontok...)"
+- Jalan mengendap-endap
+	mc (batin): "(Lebih baik aku mencari tahu diam-diam tanpa menimbulkan suara.)"
+audio -
 [signal arg="update_objective:Periksa dapur"]
