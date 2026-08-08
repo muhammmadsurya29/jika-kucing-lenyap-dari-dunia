@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c_custom_speaker"]
+[gd_scene format=3 uid="uid://dkttbgpev5563"]
 
-[ext_resource type="Script" path="res://assets/sprites/custom_speaker_portrait_layer.gd" id="1_root_script"]
+[ext_resource type="Script" uid="uid://bjnxefnyfwx48" path="res://assets/sprites/custom_speaker_portrait_layer.gd" id="1_root_script"]
 [ext_resource type="Script" uid="uid://d0ptqnbudhkyj" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="2_rxdcc"]
 
-[node name="SpeakerPortraitLayer" type="Control"]
+[node name="SpeakerPortraitLayer" type="Control" unique_id=1393796072]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,11 +12,13 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_root_script")
+portrait_size_mode = null
+portrait_origin_anchor = null
+portrait_origin_offset = null
 
-[node name="DialogicNode_PortraitContainer" type="Control" parent="."]
+[node name="DialogicNode_PortraitContainer" type="Control" parent="." unique_id=960142434]
 layout_mode = 1
-anchor_left = 0.0
-anchor_top = 0.0
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2

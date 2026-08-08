@@ -25,8 +25,6 @@ PortraitDimmer="*res://scripts/portrait_dimmer.gd"
 AudioKetik="*res://scripts/audio_ketik.gd"
 PortraitToggler="*res://scripts/portrait_toggler.gd"
 
-DialogicHelper="*res://scripts/DialogicHelper.gd"
-
 [dialogic]
 
 directories/dch_directory={

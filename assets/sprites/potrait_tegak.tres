@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://cvgf4c6gg0tsy" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_TextInput/text_input_layer.tscn" id="9_agu5f"]
 [ext_resource type="PackedScene" uid="uid://lx24i8fl6uo" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/history_layer.tscn" id="10_1sc6q"]
 [ext_resource type="Script" uid="uid://dv08k6ljua6fm" path="res://addons/dialogic/Resources/dialogic_style.gd" id="11_2dps2"]
+[ext_resource type="PackedScene" uid="uid://d2it0xiap3gnt" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Textbubble/text_bubble_layer.tscn" id="11_adwlf"]
 
 [sub_resource type="Resource" id="Resource_ko6sd"]
 script = ExtResource("2_adwlf")
@@ -23,6 +24,9 @@ scene = ExtResource("3_jkks4")
 [sub_resource type="Resource" id="Resource_6b3mk"]
 script = ExtResource("2_adwlf")
 scene = ExtResource("4_bdpx8")
+overrides = {
+"disabled": "true"
+}
 
 [sub_resource type="Resource" id="Resource_ov5va"]
 script = ExtResource("2_adwlf")
@@ -31,6 +35,9 @@ scene = ExtResource("5_w2oul")
 [sub_resource type="Resource" id="Resource_ie628"]
 script = ExtResource("2_adwlf")
 scene = ExtResource("6_op1gr")
+overrides = {
+"text_alignment": "1"
+}
 
 [sub_resource type="Resource" id="Resource_yocjt"]
 script = ExtResource("2_adwlf")
@@ -48,10 +55,14 @@ scene = ExtResource("9_agu5f")
 script = ExtResource("2_adwlf")
 scene = ExtResource("10_1sc6q")
 
+[sub_resource type="Resource" id="Resource_jkks4"]
+script = ExtResource("2_adwlf")
+scene = ExtResource("11_adwlf")
+
 [resource]
 script = ExtResource("11_2dps2")
 name = "potrait_tegak"
-layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
+layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17", "18"])
 layer_info = {
 "": SubResource("Resource_ko6sd"),
 "10": SubResource("Resource_4pma7"),
@@ -61,6 +72,7 @@ layer_info = {
 "14": SubResource("Resource_yocjt"),
 "15": SubResource("Resource_n8ael"),
 "16": SubResource("Resource_w2efm"),
-"17": SubResource("Resource_v4be7")
+"17": SubResource("Resource_v4be7"),
+"18": SubResource("Resource_jkks4")
 }
-metadata/_latest_layer = "13"
+metadata/_latest_layer = "11"
