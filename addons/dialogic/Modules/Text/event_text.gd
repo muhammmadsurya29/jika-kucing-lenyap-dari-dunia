@@ -96,15 +96,16 @@ func _execute() -> void:
 		var current_style: String = dialogic.current_state_info.get("style", "")
 		var character_style: String = "" if not character else character.custom_info.get("style", "")
 
-		## Change back to base style, if another characters style is currently used
-		if (not character or character_style.is_empty()) and (current_base_style != current_style):
+		## Change back to base style if we are currently not using it
+		if current_base_style != current_style:
 			dialogic.Styles.change_style(dialogic.current_state_info.get("base_style", "Default"))
 			await dialogic.get_tree().process_frame
 
 		## Change to the characters style if this character has one
-		elif character and not character_style.is_empty():
-			dialogic.Styles.change_style(character_style, false)
-			await dialogic.get_tree().process_frame
+		# OVERRIDE: Disabled character-specific styles to force context-based styles (Map vs VN)
+		# elif character and not character_style.is_empty():
+		# 	dialogic.Styles.change_style(character_style, false)
+		# 	await dialogic.get_tree().process_frame
 
 	_connect_signals()
 
