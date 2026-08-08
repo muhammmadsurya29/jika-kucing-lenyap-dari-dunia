@@ -11,5 +11,5 @@ func _ready() -> void:
 	
 	if StoryManager.current_day == 101:
 		if not Dialogic.current_timeline:
-			Dialogic.start("ending_c_jalanan")
+			DialogicHelper.play_vn("ending_c_jalanan")
 

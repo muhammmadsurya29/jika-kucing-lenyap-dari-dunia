@@ -244,7 +244,7 @@ func _on_trigger_bunga_body_entered(body: Node2D) -> void:
 			player.lock_movement()
 			
 		if not Dialogic.current_timeline:
-			Dialogic.start("hari3_taman_bagian1")
+			DialogicHelper.play_vn("hari3_taman_bagian1")
 
 # Script dipanggil oleh Area2D bangku
 func _on_trigger_bangku_body_entered(body: Node2D) -> void:
@@ -260,7 +260,7 @@ func _on_trigger_bangku_body_entered(body: Node2D) -> void:
 			player.play_custom_animation("sit_left")
 			
 		if not Dialogic.current_timeline:
-			Dialogic.start("hari3_taman_bagian2")
+			DialogicHelper.play_vn("hari3_taman_bagian2")
 
 func _play_alt_taman_bukit() -> void:
 	await get_tree().create_timer(1.0).timeout
@@ -268,7 +268,7 @@ func _play_alt_taman_bukit() -> void:
 		await get_tree().create_timer(0.1).timeout
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
-	Dialogic.start("alt_taman_bukit")
+	DialogicHelper.play_vn("alt_taman_bukit")
 
 func _process(delta: float) -> void:
 	if StoryManager.current_day != 3:

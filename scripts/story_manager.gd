@@ -266,7 +266,7 @@ func _on_dialogic_signal(argument: String) -> void:
 		if new_player and new_player.has_method("lock_movement"):
 			new_player.lock_movement()
 			
-		Dialogic.start("hari4_true_ending", "beres_beres")
+		DialogicHelper.play_vn("hari4_true_ending", "beres_beres")
 	elif argument == "mantan_datang":
 		# Cari NPC Mantan dan buat dia lari ke arah player
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)
@@ -280,7 +280,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			await mantan.walk_to_target(player.global_position + Vector2(0, -20), 1.5)
 			
 			# Mulai percakapan lanjutannya
-			Dialogic.start("hari1_mantan_datang")
+			DialogicHelper.play_vn("hari1_mantan_datang")
 	elif argument == "mantan_ikut":
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)
 		if mantan:
@@ -330,7 +330,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			await get_tree().create_timer(0.1).timeout
 		var player = get_tree().get_first_node_in_group("Player")
 		if player and player.has_method("lock_movement"): player.lock_movement()
-		Dialogic.start("alt_pagi_terakhir")
+		DialogicHelper.play_vn("alt_pagi_terakhir")
 	elif argument == "alt_pagi_terakhir_selesai":
 		can_leave_room = true
 		if has_node("/root/ObjectiveHUD"): get_node("/root/ObjectiveHUD").set_objective("Antar surat ke Kotak Pos di Jalanan Kota")
@@ -392,7 +392,7 @@ func _on_dialogic_signal(argument: String) -> void:
 	elif argument == "ending_kesepian":
 		is_ending_c = true
 		is_kubis_lenyap = false # Akan hilang di dalam dialog kamar_awal
-		Dialogic.start("ending_c_kamar_awal")
+		DialogicHelper.play_vn("ending_c_kamar_awal")
 	elif argument == "fade_kubis":
 		is_kubis_lenyap = true
 
@@ -535,7 +535,7 @@ func ganti_hari(target_scene: String = "") -> void:
 	if current_day == 4:
 		if player and player.has_method("lock_movement"):
 			player.lock_movement()
-		Dialogic.start("hari4_true_ending")
+		DialogicHelper.play_vn("hari4_true_ending")
 
 func pulang_malam(target_scene: String) -> void:
 	is_night = true
@@ -582,7 +582,7 @@ func pulang_malam(target_scene: String) -> void:
 	transition_layer.visible = false
 	
 	# Langsung trigger dialog malam
-	Dialogic.start("hari3_malam_kamar")
+	DialogicHelper.play_vn("hari3_malam_kamar")
 
 
 func play_alt_sore_kamar() -> void:
@@ -592,4 +592,4 @@ func play_alt_sore_kamar() -> void:
 	var player = get_tree().get_first_node_in_group("Player")
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
-	Dialogic.start("alt_sore_kamar")
+	DialogicHelper.play_vn("alt_sore_kamar")

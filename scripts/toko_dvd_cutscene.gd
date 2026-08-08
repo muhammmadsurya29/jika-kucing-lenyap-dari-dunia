@@ -20,13 +20,13 @@ func _ready() -> void:
 			var sm = get_node_or_null("/root/StoryManager")
 			if sm and not sm.has_played("hari2_siang_tsutaya"):
 				sm.mark_played("hari2_siang_tsutaya")
-				Dialogic.start("hari2_siang_tsutaya")
+				DialogicHelper.play_vn("hari2_siang_tsutaya")
 
 func _play_alt2_tsutaya() -> void:
 	await get_tree().create_timer(1.0).timeout
 	if player and player.has_method("lock_movement"):
 		player.lock_movement()
-	Dialogic.start("alt2_tsutaya")
+	DialogicHelper.play_vn("alt2_tsutaya")
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "tsutaya_cari_dvd":

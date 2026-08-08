@@ -149,7 +149,7 @@ func _on_dialogic_signal(argument: String) -> void:
 		# Setelah animasi selesai
 		tween.finished.connect(func():
 			if timeline_berikutnya != "":
-				Dialogic.start(timeline_berikutnya)
+				DialogicHelper.play_map(timeline_berikutnya)
 			
 			# Jangan dihapus, tapi disembunyikan agar bisa muncul besok
 			hide()
@@ -241,7 +241,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				if sm_check and not sm_check.can_sleep:
 					if locked_timeline != "":
 						print("[DEBUG Interactable] Memainkan locked_timeline: ", locked_timeline)
-						Dialogic.start(locked_timeline)
+						DialogicHelper.play_map(locked_timeline)
 					return # Hentikan proses, jangan putar dialog utama
 			# --------------------------------------
 			
@@ -255,9 +255,9 @@ func _unhandled_input(event: InputEvent) -> void:
 				print("[DEBUG Interactable] Memulai Dialogic: ", tl_to_play)
 				if ":" in tl_to_play:
 					var parts = tl_to_play.split(":")
-					Dialogic.start(parts[0], parts[1])
+					DialogicHelper.play_map(parts[0], parts[1])
 				else:
-					Dialogic.start(tl_to_play)
+					DialogicHelper.play_map(tl_to_play)
 			else:
 				print("[DEBUG Interactable] tl_to_play KOSONG atau IGNORE! Batal menjalankan Dialogic.")
 

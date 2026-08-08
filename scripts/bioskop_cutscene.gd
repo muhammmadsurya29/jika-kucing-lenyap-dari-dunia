@@ -14,14 +14,14 @@ func _ready() -> void:
 	# Mulai cutscene otomatis begitu masuk
 	if not Dialogic.current_timeline:
 		if StoryManager.current_day == 101:
-			Dialogic.start("ending_c_dalam_bioskop")
+			DialogicHelper.play_vn("ending_c_dalam_bioskop")
 		elif StoryManager.current_day == 100:
 			# Posisikan seolah sudah duduk
 			player.position.y -= 20
 			mantan.position.y -= 20
-			Dialogic.start("alt2_dalam_bioskop")
+			DialogicHelper.play_vn("alt2_dalam_bioskop")
 		else:
-			Dialogic.start("hari2_malam_bioskop")
+			DialogicHelper.play_vn("hari2_malam_bioskop")
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "mc_serahkan_dvd":

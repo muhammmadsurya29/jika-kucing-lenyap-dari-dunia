@@ -99,7 +99,7 @@ func _on_body_entered(body: Node2D) -> void:
 		if target_scene == "res://scenes/maps/kantor_pemakaman.tscn" and day == 4:
 			if sm and sm.day4_state != "beres_beres_selesai":
 				if not Dialogic.current_timeline:
-					Dialogic.start("hari4_belum_beres")
+					DialogicHelper.play_vn("hari4_belum_beres")
 				return
 
 		# Khusus kembali ke kamar di Hari 99 (Ending Damai)
@@ -121,7 +121,7 @@ func _on_body_entered(body: Node2D) -> void:
 					target_tl = locked_timeline_per_hari[day]
 					
 			if target_tl != "" and not Dialogic.current_timeline:
-				Dialogic.start(target_tl)
+				DialogicHelper.play_vn(target_tl)
 			return
 		
 		# Jika lolos syarat, pindah scene

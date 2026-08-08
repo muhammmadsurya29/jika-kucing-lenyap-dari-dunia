@@ -2,7 +2,7 @@ extends Control
 
 func _ready() -> void:
 	# Memulai kilas balik
-	Dialogic.start("babak3_flashback")
+	DialogicHelper.play_vn("babak3_flashback")
 	
 	# Tunggu sampai dialog selesai
 	Dialogic.timeline_ended.connect(_on_flashback_selesai)

@@ -142,9 +142,9 @@ func _wait_and_start(target_tl: String) -> void:
 		
 		if ":" in target_tl:
 			var parts = target_tl.split(":")
-			Dialogic.start(parts[0], parts[1])
+			DialogicHelper.play_vn(parts[0], parts[1])
 		else:
-			Dialogic.start(target_tl)
+			DialogicHelper.play_vn(target_tl)
 		set_deferred("monitoring", false)
 
 func _on_body_entered(body: Node2D) -> void:
@@ -186,9 +186,9 @@ func _on_body_entered(body: Node2D) -> void:
 			print("[DEBUG StoryTrigger] Memulai Dialogic: ", target_timeline)
 			if ":" in target_timeline:
 				var parts = target_timeline.split(":")
-				Dialogic.start(parts[0], parts[1])
+				DialogicHelper.play_vn(parts[0], parts[1])
 			else:
-				Dialogic.start(target_timeline)
+				DialogicHelper.play_vn(target_timeline)
 			
 			# Nonaktifkan sementara sensor ini agar tidak memicu berulang kali di hari yang sama
 			set_deferred("monitoring", false)

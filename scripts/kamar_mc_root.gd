@@ -37,7 +37,7 @@ func _ready() -> void:
 			hud.hide()
 			
 		if not Dialogic.current_timeline:
-			Dialogic.start("ending_c_epilog")
+			DialogicHelper.play_vn("ending_c_epilog")
 		return
 	if StoryManager.alt2_epilog:
 		var player = $Player
@@ -97,7 +97,7 @@ func _ready() -> void:
 				
 		# Mulai dialog
 		if not Dialogic.current_timeline:
-			Dialogic.start("alt2_epilog_kamar")
+			DialogicHelper.play_vn("alt2_epilog_kamar")
 
 func _on_dialogic_signal(argument: String) -> void:
 	if argument == "alt2_mc_tidur":

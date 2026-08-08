@@ -2,7 +2,7 @@ extends Control
 
 func _ready() -> void:
 	# 1. Jalankan timeline babak 1 secara otomatis
-	Dialogic.start("prolog_vonis")
+	DialogicHelper.play_vn("prolog_vonis")
 	
 	# 2. Perintahkan sistem: "Kalau dialognya tamat, jalankan fungsi pindah_scene"
 	Dialogic.timeline_ended.connect(_on_prolog_selesai)

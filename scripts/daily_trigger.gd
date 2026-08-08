@@ -10,12 +10,12 @@ func _ready() -> void:
 	
 	if current_day == 100:
 		if not Dialogic.current_timeline:
-			Dialogic.start("alt2_pagi_kamar")
+			DialogicHelper.play_vn("alt2_pagi_kamar")
 
 	elif current_day == 101:
 		if not Dialogic.current_timeline:
-			Dialogic.start("ending_c_pagi_bangun")
+			DialogicHelper.play_vn("ending_c_pagi_bangun")
 	elif current_day < timelines_per_hari.size():
 		var timeline_to_play = timelines_per_hari[current_day]
 		if timeline_to_play != "" and not Dialogic.current_timeline:
-			Dialogic.start(timeline_to_play)
+			DialogicHelper.play_vn(timeline_to_play)

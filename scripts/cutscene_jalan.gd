@@ -79,7 +79,7 @@ func _setup_day100():
 		player.get_node("AnimatedSprite2D").play("sit_down")
 		
 	if not Dialogic.current_timeline:
-		Dialogic.start("alt2_luar_bioskop")
+		DialogicHelper.play_vn("alt2_luar_bioskop")
 
 func _setup_post_bioskop():
 	is_walking = false
@@ -112,7 +112,7 @@ func _setup_post_bioskop():
 		mantan.get_node("AnimatedSprite2D").play("idle_left")
 		
 	if not Dialogic.current_timeline:
-		Dialogic.start("alt2_luar_bioskop_post")
+		DialogicHelper.play_vn("alt2_luar_bioskop_post")
 
 func start_walking():
 	is_walking = true
@@ -129,7 +129,7 @@ func start_walking():
 		mantan.is_moving = false
 		
 	if not Dialogic.current_timeline:
-		Dialogic.start("hari1_malam_jalan")
+		DialogicHelper.play_vn("hari1_malam_jalan")
 
 func _process(delta: float) -> void:
 	if is_walking:
@@ -290,7 +290,7 @@ func _setup_ending_c_luar():
 	mantan.hide() # Akan muncul dari pintu
 	
 	if not Dialogic.current_timeline:
-		Dialogic.start("ending_c_bioskop_luar")
+		DialogicHelper.play_vn("ending_c_bioskop_luar")
 
 func _setup_ending_c_post():
 	is_walking = false
@@ -314,7 +314,7 @@ func _setup_ending_c_post():
 		mantan.get_node("AnimatedSprite2D").play("idle_left")
 		
 	if not Dialogic.current_timeline:
-		Dialogic.start("ending_c_bioskop_luar_post")
+		DialogicHelper.play_vn("ending_c_bioskop_luar_post")
 
 func _ending_c_mantan_keluar():
 	mantan.show()

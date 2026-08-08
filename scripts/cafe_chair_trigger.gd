@@ -114,7 +114,7 @@ func _on_body_entered(body: Node2D) -> void:
 		
 		# Mulai Dialog
 		if not Dialogic.current_timeline:
-			Dialogic.start(timeline_to_play)
+			DialogicHelper.play_vn(timeline_to_play)
 			Dialogic.timeline_ended.connect(_on_dialog_ended)
 
 func _on_dialog_ended() -> void:
