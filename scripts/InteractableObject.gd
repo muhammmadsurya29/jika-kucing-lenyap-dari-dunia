@@ -35,7 +35,7 @@ func _ready() -> void:
 
 func _create_indicator() -> void:
 	_indicator = Label.new()
-	_indicator.text = "[ KLIK ]"
+	_indicator.text = "!"
 	_indicator.add_theme_font_size_override("font_size", 20)
 	_indicator.add_theme_color_override("font_color", Color.YELLOW)
 	_indicator.add_theme_color_override("font_outline_color", Color.BLACK)
