@@ -8832,6 +8832,8 @@ size = Vector2(18, 25)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uaq6v"]
 size = Vector2(16, 8)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rvnl"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8i2l"]
 size = Vector2(28.8125, 13.375)
 
@@ -9097,8 +9099,6 @@ size = Vector2(8, 9)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ctmpy"]
 size = Vector2(35, 21)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rvnl"]
-
 [node name="KamarMC" type="Node2D" unique_id=1886236822]
 y_sort_enabled = true
 position = Vector2(6, 16)
@@ -9177,6 +9177,16 @@ shape = SubResource("RectangleShape2D_uaq6v")
 [node name="NPC_Kubis" parent="." unique_id=102526592 instance=ExtResource("18_cat")]
 position = Vector2(50, 43)
 scale = Vector2(0.75, 0.78992057)
+
+[node name="Node2D4" type="Area2D" parent="NPC_Kubis" unique_id=1067627109]
+position = Vector2(-1.3333359, -8.861649)
+scale = Vector2(1.3333334, 1.2659501)
+script = ExtResource("26_5ch3y")
+popup_image = ExtResource("27_h8s4e")
+popup_description = "oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Kubis/Node2D4" unique_id=126619587]
+shape = SubResource("RectangleShape2D_5rvnl")
 
 [node name="TriggerBangun" type="Area2D" parent="." unique_id=1518604112]
 position = Vector2(8, 13)
@@ -9338,12 +9348,3 @@ script = ExtResource("26_5ch3y")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D3" unique_id=1510718150]
 position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_ctmpy")
-
-[node name="Node2D4" type="Area2D" parent="." unique_id=1067627109]
-position = Vector2(49, 36)
-script = ExtResource("26_5ch3y")
-popup_image = ExtResource("27_h8s4e")
-popup_description = "oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D4" unique_id=126619587]
-shape = SubResource("RectangleShape2D_5rvnl")

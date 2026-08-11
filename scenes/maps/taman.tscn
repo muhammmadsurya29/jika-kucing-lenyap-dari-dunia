@@ -30730,6 +30730,20 @@ position = Vector2(-280, -207)
 script = ExtResource("2_svcpl")
 target_scene = "res://scenes/maps/cafe.tscn"
 locked_timeline = "pintu_toko_terkunci"
+marker_icon = ExtResource("15_w5h7f")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
+use_offscreen_pointer = true
+pointer_texture = ExtResource("15_w5h7f")
+pointer_hframes = 18
+pointer_vframes = 16
+pointer_scale = Vector2(5, 5)
+pointer_margin = 200.0
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PintuCafe" unique_id=1143706795]
 position = Vector2(-1, -6)
