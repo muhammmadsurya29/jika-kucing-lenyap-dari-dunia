@@ -18,6 +18,11 @@ var is_bgm_muted = false
 func _ready() -> void:
 	Dialogic.end_timeline()
 	
+	var hud = get_node_or_null("/root/ObjectiveHUD")
+	if hud:
+		hud.set_objective("")
+		hud.visible = false
+	
 	_setup_layout()
 	
 	# Buat tombol Lanjutkan Game
