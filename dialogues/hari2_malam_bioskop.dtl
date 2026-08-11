@@ -15,7 +15,12 @@ mc (batin): "(Jika aku sutradara untuk hidupku sendiri, durasinya mungkin cuma l
 mc (batin): "(Dua jam pun berlalu...)"
 [background arg="res://assets/backgrounds/12.png" fade="1.0"]
 mantan (sedih): "Merasa sedih?"
-mc (netral): "Entahlah. Aku tidak tahu."
+- Entahlah
+	mc (netral): "Entahlah. Aku tidak tahu."
+- Ya, rasanya berat
+	mc (sedih): "Ya, rasanya berat membayangkan ini film terakhirku."
+- Aku bersyukur bisa menontonnya
+	mc (senyum_tipis): "Tidak juga. Aku bersyukur bisa menontonnya bersamamu."
 mantan (senyum_malu): "Kalau kau merasa sedih atau pedih, kau bisa datang ke sini setiap saat."
 mc (senyum_tipis): "Terima kasih."
 [background fade="1.0"]
@@ -27,8 +32,17 @@ mantan (sedih): "Ini benar-benar yang terakhir!"
 [background arg="res://assets/backgrounds/mantan menangis.png" fade="1.0"]
 mc (malu_malu): "Baiklah. Kali ini aku siap menjawab."
 mantan (sedih): "Kalau aku menonton film yang berakhir sedih, aku pasti akan menontonnya ulang sekali lagi. Kau tahu kenapa?"
-mc (batin): "(Aku ingat betul jawaban itu. Harapan yang terus kupegang dalam perjalanan pulang dari Buenos Aires.)"
-mc (senyum_tipis): "Aku tahu. Karena kau berharap, mungkin di tontonan kedua... akhirnya akan berubah jadi happy ending."
+- Berharap akhirnya berubah bahagia
+	mc (batin): "(Aku ingat betul jawaban itu. Harapan yang terus kupegang dalam perjalanan pulang dari Buenos Aires.)"
+	mc (senyum_tipis): "Aku tahu. Karena kau berharap, mungkin di tontonan kedua... akhirnya akan berubah jadi happy ending."
+- Ingin merasakan kesedihannya lagi
+	mc (netral): "Karena kau suka merasakan kesedihan dari film itu berulang-ulang?"
+	mantan (marah): "Tentu saja bukan! Masa aku suka menyiksa diriku sendiri?"
+	mc (senyum_tipis): "Haha, aku bercanda. Sebenarnya karena kau berharap akhirnya akan berubah jadi happy ending, kan?"
+- Lupa alurnya
+	mc (netral): "Karena kau lupa alur ceritanya?"
+	mantan (marah): "Kau pikir ingatanku seburuk itu?!"
+	mc (senyum_tipis): "Bercanda. Karena kau berharap akhirnya akan berubah jadi happy ending, kan?"
 [signal arg="mantan_senyum"]
 [background arg="res://assets/backgrounds/23.png" fade="2.0"]
 mantan (senyum_malu): "Kau benar!"

@@ -2,9 +2,15 @@
 mc (netral): "Tsutaya!"
 tsutaya (netral): "S-sudah lama, ya. A-ada apa?"
 [background fade="1.0"]
-mc (netral): "Aku tahu ini mendadak, tapi waktuku tak banyak. Aku kena kanker stadium akhir. Bisa jadi besok aku mati."
-tsutaya (netral): "Ehh?! K-kok bisa?"
-mc (netral): "Karena itu, aku harus memilih film terakhir yang akan kutonton. Kumohon, bantu aku memilihnya."
+- Beritahu dengan blak-blakan
+	mc (netral): "Aku tahu ini mendadak, tapi waktuku tak banyak. Aku kena kanker stadium akhir. Bisa jadi besok aku mati."
+	tsutaya (netral): "Ehh?! K-kok bisa?"
+- Beritahu perlahan
+	mc (senyum_tipis): "Sebenarnya... kondisiku sedang tidak baik."
+	tsutaya (netral): "A-apa k-kamu s-sakit?"
+	mc (netral): "Ya. Kanker stadium akhir. Aku mungkin tak punya banyak waktu lagi."
+	tsutaya (netral): "A-apa?! I-itu bohong kan?"
+mc (netral): "Ini sungguhan. Karena itu, aku harus memilih film terakhir yang akan kutonton. Kumohon, bantu aku memilihnya."
 tsutaya (netral): "I-itu b-benar...?"
 [background arg="res://assets/backgrounds/jalan di koridor toko.png" fade="1.0"]
 mc (senyum_tipis): "Sayangnya, iya."
@@ -16,8 +22,12 @@ tsutaya (netral): "B-bagaimana kalau i-ini?"
 [background arg="res://assets/backgrounds/pilih chaplin.png" fade="1.0"]
 mc (senyum_tipis): "Limelight ya? Boleh juga. Aku suka Chaplin, tapi belum sempat nonton yang ini."
 tsutaya (sedih): "A-aku tak tahu apa y-yang akan terjadi..."
-mc (netral): "Kenapa menangis?"
-mc (senyum_tipis): "Jangan sedih, Tsutaya. 'Ada cerita yang bagus, dan ada seseorang untuk diajak berbagi cerita. Dengan itu saja, hidup ini cukup menyenangkan.' Begitu kan kata The Legend of 1900? Bagiku sekarang, orang itu adalah kau."
+- Kenapa menangis?
+	mc (netral): "Kenapa menangis?"
+	mc (senyum_tipis): "Jangan sedih, Tsutaya. 'Ada cerita yang bagus, dan ada seseorang untuk diajak berbagi cerita. Dengan itu saja, hidup ini cukup menyenangkan.' Begitu kan kata The Legend of 1900? Bagiku sekarang, orang itu adalah kau."
+- Coba menenangkan
+	mc (senyum_tipis): "Hei, tenanglah. Menangis tak akan menyelesaikan masalah."
+	mc (senyum_tipis): "Kuharap kau masih ingat. 'Ada cerita yang bagus, dan ada seseorang untuk diajak berbagi cerita.' Bagiku, kau adalah teman terbaik untuk berbagi cerita itu."
 [background fade="1.0"]
 tsutaya (sedih): "T-terima kasih."
 mc (senyum_tipis): "Sampai jumpa."
