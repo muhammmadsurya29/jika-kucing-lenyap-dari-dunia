@@ -41,8 +41,99 @@ func reset_game_state() -> void:
 	played_timelines.clear()
 	Dialogic.VAR.reset()
 	
+func save_game() -> void:
+	var current_scene_path = get_tree().current_scene.scene_file_path if get_tree().current_scene else ""
+	if current_scene_path.contains("main_menu.tscn"):
+		return # Jangan pernah nge-save saat di main menu
+		
+	var state = {
+		"current_day": current_day,
+		"can_sleep": can_sleep,
+		"can_leave_room": can_leave_room,
+		"cafe_event_done": cafe_event_done,
+		"is_night": is_night,
+		"day4_state": day4_state,
+		"alt2_post_bioskop": alt2_post_bioskop,
+		"alt2_epilog": alt2_epilog,
+		"is_ending_c": is_ending_c,
+		"is_kubis_lenyap": is_kubis_lenyap,
+		"ending_c_state": ending_c_state,
+		"played_timelines": played_timelines,
+		"current_scene": current_scene_path
+	}
+	# Simpan ke slot spesifik, bukan global
+	Dialogic.Save.save("auto_save", false, Dialogic.Save.ThumbnailMode.NONE, state)
+	Dialogic.Save.set_slot_info("auto_save", state)
+	print("[StoryManager] Game Auto-Saved!")
+	_show_autosave_popup()
 
+func _show_autosave_popup() -> void:
+	if not get_tree().current_scene:
+		return
+		
+	var canvas = CanvasLayer.new()
+	canvas.layer = 150 # Di atas segalanya
+	get_tree().current_scene.add_child(canvas)
 	
+	var panel = PanelContainer.new()
+	var style = StyleBoxFlat.new()
+	style.bg_color = Color(0.1, 0.5, 0.2, 0.9) # Hijau gelap semi-transparan
+	style.corner_radius_bottom_left = 15
+	style.corner_radius_bottom_right = 15
+	style.content_margin_left = 25
+	style.content_margin_right = 25
+	style.content_margin_top = 10
+	style.content_margin_bottom = 10
+	panel.add_theme_stylebox_override("panel", style)
+	canvas.add_child(panel)
+	
+	panel.set_anchors_preset(Control.PRESET_CENTER_TOP)
+	panel.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	
+	var lbl = Label.new()
+	lbl.text = "Game Ter-Save!"
+	lbl.add_theme_font_size_override("font_size", 18)
+	lbl.add_theme_color_override("font_color", Color.WHITE)
+	lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	panel.add_child(lbl)
+	
+	# Animasi drop down lalu naik lagi
+	panel.position.y = -80
+	var tween = create_tween()
+	tween.tween_property(panel, "position:y", 0.0, 0.5).set_trans(Tween.TRANS_BOUNCE).set_ease(Tween.EASE_OUT)
+	tween.tween_interval(2.0)
+	tween.tween_property(panel, "position:y", -80.0, 0.5).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN)
+	tween.finished.connect(canvas.queue_free)
+
+func load_game() -> bool:
+	if not Dialogic.Save.has_slot("auto_save"):
+		return false
+		
+	Dialogic.Save.load("auto_save")
+	var state = Dialogic.Save.get_slot_info("auto_save")
+	if state == null or state.is_empty():
+		return false
+		
+	current_day = state.get("current_day", 0)
+	can_sleep = state.get("can_sleep", false)
+	can_leave_room = state.get("can_leave_room", false)
+	cafe_event_done = state.get("cafe_event_done", false)
+	is_night = state.get("is_night", false)
+	day4_state = state.get("day4_state", "")
+	alt2_post_bioskop = state.get("alt2_post_bioskop", false)
+	alt2_epilog = state.get("alt2_epilog", false)
+	is_ending_c = state.get("is_ending_c", false)
+	is_kubis_lenyap = state.get("is_kubis_lenyap", false)
+	ending_c_state = state.get("ending_c_state", "")
+	played_timelines = state.get("played_timelines", [])
+	
+	var scene_path = state.get("current_scene", "")
+	if scene_path != "":
+		get_tree().change_scene_to_file(scene_path)
+		
+	print("[StoryManager] Game Loaded!")
+	return true
+
 func unlock_ending(ending_name: String) -> void:
 	if not unlocked_endings.has(ending_name):
 		unlocked_endings.append(ending_name)
@@ -164,6 +255,7 @@ func _on_dialogic_signal(argument: String) -> void:
 	print(">> STORY MANAGER MENERIMA SINYAL: ", argument)
 	if argument == "ganti_hari":
 		ganti_hari()
+		save_game()
 	elif argument == "event_selesai":
 		print(">> Misi hari ini tamat! MC sekarang diizinkan tidur.")
 		can_sleep = true
@@ -201,6 +293,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			get_node("/root/ScreenFade").transition_to("res://scenes/maps/Taman_Bukit.tscn", 1.0)
 		else:
 			get_tree().change_scene_to_file("res://scenes/maps/Taman_Bukit.tscn")
+		save_game()
 	elif argument == "teleport_ke_taman":
 		print(">> Pindah otomatis ke Taman!")
 		var player = get_tree().get_first_node_in_group("Player")
@@ -580,6 +673,8 @@ func pulang_malam(target_scene: String) -> void:
 	
 	transition_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	transition_layer.visible = false
+	
+	save_game()
 	
 	# Langsung trigger dialog malam
 	Dialogic.start("hari3_malam_kamar")

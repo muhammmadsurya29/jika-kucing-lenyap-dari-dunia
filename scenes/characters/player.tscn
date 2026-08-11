@@ -654,6 +654,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D" unique_id=312454733]
+motion_mode = 1
 z_index = 12
 script = ExtResource("1_rp718")
 

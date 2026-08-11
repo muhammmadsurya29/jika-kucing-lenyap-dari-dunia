@@ -24,6 +24,8 @@ StoryManager="*uid://l8alx6gj06g"
 PortraitDimmer="*res://scripts/portrait_dimmer.gd"
 AudioKetik="*res://scripts/audio_ketik.gd"
 PortraitToggler="*res://scripts/portrait_toggler.gd"
+PauseManager="*res://scenes/ui/pause_manager.tscn"
+BGMManager="*res://scripts/bgm_manager.gd"
 
 [dialogic]
 
@@ -148,6 +150,10 @@ variables={
 }
 animations/join_default="Fade In Out"
 animations/leave_default="Fade In Out"
+history/simple_history_enabled=true
+history/simple_history_save=true
+history/save_on_autosave=true
+history/save_on_save=true
 
 [display]
 

@@ -8,21 +8,40 @@ extends Control
 
 var pixel_font = preload("res://assets/font/ByteBounce.ttf")
 var btn_mulai_base_text = "Mulai Game"
+var btn_lanjut_base_text = "Lanjutkan Game"
 var btn_bgm_base_text = "BGM: ON"
 var btn_keluar_base_text = "Keluar"
 
+var btn_lanjut: Button
 var is_bgm_muted = false
 
 func _ready() -> void:
 	Dialogic.end_timeline()
 	
-	var bgm_player = AudioStreamPlayer.new()
-	bgm_player.stream = preload("res://assets/audio/BGM_MAIN_MENU.mp3")
-	bgm_player.bus = "Master"
-	bgm_player.autoplay = true
-	add_child(bgm_player)
-	
 	_setup_layout()
+	
+	# Buat tombol Lanjutkan Game
+	btn_lanjut = btn_mulai.duplicate()
+	btn_lanjut.name = "TombolLanjut"
+	btn_lanjut.text = btn_lanjut_base_text
+	
+	# Putuskan signal hasil duplicate agar tidak tumpang tindih
+	if btn_lanjut.pressed.is_connected(_on_tombol_mulai_pressed):
+		btn_lanjut.pressed.disconnect(_on_tombol_mulai_pressed)
+		
+	$VBoxContainer.add_child(btn_lanjut)
+	$VBoxContainer.move_child(btn_lanjut, 1) # Pindah di bawah Mulai
+	
+	var can_continue = false
+	if Dialogic.Save.has_slot("auto_save"):
+		var state = Dialogic.Save.get_slot_info("auto_save")
+		if state != null and not state.is_empty() and state.get("current_scene", "") != "":
+			can_continue = true
+			
+	if not can_continue:
+		btn_lanjut.disabled = true
+		btn_lanjut.modulate = Color(0.5, 0.5, 0.5, 1)
+	
 	_setup_pixel_theme()
 	_start_animations()
 	_setup_button_effects()
@@ -99,6 +118,7 @@ func _setup_layout():
 	
 	# Pusatkan teks di dalam tombol
 	btn_mulai.alignment = HORIZONTAL_ALIGNMENT_CENTER
+	if btn_lanjut: btn_lanjut.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	btn_bgm.alignment = HORIZONTAL_ALIGNMENT_CENTER
 	btn_keluar.alignment = HORIZONTAL_ALIGNMENT_CENTER
 
@@ -114,7 +134,9 @@ func _setup_pixel_theme():
 	title_label.add_theme_color_override("font_outline_color", Color.BLACK)
 	
 	# Terapkan font ke tombol
-	for btn in [btn_mulai, btn_bgm, btn_keluar]:
+	var buttons = [btn_mulai, btn_bgm, btn_keluar]
+	if btn_lanjut: buttons.append(btn_lanjut)
+	for btn in buttons:
 		btn.add_theme_font_override("font", pixel_font)
 		btn.add_theme_font_size_override("font_size", 32)
 		
@@ -149,9 +171,13 @@ func _start_animations():
 	title_tween.tween_property(title_label, "position:y", base_y, 2.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
 func _setup_button_effects():
-	# Hubungkan sinyal hover
 	btn_mulai.mouse_entered.connect(_on_btn_mulai_hover)
 	btn_mulai.mouse_exited.connect(_on_btn_mulai_exit)
+	
+	if btn_lanjut:
+		btn_lanjut.mouse_entered.connect(_on_btn_lanjut_hover)
+		btn_lanjut.mouse_exited.connect(_on_btn_lanjut_exit)
+		btn_lanjut.pressed.connect(_on_tombol_lanjut_pressed)
 	
 	btn_bgm.mouse_entered.connect(_on_btn_bgm_hover)
 	btn_bgm.mouse_exited.connect(_on_btn_bgm_exit)
@@ -162,6 +188,7 @@ func _setup_button_effects():
 	
 	# Pastikan pivot_offset di tengah agar efek membesar rapi
 	btn_mulai.pivot_offset = btn_mulai.size / 2.0
+	if btn_lanjut: btn_lanjut.pivot_offset = btn_lanjut.size / 2.0
 	btn_bgm.pivot_offset = btn_bgm.size / 2.0
 	btn_keluar.pivot_offset = btn_keluar.size / 2.0
 
@@ -172,6 +199,16 @@ func _on_btn_mulai_hover():
 func _on_btn_mulai_exit():
 	btn_mulai.text = btn_mulai_base_text
 	_tween_btn_scale(btn_mulai, 1.0)
+	
+func _on_btn_lanjut_hover():
+	if btn_lanjut.disabled: return
+	btn_lanjut.text = "> " + btn_lanjut_base_text + " <"
+	_tween_btn_scale(btn_lanjut, 1.2)
+
+func _on_btn_lanjut_exit():
+	if btn_lanjut.disabled: return
+	btn_lanjut.text = btn_lanjut_base_text
+	_tween_btn_scale(btn_lanjut, 1.0)
 
 func _on_btn_bgm_hover():
 	btn_bgm.text = "> " + btn_bgm_base_text + " <"
@@ -210,6 +247,12 @@ func _on_tombol_mulai_pressed() -> void:
 	if sm:
 		sm.reset_game_state()
 	get_tree().change_scene_to_file("res://scenes/maps/prolog.tscn")
+
+func _on_tombol_lanjut_pressed() -> void:
+	var sm = get_node_or_null("/root/StoryManager")
+	if sm:
+		sm.load_game()
+
 
 func _on_tombol_keluar_pressed() -> void:
 	get_tree().quit()
