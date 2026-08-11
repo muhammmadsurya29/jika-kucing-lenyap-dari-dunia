@@ -20,7 +20,10 @@ narator: "Matahari mulai condong ke barat. Dua cangkir kopi sudah lama habis tap
 mantan: "Boleh aku tanya sesuatu?"
 mc: "Boleh."
 mantan: "Kamu menyesal? Putus dulu?"
-mc: "Menyesal bukan kata yang tepat. Lebih ke... ada hal-hal yang ingin kukatakan waktu itu tapi tidak bisa. Dan itu yang kusesali, bukan putusnya."
+- Sangat menyesal
+	mc: "Ya, aku sangat menyesal. Ada hal-hal yang ingin kulakukan waktu itu tapi tidak bisa kulakukan."
+- Bukan menyesal putusnya
+	mc: "Menyesal bukan kata yang tepat. Lebih ke... ada hal-hal yang ingin kukatakan waktu itu tapi tidak bisa."
 mantan: "Hal apa?"
 mc: "Bahwa hari di pesawat pulang dari Buenos Aires itu, aku ingin menggenggam tanganmu. Tapi aku tidak bisa. Tanganku tidak bergerak. Dan kamu duduk di sebelahku dalam diam selama berapa jam, dan aku juga diam. Karena aku tidak tahu cara menjadi kuat untuk seseorang yang sedang berduka, sementara aku sendiri juga berduka."
 mantan: "Aku tahu."

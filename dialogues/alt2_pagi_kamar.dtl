@@ -1,7 +1,10 @@
 [background arg="res://assets/backgrounds/Ending B/3.png" fade="1.0"]
 narator: "Hari terakhir. Bukan karena waktu tambahan habis, tapi karena aku memilih untuk tidak menukarnya lagi. Ada bedanya, kukira. Satu terasa seperti kehabisan. Satu terasa seperti keputusan."
 kubis: "Meong."
-mc: "Iya, aku tahu. Sarapan dulu."
+- Iya, aku tahu
+	mc: "Iya, aku tahu. Sarapan dulu."
+- Sabar sebentar
+	mc: "Sabar sebentar, Kubis. Hari ini tidak usah buru-buru."
 [background arg="res://assets/backgrounds/Ending B/4.png" fade="1.0"]
 narator: "Di dapur kecil."
 narator: "Aku memasak telur dadar dengan cara yang tidak terlalu mahir, tapi serius. Sesekali membalik telur terlalu cepat hingga pinggirnya sedikit gosong."

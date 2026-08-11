@@ -13,9 +13,14 @@ mc: "Limelight. Charlie Chaplin. Yang tadi kamu rekomendasikan."
 [background arg="res://assets/backgrounds/Ending B/8.png" fade="1.0"]
 narator: "Tsutaya mengambil DVD dari rak."
 tsutaya: "Ini... g-gratis."
-mc: "Tidak bisa begitu..."
-tsutaya: "G-gratis. Hari ini gratis."
-mc: "Terima kasih, Tsutaya."
+- Tidak bisa begitu...
+	mc: "Tidak bisa begitu, Tsutaya. Ini kan toko."
+	tsutaya: "G-gratis. Hari ini gratis."
+	mc: "Terima kasih, Tsutaya."
+- Apa tidak apa-apa?
+	mc: "Apa tidak apa-apa? Kau bisa dimarahi bosmu."
+	tsutaya: "T-tidak apa-apa. B-biar aku yang bayar. Hari ini gratis untukmu."
+	mc: "Terima kasih banyak, Tsutaya."
 [background arg="res://assets/backgrounds/Ending B/9.png" fade="1.0"]
 tsutaya: "N-nikmati filmnya."
 [background fade="1.0"]
