@@ -4,14 +4,26 @@
 mc (netral): "Aku baik-baik saja. Aku menemuimu hanya untuk memberitahu... waktuku tak lama lagi."
 mantan (default): "Kenapa tiba-tiba?"
 mc (batin): "(Reaksinya sangat datar. Tapi, apa yang kuharapkan? Aku ingin dia menangis tersedu-sedu?)"
-mc (netral): "Aku... terkena kanker stadium akhir."
+- Jawab dengan jujur
+	mc (netral): "Aku... terkena kanker stadium akhir."
+- Bercanda sedikit
+	mc (senyum_tipis): "Mungkin karena aku terlalu tampan, jadi Tuhan memanggilku lebih awal. Haha, bercanda... Aku terkena kanker."
 mantan (default): "Oh, gawat ya. Tapi kau tidak kelihatan sedih sedikitpun?"
 mc (batin): "(Karena kematianku baru saja ditunda oleh Iblis. Tentu saja aku tak bisa bilang begitu.)"
+- Aku mencoba tegar
+	mc (netral): "Aku mencoba tegar. Lagipula, menangis tidak akan mengubah apapun."
+- Aku masih belum percaya
+	mc (netral): "Sebenarnya aku masih belum percaya. Rasanya seperti mimpi."
 mc (netral): "Orang yang akan mati biasanya ingin mencari tahu makna hidupnya. Tolong, ceritakan padaku kenangan kita. Hal sepele apa pun boleh."
 mantan (menggoda): "Kamu sering ke toilet. Terlalu sering. Dan terlalu banyak mendesah. Apa hidupmu sesulit itu?"
-mc (malu_malu): "Emmm... begitukah?"
-mantan (marah): "Kau payah minum miras. Kalau di restoran, kau tak pernah bisa memilih menu dan ujung-ujungnya memesan kari. Kalau aku marah, kau langsung rapuh dan lama bangkitnya."
-mc (senyum_ikhlas): "Maafkan aku..."
+- Emmm... begitukah?
+	mc (malu_malu): "Emmm... begitukah?"
+	mantan (marah): "Kau payah minum miras. Kalau di restoran, kau tak pernah bisa memilih menu dan ujung-ujungnya memesan kari. Kalau aku marah, kau langsung rapuh dan lama bangkitnya."
+	mc (senyum_ikhlas): "Maafkan aku..."
+- Hei, itu kan kebutuhan biologis!
+	mc (netral): "Hei, itu kan kebutuhan biologis! Jangan salahkan aku."
+	mantan (marah): "Tetap saja aneh! Dan lagi, kau payah minum miras. Kalau di restoran, kau tak pernah bisa memilih menu dan ujung-ujungnya memesan kari. Kalau aku marah, kau langsung rapuh dan lama bangkitnya."
+	mc (senyum_ikhlas): "Iya, iya, aku mengaku salah."
 mc (batin): "(Inikah makna hidupku yang harus kudengar di akhir hayat? Wanita memang jujur tanpa kompromi.)"
 mantan (marah): "Satu lagi. Kau bawel kalau di telepon, tapi kalau ketemu langsung, kau diam seperti patung."
 mc (malu_malu): "Meski aku seburuk itu, kenapa kau mau berpacaran denganku sampai tiga setengah tahun?"

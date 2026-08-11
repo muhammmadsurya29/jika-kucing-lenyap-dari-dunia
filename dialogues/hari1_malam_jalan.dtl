@@ -15,11 +15,20 @@ mc (malu_malu): "Emm... terima kasih. Ngomong-ngomong, menurutmu kenapa kita dul
 mantan (menggoda): "Kenapa ya? Tiba-tiba saja, kan?"
 mc (malu_malu): "Pasti ada alasannya. Meski kupikirkan keras-keras, aku tetap tak tahu."
 mantan (default): "Eh? Kalau makanan kesukaanku, kamu masih ingat?"
-mc (netral): "Udang goreng tepung roti!"
-mantan (marah): "Salah! Tempura jagung!"
+- Udang goreng tepung roti!
+	mc (netral): "Udang goreng tepung roti!"
+	mantan (marah): "Salah! Tempura jagung!"
+- Tempura jagung!
+	mc (netral): "Tempura jagung!"
+	mantan (senyum_malu): "Tumben kamu ingat! Hehe, benar."
 mantan (senyum_malu): "Lalu, minuman favoritku?"
-mc (senyum_tipis): "Hmm... aku menyerah. Aku tidak ingat."
-mantan (marah): "Padahal baru saja kita minum cokelat panas! Alasan kita putus juga hal-hal sepele seperti itu. Tidak pantas diingat."
+- Hmm... aku menyerah.
+	mc (senyum_tipis): "Hmm... aku menyerah. Aku tidak ingat."
+	mantan (marah): "Padahal baru saja kita minum cokelat panas! Alasan kita putus juga hal-hal sepele seperti itu. Tidak pantas diingat."
+- Cokelat panas!
+	mc (netral): "Cokelat panas!"
+	mantan (senyum_malu): "Benar! Aku senang kau masih mengingat hal-hal kecil tentangku."
+	mantan (marah): "Tapi tetap saja, alasan kita putus dulu juga hal-hal sepele yang menumpuk. Kadang kamu tidak peka."
 mantan (default): "Mungkin liburan kita sebelum masuk kuliah juga ada kaitannya."
 mc (netral): "Buenos Aires?"
 [background arg="res://assets/backgrounds/sep_Buenos.png" fade="1.0"]
@@ -34,8 +43,15 @@ mc (netral): "Eh... iya. Kok enteng banget kamu bilang begitu?"
 mantan (sedih): "Sebagai perpisahan, aku akan memutarkan film kesukaanmu di bioskop ini. Besok malam jam sembilan. Bawa filmnya ke sini."
 mc (senyum_tipis): "Baiklah."
 mantan (menggoda): "Oh ya, pertanyaan terakhir. Kau ingat tempat favoritku?"
-mc (malu_malu): "Hehehe... sama sekali tidak ingat."
-mantan (sedih): "Lagi-lagi lupa. Jadikan itu PR. Sampai besok!"
+- Bioskop tua ini?
+	mc (netral): "Bioskop tua ini?"
+	mantan (senyum_malu): "Hmm... mungkin. Tapi coba ingat-ingat lagi tempat lain. Jadikan itu PR. Sampai besok!"
+- Aku menyerah.
+	mc (malu_malu): "Hehehe... sama sekali tidak ingat."
+	mantan (sedih): "Lagi-lagi lupa. Jadikan itu PR. Sampai besok!"
+- Taman di dekat kampus?
+	mc (netral): "Taman di dekat kampus tempat kita sering ngobrol?"
+	mantan (menggoda): "Bukan! Tempat itu kan banyak nyamuk. Jadikan itu PR. Sampai besok!"
 mc (netral): "Sampai besok!"
 [signal arg="mantan_pergi"]
 mantan (senyum_malu): "Byee..."
