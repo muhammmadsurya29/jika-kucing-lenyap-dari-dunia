@@ -26,8 +26,12 @@ mc: "(Tapi... benarkah jam sudah lenyap? Ponsel juga tak ada. Aku sungguh tidak 
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/aloha dan kubis day 3 pagi.png" fade="1.0"]
 mc: "Ngomong-ngomong, kenapa kau memilih jam?"
 aloha: "Pertanyaan bagus! Sebenarnya, 'waktu' itu cuma ilusi buatan manusia. Matahari terbit dan terbenam itu gejala alam, tapi membaginya jadi 'jam 6' atau 'jam 12' itu cuma ulah manusia."
-mc: "Benar juga."
-aloha: "Manusia sok tahu, merasa paling memahami dunia, padahal mereka cuma melihat dari kacamata aturan mereka sendiri. Makanya, kubuat jam lenyap biar kalian bisa melihat dunia apa adanya. Gitu aja sih."
+- Benar juga
+	mc: "Benar juga. Manusia terlalu terobsesi dengan waktu."
+	aloha: "Tepat! Manusia sok tahu, merasa paling memahami dunia, padahal mereka cuma melihat dari kacamata aturan mereka sendiri. Makanya, kubuat jam lenyap biar kalian bisa melihat dunia apa adanya. Gitu aja sih."
+- Tapi itu kan berguna!
+	mc: "Tapi itu kan berguna untuk mengatur kegiatan! Kalau tidak ada jam, dunia pasti kacau."
+	aloha: "Kacau? Justru itu seninya! Manusia terlalu diatur oleh jarum jam. Kubuat jam lenyap biar kalian bisa melihat dunia apa adanya tanpa dikekang waktu. Gitu aja sih."
 mc: "Gitu aja sih... Enteng sekali kau bicara."
 aloha: "Pokoknya, selamat menikmati hari bebas tanpa waktu!"
 [background fade="1.0"]
@@ -39,10 +43,16 @@ mc (batin): "(Lagi pula, aku tak punya apa-apa untuk dikerjakan. Manusia tidur, 
 mc (batin): "(Sekarang aku paham. Kebebasan itu membawa kegelisahan. Sebaliknya, manusia menukar kebebasan dengan aturan demi rasa aman.)"
 [wait time="0.5"]
 [background arg="res://assets/backgrounds/DAY 3 JAM LENYAP/mengelus kubis.png" fade="1.0"]
-mc (senyum_tipis): "Kenapa Kubis? Sudah lapar ya?"
-kubis: "Tidak juga, Tuanku."
-mc (senyum_tipis): "Lalu?"
-kubis: "Gusti Patih ini selalu salah menebak."
+- Sudah lapar ya?
+	mc (senyum_tipis): "Kenapa Kubis? Sudah lapar ya?"
+	kubis: "Tidak juga, Tuanku."
+	mc (senyum_tipis): "Lalu?"
+	kubis: "Gusti Patih ini selalu salah menebak."
+- Ingin main?
+	mc (senyum_tipis): "Kenapa Kubis? Ingin main ya?"
+	kubis: "Bukan, Tuanku."
+	mc (senyum_tipis): "Lalu apa?"
+	kubis: "Gusti Patih ini selalu salah menebak."
 mc (nyimak_aloha): "Gusti Patih?"
 mc (batin): "(Sepertinya yang dia maksud itu aku. Gaya bicaranya benar-benar seperti drama sejarah kolosal.)"
 kubis: "Kalau sahaya mau jalan-jalan, dikira mau makan. Kalau mau makan, dikira mau tidur siang. Kalau mau tidur, dikira mau main. Selalu meleset, Tuanku."

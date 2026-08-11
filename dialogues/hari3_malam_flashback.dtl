@@ -25,9 +25,13 @@ mc (batin): "(Ibu benar. Bukan kucing yang butuh manusia. Manusialah yang butuh 
 mc (batin): "(Kini tubuhku sendiri yang dikuasai kematian. Dadaku nyeri, bergetar tanpa daya, persis seperti Selada saat itu.)"
 [wait time="2.0"]
 aloha: "Jadi bagaimana? Kucing atau nyawamu? Bukan pilihan sulit, kan? Kalau kau mati, kau juga tak bisa menyayangi kucing."
-mc: "Bisa tolong tunggu sebentar?"
-aloha: "Apanya yang sulit?"
-mc: "Tolong... beri aku waktu sebentar."
+- Tolong tunggu sebentar
+	mc: "Bisa tolong tunggu sebentar?"
+	aloha: "Apanya yang sulit?"
+	mc: "Tolong... beri aku waktu sebentar. Ini bukan hal yang mudah."
+- Jangan paksa aku sekarang!
+	mc: "Jangan paksa aku sekarang! Kumohon, biarkan aku berpikir."
+	aloha: "Tsk. Padahal waktu terus berjalan."
 aloha: "Baiklah. Ambil keputusanmu sebelum nyawamu melayang."
 [signal arg="ganti_hari"]
 return

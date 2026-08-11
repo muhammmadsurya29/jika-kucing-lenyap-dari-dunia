@@ -11,13 +11,20 @@ kubis: "Tapi sahaya mau duduk di sini, Tuanku."
 kubis: "Ngomong-ngomong, manusia itu makhluk yang aneh ya, Tuanku."
 mc: "Masa sih?"
 kubis: "Mengapa semua bunga harus dinamai?"
-mc: "Ya, karena jenisnya banyak. Harus dibedakan satu-satu."
-kubis: "Walaupun banyak, mengapa harus punya nama? Bukankah cukup dipanggil 'bunga' saja?"
+- Supaya mudah dibedakan
+	mc: "Ya, karena jenisnya banyak. Harus dibedakan satu-satu agar tidak bingung."
+	kubis: "Walaupun banyak, mengapa harus punya nama? Bukankah cukup dipanggil 'bunga' saja?"
+- Karena manusia suka mengatur
+	mc: "Mungkin karena manusia suka mengklasifikasikan segala sesuatu agar merasa memegang kendali."
+	kubis: "Terdengar merepotkan. Bukankah cukup dipanggil 'bunga' saja?"
 mc (batin): "(Betul juga. Mengapa kita menamai segalanya? Bunga, barang, warna, waktu... semuanya kuberi nama.)"
 mc (batin): "(Di dunia Kubis tak ada waktu dan tak ada jam. Patokan suhu atau warna pun tak bernama baginya. Tapi meski tak ada nama 'kuning' atau 'merah', bukankah Kubis tetap bisa melihat keindahan bunga itu?)"
 mc: "Ngomong-ngomong, ibuku hebat ya. Dia sabar menemanimu jalan-jalan setiap hari. Dia pasti sangat menyayangimu."
 kubis: "Ibu? Ibu itu siapakah gerangan, Tuanku?"
-mc: "Ya ibuku, ibumu juga. Masa kau tidak ingat pada Ibu?"
+- Ya ampun, masa kau lupa?
+	mc: "Ya ampun, ibuku, ibumu juga. Masa kau tidak ingat pada Ibu?"
+- Wanita yang sering merawatmu
+	mc: "Wanita yang dulu sering menggendong dan memberimu makan. Kau tidak ingat?"
 kubis: "Siapakah itu, Tuanku?"
 [background arg="res://assets/backgrounds/DAY 3 taman/duduk sedih di taman bukit.png" fade="1.0"]
 mc (batin): "(Aku terdiam. Kubis menatapku dengan polos. Ia benar-benar tidak ingat.)"
