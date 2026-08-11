@@ -26,7 +26,10 @@ aloha (serius): "Karena kamu baru siap mendengarnya sekarang."
 narator: "Aloha melangkah ke arah pintu lalu berhenti."
 aloha (serius): "Kalau kamu bisa mengulang, apakah kamu akan membuat pilihan yang sama?"
 [wait time="1.0"]
-mc: "Tidak."
+- Tentu saja tidak
+	mc: "Tidak. Aku akan memilih untuk mati daripada mengorbankan Kubis."
+- Aku tidak tahu
+	mc: "Aku... aku tidak tahu. Rasa takut mati begitu besar, tapi kehilangan Kubis juga menghancurkanku."
 aloha (serius): "Itu sudah cukup."
 narator: "Ibu pernah bilang, hampir selalu orang baru menyadari sesuatu yang berharga baginya setelah kehilangannya. Aku menyadarinya. Hanya saja terlambat dua kali, sekali waktu ibu pergi, sekali waktu Kubis lenyap oleh tanganku sendiri. Mungkin itulah harga dari tidak mau belajar pada waktu yang pertama."
 [background fade="1.0"]

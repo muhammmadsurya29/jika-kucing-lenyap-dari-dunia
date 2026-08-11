@@ -6,9 +6,14 @@ narator: "Kedai mie soba. Pemilik kedai menatapku."
 [background arg="res://assets/backgrounds/Ending C/makan alone.png" fade="1.0"]
 mc (senyum_tipis): "Hari ini sendirian."
 pemilik_kedai: "Oh. Tunggu, kucing kamu mana?"
-mc: "Sudah tidak ada."
-pemilik_kedai: "Sakit?"
-mc: "Semacam itu."
+- Sudah tidak ada
+	mc: "Sudah tidak ada."
+	pemilik_kedai: "Sakit?"
+	mc: "Semacam itu."
+- Pergi ke tempat yang jauh
+	mc: "Dia pergi ke tempat yang sangat jauh."
+	pemilik_kedai: "Oh... Maaf, aku tidak bermaksud."
+	mc: "Tidak apa-apa."
 narator: "Di dunia tanpa kucing, orang tidak tahu apa yang hilang. Mereka hanya tahu ada yang berbeda. Pemilik kedai memberiku semangkuk mie soba dengan potongan ikan yang lebih banyak dari biasanya. Mungkin sebagai ungkapan simpati yang tidak tahu harus diungkapkan bagaimana."
 narator: "Aku memakannya sendiri. Tanpa ada yang mencuri ikan dari mangkukku."
 [background fade="1.0"]
