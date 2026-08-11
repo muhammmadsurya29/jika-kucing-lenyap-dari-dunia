@@ -5,7 +5,12 @@ mc (senyum_tipis): "Iya. Aku mengerti."
 [background arg="res://assets/backgrounds/Ending A/1.png" fade="1.0"]
 narator: "(Hening. Aku dan Aloha saling bertatap.)"
 aloha (datar): "Kamu... tidak menyesal?"
-mc: "Entah. Tapi rasanya tidak benar kalau harus menukar sesuatu milik orang lain demi memperpanjang hidupku. Telepon itu bukan hanya milikku."
+- Entah
+	mc: "Entah. Tapi rasanya tidak benar kalau harus menukar sesuatu milik orang lain demi memperpanjang hidupku. Telepon itu bukan hanya milikku."
+- Sedikit menyesal
+	mc: "Bohong kalau aku bilang tidak menyesal. Tapi rasanya tidak benar kalau harus menukar sesuatu milik orang lain demi memperpanjang hidupku."
+- Aku yakin dengan pilihanku
+	mc: "Sama sekali tidak. Rasanya tidak benar kalau harus menukar sesuatu milik orang lain demi memperpanjang hidupku. Telepon itu bukan hanya milikku."
 [background arg="res://assets/backgrounds/Ending A/2.png" fade="1.0"]
 narator: "(Aloha diam sebentar, lalu duduk di kursi dengan ekspresi yang tidak biasa. Lebih serius dari biasanya.)"
 aloha (serius): "Menarik juga kamu ini."

@@ -14,9 +14,14 @@ narator: "Sarapan terakhir di bangku taman dengan kucing yang tidak bisa bicara 
 [background arg="res://assets/backgrounds/Ending A/14.png" fade="1.0"]
 narator: "Seorang anak kecil sekitar 7 tahun berlari menghampiri bangku dan langsung menatap Kubis dengan mata berbinar."
 anak: "Kucingnya boleh aku pegang?"
-mc: "Boleh, asal pelan-pelan."
-[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
-narator: "Anak itu mengelus Kubis dengan hati-hati. Kubis diam saja bahkan sedikit mendengkur."
+- Tentu saja boleh
+	mc: "Tentu saja boleh. Asal pelan-pelan ya."
+	[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
+	narator: "Anak itu mengelus Kubis dengan hati-hati. Kubis diam saja bahkan sedikit mendengkur."
+- Hati-hati, dia agak pemalu
+	mc: "Boleh, tapi hati-hati ya, dia agak pemalu."
+	[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
+	narator: "Anak itu mengelus Kubis dengan sangat pelan. Ternyata Kubis malah menyukainya dan mulai mendengkur."
 anak: "Namanya siapa?"
 mc: "Kubis."
 anak: "(Tertawa) Nama kucing kok kayak sayuran!"

@@ -8,7 +8,11 @@ narator: "Aku berhenti di depan satu surat yang belum dimasukkan. Amplop putih b
 mc: "Yang ini... untuk siapa ya."
 [background arg="res://assets/backgrounds/Ending A/11.png" fade="1.0"]
 narator: "Aku menatap amplop itu lama. Lalu menuliskan sesuatu di bagian depan."
-narator: "\"Untuk siapa saja yang menemukannya.\""
+- "Untuk diriku di masa depan"
+	narator: "\"Untuk diriku di masa depan.\""
+	mc: "Lucu sekali. Bukankah besok aku sudah tidak ada?"
+- "Untuk siapa saja yang menemukannya"
+	narator: "\"Untuk siapa saja yang menemukannya.\""
 [background fade="1.0"]
 narator: "Aku memasukkan surat itu ke kotak pos, lalu tersenyum kecil."
 mc (senyum_tulus): "Mudah-mudahan sampai ke orang yang tepat."
