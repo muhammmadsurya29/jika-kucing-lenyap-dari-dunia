@@ -64,6 +64,18 @@ func _ready() -> void:
 		_icon_sprite.z_index = 50 # Di atas karakter
 		add_child(_icon_sprite)
 		
+		var lbl_spasi = Label.new()
+		lbl_spasi.text = "[ SPASI ]"
+		lbl_spasi.add_theme_font_size_override("font_size", 14)
+		lbl_spasi.add_theme_color_override("font_color", Color.WHITE)
+		lbl_spasi.add_theme_color_override("font_outline_color", Color.BLACK)
+		lbl_spasi.add_theme_constant_override("outline_size", 3)
+		lbl_spasi.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
+		lbl_spasi.grow_horizontal = Control.GROW_DIRECTION_BOTH
+		lbl_spasi.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+		lbl_spasi.position = Vector2(-4, -20)
+		_icon_sprite.add_child(lbl_spasi)
+		
 		var shape = get_node_or_null("CollisionShape2D")
 		if shape:
 			_icon_sprite.position = shape.position + icon_offset

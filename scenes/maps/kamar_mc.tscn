@@ -25,6 +25,8 @@
 [ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="22_xgyj3"]
 [ext_resource type="Script" uid="uid://cjtloyjo42rvq" path="res://scripts/InteractableObject.gd" id="26_5ch3y"]
 [ext_resource type="Texture2D" uid="uid://bcrtng8w2dnqu" path="res://assets/backgrounds/nangis karna surat.png" id="27_h8s4e"]
+[ext_resource type="Texture2D" uid="uid://nyvq5d0go038" path="res://assets/backgrounds/star.png" id="29_8d2w6"]
+[ext_resource type="Texture2D" uid="uid://b01ooj277yrt" path="res://assets/backgrounds/12.png" id="30_8cgt5"]
 [ext_resource type="Script" uid="uid://bask6tfvanlo0" path="res://scripts/kamar_mc_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://do5fvp7ei04ft" path="res://scripts/npc_choreography.gd" id="iq5e41uq"]
 
@@ -9329,6 +9331,8 @@ position = Vector2(8, 27)
 [node name="Node2D" type="Area2D" parent="." unique_id=1556223877]
 position = Vector2(23, 58)
 script = ExtResource("26_5ch3y")
+popup_image = ExtResource("16_cvcuk")
+popup_description = "woiiiii"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=1172601369]
 position = Vector2(0, -1)
@@ -9337,6 +9341,8 @@ shape = SubResource("RectangleShape2D_4ui7d")
 [node name="Node2D2" type="Area2D" parent="." unique_id=1452381084]
 position = Vector2(169, 48)
 script = ExtResource("26_5ch3y")
+popup_image = ExtResource("29_8d2w6")
+popup_description = "yeeeee"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2" unique_id=1058869386]
 shape = SubResource("RectangleShape2D_y78md")
@@ -9344,6 +9350,8 @@ shape = SubResource("RectangleShape2D_y78md")
 [node name="Node2D3" type="Area2D" parent="." unique_id=571045750]
 position = Vector2(128, 5)
 script = ExtResource("26_5ch3y")
+popup_image = ExtResource("30_8cgt5")
+popup_description = "iiiiiii"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D3" unique_id=1510718150]
 position = Vector2(0.5, -0.5)
