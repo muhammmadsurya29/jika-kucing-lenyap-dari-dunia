@@ -62,6 +62,12 @@ mc (batin): "(Kurasakan keempukan dan kehangatan yang meresap ke dalam tubuhku. 
 mantan: "Aku sempat kaget tiba-tiba Kubis datang ke sini."
 mc: "Terima kasih... sungguh."
 mantan: "Kamu menangis lagi. Dari dulu kebiasaan gampang menangismu tak pernah berubah ya? Pasti karena ibumu."
+- Menyeka air mata
+	mc: "Aku tidak menangis. Hanya kelilipan saja."
+	mantan: "Pembohong yang buruk."
+- Tersenyum pahit
+	mc: "Mungkin kau benar. Aku memang cengeng."
+	mantan: "Bukan cengeng. Kau hanya terlalu perasa, seperti ibumu."
 mc: "Apa maksudmu?"
 [background arg="mantan_kasih_surat.png" fade="1.0"]
 mantan: "Ibumu menitipkan sepucuk surat padaku, sudah lama sekali."
@@ -97,6 +103,12 @@ kubis: "Sahaya ingin Gusti Patih tetap hidup. Sahaya tak sanggup hidup di dunia 
 [background arg="mc_tatapan_dengan_kubis.png" fade="1.0"]
 mc (batin): "(Belum pernah aku dibuat menangis oleh seekor kucing. Meski suaranya hanya 'meong', perasaannya sampai padaku.)"
 kubis: "Mohon jangan menangis. Dibandingkan hal-hal yang telah Gusti Patih korbankan selama ini, sahaya hanyalah sepele."
+- Memeluk Kubis
+	mc: "Kau tidak sepele, Kubis. Kau keluargaku."
+	kubis: "Gusti Patih..."
+- Membelai kepalanya
+	mc: "Bodoh. Bagaimana mungkin aku mengorbankanmu demi diriku sendiri?"
+	kubis: "Sahaya rela, demi Tuanku."
 mc: "Bukan itu masalahnya, Kubis. Bukan begitu..."
 [background arg="mc_elus_kubis_bioskop.png" fade="1.0"]
 mc (batin): "(Jika kucing lenyap... jika Selada, Kubis, dan Ibu tiada... Aku tak sanggup membayangkannya. Selalu ada alasan mengapa sesuatu hadir di dunia, tapi tak ada alasan ia harus dilenyapkan.)"
@@ -129,8 +141,12 @@ aloha: "Betulan?"
 mc: "Betulan."
 [background arg="aloha_kaget.png" fade="1.0"]
 aloha: "Apanya yang lucu? Kalau begitu kau akan mati. Yakin?"
-mc: "Yakin. Aku takkan melenyapkan apa pun lagi."
-aloha: "Kau semestinya bisa hidup lebih lama."
+- Aku sangat yakin
+	mc: "Yakin. Aku takkan melenyapkan apa pun lagi. Ini adalah pilihanku."
+	aloha: "Kau semestinya bisa hidup lebih lama."
+- Aku sudah siap
+	mc: "Aku sudah siap. Aku tidak mau hidup dengan merenggut kebahagiaan dari dunia."
+	aloha: "Kau semestinya bisa hidup lebih lama dengan mengorbankan hal-hal sepele."
 mc: "Hidup hanya sekadar hidup tak ada artinya. Yang terpenting adalah bagaimana kita menjalaninya."
 aloha: "Lagi-lagi aku kalah. Dasar manusia!"
 mc: "Kenapa?"
