@@ -579,7 +579,17 @@ func ganti_hari(target_scene: String = "") -> void:
 	print("Sekarang adalah Hari ke-", current_day)
 	
 	# Transisi Layar Hitam (Fade In)
-	transition_label.text = "Hari ke-" + str(current_day)
+	match current_day:
+		1:
+			transition_label.text = "Hari 1\nPonsel Lenyap Dari Dunia"
+		2:
+			transition_label.text = "Hari 2\nFilm Lenyap Dari Dunia"
+		3:
+			transition_label.text = "Hari 3\nJam Lenyap Dari Dunia"
+		4:
+			transition_label.text = "Hari 4\nKucing Lenyap Dari Dunia"
+		_:
+			transition_label.text = "Hari ke-" + str(current_day)
 	transition_rect.modulate = Color(1, 1, 1, 0)
 	transition_rect.mouse_filter = Control.MOUSE_FILTER_STOP
 	transition_layer.visible = true
