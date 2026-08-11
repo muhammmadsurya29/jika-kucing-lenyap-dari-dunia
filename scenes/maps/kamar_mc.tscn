@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bbg4di4t0fltg" path="res://assets/Tiles/animated_TV_reportage_hospital_2.png" id="20_tcxud"]
 [ext_resource type="Texture2D" uid="uid://dbgk03wlojgt4" path="res://assets/ui/UI_16x16.png" id="22_xgyj3"]
 [ext_resource type="Script" uid="uid://cjtloyjo42rvq" path="res://scripts/InteractableObject.gd" id="26_5ch3y"]
+[ext_resource type="Texture2D" uid="uid://bcrtng8w2dnqu" path="res://assets/backgrounds/nangis karna surat.png" id="27_h8s4e"]
 [ext_resource type="Script" uid="uid://bask6tfvanlo0" path="res://scripts/kamar_mc_root.gd" id="99_root"]
 [ext_resource type="Script" uid="uid://do5fvp7ei04ft" path="res://scripts/npc_choreography.gd" id="iq5e41uq"]
 
@@ -9341,6 +9342,8 @@ shape = SubResource("RectangleShape2D_ctmpy")
 [node name="Node2D4" type="Area2D" parent="." unique_id=1067627109]
 position = Vector2(49, 36)
 script = ExtResource("26_5ch3y")
+popup_image = ExtResource("27_h8s4e")
+popup_description = "oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D4" unique_id=126619587]
 shape = SubResource("RectangleShape2D_5rvnl")
