@@ -6,6 +6,7 @@ extends Area2D
 @export var minimum_day_to_exit: int = 1
 @export var requires_leave_permission: bool = false
 @export var requires_cafe_event_done: bool = false
+@export var requires_met_mantan: bool = false
 @export var locked_timeline: String = "pintu_terkunci"
 @export var locked_timeline_per_hari: Array[String] = []
 @export var target_scene_per_hari: Array[String] = []
@@ -94,6 +95,7 @@ func _on_body_entered(body: Node2D) -> void:
 			
 		var can_leave = sm.can_leave_room if sm else true
 		var cafe_done = sm.cafe_event_done if sm else false
+		var met_mantan = sm.has_met_mantan if sm else false
 		
 		# Khusus Pintu Pemakaman di Hari 4, hanya bisa diakses SETELAH beres-beres
 		if target_scene == "res://scenes/maps/kantor_pemakaman.tscn" and day == 4:
@@ -113,7 +115,7 @@ func _on_body_entered(body: Node2D) -> void:
 			return
 			
 		# Kunci pintu jika belum ada izin keluar (khusus pintu kamar) atau belum cukup hari
-		if (requires_leave_permission and not can_leave) or (requires_cafe_event_done and not cafe_done) or day < minimum_day_to_exit:
+		if (requires_leave_permission and not can_leave) or (requires_cafe_event_done and not cafe_done) or (requires_met_mantan and not met_mantan) or day < minimum_day_to_exit:
 			var target_tl = locked_timeline
 			
 			if locked_timeline_per_hari.size() > 0 and day < locked_timeline_per_hari.size():

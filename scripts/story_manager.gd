@@ -6,6 +6,7 @@ var current_day: int = 0
 var can_sleep: bool = false
 var can_leave_room: bool = false
 var cafe_event_done: bool = false
+var has_met_mantan: bool = false
 var is_night: bool = false
 var day4_state: String = ""
 var alt2_post_bioskop: bool = false
@@ -31,6 +32,7 @@ func reset_game_state() -> void:
 	can_sleep = false
 	can_leave_room = false
 	cafe_event_done = false
+	has_met_mantan = false
 	is_night = false
 	day4_state = ""
 	alt2_post_bioskop = false
@@ -51,6 +53,7 @@ func save_game() -> void:
 		"can_sleep": can_sleep,
 		"can_leave_room": can_leave_room,
 		"cafe_event_done": cafe_event_done,
+		"has_met_mantan": has_met_mantan,
 		"is_night": is_night,
 		"day4_state": day4_state,
 		"alt2_post_bioskop": alt2_post_bioskop,
@@ -118,6 +121,7 @@ func load_game() -> bool:
 	can_sleep = state.get("can_sleep", false)
 	can_leave_room = state.get("can_leave_room", false)
 	cafe_event_done = state.get("cafe_event_done", false)
+	has_met_mantan = state.get("has_met_mantan", false)
 	is_night = state.get("is_night", false)
 	day4_state = state.get("day4_state", "")
 	alt2_post_bioskop = state.get("alt2_post_bioskop", false)
@@ -132,9 +136,20 @@ func load_game() -> bool:
 		get_tree().change_scene_to_file(scene_path)
 		
 	print("[StoryManager] Game Loaded!")
+	
+	# Paksa update BGM berdasarkan timeline Dialogic yang sedang berjalan
+	await get_tree().process_frame
+	await get_tree().process_frame
+	var bgm_manager = get_node_or_null("/root/BGMManager")
+	if bgm_manager:
+		bgm_manager._on_timeline_started()
+		
 	return true
 
 func unlock_ending(ending_name: String) -> void:
+	if Dialogic.Save.has_slot("auto_save"):
+		Dialogic.Save.delete_slot("auto_save")
+		
 	if not unlocked_endings.has(ending_name):
 		unlocked_endings.append(ending_name)
 		var config = ConfigFile.new()
@@ -375,6 +390,7 @@ func _on_dialogic_signal(argument: String) -> void:
 			# Mulai percakapan lanjutannya
 			Dialogic.start("hari1_mantan_datang")
 	elif argument == "mantan_ikut":
+		has_met_mantan = true
 		var mantan = get_tree().get_root().find_child("NPC_Mantan", true, false)
 		if mantan:
 			mantan.is_following_player = true
