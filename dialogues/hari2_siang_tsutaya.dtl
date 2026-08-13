@@ -32,4 +32,5 @@ tsutaya (sedih): "A-aku tak tahu apa y-yang akan terjadi..."
 tsutaya (sedih): "T-terima kasih."
 mc (senyum_tipis): "Sampai jumpa."
 [signal arg="boleh_keluar"]
+[signal arg="update_objective:Keluar menuju bioskop tua"]
 return

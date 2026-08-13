@@ -53,8 +53,8 @@ mantan (menggoda): "Oh ya, pertanyaan terakhir. Kau ingat tempat favoritku?"
 	mc (netral): "Taman di dekat kampus tempat kita sering ngobrol?"
 	mantan (menggoda): "Bukan! Tempat itu kan banyak nyamuk. Jadikan itu PR. Sampai besok!"
 mc (netral): "Sampai besok!"
-[signal arg="mantan_pergi"]
 mantan (senyum_malu): "Byee..."
+[signal arg="mantan_pergi"]
 [background arg="res://assets/backgrounds/bioskop malam.png" fade="0.0"]
 mc (batin): "(Tempat favoritnya? Aku mendongak menatap bioskop tua ini. Ya, ini tempatnya. Aku refleks mencari ponselku untuk segera menebak, sebelum sadar... ponselku sudah musnah.)"
 mc (batin): "(Rasa resah tak bisa mengabarinya segera membuatku tak sabar menunggu besok.)"

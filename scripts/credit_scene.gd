@@ -57,6 +57,10 @@ func _end_credits() -> void:
 	await tween.finished
 	
 	# Kembali ke Main Menu
+	var bgm_manager = get_node_or_null("/root/BGMManager")
+	if bgm_manager:
+		bgm_manager.play_track("main_menu")
+		
 	if has_node("/root/ScreenFade"):
 		get_node("/root/ScreenFade").transition_to("res://scenes/ui/main_menu.tscn", 1.0)
 	else:

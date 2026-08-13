@@ -91,6 +91,7 @@ directories/dtl_directory={
 "hari4_belum_beres": "res://dialogues/hari4_belum_beres.dtl",
 "hari4_kucing": "res://dialogues/arsip/hari4_kucing.dtl",
 "hari4_true_ending": "res://dialogues/hari4_true_ending.dtl",
+"pintu_cafe_terkunci": "res://dialogues/pintu_cafe_terkunci.dtl",
 "pintu_terkunci": "res://dialogues/pintu_terkunci.dtl",
 "pintu_toko_terkunci": "res://dialogues/pintu_toko_terkunci.dtl",
 "prolog_vonis": "res://dialogues/prolog_vonis.dtl",
