@@ -9,6 +9,7 @@ class_name Interactable
 @export var requires_daily_event: bool = false
 @export var locked_timeline: String = ""
 @export var active_in_day4_climax: bool = false
+@export var active_only_on_day: int = -1
 
 @export_group("UI Tanda Pentung")
 @export var interact_icon: Texture2D
@@ -124,6 +125,9 @@ func _on_day_changed(new_day: int) -> void:
 				has_dialog = false
 		else:
 			has_dialog = false
+			
+	if active_only_on_day != -1 and new_day != active_only_on_day:
+		has_dialog = false
 			
 	# Cek apakah timeline ini sudah pernah dimainkan
 	var sm = get_node_or_null("/root/StoryManager")
