@@ -9186,6 +9186,7 @@ scale = Vector2(1.3333334, 1.2659501)
 script = ExtResource("26_5ch3y")
 popup_image = ExtResource("27_h8s4e")
 popup_description = "oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo"
+disappear_on_day = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Kubis/Node2D4" unique_id=126619587]
 shape = SubResource("RectangleShape2D_5rvnl")
@@ -9333,6 +9334,7 @@ position = Vector2(23, 58)
 script = ExtResource("26_5ch3y")
 popup_image = ExtResource("16_cvcuk")
 popup_description = "woiiiii"
+disappear_on_day = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D" unique_id=1172601369]
 position = Vector2(0, -1)
@@ -9343,6 +9345,7 @@ position = Vector2(169, 48)
 script = ExtResource("26_5ch3y")
 popup_image = ExtResource("29_8d2w6")
 popup_description = "yeeeee"
+disappear_on_day = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D2" unique_id=1058869386]
 shape = SubResource("RectangleShape2D_y78md")
@@ -9352,6 +9355,7 @@ position = Vector2(128, 5)
 script = ExtResource("26_5ch3y")
 popup_image = ExtResource("30_8cgt5")
 popup_description = "iiiiiii"
+disappear_on_day = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D3" unique_id=1510718150]
 position = Vector2(0.5, -0.5)

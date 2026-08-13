@@ -10,6 +10,7 @@ class_name InteractableObject
 @export var popup_image: Texture2D
 @export_multiline var popup_description: String = ""
 @export var hover_modulate: Color = Color(1.2, 1.2, 1.2, 1.0) # Sedikit lebih terang saat di-hover
+@export var disappear_on_day: int = -1
 
 var _is_hovered: bool = false
 var _original_modulate: Color = Color.WHITE
@@ -32,6 +33,16 @@ func _ready() -> void:
 		_original_modulate = _sprite.modulate
 		
 	_create_indicator()
+	
+	var sm = get_node_or_null("/root/StoryManager")
+	if sm:
+		sm.day_changed.connect(_on_day_changed)
+		_on_day_changed(sm.current_day)
+
+func _on_day_changed(new_day: int) -> void:
+	if disappear_on_day != -1 and new_day >= disappear_on_day:
+		hide()
+		queue_free()
 
 func _create_indicator() -> void:
 	_indicator = Label.new()
