@@ -22,15 +22,15 @@ mc: "Kubis!"
 [signal arg="boleh_keluar"]
 return
 label cek_parkiran
-[signal arg="update_objective:Cari Kubis di parkiran"]
 [background arg="res://assets/backgrounds/HARI 4/mencari kubis di mobil van putih.png" fade="1.0"]
 mc (batin): "(Di mobil van juga tidak ada.)"
+[signal arg="update_objective:Cari Kubis di Taman Bukit"]
 [signal arg="teleport_ke_taman_bukit"]
 return
 label cek_taman_bukit
-[signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
 [background arg="res://assets/backgrounds/DAY 3 taman/49.png" fade="1.0"]
 mc (batin): "(Di bukit ini pun kosong.)"
+[signal arg="update_objective:Cari Kubis di area Taman (Dekat Bioskop)"]
 [signal arg="teleport_ke_taman"]
 return
 label cek_soba

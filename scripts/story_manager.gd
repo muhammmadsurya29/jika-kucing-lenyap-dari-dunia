@@ -201,7 +201,7 @@ func update_objective_based_on_state() -> void:
 				obj = "Tidur di kasur"
 		3:
 			if not is_night:
-				obj = "Keluar kamar dan pergi ke Taman Bukit"
+				obj = "Keluar kamar dan pergi ke Bangku Biru di Taman Bukit"
 			else:
 				obj = "Tidur di kasur"
 		4:
@@ -616,6 +616,11 @@ func ganti_hari(target_scene: String = "") -> void:
 		
 	var tween_in = get_tree().create_tween()
 	tween_in.tween_property(transition_rect, "modulate", Color(1, 1, 1, 1), 1.5)
+	
+	var bgm = get_node_or_null("/root/BGMManager")
+	if bgm:
+		bgm.stop_track(1.5)
+		
 	await tween_in.finished
 	
 	# Tahan Layar Hitam Selama 2 Detik agar tulisan mudah dibaca
@@ -642,6 +647,11 @@ func ganti_hari(target_scene: String = "") -> void:
 			player.play_waking_up_animation()
 	
 	update_objective_based_on_state()
+	
+	var bgm = get_node_or_null("/root/BGMManager")
+	if bgm:
+		bgm.stop_track(1.0)
+		bgm.play_track("all", 1.0)
 			
 	# Fade Out: Kembali perlahan dari gelap, berbarengan dengan MC yang sedang melompat dari kasur
 	var tween_out = get_tree().create_tween()

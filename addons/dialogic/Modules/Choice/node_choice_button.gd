@@ -45,6 +45,23 @@ func _ready() -> void:
 	shortcut_in_tooltip = false
 	hide()
 	
+	var style_normal = preload("res://assets/ui/choice_normal.tres")
+	var style_hover = preload("res://assets/ui/choice_hover.tres")
+	if style_normal:
+		add_theme_stylebox_override("normal", style_normal)
+	if style_hover:
+		add_theme_stylebox_override("hover", style_hover)
+		add_theme_stylebox_override("focus", style_hover)
+		add_theme_stylebox_override("pressed", style_hover)
+		
+	# Pastikan warna text kontras
+	add_theme_color_override("font_color", Color.WHITE)
+	add_theme_color_override("font_hover_color", Color.YELLOW)
+	add_theme_color_override("font_focus_color", Color.YELLOW)
+	
+	# Mematikan outline default Dialogic
+	add_theme_constant_override("outline_size", 0)
+	
 	# For players who use a mouse to make choices, mouse hover should grab focus.
 	# Otherwise the auto-focused button will always show a highlighted color when
 	# the mouse cursor is hovering on another button.

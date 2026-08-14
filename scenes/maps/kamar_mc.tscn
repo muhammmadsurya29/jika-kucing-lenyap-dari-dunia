@@ -9159,7 +9159,20 @@ timeline_name = "tidur_malam"
 requires_daily_event = true
 locked_timeline = "belum_bisa_tidur"
 active_in_day4_climax = true
-icon_vframes = 0
+interact_icon = ExtResource("22_xgyj3")
+icon_hframes = 18
+icon_vframes = 8
+icon_frame = 10
+use_offscreen_pointer = true
+pointer_texture = ExtResource("22_xgyj3")
+pointer_hframes = 18
+pointer_vframes = 16
+pointer_scale = Vector2(5, 5)
+pointer_margin = 200.0
+frame_right = 90
+frame_left = 91
+frame_top_right = 92
+frame_top_left = 93
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Meja" unique_id=1470024040]
 position = Vector2(0, 1)

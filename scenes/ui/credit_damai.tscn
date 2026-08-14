@@ -80,5 +80,5 @@ layout_mode = 2
 [node name="Thanks" type="Label" parent="CreditContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "Terima kasih sudah bermain!"
+text = "-TAMAT ENDING DAMAI-"
 horizontal_alignment = 1

@@ -30730,6 +30730,7 @@ position = Vector2(-280, -207)
 script = ExtResource("2_svcpl")
 requires_met_mantan = true
 target_scene = "res://scenes/maps/cafe.tscn"
+inactive_on_days = Array[int]([4])
 locked_timeline = "pintu_cafe_terkunci"
 marker_icon = ExtResource("15_w5h7f")
 icon_hframes = 18

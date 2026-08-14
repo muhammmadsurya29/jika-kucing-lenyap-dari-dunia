@@ -150,7 +150,15 @@ func _on_day_changed(new_day: int) -> void:
 	if has_dialog:
 		show()
 		if shape: shape.set_deferred("disabled", false)
-		if _icon_sprite: _icon_sprite.visible = is_active
+		
+		var show_icon = is_active
+		if self.name == "Meja":
+			if sm and sm.current_day == 4 and sm.day4_state == "pemakaman_selesai":
+				show_icon = true
+			else:
+				show_icon = false
+				
+		if _icon_sprite: _icon_sprite.visible = show_icon
 	else:
 		hide()
 		if shape: shape.set_deferred("disabled", true)

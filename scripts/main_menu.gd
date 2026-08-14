@@ -68,6 +68,9 @@ func _setup_gallery_ui() -> void:
 	var sm = get_node_or_null("/root/StoryManager")
 	var unlocked_endings = sm.unlocked_endings if sm else []
 	
+	if unlocked_endings.is_empty():
+		hbox.visible = false
+		
 	var ending_list = [
 		{"name": "Ending Kesepian", "image": preload("res://assets/ui/credit/Ending Kesepian.png")},
 		{"name": "Ending Bangkit", "image": preload("res://assets/ui/credit/Ending Bangkit.png")},

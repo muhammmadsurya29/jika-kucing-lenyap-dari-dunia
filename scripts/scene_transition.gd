@@ -148,6 +148,10 @@ func _process(delta: float) -> void:
 	var is_door_active = true
 	if day in inactive_on_days:
 		is_door_active = false
+	if requires_met_mantan and sm and not sm.has_met_mantan:
+		is_door_active = false
+	if requires_cafe_event_done and sm and not sm.cafe_event_done:
+		is_door_active = false
 	if target_scene == "res://scenes/maps/kantor_pemakaman.tscn" and day == 4:
 		if sm and sm.day4_state != "beres_beres_selesai":
 			is_door_active = false

@@ -27936,6 +27936,7 @@ position = Vector2(-369, -343)
 script = ExtResource("lpdwmyu6")
 timeline_name = "alt_mengantar_surat"
 active_in_day4_climax = true
+active_only_on_day = 99
 interact_icon = ExtResource("13_l77tl")
 icon_hframes = 18
 icon_vframes = 8

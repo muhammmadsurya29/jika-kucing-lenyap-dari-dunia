@@ -1,7 +1,27 @@
+[background arg="hitam.png" fade="1.0"]
+mc (batin): "(Aku melangkah masuk ke apartemenku yang sepi. Udara dingin menyapaku. Tapi ingatanku justru melayang ke hari itu... hari dimana Ibu meninggal empat tahun lalu.)"
+[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/rumah jam malam.png" fade="1.0"]
+narator: "Di depan rumah keluarga kami, kulihat Ayah berdiri terdiam di depan pintu. Ia mengenakan pakaian kerjanya yang lusuh, masih membawa tas perkakasnya. Ia baru saja pulang bekerja."
+mc: "Ayah... dari mana saja?"
+ayah: "..."
+mc: "Ibu meninggal, Yah. Dia meninggal, dan Ayah tidak ada di sana! Ayah tidak menemaninya di rumah sakit!"
+narator: "Kemarahanku meledak. Berhari-hari aku menemani Ibu sendirian, memendam rasa takut. Dan di saat-saat terakhirnya, pria ini justru sedang bekerja."
+mc: "Apa jam rusak orang-orang itu lebih berharga dari istri Ayah sendiri?! Jawab, Yah!"
+narator: "Ayah perlahan menoleh. Wajahnya begitu kuyu, matanya memerah. Dari saku kemejanya yang sedikit terbuka, kulihat lipatan kertas tagihan rumah sakit yang terus membengkak. Selama berbulan-bulan, Ayah bekerja nyaris tanpa tidur demi membayar biaya perawatan Ibu."
+narator: "Ia telah memikul semua beban itu sendirian. Menyimpan rasa takut, lelah, dan kesepian tanpa pernah mengeluh atau membaginya denganku."
+mc: "Ayah... tagihan itu..."
+ayah: "Masuklah ke kamarmu."
+mc: "Tapi Yah, aku tidak tahu..."
+ayah: "Ku bilang masuk! Jangan ganggu aku. Aku ingin sendiri."
+narator: "Suaranya dingin, namun bergetar. Ia mengusirku bukan karena benci, tapi karena ia tak sanggup memperlihatkan kehancurannya. Ia baru saja kehilangan wanita yang paling dicintainya."
+narator: "Aku mematung, tenggelam dalam rasa bersalah dan penyesalan yang begitu dalam. Aku berbalik, berjalan perlahan ke kamarku, meninggalkan Ayah sendirian dalam kesepiannya."
+[background fade="1.0"]
+[wait time="1.0"]
 [background arg="res://assets/backgrounds/Ending C/13.png" fade="1.0"]
-narator: "Di dunia tanpa kucing, selimut oranye ini tidak punya konteks. Siapapun yang melihatnya hanya melihat selimut lama yang butut. Tapi aku tahu, ini adalah selimut yang selama empat tahun menjadi tempat tidur Kubis. Yang masih menyimpan sedikit bulunya di sudut-sudutnya. Yang masih terasa hangat meski itu mungkin hanya imajinasinya."
+mc (batin): "(Kini, kesepian itu berbalik padaku. Tak ada Ibu. Tak ada Kubis. Hanya aku dan keputusanku sendiri.)"
+narator: "Di dunia tanpa kucing, selimut oranye ini tidak punya konteks. Siapapun yang melihatnya hanya melihat selimut lama yang butut. Tapi aku tahu, ini adalah selimut yang selama empat tahun menjadi tempat tidur Kubis."
 [background arg="res://assets/backgrounds/Ending C/14.png" fade="1.0"]
-narator: "Aku memeluknya."
+narator: "Aku merengkuh selimut itu erat-erat."
 [background fade="1.0"]
 [signal arg="alt2_mc_tidur"]
 [wait time="0.5"]
