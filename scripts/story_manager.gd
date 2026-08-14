@@ -648,7 +648,7 @@ func ganti_hari(target_scene: String = "") -> void:
 	
 	update_objective_based_on_state()
 	
-	var bgm = get_node_or_null("/root/BGMManager")
+	bgm = get_node_or_null("/root/BGMManager")
 	if bgm:
 		bgm.stop_track(1.0)
 		bgm.play_track("all", 1.0)
