@@ -67,7 +67,7 @@ func _ready() -> void:
 		
 		var lbl_spasi = Label.new()
 		lbl_spasi.text = "[Spasi]"
-		lbl_spasi.add_theme_font_size_override("font_size", 10)
+		lbl_spasi.add_theme_font_size_override("font_size", 7)
 		lbl_spasi.add_theme_color_override("font_color", Color.WHITE)
 		lbl_spasi.add_theme_color_override("font_outline_color", Color.BLACK)
 		lbl_spasi.add_theme_constant_override("outline_size", 2)

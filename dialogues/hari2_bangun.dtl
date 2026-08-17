@@ -13,6 +13,7 @@ aloha (kedipanmata): "Mau dihilangkan, atau batal?"
 	jump alt_ending
 
 label hapus_film
+[signal arg="update_objective:Keluar"]
 mc (netral): "Tidak bisa selain film?"
 aloha (kesal): "Tidak bisa."
 mc (netral): "Benar-benar tidak bisa?"

@@ -1,3 +1,4 @@
+[signal arg="update_objective:Minta Rekomen Ke Toko DVD"]
 [background arg="res://assets/backgrounds/Ending B/5.png" fade="1.0"]
 narator: "Aku ingin menonton film. Bukan karena ini yang terakhir. Tapi karena semalam mantan bilang datanglah besok pukul sembilan malam, bawalah film kesukaanmu. Dan aku sudah berjanji."
 [background fade="1.0"]

@@ -17,5 +17,6 @@ aloha: "Bagaimana kalau kita melenyapkan... Film? Demi menyambung nyawamu."
 mc: "Film...?!"
 mc (batin): "(Pandanganku buram. Bioskop tua ini... Kenangan-kenanganku...)"
 mc (batin): "(Tolong! Aku menjerit tanpa suara, lalu semuanya menjadi gelap.)"
+[signal arg="update_objective:BALIKK"]
 [signal arg="event_selesai"]
 [signal arg="ganti_hari"]

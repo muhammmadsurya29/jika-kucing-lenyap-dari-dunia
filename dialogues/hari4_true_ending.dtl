@@ -101,11 +101,15 @@ kubis: "Sahaya ingin Gusti Patih tetap hidup. Sahaya tak sanggup hidup di dunia 
 mc (batin): "(Belum pernah aku dibuat menangis oleh seekor kucing. Meski suaranya hanya 'meong', perasaannya sampai padaku.)"
 kubis: "Mohon jangan menangis. Dibandingkan hal-hal yang telah Gusti Patih korbankan selama ini, sahaya hanyalah sepele."
 - Memeluk Kubis
+	[background arg="res://assets/backgrounds/HARI 4/PELUK KUBIS SURAT.png" fade="1.0"]
 	mc: "Kau tidak sepele, Kubis. Kau keluargaku."
+	[background fade="1.0"]
 	kubis: "Gusti Patih..."
 - Membelai kepalanya
+	[background arg="res://assets/backgrounds/HARI 4/BELAI KUBIS SURAT.png" fade="1.0"]
 	mc: "Bodoh. Bagaimana mungkin aku mengorbankanmu demi diriku sendiri?"
 	kubis: "Sahaya rela, demi Tuanku."
+	[background fade="1.0"]
 mc: "Bukan itu masalahnya, Kubis. Bukan begitu..."
 [background arg="res://assets/backgrounds/DAY 3 taman/64.2.png" fade="1.0"]
 mc (batin): "(Jika kucing lenyap... jika Selada, Kubis, dan Ibu tiada... Aku tak sanggup membayangkannya. Selalu ada alasan mengapa sesuatu hadir di dunia, tapi tak ada alasan ia harus dilenyapkan.)"
@@ -192,8 +196,8 @@ mc (batin): "(Aloha mengucapkan perpisahan itu dengan sangat ringan.)"
 [signal arg="day4_ke_kamar_beres2"]
 return
 label beres_beres
-[signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres kamar.png" fade="1.0"]
+[signal arg="update_objective:Pergi ke Kantor Pemakaman (Lewat Pintu)"]
 mc (batin): "(Aku mulai merapikan sekeliling. Persiapan sebelum tiada.)"
 [background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/beres beres.png" fade="1.0"]
 mc (batin): "(Buku harian yang memalukan, pakaian kuno, foto usang... kepingan hidupku. Seandainya kulenyapkan barang-barang ini, akankah Aloha memberiku nyawa ekstra? Ah, sudahlah. Syukurlah aku tak perlu melenyapkan apa pun lagi.)"

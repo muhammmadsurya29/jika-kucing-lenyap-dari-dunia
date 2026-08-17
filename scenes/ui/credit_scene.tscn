@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxc_creditscene1"]
+[gd_scene format=3 uid="uid://bq6vovu78r64j"]
 
-[ext_resource type="Script" path="res://scripts/credit_scene.gd" id="1_credit"]
-[ext_resource type="AudioStream" uid="uid://dwdwdwdw" path="res://assets/audio/happy-end.mp3" id="2_audio"]
+[ext_resource type="Script" uid="uid://dvoupoq8i7q2h" path="res://scripts/credit_scene.gd" id="1_credit"]
+[ext_resource type="AudioStream" uid="uid://ccek8jyrn5pcy" path="res://assets/audio/happy-end.mp3" id="2_audio"]
 
-[node name="CreditScene" type="Control"]
+[node name="CreditScene" type="Control" unique_id=459014097]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_credit")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=1417725144]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="TrueEndingText" type="Label" parent="."]
+[node name="TrueEndingText" type="Label" parent="." unique_id=219298916]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,7 +33,7 @@ text = "True Ending"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CreditContainer" type="VBoxContainer" parent="."]
+[node name="CreditContainer" type="VBoxContainer" parent="." unique_id=2071040365]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -41,17 +41,17 @@ offset_bottom = 200.0
 grow_horizontal = 2
 alignment = 1
 
-[node name="Title" type="Label" parent="CreditContainer"]
+[node name="Title" type="Label" parent="CreditContainer" unique_id=1088378604]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "JIKA KUCING LENYAP DARI DUNIA"
 horizontal_alignment = 1
 
-[node name="Space1" type="Control" parent="CreditContainer"]
+[node name="Space1" type="Control" parent="CreditContainer" unique_id=1779684532]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 
-[node name="Credits" type="Label" parent="CreditContainer"]
+[node name="Credits" type="Label" parent="CreditContainer" unique_id=1277088330]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 text = "Dibuat oleh:
@@ -60,15 +60,15 @@ Universitas Ahmad Dahlan
 Informatika"
 horizontal_alignment = 1
 
-[node name="Space2" type="Control" parent="CreditContainer"]
+[node name="Space2" type="Control" parent="CreditContainer" unique_id=1753785407]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 
-[node name="Thanks" type="Label" parent="CreditContainer"]
+[node name="Thanks" type="Label" parent="CreditContainer" unique_id=282912735]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "-TAMAT TRUE ENDING-"
 horizontal_alignment = 1
 
-[node name="BGMPlayer" type="AudioStreamPlayer" parent="."]
+[node name="BGMPlayer" type="AudioStreamPlayer" parent="." unique_id=90521624]
 stream = ExtResource("2_audio")

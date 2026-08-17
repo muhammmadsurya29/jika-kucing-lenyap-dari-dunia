@@ -2,14 +2,20 @@
 mc (terkejut): "Anuu... Siapa kamu? Kenapa kamu di sini? Dan... wajahmu...?"
 aloha (ngejek): (Tersenyum menyeringai) "Aku juga tidak tahu, siapa aku? HA HA HA. Coba kamu tebak dengan sisa isi kepalamu yang berharga itu.”
 - [Lempar bantal terdekat ke arahnya]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/LEMPAR BANTAL.png" fade="2.0"]
 	mc (marah): "Pergi dari sini! Apa kau hantu?!"
 	aloha (ketawa_tengil): "Wow, wow! Tenang. Bantal empukmu tidak mempan terhadapku."
+	[background fade="2.0"]
 - [Mundur ketakutan]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MUNDUR KETAKUTAN.png" fade="2.0"]
 	mc (terkejut): "[i](Aku mundur beberapa langkah, tubuhku gemetar.)[/i]"
 	aloha (ngejek): "Hahaha, lihat wajah ketakutanmu itu. Lucu sekali!"
+	[background fade="2.0"]
 - [Tertawa tidak percaya]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/TERTAWA GA PERCAYA.png" fade="2.0"]
 	mc (senyum_tipis): "Ah, ini pasti halusinasi efek tumor itu kan? Hahaha..."
 	aloha (kesal): "Hei, aku bukan halusinasi murahan!"
+	[background fade="2.0"]
 mc (terkejut): "Jadi kau ini apa? Doppelganger? Malaikat maut?"
 aloha (ketawa_tengil): "HA HA HA... Benar-benar manusia yang tidak berguna dan bodoh. Aku adalah Sang Iblis."
 mc (dada_sesak): "Iblis?”
@@ -21,9 +27,13 @@ aloha (terkejeut): "HA HA HA! Kau dihadapkan dengan kematian dan masih bisa berp
 - [Skydiving tanpa instruktur!]
 	mc (senyum_tipis): "Mungkin... Skydiving dari langit yang tinggi?!"
 - [Makan daging Wagyu A5 sampai muntah!]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MAKAN WAGYU A5.png" fade="2.0"]
 	mc (senyum_tipis): "Makan daging Wagyu A5 paling mahal sampai aku tak bisa bergerak?!"
+	[background fade="2.0"]
 - [Menyatakan cinta ke idol terkenal!]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MENYATAKAN CINTA IDOL.png" fade="2.0"]
 	mc (senyum_tipis): "Menerobos masuk ke konser dan menyatakan cinta ke idol?!"
+	[background fade="2.0"]
 aloha (ngakak_jail): "HA HA HA! Apa-apaan itu?! Ide macam apa itu?! Anak SMP pun bisa lebih kreatif! Repot sekali kalau aku harus mengabulkan semuanya. Kita lakukan satu saja. Skydiving!"
 [background arg="res://assets/backgrounds/skydiving.png" fade="1.0"]
 narator: "Iblis itu menepuk tangannya dan tiba-tiba aku sudah berada di atas pesawat dengan ketinggian 3000 meter."
@@ -42,11 +52,15 @@ aloha (ngejek): "Oh? Kau sudah siap mendengarnya? Aku datang untuk menyampaikan.
 mc (syok_kesal): "A-apa?!"
 narator: "Terlalu kaget, aku kehilangan suaraku. Besok? Aku tak punya banyak waktu lagi untuk memperbaiki kesalahanku!"
 - [Marah pada takdir]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MARAH PADA TAKDIR.png" fade="2.0"]
 	mc (marah): "Kenapa besok?! Ini tidak adil! Aku belum sempat berbaikan dengan ayahku! Aku belum—!"
 	aloha (ketawa_tengil): "Marah-marah pada takdir tidak akan mengubah apapun, kawan."
+	[background fade="2.0"]
 - [Menangis pasrah]
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MENANGIS PASRAH.png" fade="2.0"]
 	mc (dada_sesak): "[i](Air mataku menetes. Selesai sudah. Hidupku yang menyedihkan ini akan berakhir besok...)[/i]"
 	aloha (ngejek): "Hahaha, lihatlah. Manusia selalu menangis di saat-saat terakhir."
+	[background fade="2.0"]
 aloha (ada_maunya): "Hei! Jangan pasang wajah memelas begitu. Aku datang membawa tawaran besar. 'Big Chance' yang tak bisa kau bayangkan."
 mc (netral): "Tawaran apa?"
 aloha (ada_maunya): "Apa kamu mau mati besok dengan keadaan menyedihkan dan penuh penyesalan?"
@@ -73,7 +87,7 @@ mc (sakit_kepala): "[i](Benar-benar tidak adil...)[/i]"
 aloha (ngejek): "Hei hei, jangan murung. Aku akan memikirkan barang lain."
 audio "res://assets/audio/ringtone.mp3"
 narator: "[i](Ponselku berdering. Kepala kantor pos mencariku karena aku bolos hari ini.)[/i]"
-[background arg="res://assets/backgrounds/ponsel bunyi.png" fade="0.0"]
+[background arg="res://assets/backgrounds/DAY 1 otw taman/KANTOR POS NELFON.png" fade="0.0"]
 aloha (ada_maunya): "Itu...!"
 mc (netral): "Apa?"
 aloha (ketawa_tengil): "Benda kotak berisik itu! Telepon? Ya. Mari kita hilangkan ponsel itu dari dunia ini! Ha ha ha!"
@@ -87,7 +101,7 @@ aloha (ngejek): "15 detik..."
 aloha (ngejek): "10 detik..."
 [wait time="1.0"]
 aloha (ngejek): "5... 4... 3..."
-- [i](Ponsel Tukar Nyawa? Sepertinya itu harga yang murah)[/i] BAIKLAH AKU SETUJU
+- BAIKLAH AKU SETUJU
 	mc (marah): "Boleh! Aku setuju! Lagipula nyawaku jauh lebih penting daripada ponsel ini!"
 	aloha (ngejek): "Pilihan bagus! Mari kita musnahkan benda kecil penyedot perhatian ini!"
 	mc (terkejut): "Tunggu..."
@@ -105,5 +119,5 @@ aloha (ngejek): "5... 4... 3..."
 	[signal arg="aloha_hilang"]
 	[background arg="res://assets/backgrounds/hitam.png" fade="0.0"]
 	jump hari0_flashback/
-- JANGAN! AKU TIDAK BISA BERKOMUNIKASI DENGAN AYAHKU
+- JANGAN! PONSEL SANGAT BERHARGA BAGIKU
 	jump alt_malam_terakhir/

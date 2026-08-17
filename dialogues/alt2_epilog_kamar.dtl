@@ -20,3 +20,4 @@ narator: "Ada cerita yang bagus dan ada seseorang yang bisa kuceritai. Dengan it
 narator: "Tsutaya membaca kertas itu. Memeluknya sebentar ke dadanya."
 [background fade="1.0"]
 [signal arg="alt2_credit_bangkit_start"]
+[signal arg="update_objective:TAMAT"]

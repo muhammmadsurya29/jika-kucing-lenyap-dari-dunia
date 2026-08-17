@@ -16,9 +16,13 @@ audio "res://assets/audio/mixkit-frying-eggs-on-hot-pan-121.mp3"
 mc (terkejut): "Eh...?"
 mc: "(Suara apa itu? Ada orang yang sedang memasak? Pencuri? Tidak mungkin... Ibu? Ah, tidak mungkin...)"
 - Ambil sapu untuk senjata
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/AMBIL SAPU.png" fade="2.0"]
 	mc (batin): "(Kalau itu pencuri, setidaknya aku tidak akan mati konyol hari ini.)"
+	[background fade="2.0"]
 	mc (batin): "(Ukh, badanku rasanya mau rontok...)"
 - Jalan mengendap-endap
+	[background arg="res://assets/backgrounds/DAY 1 otw taman/MENGENDAP.png" fade="2.0"]
 	mc (batin): "(Lebih baik aku mencari tahu diam-diam tanpa menimbulkan suara.)"
+	[background fade="2.0"]
 audio -
 [signal arg="update_objective:Periksa dapur"]

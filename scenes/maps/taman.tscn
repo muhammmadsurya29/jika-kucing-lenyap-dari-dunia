@@ -30728,10 +30728,10 @@ shape = SubResource("RectangleShape2D_1s67d")
 [node name="PintuCafe" type="Area2D" parent="." unique_id=455985120]
 position = Vector2(-280, -207)
 script = ExtResource("2_svcpl")
-requires_met_mantan = true
 target_scene = "res://scenes/maps/cafe.tscn"
-inactive_on_days = Array[int]([4])
+requires_met_mantan = true
 locked_timeline = "pintu_cafe_terkunci"
+inactive_on_days = Array[int]([4])
 marker_icon = ExtResource("15_w5h7f")
 icon_hframes = 18
 icon_vframes = 8

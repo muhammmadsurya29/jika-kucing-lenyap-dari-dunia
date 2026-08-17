@@ -1,6 +1,6 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3]
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://c24f2l81jmjih"]
 
-[ext_resource type="Texture2D" uid="uid://djx001" path="res://assets/ui/ChoiceBox.png" id="1_tex"]
+[ext_resource type="Texture2D" uid="uid://blc287i1qjtdn" path="res://assets/ui/ChoiceBox.png" id="1_tex"]
 
 [resource]
 texture = ExtResource("1_tex")
@@ -8,4 +8,4 @@ texture_margin_left = 20.0
 texture_margin_top = 10.0
 texture_margin_right = 20.0
 texture_margin_bottom = 10.0
-modulate_color = Color(1.2, 1.2, 1.2, 1.0)
+modulate_color = Color(1.2, 1.2, 1.2, 1)

@@ -30,6 +30,7 @@ BGMManager="*res://scripts/bgm_manager.gd"
 [dialogic]
 
 directories/dch_directory={
+"Ayah": "res://assets/portraits/AYAH TUA/Ayah.dch",
 "aloha": "res://assets/sprites/aloha.dch",
 "ibu": "res://assets/sprites/ibu.dch",
 "ibu-kencur": "res://assets/sprites/ibu-kencur.dch",

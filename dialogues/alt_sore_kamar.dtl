@@ -29,3 +29,4 @@ narator: "Aku tidak menghilangkan ponsel. Aku tidak mendapat satu hari tambahan 
 [background fade="1.0"]
 
 [signal arg="alt_tamat"]
+[signal arg="update_objective:TAMAT"]

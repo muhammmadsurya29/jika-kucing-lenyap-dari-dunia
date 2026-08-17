@@ -1,20 +1,59 @@
 [background arg="hitam.png" fade="1.0"]
-mc (batin): "(Aku melangkah masuk ke apartemenku yang sepi. Udara dingin menyapaku. Tapi ingatanku justru melayang ke hari itu... hari dimana Ibu meninggal empat tahun lalu.)"
-[background arg="res://assets/backgrounds/JIKA AKU LENYAP DARI DUNIA/rumah jam malam.png" fade="1.0"]
-narator: "Di depan rumah keluarga kami, kulihat Ayah berdiri terdiam di depan pintu. Ia mengenakan pakaian kerjanya yang lusuh, masih membawa tas perkakasnya. Ia baru saja pulang bekerja."
-mc: "Ayah... dari mana saja?"
-ayah: "..."
-mc: "Ibu meninggal, Yah. Dia meninggal, dan Ayah tidak ada di sana! Ayah tidak menemaninya di rumah sakit!"
-narator: "Kemarahanku meledak. Berhari-hari aku menemani Ibu sendirian, memendam rasa takut. Dan di saat-saat terakhirnya, pria ini justru sedang bekerja."
-mc: "Apa jam rusak orang-orang itu lebih berharga dari istri Ayah sendiri?! Jawab, Yah!"
-narator: "Ayah perlahan menoleh. Wajahnya begitu kuyu, matanya memerah. Dari saku kemejanya yang sedikit terbuka, kulihat lipatan kertas tagihan rumah sakit yang terus membengkak. Selama berbulan-bulan, Ayah bekerja nyaris tanpa tidur demi membayar biaya perawatan Ibu."
-narator: "Ia telah memikul semua beban itu sendirian. Menyimpan rasa takut, lelah, dan kesepian tanpa pernah mengeluh atau membaginya denganku."
-mc: "Ayah... tagihan itu..."
-ayah: "Masuklah ke kamarmu."
-mc: "Tapi Yah, aku tidak tahu..."
-ayah: "Ku bilang masuk! Jangan ganggu aku. Aku ingin sendiri."
-narator: "Suaranya dingin, namun bergetar. Ia mengusirku bukan karena benci, tapi karena ia tak sanggup memperlihatkan kehancurannya. Ia baru saja kehilangan wanita yang paling dicintainya."
-narator: "Aku mematung, tenggelam dalam rasa bersalah dan penyesalan yang begitu dalam. Aku berbalik, berjalan perlahan ke kamarku, meninggalkan Ayah sendirian dalam kesepiannya."
+mc (batin): "(Aku melangkah perlahan di ujung tanjakan bukit yang sepi. Udara dingin menyapaku. Tapi ingatanku justru melayang ke hari itu... hari dimana Ibu meninggal empat tahun lalu.)"
+[background arg="res://assets/backgrounds/HARI 4/MASUK RUMAH AYAH.png" fade="1.0"]
+narator: "Menarik napas panjang, meremas tangan yang gemetar. Aku perlahan membuka pintu"
+mc: "Permisi"
+[background fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/AYAH LIAT BELAKANG.png" fade="1.0"]
+narator: "Kau...Untuk apa ke sini?"
+- Aku ingin melihat keadaan Ayah
+	[background arg="res://assets/backgrounds/HARI 4/LIAT KEADAAN AYAH.png" fade="1.0"]
+	mc (netral): "Aku... hanya ingin melihat keadaan Ayah. Apakah Ayah baik-baik saja?"
+	Ayah: "Seperti yang kau lihat. Masih bernapas, masih bisa bekerja. Duduklah. Jangan berdiri terus di depan pintu."
+	[background fade="1.0"]
+- Aku datang untuk meminta maaf
+	[background arg="res://assets/backgrounds/HARI 4/MAAF KE AYAH.png" fade="1.0"]
+	mc: "Aku datang unntuk meminta maaf, yah..... Untuk semuanya."
+	Ayah: "(Terdiam cukup lama) .....Duduklah. Jangan berdiri terus di depan pintu."
+	[background fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/DUDUK HADAPANN AYAH.png" fade="1.0"]
+Ayah: "Lalu? Ada apa tiba-tiba? Wajahmu terlihat pucat."
+mc: "Tidak... tidak apa-apa. Hanya kelelahan bekerja."
+Ayah: "Kau selalu memaksakan diri. Sama seperti Ibumu."
+[background arg="res://assets/backgrounds/HARI 4/KETAWA CANGGUNG AYAH.png" fade="1.0"]
+mc: (Tersenyum tipis) "Ya... aku sadar aku memang anak kalian berdua."
+Ayah: (Ayah ikut tersenyum)
+[background arg="res://assets/backgrounds/HARI 4/SEDIH DEPAN AYAH.png" fade="1.0"]
+mc: "Yah... selama empat tahun ini, aku selalu berlari. Aku marah pada Ayah karena mengira Ayah tidak peduli saat Ibu sakit. Tapi akhir-akhir ini... aku banyak berpikir."
+Ayah: "......."
+- Mengungkap perasaan sesungguhnya
+	mc: "Aku sadar, rasa kehilanganku tidak sebanding dengan rasa kehilangan Ayah. Ayah kehilangan pasangan hidup. Maafkan aku karena malah meninggalkan Ayah sendirian di saat kita berdua sedang hancur."
+- Apakah ayah membenciku?
+	mc: "Apakah Ayah masih membenciku karena aku pergi begitu saja di hari pemakaman Ibu?"
+[background arg="res://assets/backgrounds/HARI 4/AYAH IKUT SEDIH.png" fade="1.0"]
+narator: (Tangan ayah terlihat gemetar, ia menutupi sebagian wajahnya) "Saat ibumu pergi... sebagian dari diriku ikut mati. Aku tidak tahu bagaimana cara berbicara denganmu tanpanya. Ibumu yang selalu menjadi jembatan di antara kita. Aku memang ayah yang gagal."
+mc: "Tidak, Yah. Ayah bukan ayah yang gagal. Ayah selalu memperbaiki jam-jam rusak milik orang lain dengan penuh kasih sayang. Ibu sangat mencintai sisi Ayah yang itu. Dan aku... aku juga menyadarinya sekarang."
+[background arg="res://assets/backgrounds/HARI 4/DUDUK HADAPANN AYAH.png" fade="1.0"]
+mc: (Besok, aku akan menghilang dari dunia ini. Sebelum itu terjadi, aku harus mengatakannya.)
+mc: "Yah... terima kasih. Terima kasih karena sudah melahirkanku ke dunia ini. Terima kasih karena sudah membiarkanku hidup dan merasakan indahnya dunia, walau hanya sebentar."
+Ayah: "Nada bicaramu aneh. Seolah-olah kau akan pergi jauh dan tidak akan kembali."
+[background arg="res://assets/backgrounds/HARI 4/UNGKAPAN DEPAN AYAH.png" fade="1.0"]
+mc:  "Aku tidak akan pergi ke mana-mana, Yah. Ingatanku, keberadaanku, semuanya... akan selalu ada di sini, bersama Ayah."
+- [Peluk Ayah]
+	[background arg="res://assets/backgrounds/HARI 4/PELUKAN.png" fade="1.0"]
+	Ayah: "Sering-seringlah pulang... Pintu rumah ini selalu terbuka untukmu."
+	[background fade="1.0"]
+- [Berikan barang kepada Ayah]
+	[background arg="res://assets/backgrounds/HARI 4/NGAIH BARANG.png" fade="1.0"]
+	mc: "Tolong simpan ini, Yah. Sebagai kenang-kenangan..."
+	[background fade="1.0"]
+- Nyatakan kasih sayang
+	[background arg="res://assets/backgrounds/HARI 4/AYAH IKUT SEDIH.png" fade="1.0"]
+	mc:  "Aku hanya ingin memastikan Ayah mendengarnya secara langsung dariku... Aku menyayangi Ayah."
+	Ayah: "Bodoh. Anak laki-laki tidak seharusnya membuat ayahnya menangis seperti ini. ...Aku juga. Aku selalu menyayangimu."
+	[background fade="1.0"]
+[background arg="res://assets/backgrounds/HARI 4/PELUKAN.png" fade="1.0"]
+mc (batin): Terima kasih, Tuhan. Akhirnya aku bisa berdamai dengan masa laluku. Berdamai dengan ayahku. Kini, aku sudah siap. Apapun yang terjadi besok, aku tidak menyesali keputusanku untuk mempertahankan dunia ini... beserta isinya.
 [background fade="1.0"]
 [wait time="1.0"]
 [background arg="res://assets/backgrounds/Ending C/13.png" fade="1.0"]

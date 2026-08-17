@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(0.050302755, 0.71152496, 0.946875, 1),
+&"color": Color(0.29411766, 0, 0.50980395, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -10,16 +10,16 @@
 "style": "dialog_npc",
 "suffix": ""
 },
-&"default_portrait": "New portrait",
+&"default_portrait": "Default",
 &"description": "",
 &"display_name": "Kencur",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
-"New portrait": {
+"Default": {
 "export_overrides": {
-"image": ""
+"image": "\"res://assets/portraits/KENCUR/KENCUR.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

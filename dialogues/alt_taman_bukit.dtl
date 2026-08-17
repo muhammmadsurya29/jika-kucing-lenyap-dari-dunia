@@ -13,7 +13,7 @@ narator: "Sarapan terakhir di bangku taman dengan kucing yang tidak bisa bicara 
 [wait time="1.5"]
 [background arg="res://assets/backgrounds/Ending A/14.png" fade="1.0"]
 narator: "Seorang anak kecil sekitar 7 tahun berlari menghampiri bangku dan langsung menatap Kubis dengan mata berbinar."
-anak: "Kucingnya boleh aku pegang?"
+kencur: "Kucingnya boleh aku pegang?"
 - Tentu saja boleh
 	mc: "Tentu saja boleh. Asal pelan-pelan ya."
 	[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
@@ -22,9 +22,9 @@ anak: "Kucingnya boleh aku pegang?"
 	mc: "Boleh, tapi hati-hati ya, dia agak pemalu."
 	[background arg="res://assets/backgrounds/Ending A/15.png" fade="1.0"]
 	narator: "Anak itu mengelus Kubis dengan sangat pelan. Ternyata Kubis malah menyukainya dan mulai mendengkur."
-anak: "Namanya siapa?"
+kencur: "Namanya siapa?"
 mc: "Kubis."
-anak: "(Tertawa) Nama kucing kok kayak sayuran!"
+kencur: "(Tertawa) Nama kucing kok kayak sayuran!"
 mc: "Memang. Dia juga bulat seperti kubis."
 [background fade="1.0"]
 
@@ -32,7 +32,7 @@ mc: "Memang. Dia juga bulat seperti kubis."
 [wait time="2.0"]
 [background arg="res://assets/backgrounds/Ending A/16 (1).png" fade="1.0"]
 narator: "Ibu si anak datang menghampiri, sedikit panik karena anaknya lari duluan."
-ibu_anak: "Maaf, anak saya langsung lari waktu lihat kucing."
+ibu-kencur: "Maaf, anak saya langsung lari waktu lihat kucing."
 mc: "Tidak apa-apa. Kubis suka anak kecil."
 [background arg="res://assets/backgrounds/Ending A/17.png" fade="1.0"]
 narator: "Aku tersenyum lega. Si anak masih asyik bermain dengan Kubis. Aku menatap mereka."
